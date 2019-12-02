@@ -1,0 +1,17 @@
+@font-face {
+  font-family: Cocogoose;
+  font-weight: 400;
+  src: url(../fonts/Cocogoose-Classic-Medium-trial.ttf);
+}
+@font-face {
+  font-family: Dinosaur;
+  font-weight: 300;
+  src: url(../fonts/DINosaur-Light.ttf);
+}
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@import 'custom' ;

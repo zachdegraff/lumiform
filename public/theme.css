@@ -1,0 +1,347 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.wrapper {
+    max-width: 1200px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+}
+
+li {
+    list-style-type: none;
+}
+
+body > header {
+    position: fixed;
+    height: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #ddd;
+    background: white;
+}
+
+body > section.content {
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+
+body > header > nav.wrapper {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+body > header > nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+body > header > nav > ul {
+    display: flex;
+}
+
+body > header > nav > ul > li.logo {
+    margin-right: auto;
+}
+
+body > header > nav li {
+    list-style-type: none;
+}
+
+body > header > nav > ul > li {
+    position: relative;
+}
+
+body > header > nav a {
+    display: block;
+}
+
+body > header > nav > ul > li > a {
+    padding: 0 10px;
+    line-height: 50px;
+}
+
+body > header > nav > ul > li > ul {
+    display: none;
+    position: absolute;
+    width: 200px;
+    left: 0;
+    top: 50px;
+    border: 1px solid #ddd;
+    background: white;
+}
+
+body > header > nav > ul > li > ul > li > a {
+    padding: 0 10px;
+    line-height: 30px;
+}
+
+body > header > nav > ul > li:hover > ul {
+    display: block;
+}
+
+.sidebar-wrapper {
+    display: flex;
+}
+
+.sidebar-wrapper .sidebar {
+    width: 250px;
+    margin-right: 20px;
+}
+
+.sidebar-wrapper > section {
+    flex: 1;
+}
+
+.sidebar .categories ul {
+    margin-left: 20px;
+}
+
+.imgbox {
+    width: 290px;
+    background: #efefef;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.imgbox > a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.imgbox .image {
+    height: 150px;
+    background-color: #ddd;
+    background-size: cover;
+}
+
+.imgbox .text {
+    padding: 10px;
+    height: 6em;
+    overflow: hidden;
+}
+
+.app-use-page .hero {
+    height: 400px;
+    background-color: #ddd;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.app-use-page .sidebar .related-templates {
+    background: #efefef;
+    padding: 10px;
+}
+
+.app-use-page .related-templates-extended > li {
+    background: #efefef;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.app-use-page .related-templates-extended > li + li {
+    margin-top: 20px;
+}
+
+.content img {
+    max-width: 100%;
+}
+
+body > footer {
+    margin-top: 20px;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+}
+
+body > footer > nav {
+    display: flex;
+}
+
+body > footer > nav > .col {
+    width: 16.66%;
+}
+
+body > footer > nav h5 {
+    margin-bottom: 0.5rem;
+}
+
+.page-title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.templates {
+    margin-bottom: 1rem;
+}
+
+.template-library-categories .searchform {
+    margin-bottom: 2rem;
+}
+
+.pagination {
+    display: flex;
+}
+
+.pagination .page-item .page-link {
+    padding: 10px;
+    display: inline-block;
+}
+
+.pagination .page-item:first-child {
+    margin-right: auto;
+}
+
+.template-preview {
+    border: 1px solid #666666;
+    width: 320px;
+}
+
+.template-preview > .scrollable {
+    height: 400px;
+    overflow-y: scroll;
+}
