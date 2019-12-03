@@ -6,7 +6,7 @@
 
     <title>@yield("head.title")</title>
 
-    {{--<link rel="stylesheet" type="text/css" href="/theme.css">--}}
+   {{-- <link rel="stylesheet" type="text/css" href="/theme.css">--}}
     <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
 
     @if (app()->environment() !== 'production')
@@ -14,12 +14,12 @@
     @endif
 </head>
 <body>
-    <header class="h-32 flex items-center">
+    <header class="xl:h-20 xxl:h-32 flex items-center">
         @include("layout/header")
     </header>
-    <section class="content wrapper">
+    <div class="content wrapper">
         @yield("content")
-    </section>
+    </div>
     <footer class="pt-16">
         @include("layout/footer")
     </footer>
