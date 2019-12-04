@@ -14,7 +14,7 @@
     @endif
 </head>
 <body>
-    <header class="xl:h-20 xxl:h-32 flex items-center">
+    <header class="w-full xl:h-20 xxl:h-32 flex items-center z-50 bg-white">
         @include("layout/header")
     </header>
     <div class="content wrapper">
@@ -23,5 +23,6 @@
     <footer class="pt-16">
         @include("layout/footer")
     </footer>
+    <script src="{{asset('js/app.js')}}"></script>
 </body>
 </html>

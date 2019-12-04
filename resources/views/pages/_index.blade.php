@@ -183,7 +183,7 @@
             <h3 class="section__title-large md:w-2/3 md:mx-auto text-center mb-20 "
                 style="color: #ffffff">@lang('It’s easy to get started with Lumiform. And it’s free of charge.')</h3>
             <div class="easy__content flex">
-                <div class="easy__image md:w-0 w-1/4 flex justify-end pt-8">
+                <div class="easy__image md:w-0 xxl:w-1/4 flex justify-end pt-8">
                     <img src="{{asset('img/home-easy-img.png')}}" alt="">
                 </div>
                 <div class="easy__submit md:w-full lg:w-3/4 xxl:w-2/4 px-16">

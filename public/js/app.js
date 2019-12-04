@@ -93,7 +93,33 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+var header = document.querySelector('header');
 
+window.onscroll = function () {
+  if (document.documentElement.scrollTop > 200) {
+    header.classList.add('fixed');
+  } else {
+    header.classList.remove('fixed');
+  }
+};
+
+var tabElement = document.getElementsByClassName('header__item');
+var tabContent = document.getElementsByClassName('content__item');
+
+function removeClases(data) {
+  [].forEach.call(data, function (el) {
+    el.classList.remove("active");
+  });
+}
+
+document.onclick = function (event) {
+  removeClases(tabElement);
+  removeClases(tabContent);
+  var target = event.target || event.srcElement;
+  var index = target.dataset.index;
+  target.classList.add('active');
+  tabContent[index].classList.add('active');
+};
 
 /***/ }),
 
