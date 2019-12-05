@@ -5,20 +5,20 @@
 @section("content")
     <section id="home__banner">
         <div class="container mx-auto flex">
-            <div class="banner__left md:flex-2 lg:flex-1 pt-32 pb-24">
-                <h1 class="banner__heading mb-10">@lang('A new, easy way for inspections AND audits')</h1>
+            <div class="banner__left md:flex-2  lg:flex-1 py-16 md:pt-32  md:pb-24">
+                <h1 class="banner__heading mb-10 text-20 md:text-40">@lang('A new, easy way for inspections AND audits')</h1>
                 <p class="banner__text mb-10">@lang('Equip your team with the Lumiform app and brighten up your quality and
                     safety workflows.')</p>
                 <form action="">
-                    <div class="home__banner--email flex justify-between mb-8 ">
+                    <div class="home__banner--email flex justify-between mb-8 flex-col md:flex-row">
 
-                        <input class="pl-8 w-2/5" type="email" placeholder="{{__('Enter e-mail address')}}">
-                        <button class="button__base w-2/5">@lang('Get Lumiform FREE')</button>
+                        <input class="pl-8 sm:w-full md:w-1/2 xxl:w-2/5" type="email" placeholder="{{__('Enter e-mail address')}}">
+                        <button class="button__base mt-5 md:mt-0 sm:w-full md:w-1/2 md:ml-5 xxl:w-2/5">@lang('Get Lumiform FREE')</button>
 
                     </div>
                 </form>
                 <div class="banner__signin">
-                    <small class="banner__small-text">@lang('Already using Lumiform?') <a href=""> @lang('Sign in')</a>
+                    <small class="banner__small-text ">@lang('Already using Lumiform?') <a href=""> @lang('Sign in')</a>
                     </small>
                 </div>
             </div>
@@ -28,9 +28,9 @@
         </div>
     </section>
     <section id="home__trusted">
-        <div class="container mx-auto">
+        <div class="container mx-auto ">
             <h4 class="section__title mb-5">@lang('Trusted by forward-thinking of all shapes and sizes')</h4>
-            <div class="flex items-center justify-between trusted__gallery">
+            <div class="flex items-center justify-between trusted__gallery flex-wrap md:flex-no-wrap">
                 <div class="gallery__item">
                     <img src="{{asset('img/back-factory.png')}}" alt="">
                 </div>
@@ -61,11 +61,11 @@
             </div>
         </div>
     </section>
-    <section id="home__procedure" class="md:pt-10 lg:pt-16 xxl:pt-32 lg:pb-20 xxl:pb-48">
+    <section id="home__procedure" class="py-10 lg:pt-16 xxl:pt-32 lg:pb-20 xxl:pb-48">
         <div class="container mx-auto">
             <h2 class="section__title-large lg:mb-16 xxl:mb-32 text-center">@lang('AN intuitive app for all quality and safety procedures')</h2>
             <div class="procedure__content flex">
-                <div class="md:w-2/2 md:mx-auto md:mt-5 lg:w-2/5">
+                <div class="w-2/2 mx-auto mt-5  lg:w-3/5 xl:w-2/5">
                     <ul class="list--circle__check mb-20 md:mx-auto">
                         <li>@lang('Create customised forms in minutes')</li>
                         <li>@lang('Start with expert-proofed templates')</li>
@@ -77,13 +77,13 @@
                         @lang('LEARN MORE ABOUT THE PRODUCT')
                     </a>
                 </div>
-                <div class="md:w-0 lg:w-3/5">
+                <div class="w-0 lg:w-2/5 xl:w-3/5">
                     <img src="{{asset('img/landing-page-devices.png')}}" alt="" class="procedure__image">
                 </div>
             </div>
         </div>
     </section>
-    <section id="home__cases" class="md:pb-20 lg:pb-64">
+    <section id="home__cases" class="pb-10 lg:pb-64">
         <div class="container mx-auto">
             <div class="case__items">
                 <div class="case__item flex mt-24">
@@ -110,12 +110,12 @@
     </section>
     <section id="home__start">
         <div class="container mx-auto flex align-baseline md:pb-10 lg:pb-24">
-            <div class="start__text md:w-2/3 md:mx-auto md:text-center lg:w-2/5">
+            <div class="start__text w-full md:w-3/5 md:w-2/3 md:mx-auto md:text-center lg:w-2/5">
                 <h3 class="md:text-center section__title-large mb-10 lg:text-left">@lang('Start right away, with ready-to-use checklists')</h3>
                 <p class="mb-24">@lang('Lumiform provides free, ready-to-use templates that you can further customise, to enable you to start industry-proofed checklists within minutes.')</p>
                 <a href="" class="description-link">@lang('DISCOVER TEMPLATES')</a>
             </div>
-            <div class="start__image md:w-0 lg:w-3/5">
+            <div class="start__image w-0 md:w-2/5 lg:w-3/5">
                 <img src="{{asset('img/checklists-tablet.png')}}" alt="">
             </div>
 
@@ -123,37 +123,37 @@
 
     </section>
     <section id="home__learn">
-        <div class="container mx-auto md:my-12 lg:my-24 xxl:my-48 ">
-            <div class="learn__text w-2/3 mx-auto mb-32">
+        <div class="container mx-auto my-12 lg:my-24 xxl:my-48 ">
+            <div class="learn__text w-full md:w-2/3 mx-auto mb-12 lg:mb-32">
                 <h3 class="learn__heading mb-6">@lang('Learn and grow through inspiration')</h3>
                 <p>@lang('We offer you a wide range of inspiring options that show how companies use Lumiform to continuously improve their quality and safety procedures.')</p>
             </div>
 
 
-            <div class="learn__items md:flex-wrap flex">
-                <div class="learn__item md:w-1/2 lg:flex-1 text-center">
-                    <div class="with__circle mb-24 mx-auto">
+            <div class="learn__items flex-wrap lg:flex-no-wrap flex">
+                <div class="learn__item w-full md:w-1/2 lg:flex-1 text-center mb-5">
+                    <div class="with__circle mb-10 lg:mb-24 mx-auto">
                         <div class="image__circle" style="background:#00B2FF19 ;"></div>
                         <img src="{{asset('img/industries.png')}}" alt="">
                     </div>
                     <a href="" class="description-link" style="color: #00B2FF">@lang('SOLUTION BY INDUSTRIES')</a>
                 </div>
-                <div class="learn__item md:w-1/2 lg:flex-1 text-center">
-                    <div class="with__circle mb-24 mx-auto">
+                <div class="learn__item w-full md:w-1/2 lg:flex-1 text-center mb-5">
+                    <div class="with__circle  mb-10 lg:mb-24 mx-auto">
                         <div class="image__circle" style="background:#FD2F581A ;"></div>
                         <img src="{{asset('img/type-solution.png')}}" alt="">
                     </div>
                     <a href="" class="description-link" style="color: #00B2FF">@lang('SOLUTION BY TYPE')</a>
                 </div>
-                <div class="learn__item md:w-1/2 lg:flex-1 text-center">
-                    <div class="with__circle mb-24 mx-auto">
+                <div class="learn__item w-full md:w-1/2 lg:flex-1 text-center mb-5">
+                    <div class="with__circle  mb-10 lg:mb-24 mx-auto">
                         <div class="image__circle" style="background:#F3EFFB ;"></div>
                         <img src="{{asset('img/case-study.png')}}" alt="">
                     </div>
                     <a href="" class="description-link">@lang('CASE STUDIES')</a>
                 </div>
-                <div class="learn__item md:w-1/2 lg:flex-1 text-center">
-                    <div class="with__circle mb-24 mx-auto">
+                <div class="learn__item w-full md:w-1/2 lg:flex-1 text-center mb-5">
+                    <div class="with__circle  mb-10 lg:mb-24 mx-auto">
                         <div class="image__circle" style="background:#8D5FD6;"></div>
                         <img src="{{asset('img/use-cases.png')}}" alt="">
                     </div>
@@ -163,35 +163,35 @@
         </div>
     </section>
     <section id="home__leaders">
-        <div class="container mx-auto py-24">
+        <div class="container mx-auto md:py-24 py-10">
             <h3 class="section__title-large mb-20 text-center">@lang('Manage quality and safety like industry leaders.')</h3>
-            <div class="leader__items flex flex-wrap">
-                <div class="leader__item mr-10 flex items-center">
+            <div class="leader__items flex flex-wrap  justify-between">
+                <div class="leader__item md:mr-10 flex items-center md:w-auto w-1/4 mr-0">
                     <img src="{{asset('img/adidas.png')}}" alt="">
                 </div>
-                <div class="leader__item mr-10 flex items-center">
+                <div class="leader__item md:mr-10 flex items-center md:w-auto w-1/4 mr-0">
                     <img src="{{asset('img/ritter.png')}}" alt="">
                 </div>
-                <div class="leader__item mr-10 flex items-center">
+                <div class="leader__item md:mr-10 flex items-center md:w-auto w-1/4 mr-0">
                     <img src="{{asset('img/aldi.png')}}" alt="">
                 </div>
             </div>
         </div>
     </section>
-    <section id="home__easy" class="xl:pt-24 xxl:pt-32">
-        <div class="xxl:container mx-auto md:py-12">
+    <section id="home__easy" class="pt-10 xl:pt-24 xxl:pt-32">
+        <div class="xxl:container mx-auto md:pt-12">
             <h3 class="section__title-large md:w-2/3 md:mx-auto text-center mb-20 "
                 style="color: #ffffff">@lang('It’s easy to get started with Lumiform. And it’s free of charge.')</h3>
             <div class="easy__content flex">
-                <div class="easy__image md:w-0 xxl:w-1/4 flex justify-end pt-8">
+                <div class="easy__image w-0 lg:w-1/4 flex justify-end pt-8">
                     <img src="{{asset('img/home-easy-img.png')}}" alt="">
                 </div>
                 <div class="easy__submit md:w-full lg:w-3/4 xxl:w-2/4 px-16">
                     <form action="">
-                        <div class="home__banner--email flex justify-between mb-8 ">
+                        <div class="home__banner--email flex flex-col lg:flex-row justify-between mb-8 ">
 
-                            <input class="pl-8 w-2/4 mx-4" type="email" placeholder="{{__('Enter e-mail address')}}">
-                            <button class="button__base w-2/4 mx-4">@lang('Get Lumiform FREE')</button>
+                            <input class="pl-8 mx-0 w-full lg:w-2/4 lg:mx-4" type="email" placeholder="{{__('Enter e-mail address')}}">
+                            <button class="button__base mx-0 mt-5 md:mt-0 w-full lg:w-2/4 lg:mx-4">@lang('Get Lumiform FREE')</button>
                         </div>
                     </form>
                     <div class="banner__signin">

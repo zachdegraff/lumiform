@@ -3805,7 +3805,7 @@ video {
 }
 
 .h-40 {
-  height: 10rem;
+  height: 40px;
 }
 
 .h-48 {
@@ -10695,8 +10695,20 @@ video {
   color: #FF8500;
 }
 
+.text-15 {
+  font-size: 15px;
+}
+
+.text-17 {
+  font-size: 17px;
+}
+
 .text-20 {
   font-size: 20px;
+}
+
+.text-25 {
+  font-size: 25px;
 }
 
 .text-30 {
@@ -11180,6 +11192,11 @@ body {
   overflow-x: hidden;
 }
 
+header {
+  position: relative;
+  z-index: 999;
+}
+
 .fs-30 {
   font-size: 30px;
 }
@@ -11246,11 +11263,37 @@ body {
   display: none;
   position: absolute;
   min-width: 350px;
+  z-index: 999;
   left: 0;
   top: 100%;
   border: 1px solid #ddd;
   background: white;
   padding: 30px;
+}
+
+.nav__subitem ul {
+  padding-right: 20px;
+  min-width: 350px;
+}
+
+.sub__right .active {
+  min-width: 350px;
+}
+
+.sub__right a {
+  padding-bottom: 20px;
+  display: block;
+}
+
+.nav__subitem--2 {
+  display: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-left: 2px solid #aaaaaa;
+}
+
+.nav__subitem--2.active {
+  display: block;
 }
 
 .nav__subitem a {
@@ -11261,17 +11304,18 @@ body {
 }
 
 nav ul li {
+  list-style: none;
   -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s;
 }
 
-nav ul li:hover {
+nav ul .active {
   position: relative;
   -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s;
 }
 
-nav ul li:hover > .nav__subitem {
+nav ul .active > .nav__subitem {
   display: block;
   -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s;
@@ -11286,7 +11330,7 @@ nav ul li:hover > .nav__subitem {
   transition: all ease 0.3s;
 }
 
-nav ul li:hover > .nav__item--arrow img {
+nav ul .active > .nav__item--arrow img {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   -webkit-transition: all ease 0.3s;
@@ -11376,6 +11420,10 @@ button.banner__button {
   outline: none;
 }
 
+li.sub__menu--item.active a, .menu__item.active .nav__item {
+  color: #000;
+}
+
 .banner__small-text {
   font: 300 20px/27px DINosaur;
   letter-spacing: 0.4px;
@@ -11392,7 +11440,7 @@ button.banner__button {
   top: 0;
   bottom: 0;
   height: 110%;
-  z-index: 99;
+  z-index: 9;
 }
 
 section#home__trusted {
@@ -11628,6 +11676,14 @@ header .nav__subitem li {
   padding-bottom: 20px;
 }
 
+.with-border {
+  border-bottom: 2px solid #AAAAAA;
+}
+
+.sub__menu--item.active {
+  display: block;
+}
+
 @media (max-width: 1660px) {
   .banner__heading {
     font: 700 55px/80px Cocogoose;
@@ -11643,6 +11699,7 @@ header .nav__subitem li {
 
   .button__base {
     font: 900 17px/27px Cocogoose;
+    height: 70px;
   }
 
   .banner__small-text {
@@ -11750,6 +11807,21 @@ header .nav__subitem li {
   }
 }
 
+@media (max-width: 1280px) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .item__bottom--text {
+    bottom: 45px;
+  }
+
+  .line {
+    bottom: 70px;
+  }
+}
+
 @media (max-width: 1024px) {
   .container {
     padding-left: 20px;
@@ -11772,6 +11844,40 @@ header .nav__subitem li {
 
   .start__text {
     margin: 50px 0 30px;
+  }
+
+  .start__image img {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .section__title, .section__title-large {
+    font: 700 20px/40px DINosaur;
+  }
+
+  ul.list--circle__check li {
+    font: 300 20px/30px DINosaur;
+    margin-bottom: 15px;
+  }
+
+  .item__heading, .learn__heading {
+    font: 700 20px/30px Cocogoose;
+  }
+
+  .header__item:nth-child(1), .header__item:nth-child(2) {
+    border-bottom: 1px solid #AAAAAA;
+  }
+
+  .header__item:nth-child(2) {
+    border-right: none;
+  }
+
+  footer ul li {
+    font: 300 15px/20px DINosaur;
+    margin-bottom: 10px;
   }
 }
 
@@ -14887,7 +14993,7 @@ header .nav__subitem li {
   }
 
   .sm\:h-40 {
-    height: 10rem;
+    height: 40px;
   }
 
   .sm\:h-48 {
@@ -21777,8 +21883,20 @@ header .nav__subitem li {
     color: #FF8500;
   }
 
+  .sm\:text-15 {
+    font-size: 15px;
+  }
+
+  .sm\:text-17 {
+    font-size: 17px;
+  }
+
   .sm\:text-20 {
     font-size: 20px;
+  }
+
+  .sm\:text-25 {
+    font-size: 25px;
   }
 
   .sm\:text-30 {
@@ -25371,7 +25489,7 @@ header .nav__subitem li {
   }
 
   .md\:h-40 {
-    height: 10rem;
+    height: 40px;
   }
 
   .md\:h-48 {
@@ -32261,8 +32379,20 @@ header .nav__subitem li {
     color: #FF8500;
   }
 
+  .md\:text-15 {
+    font-size: 15px;
+  }
+
+  .md\:text-17 {
+    font-size: 17px;
+  }
+
   .md\:text-20 {
     font-size: 20px;
+  }
+
+  .md\:text-25 {
+    font-size: 25px;
   }
 
   .md\:text-30 {
@@ -35855,7 +35985,7 @@ header .nav__subitem li {
   }
 
   .lg\:h-40 {
-    height: 10rem;
+    height: 40px;
   }
 
   .lg\:h-48 {
@@ -42745,8 +42875,20 @@ header .nav__subitem li {
     color: #FF8500;
   }
 
+  .lg\:text-15 {
+    font-size: 15px;
+  }
+
+  .lg\:text-17 {
+    font-size: 17px;
+  }
+
   .lg\:text-20 {
     font-size: 20px;
+  }
+
+  .lg\:text-25 {
+    font-size: 25px;
   }
 
   .lg\:text-30 {
@@ -46339,7 +46481,7 @@ header .nav__subitem li {
   }
 
   .xl\:h-40 {
-    height: 10rem;
+    height: 40px;
   }
 
   .xl\:h-48 {
@@ -53229,8 +53371,20 @@ header .nav__subitem li {
     color: #FF8500;
   }
 
+  .xl\:text-15 {
+    font-size: 15px;
+  }
+
+  .xl\:text-17 {
+    font-size: 17px;
+  }
+
   .xl\:text-20 {
     font-size: 20px;
+  }
+
+  .xl\:text-25 {
+    font-size: 25px;
   }
 
   .xl\:text-30 {
@@ -56823,7 +56977,7 @@ header .nav__subitem li {
   }
 
   .xxl\:h-40 {
-    height: 10rem;
+    height: 40px;
   }
 
   .xxl\:h-48 {
@@ -63713,8 +63867,20 @@ header .nav__subitem li {
     color: #FF8500;
   }
 
+  .xxl\:text-15 {
+    font-size: 15px;
+  }
+
+  .xxl\:text-17 {
+    font-size: 17px;
+  }
+
   .xxl\:text-20 {
     font-size: 20px;
+  }
+
+  .xxl\:text-25 {
+    font-size: 25px;
   }
 
   .xxl\:text-30 {

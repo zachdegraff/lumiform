@@ -33,7 +33,10 @@ module.exports = {
                 '70' : '70px',
                 '40' : '40px',
                 '30' : '30px',
+                '25' : '25px',
                 '20' : '20px',
+                '17' : '17px',
+                '15' : '15px',
             },
             screens: {
                 'sm': '640px',
@@ -54,7 +57,8 @@ module.exports = {
                 '20' : '20px'
             },
             height: {
-                '70' : '70px'
+                '70' : '70px',
+                '40' : '40px',
             },
 
             letterSpacing: {
