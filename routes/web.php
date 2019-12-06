@@ -14,6 +14,7 @@ foreach (config("app.locales") as $localeSlug => $locale) {
                     Route::view(__("organization", [], $locale), 'pages/product/organization')->name('.organization');
                     Route::view(__("conduct", [], $locale), 'pages/product/conduct')->name('.conduct');
                     Route::view(__("analysis", [], $locale), 'pages/product/analysis')->name('.analysis');
+                    Route::view(__("issues", [], $locale), 'pages/product/issues')->name('.issues');
                 });
 
             Route::name(".useCases")

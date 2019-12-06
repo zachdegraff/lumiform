@@ -459,6 +459,28 @@ header .nav__subitem li{
 .sub__menu--item.active {
   display: block;
 }
+#digitise,#forms,#workflow,#organise{
+  border-bottom: 1px solid #EEE7F9;
+}
+.circle{
+  background-image:url(../img/icons/back-factory.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 530px;
+  background-size: contain;
+  background-position: center;
+}
+.border-top-ccc{
+  border-top:1px solid #ccc;
+}
+.issue-management-second{
+  background-color:#FF85001A;
+
+}
+.issue-management-second-img{
+  position:relative;
+  top:-70px;
+}
 @media (max-width: 1660px) {
   .banner__heading {
     font: 700 55px/80px Cocogoose;

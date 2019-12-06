@@ -9,6 +9,8 @@ module.exports = {
             textColor: theme => theme('colors'),
             textColor: {
                 'primary': '#4D4D4D',
+                'grey-light': '#666666',
+                'grey-bold': '#333333',
                 'white': '#FFFFFF',
                 'secondary': '#707070',
                 'light-blue': '#00B2FF',
@@ -25,18 +27,27 @@ module.exports = {
                 'grey-dark': '#9690A5',
                 'red': '#FD2F58',
                 'red-light': '#FD2F581A',
+                'blue': '#4ECAFF',
+                'blue-dark': '#00B2FF',
+                'blue-light': '#00B2FF19',
                 'purple': '#8D5FD6',
                 'purple-light': '#B090E3',
             }),
+            width: {
+                '360': '360px',
+                '215': '215px',
+            },
             fontSize: {
 
-                '70' : '70px',
-                '40' : '40px',
-                '30' : '30px',
-                '25' : '25px',
-                '20' : '20px',
-                '17' : '17px',
-                '15' : '15px',
+                '70': '70px',
+                '50': '50px',
+                '40': '40px',
+                '30': '30px',
+                '25': '25px',
+                '20': '20px',
+                '17': '17px',
+                '15': '15px',
+                '12': '12px',
             },
             screens: {
                 'sm': '640px',
@@ -54,17 +65,18 @@ module.exports = {
                 // => @media (min-width: 1660px) { ... }
             },
             borderRadius: {
-                '20' : '20px'
+                '20': '20px'
             },
             height: {
-                '70' : '70px',
-                '40' : '40px',
+                '70': '70px',
+                '50': '50px',
+                '40': '40px',
             },
 
             letterSpacing: {
-                'heading' : '1.2px',
-                'text' : '0.3px',
-                'large' : '2px'
+                'heading': '1.2px',
+                'text': '0.3px',
+                'large': '2px'
             }
         }
     },
