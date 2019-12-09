@@ -19,6 +19,14 @@ module.exports = {
                 'green': '#00C389',
                 'purple': '#8D5FD6',
             },
+            maxWidth: {
+                '3/4': '75%',
+                '140': '140px',
+            },
+            maxHeight: {
+                '1/2': '50%',
+                '1/4': '25%',
+            },
             backgroundColor: theme => ({
                 ...theme('colors'),
                 'white': '#ffffff',
@@ -32,13 +40,18 @@ module.exports = {
                 'blue-light': '#00B2FF19',
                 'purple': '#8D5FD6',
                 'purple-light': '#B090E3',
+                'green-light': '#0EAE8F',
+                'green-dark': '#02A871',
             }),
             width: {
                 '360': '360px',
-                '215': '215px',
+                '215': '230px',
+                '210': '210px',
+                '270': '270px',
             },
             fontSize: {
 
+                '80': '80px',
                 '70': '70px',
                 '50': '50px',
                 '40': '40px',

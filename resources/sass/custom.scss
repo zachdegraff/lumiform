@@ -459,7 +459,7 @@ header .nav__subitem li{
 .sub__menu--item.active {
   display: block;
 }
-#digitise,#forms,#workflow,#organise{
+#digitise,#forms,#workflow,#organise,.with__border--bottom{
   border-bottom: 1px solid #EEE7F9;
 }
 .circle{
@@ -480,6 +480,15 @@ header .nav__subitem li{
 .issue-management-second-img{
   position:relative;
   top:-70px;
+}
+.issue__item--bg{
+  background: url("../img/circle-grey.svg") no-repeat left;
+  background-size: contain;
+}
+.from__image{
+  position: relative;
+  top: -35%;
+  right: -5%;
 }
 @media (max-width: 1660px) {
   .banner__heading {
@@ -613,6 +622,10 @@ header .nav__subitem li{
   }
   .start__image img{
     transform: scale(1);
+    right: 0;
+  }
+  .from__image{
+    top: 0;
     right: 0;
   }
 }
