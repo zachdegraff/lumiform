@@ -26,6 +26,7 @@ module.exports = {
             maxHeight: {
                 '1/2': '50%',
                 '1/4': '25%',
+
             },
             backgroundColor: theme => ({
                 ...theme('colors'),
@@ -35,6 +36,7 @@ module.exports = {
                 'grey-dark': '#9690A5',
                 'red': '#FD2F58',
                 'red-light': '#FD2F581A',
+                'red-opacity': '#FE6F8B',
                 'blue': '#4ECAFF',
                 'blue-dark': '#00B2FF',
                 'blue-light': '#00B2FF19',
@@ -42,6 +44,8 @@ module.exports = {
                 'purple-light': '#B090E3',
                 'green-light': '#0EAE8F',
                 'green-dark': '#02A871',
+                'orange-light': '#FFAA4E',
+                'orange': '#FF8500',
             }),
             width: {
                 '360': '360px',
@@ -84,6 +88,11 @@ module.exports = {
                 '70': '70px',
                 '50': '50px',
                 '40': '40px',
+                '420': '420px',
+                '320': '320px',
+                '300': '300px',
+                '250': '250px',
+                'fit': '-webkit-fill-available',
             },
 
             letterSpacing: {

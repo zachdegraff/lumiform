@@ -14,7 +14,7 @@
                           class="mb-10 flex flex-col md:flex-row items-center md:justify-center lg:flex-none lg:justify-start">
                         <input type="email" class="w-full sm:w-360 pl-8 h-50 xxl:h-70 rounded-20"
                                placeholder="@lang('Enter e-mail address')">
-                        <button class="font-extrabold w-215 mt-5 md:ml-10 md:mt-0  xxl:ml-12 bg-red text-white uppercase font-cocogoose text-17 lg:text-xl  h-50 xxxl:h-70 px-8 rounded-20">@lang('TRY FOR FREE')</button>
+                        <button class="font-extrabold w-215 mt-5 md:ml-10 md:mt-0  xxl:ml-12 bg-red text-white uppercase font-cocogoose text-17 lg:text-xl  h-50 xxl:h-70 px-8 rounded-20">@lang('TRY FOR FREE')</button>
                     </form>
                     <div class="banner__signin text-center lg:text-left">
                         <small class="banner__small-text">@lang('Already using Lumiform?') <a
@@ -38,15 +38,21 @@
             <div class="management__tools flex flex-wrap justify-center lg:flex-no-wrap lg:justify-between">
                 <div class="tool__item w-full sm:w-1/2 lg:w-1/3">
                     <h3 class="text-center text-20 font-bold font-cocogoose uppercase mb-10 text-red">@lang('Raise Issue')</h3>
-                    <img src="{{asset('img/rise-image.svg')}}" alt="" class="mx-auto">
+                    <div class="tool__item--img relative">
+                        <img src="{{asset('img/rise-image.svg')}}" alt="" class="mx-auto">
+                    </div>
                 </div>
                 <div class="tool__item w-full sm:w-1/2 lg:w-1/3">
                     <h3 class="text-center text-20 font-bold font-cocogoose uppercase mb-10 text-green">@lang('Solve issue together')</h3>
-                    <img src="{{asset('img/group-1374.svg')}}" alt="" class="mx-auto">
+                    <div class="tool__item--img relative">
+                        <img src="{{asset('img/group-1374.svg')}}" alt="" class="mx-auto">
+                    </div>
                 </div>
                 <div class="tool__item mt-8 w-full sm:mt-0 w-1/2 lg:w-1/3">
                     <h3 class="text-center text-20 font-bold font-cocogoose uppercase mb-10 text-light-blue">@lang('Get an overview')</h3>
-                    <img src="{{asset('img/group-880.svg')}}" alt="" class="mx-auto">
+                    <div class="tool__item--img relative">
+                        <img src="{{asset('img/group-880.svg')}}" alt="" class="mx-auto">
+                    </div>
                 </div>
             </div>
             <button class="button__base px-8 py-3 lg:py-5 mt-20 mx-auto">@lang('Get Lumiform FREE')</button>
@@ -58,7 +64,7 @@
                 @lang('Raise issues in three different ways:')
             </h2>
             <div class="lg:flex  lg:flex-row-reverse mb-5 md:mb-16">
-                <div class="issue__item--text w-full lg:w-3/5 flex flex-col justify-center md:pl-10 items-end">
+                <div class="issue__item--text w-full lg:w-5/6 flex flex-col justify-center items-end">
                     <div class="flex issue__item--bg py-10 pl-12 lg:max-w-3/4">
                         <span class="text-50 md:text-80 text-secondary leading-none">1</span>
                         <div class="pl-4 sm:pl-12">
@@ -70,10 +76,12 @@
                             </p>
                         </div>
                     </div>
-                    <div class="w-full pl-24 issue__subitem lg:max-w-3/4">
-                        <h5 class="text-15 lg:text-20 font-cocogoose">@lang('EXAMPLE USE CASES FOR AUTOMATIC ISSUES')</h5>
+                    <div class="w-full issue__subitem lg:max-w-3/4 mt-10">
+                        <h5 class="pl-32 md:pl-40 text-15 lg:text-20 font-cocogoose font-extrabold mb-5">@lang('EXAMPLE USE CASES FOR AUTOMATIC ISSUES')</h5>
                         <ul>
-                            <li>@lang('Inform the technician when employee marked Coffee machine as damaged.')</li>
+                            <li class="flex items-center font-light text-20 font-din text-secondary"><img src="{{asset('img/group-1392.svg')}}" alt="" class="px-12 md:px-16">@lang('Inform the technician when employee marked Coffee machine as damaged.')</li>
+                            <li class="flex items-center font-light text-20 font-din text-secondary"><img src="{{asset('img/group-1382.svg')}}" alt="" class="px-12 md:px-16">@lang('Inform the safety officer if first aid kit is marked as incomplete.')</li>
+                            <li class="flex items-center font-light text-20 font-din text-secondary"><img src="{{asset('img/group-1383.svg')}}" alt="" class="px-12 md:px-16">@lang('Inform the manager if mould infestation is detected during the monthly audit.')</li>
                         </ul>
                     </div>
 
@@ -238,7 +246,8 @@
                     <form action="">
                         <div class="home__banner--email flex flex-col justify-center  md:flex-row lg:justify-between mb-8">
 
-                            <input class="pl-8 w-full sm:w-360 lg:w-2/4 sm:mx-4" type="email" placeholder="{{__('Enter e-mail address')}}">
+                            <input class="pl-8 w-full sm:w-360 lg:w-2/4 sm:mx-4" type="email"
+                                   placeholder="{{__('Enter e-mail address')}}">
                             <button class="base__button mx-auto mt-5 md:mt-0 w-215 lg:w-auto px-8 bg-green-dark md:mx-4 font-extrabold text-white uppercase font-cocogoose text-17 lg:text-xl h-70  rounded-20 items-center flex">@lang('TRY FOR FREE')</button>
                         </div>
                     </form>

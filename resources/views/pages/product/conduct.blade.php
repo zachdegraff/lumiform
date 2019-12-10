@@ -99,7 +99,8 @@
         </div>
         <div class="container mx-auto text-center lg:text-left flex flex-wrap lg:flex-no-wrap justify-around">
             <div class="team__itemw-full sm:w-1/2 lg:w-1/3 mb-10 px-5 lg:px-0">
-                <img src="{{asset('img/group-3333.svg')}}" alt="" class="mb-16 mx-auto lg:mx-0 sm:max-h-1/4 lg:max-h-1/2">
+                <img src="{{asset('img/group-3333.svg')}}" alt=""
+                     class="mb-16 mx-auto lg:mx-0 sm:max-h-1/4 lg:max-h-1/2">
                 <h3 class="font-cocogoose font-black text-red uppercase text-20 md:text-30 mb-10">
                     @lang('upcoming task Notifications')
                 </h3>
@@ -108,7 +109,8 @@
                 </p>
             </div>
             <div class="team__itemw-full sm:w-1/2 lg:w-1/3 mb-10 px-5 lg:px-0">
-                <img src="{{asset('img/group-3328.svg')}}" alt="" class="mb-16 mx-auto lg:mx-0 sm:max-h-1/4 lg:max-h-1/2">
+                <img src="{{asset('img/group-3328.svg')}}" alt=""
+                     class="mb-16 mx-auto lg:mx-0 sm:max-h-1/4 lg:max-h-1/2">
                 <h3 class="font-cocogoose font-black text-gold uppercase text-20 md:text-30 mb-10">
                     @lang('Supervisor notifications')
                 </h3>
@@ -120,7 +122,7 @@
         </div>
         <button class="button__base px-8 py-5 mt-20 mx-auto">@lang('Get Lumiform FREE')</button>
     </section>
-    <section id="messages"  class="py-12 lg:py-32 bg-grey-light">
+    <section id="messages" class="py-12 lg:py-32 bg-grey-light">
         <div class="container mx-auto">
             <h2 class="font-bold text-center font-cocogoose text-primary text-30 lg:text-40 mb-5 lg:mb-20 uppercase tracking-heading">
                 @lang('CHOOSE BETWEEN <span class="text-light-blue"> TWO TYPES OF MESSAGES</span>')
@@ -139,16 +141,18 @@
             <button class="button__base px-8 py-5 mt-20 mx-auto">@lang('Get Lumiform FREE')</button>
         </div>
     </section>
-    <section id="as_a_team" class="py-12 lg:py-32">
+    <section id="as_a_team" class="py-12 lg:py-32 with__border--bottom">
         <div class="container mx-auto">
-            <h2 class="font-bold text-center font-cocogoose text-green text-30 lg:text-40 mb-5 lg:mb-20 uppercase tracking-heading">
+            <h2 class="font-bold text-center font-cocogoose text-green text-30 lg:text-40 mb-10 lg:mb-20 uppercase tracking-heading">
                 @lang('Easy, intuitive filling-out process')
             </h2>
         </div>
         <div class="container mx-auto text-center lg:text-left flex flex-wrap lg:flex-no-wrap justify-between">
 
             <div class="team__itemw-full sm:w-1/2 lg:w-1/5 mb-10 px-5 lg:px-0">
-                <img src="{{asset('img/group-3329.svg')}}" alt="" class="mb-16 mx-auto lg:mx-0">
+                <div class="h-250 lg:h-320 mb-16 mx-auto lg:mx-0 flex items-center">
+                    <img src="{{asset('img/group-3329.svg')}}" alt="" class="h-fit mx-auto">
+                </div>
                 <h3 class="font-cocogoose font-black text-green uppercase text-15 md:text-20 mb-10">
                     @lang('Easy and simple interface')
                 </h3>
@@ -159,7 +163,9 @@
 
 
             <div class="team__itemw-full sm:w-1/2 lg:w-1/5 mb-10 px-5 lg:px-0">
-                <img src="{{asset('img/group-3330.svg')}}" alt="" class="mb-16 mx-auto lg:mx-0">
+                <div class="h-250 lg:h-320 mb-16 mx-auto lg:mx-0 flex items-center">
+                    <img src="{{asset('img/group-3330.svg')}}" alt="" class="h-fit mx-auto">
+                </div>
                 <h3 class="font-cocogoose font-black text-gold uppercase text-15 md:text-20 mb-10">
                     @lang('intuitive filling-out process logic')
                 </h3>
@@ -170,7 +176,9 @@
 
 
             <div class="team__item w-full sm:w-1/2 lg:w-1/5 mb-10 px-5 lg:px-0">
-                <img src="{{asset('img/group-3331.svg')}}" alt="" class="mb-16 mx-auto lg:mx-0">
+                <div class="h-250 lg:h-320 mb-16 mx-auto lg:mx-0 flex items-center">
+                    <img src="{{asset('img/group-3331.svg')}}" alt="" class="h-fit mx-auto">
+                </div>
                 <h3 class="font-cocogoose font-black text-purple uppercase text-15 md:text-20 mb-10">
                     @lang('Support answers with text comments and photos')
                 </h3>
@@ -181,7 +189,9 @@
 
 
             <div class="team__item w-full sm:w-1/2 lg:w-1/5 mb-10 px-5 lg:px-0">
-                <img src="{{asset('img/group-3332.svg')}}" alt="" class="mb-16 mx-auto lg:mx-0">
+                <div class="h-250 lg:h-320 mb-16 mx-auto lg:mx-0 flex items-center">
+                    <img src="{{asset('img/group-3332.svg')}}" alt="" class="h-fit mx-auto">
+                </div>
                 <h3 class="font-cocogoose font-black text-red uppercase text-15 md:text-20 mb-10">
                     @lang('Save inspections as drafts')
                 </h3>
@@ -192,5 +202,63 @@
 
         </div>
         <button class="button__base px-8 py-5 mt-20 mx-auto">@lang('Get Lumiform FREE')</button>
+    </section>
+    <section id="as_a_team" class="py-12 lg:py-32 with__border--bottom">
+        <div class="container mx-auto">
+            <h2 class="font-bold text-center font-cocogoose text-purple text-30 lg:text-40 mb-10 lg:mb-20 uppercase tracking-heading">
+                @lang('Manage and share reports')
+            </h2>
+        </div>
+        <div class="report__items container mx-auto text-center lg:text-left flex flex-wrap lg:flex-no-wrap">
+            <div class="team__itemw-full sm:w-1/2 lg:w-1/3 mb-10 px-5 lg:px-0">
+                <img src="{{asset('img/group-2733.svg')}}" alt=""
+                     class="mb-16 mx-auto  sm:max-h-1/4 lg:max-h-1/2">
+                <h3 class="font-cocogoose font-black text-purple uppercase text-20 md:text-30 mb-10">
+                    @lang('Manage reports')
+                </h3>
+                <p class="font-light font-din text-20 md:text-30">
+                    @lang('Depending on the assigned user rights, you can view inspection results after completion and edit them again.')
+                </p>
+            </div>
+            <div class="team__itemw-full sm:w-1/2 lg:w-1/3 mb-10 px-5 lg:px-0">
+                <img src="{{asset('img/group-2732.svg')}}" alt=""
+                     class="mb-16 mx-auto sm:max-h-1/4 lg:max-h-1/2">
+                <h3 class="font-cocogoose font-black text-red uppercase text-20 md:text-30 mb-10">
+                    @lang('Manage reports')
+                </h3>
+                <p class="font-light font-din text-20 md:text-30">
+                    @lang('Send your automatically created audit reports to all stakeholders via email, as a PDF report.')
+                </p>
+            </div>
+
+        </div>
+        <button class="button__base px-8 py-5 mt-20 mx-auto">@lang('Get Lumiform FREE')</button>
+    </section>
+    <section id="easy" class="pt-12 lg:pt-24 bg-red-opacity">
+        <div class="container mx-auto md:pt-12">
+            <h3 class="section__title-large  md:mx-auto text-center mb-5 lg:mb-20 lg:w-2/3"
+                style="color: #ffffff">@lang('Install the mobile app on your device now, and use Lumiform free of charge')</h3>
+            <div class="easy__content flex justify-end">
+
+                <div class="easy__submit w-full lg:w-3/4 xxl:w-2/4 px-5 lg:px-16">
+                    <form action="">
+                        <div class="home__banner--email flex flex-col justify-center  md:flex-row lg:justify-between mb-8">
+
+                            <input class="pl-8 w-full sm:w-360 lg:w-2/4 sm:mx-4" type="email" placeholder="{{__('Enter e-mail address')}}">
+                            <button class="base__button mx-auto mt-5 md:mt-0 w-215 lg:w-auto px-8 bg-red md:mx-4 font-extrabold text-white uppercase font-cocogoose text-17 lg:text-xl h-50 xxl:h-70  rounded-20 items-center flex">@lang('TRY FOR FREE')</button>
+                        </div>
+                    </form>
+                    <div class="banner__signin">
+                        <small class="banner__small-text text-center block"
+                               style="color: #ffffff;">@lang('We also offer <a href=""> paid plans </a> with additional features, storage and support.')
+                        </small>
+                    </div>
+                </div>
+                <div class="easy__image w-0 lg:w-1/4 flex justify-start">
+                    <img src="{{asset('img/group-1943.svg')}}" alt="">
+                </div>
+
+            </div>
+        </div>
     </section>
 @endsection

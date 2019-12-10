@@ -462,6 +462,7 @@ header .nav__subitem li{
 #digitise,#forms,#workflow,#organise,.with__border--bottom{
   border-bottom: 1px solid #EEE7F9;
 }
+
 .circle{
   background-image:url(../img/icons/back-factory.svg);
   background-repeat: no-repeat;
@@ -489,6 +490,32 @@ header .nav__subitem li{
   position: relative;
   top: -35%;
   right: -5%;
+}
+.report__items{
+  justify-content: space-evenly;
+}
+.management__tools .tool__item--img:after{
+  content: '';
+  background: url("../img/group-585.svg") no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 12px;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+}
+
+.management__tools .tool__item:last-child .tool__item--img:after{
+background: none;
+}
+.analysis__banner--image{
+  right: 3%;
+}
+.background-grey{
+  background: #FAFBFB;
+  height: 70px;
+  width: 100%;
 }
 @media (max-width: 1660px) {
   .banner__heading {
@@ -552,7 +579,13 @@ header .nav__subitem li{
     font: 500 13px/20px Cocogoose;
     letter-spacing: 0.8px;
   }
+  .management__tools .tool__item--img:after{
+    width: 30px;
+    left: calc(100% - 15px );
+  }
+
 }
+
 
 @media (max-width: 1400px) {
   .banner__heading {
@@ -627,6 +660,9 @@ header .nav__subitem li{
   .from__image{
     top: 0;
     right: 0;
+  }
+  .management__tools .tool__item--img:after{
+    display: none;
   }
 }
 @media (max-width: 768px) {
