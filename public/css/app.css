@@ -4928,6 +4928,10 @@ video {
   margin-left: -1px;
 }
 
+.max-h-500 {
+  max-height: 500px;
+}
+
 .max-h-full {
   max-height: 100%;
 }
@@ -4946,6 +4950,10 @@ video {
 
 .max-w-140 {
   max-width: 140px;
+}
+
+.max-w-510 {
+  max-width: 510px;
 }
 
 .max-w-xs {
@@ -11001,11 +11009,15 @@ video {
 }
 
 .w-215 {
-  width: 230px;
+  width: 215px;
 }
 
 .w-270 {
   width: 270px;
+}
+
+.w-290 {
+  width: 290px;
 }
 
 .w-360 {
@@ -11162,6 +11174,34 @@ video {
 
 body {
   overflow-x: hidden;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #707070;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #707070;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #707070;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #707070;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 
 header {
@@ -11421,6 +11461,10 @@ section#home__trusted {
   padding: 50px 25px;
 }
 
+#home__banner input {
+  border: 1px solid #8D5FD666;
+}
+
 .section__title {
   text-align: center;
   font: 700 25px/40px DINosaur;
@@ -11429,8 +11473,21 @@ section#home__trusted {
   text-transform: uppercase;
 }
 
+.workflow__items .digitise__item--image, #analysis .digitise__item--image {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.workflow__items .digitise__item--image:last-child {
+  margin: 0 auto;
+}
+
 .fixed-height {
   max-height: 150px;
+}
+
+.custom-text-size p {
+  font-size: 20px;
 }
 
 .section__title-large {
@@ -16171,6 +16228,10 @@ header .nav__subitem li {
     margin-left: -1px;
   }
 
+  .sm\:max-h-500 {
+    max-height: 500px;
+  }
+
   .sm\:max-h-full {
     max-height: 100%;
   }
@@ -16189,6 +16250,10 @@ header .nav__subitem li {
 
   .sm\:max-w-140 {
     max-width: 140px;
+  }
+
+  .sm\:max-w-510 {
+    max-width: 510px;
   }
 
   .sm\:max-w-xs {
@@ -22244,11 +22309,15 @@ header .nav__subitem li {
   }
 
   .sm\:w-215 {
-    width: 230px;
+    width: 215px;
   }
 
   .sm\:w-270 {
     width: 270px;
+  }
+
+  .sm\:w-290 {
+    width: 290px;
   }
 
   .sm\:w-360 {
@@ -26639,6 +26708,10 @@ header .nav__subitem li {
     margin-left: -1px;
   }
 
+  .md\:max-h-500 {
+    max-height: 500px;
+  }
+
   .md\:max-h-full {
     max-height: 100%;
   }
@@ -26657,6 +26730,10 @@ header .nav__subitem li {
 
   .md\:max-w-140 {
     max-width: 140px;
+  }
+
+  .md\:max-w-510 {
+    max-width: 510px;
   }
 
   .md\:max-w-xs {
@@ -32712,11 +32789,15 @@ header .nav__subitem li {
   }
 
   .md\:w-215 {
-    width: 230px;
+    width: 215px;
   }
 
   .md\:w-270 {
     width: 270px;
+  }
+
+  .md\:w-290 {
+    width: 290px;
   }
 
   .md\:w-360 {
@@ -37107,6 +37188,10 @@ header .nav__subitem li {
     margin-left: -1px;
   }
 
+  .lg\:max-h-500 {
+    max-height: 500px;
+  }
+
   .lg\:max-h-full {
     max-height: 100%;
   }
@@ -37125,6 +37210,10 @@ header .nav__subitem li {
 
   .lg\:max-w-140 {
     max-width: 140px;
+  }
+
+  .lg\:max-w-510 {
+    max-width: 510px;
   }
 
   .lg\:max-w-xs {
@@ -43180,11 +43269,15 @@ header .nav__subitem li {
   }
 
   .lg\:w-215 {
-    width: 230px;
+    width: 215px;
   }
 
   .lg\:w-270 {
     width: 270px;
+  }
+
+  .lg\:w-290 {
+    width: 290px;
   }
 
   .lg\:w-360 {
@@ -47575,6 +47668,10 @@ header .nav__subitem li {
     margin-left: -1px;
   }
 
+  .xl\:max-h-500 {
+    max-height: 500px;
+  }
+
   .xl\:max-h-full {
     max-height: 100%;
   }
@@ -47593,6 +47690,10 @@ header .nav__subitem li {
 
   .xl\:max-w-140 {
     max-width: 140px;
+  }
+
+  .xl\:max-w-510 {
+    max-width: 510px;
   }
 
   .xl\:max-w-xs {
@@ -53648,11 +53749,15 @@ header .nav__subitem li {
   }
 
   .xl\:w-215 {
-    width: 230px;
+    width: 215px;
   }
 
   .xl\:w-270 {
     width: 270px;
+  }
+
+  .xl\:w-290 {
+    width: 290px;
   }
 
   .xl\:w-360 {
@@ -58043,6 +58148,10 @@ header .nav__subitem li {
     margin-left: -1px;
   }
 
+  .xxl\:max-h-500 {
+    max-height: 500px;
+  }
+
   .xxl\:max-h-full {
     max-height: 100%;
   }
@@ -58061,6 +58170,10 @@ header .nav__subitem li {
 
   .xxl\:max-w-140 {
     max-width: 140px;
+  }
+
+  .xxl\:max-w-510 {
+    max-width: 510px;
   }
 
   .xxl\:max-w-xs {
@@ -64116,11 +64229,15 @@ header .nav__subitem li {
   }
 
   .xxl\:w-215 {
-    width: 230px;
+    width: 215px;
   }
 
   .xxl\:w-270 {
     width: 270px;
+  }
+
+  .xxl\:w-290 {
+    width: 290px;
   }
 
   .xxl\:w-360 {

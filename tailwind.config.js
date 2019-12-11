@@ -22,10 +22,12 @@ module.exports = {
             maxWidth: {
                 '3/4': '75%',
                 '140': '140px',
+                '510': '510px',
             },
             maxHeight: {
                 '1/2': '50%',
                 '1/4': '25%',
+                '500': '500px',
 
             },
             backgroundColor: theme => ({
@@ -49,9 +51,10 @@ module.exports = {
             }),
             width: {
                 '360': '360px',
-                '215': '230px',
+                '215': '215px',
                 '210': '210px',
                 '270': '270px',
+                '290': '290px',
             },
             fontSize: {
 

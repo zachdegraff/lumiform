@@ -5,22 +5,11 @@
 @section("content")
     <section id="home__banner">
         <div class="container mx-auto flex">
-            <div class="banner__left md:flex-2  lg:flex-1 py-16 md:pt-32  md:pb-24">
-                <h1 class="banner__heading mb-10 text-20 md:text-40">@lang('A new, easy way for inspections AND audits')</h1>
-                <p class="banner__text mb-10">@lang('Equip your team with the Lumiform app and brighten up your quality and
+            <div class="banner__left md:flex-2  lg:flex-1 py-16 md:py-32">
+                <h1 class="mb-5 text-20 text-primary md:text-70 font-cocogoose font-extrabold uppercase tracking-normal leading-tight">@lang('A new, easy way for inspections AND audits')</h1>
+                <p class="font-din text-30 font-light text-secondary mb-32">@lang('Equip your team with the Lumiform app and brighten up your quality and
                     safety workflows.')</p>
-                <form action="">
-                    <div class="home__banner--email flex justify-between mb-8 flex-col md:flex-row">
-
-                        <input class="pl-8 sm:w-full md:w-1/2 xxl:w-2/5" type="email" placeholder="{{__('Enter e-mail address')}}">
-                        <button class="button__base mt-5 md:mt-0 sm:w-full md:w-1/2 md:ml-5 xxl:w-2/5">@lang('Get Lumiform FREE')</button>
-
-                    </div>
-                </form>
-                <div class="banner__signin">
-                    <small class="banner__small-text ">@lang('Already using Lumiform?') <a href=""> @lang('Sign in')</a>
-                    </small>
-                </div>
+                @include('components.product.banner_form')
             </div>
             <div class="banner__right md:flex-shrink-0 lg:flex-1 relative">
                 <img src="{{asset('img/tablet.png')}}" alt="" class="absolute banner__image">
@@ -73,8 +62,10 @@
                         <li>@lang('Fully automated, customisable reports')</li>
                         <li>@lang('Data analysis')</li>
                     </ul>
-                    <a href="" class="description-link">
+                    <a href=""
+                       class="flex items-center uppercase text-red text-center block text-17 lg:text-20 tracking-large my-5 lg:mt-10">
                         @lang('LEARN MORE ABOUT THE PRODUCT')
+                        <img src="{{asset('img/arrow-right-long-red.svg')}}" alt="" class="h-3 ml-8">
                     </a>
                 </div>
                 <div class="w-0 lg:w-2/5 xl:w-3/5">
@@ -85,22 +76,22 @@
     </section>
     <section id="home__cases" class="pb-10 lg:pb-64">
         <div class="container mx-auto">
-            <div class="case__items">
-                <div class="case__item flex mt-24">
-                    <div class="item__text flex-1">
-                        <h6 class="item__heading mb-5">@lang('Improve quality and safety')</h6>
+            <div class="case__items w-10/12 mx-auto">
+                <div class="case__item flex mt-24 justify-between">
+                    <div class="item__text w-7/12">
+                        <h6 class="item__heading mb-5 text-green">@lang('Improve quality and safety')</h6>
                         <p>@lang('Your reputation is everything – preserve it. Don’t just digitise your inspections and audits: continuously optimise procedures.')</p>
                     </div>
-                    <div class="item__image flex-1">
+                    <div class="item__image">
                         <img src="{{asset('img/improve-quality.png')}}" alt="">
                     </div>
                 </div>
-                <div class="case__item reversed flex mt-24">
-                    <div class="item__text flex-1">
-                        <h6 class="item__heading mb-5">@lang('Save time and money')</h6>
+                <div class="case__item reversed flex mt-24 justify-between">
+                    <div class="item__text w-7/12">
+                        <h6 class="item__heading mb-5 text-gold">@lang('Save time and money')</h6>
                         <p>@lang('Cut your inspection time by up to half, resolve issues up to four times faster, get customised reports that are generated fully automatically, and uncover underperforming areas in a snap.')</p>
                     </div>
-                    <div class="item__image flex-1">
+                    <div class="item__image ">
                         <img src="{{asset('img/save-time.png')}}" alt="">
                     </div>
                 </div>
@@ -113,7 +104,12 @@
             <div class="start__text w-full md:w-3/5 md:w-2/3 md:mx-auto md:text-center lg:w-2/5">
                 <h3 class="md:text-center section__title-large mb-10 lg:text-left">@lang('Start right away, with ready-to-use checklists')</h3>
                 <p class="mb-24">@lang('Lumiform provides free, ready-to-use templates that you can further customise, to enable you to start industry-proofed checklists within minutes.')</p>
-                <a href="" class="description-link">@lang('DISCOVER TEMPLATES')</a>
+                <a href=""
+                   class="flex items-center uppercase text-red text-center block text-17 lg:text-20 tracking-large my-5 lg:mt-10">
+                    @lang('DISCOVER TEMPLATES')
+                    <img src="{{asset('img/arrow-right-long-red.svg')}}" alt="" class="h-3 ml-8">
+                </a>
+
             </div>
             <div class="start__image w-0 md:w-2/5 lg:w-3/5">
                 <img src="{{asset('img/checklists-tablet.png')}}" alt="">
@@ -136,73 +132,55 @@
                         <div class="image__circle" style="background:#00B2FF19 ;"></div>
                         <img src="{{asset('img/industries.png')}}" alt="">
                     </div>
-                    <a href="" class="description-link" style="color: #00B2FF">@lang('SOLUTION BY INDUSTRIES')</a>
+
+                        @include('components.product.arrow-right',['color' => '#00B2FF','text' => 'SOLUTION BY INDUSTRIES'])
+
                 </div>
                 <div class="learn__item w-full md:w-1/2 lg:flex-1 text-center mb-5">
                     <div class="with__circle  mb-10 lg:mb-24 mx-auto">
                         <div class="image__circle" style="background:#FD2F581A ;"></div>
                         <img src="{{asset('img/type-solution.png')}}" alt="">
                     </div>
-                    <a href="" class="description-link" style="color: #00B2FF">@lang('SOLUTION BY TYPE')</a>
+                    @include('components.product.arrow-right',['color' => '#FD2F58','text' => 'SOLUTION BY TYPE'])
                 </div>
                 <div class="learn__item w-full md:w-1/2 lg:flex-1 text-center mb-5">
                     <div class="with__circle  mb-10 lg:mb-24 mx-auto">
                         <div class="image__circle" style="background:#F3EFFB ;"></div>
                         <img src="{{asset('img/case-study.png')}}" alt="">
                     </div>
-                    <a href="" class="description-link">@lang('CASE STUDIES')</a>
+                    @include('components.product.arrow-right',['color' => '#8D5FD6','text' => 'CASE STUDIES'])
+
                 </div>
                 <div class="learn__item w-full md:w-1/2 lg:flex-1 text-center mb-5">
                     <div class="with__circle  mb-10 lg:mb-24 mx-auto">
                         <div class="image__circle" style="background:#8D5FD6;"></div>
                         <img src="{{asset('img/use-cases.png')}}" alt="">
                     </div>
-                    <a href="" class="description-link" style="color: #8D5FD6">@lang('APP USES')</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="home__leaders">
-        <div class="container mx-auto md:py-24 py-10">
-            <h3 class="section__title-large mb-20 text-center">@lang('Manage quality and safety like industry leaders.')</h3>
-            <div class="leader__items flex flex-wrap  justify-between">
-                <div class="leader__item md:mr-10 flex items-center md:w-auto w-1/4 mr-0">
-                    <img src="{{asset('img/adidas.png')}}" alt="">
-                </div>
-                <div class="leader__item md:mr-10 flex items-center md:w-auto w-1/4 mr-0">
-                    <img src="{{asset('img/ritter.png')}}" alt="">
-                </div>
-                <div class="leader__item md:mr-10 flex items-center md:w-auto w-1/4 mr-0">
-                    <img src="{{asset('img/aldi.png')}}" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="home__easy" class="pt-10 xl:pt-24 xxl:pt-32">
-        <div class="xxl:container mx-auto md:pt-12">
-            <h3 class="section__title-large md:w-2/3 md:mx-auto text-center mb-20 "
-                style="color: #ffffff">@lang('It’s easy to get started with Lumiform. And it’s free of charge.')</h3>
-            <div class="easy__content flex">
-                <div class="easy__image w-0 lg:w-1/4 flex justify-end pt-8">
-                    <img src="{{asset('img/home-easy-img.png')}}" alt="">
-                </div>
-                <div class="easy__submit md:w-full lg:w-3/4 xxl:w-2/4 px-16">
-                    <form action="">
-                        <div class="home__banner--email flex flex-col lg:flex-row justify-between mb-8 ">
 
-                            <input class="pl-8 mx-0 w-full lg:w-2/4 lg:mx-4" type="email" placeholder="{{__('Enter e-mail address')}}">
-                            <button class="button__base mx-0 mt-5 md:mt-0 w-full lg:w-2/4 lg:mx-4">@lang('Get Lumiform FREE')</button>
-                        </div>
-                    </form>
-                    <div class="banner__signin">
-                        <small class="banner__small-text text-center block" style="color: #ffffff;">@lang('We also offer <a href=""> paid plans </a> with additional features, storage and support.')
-                        </small>
-                    </div>
+                    @include('components.product.arrow-right',['color' => '#00C389','text' => 'APP USES'])
                 </div>
-
             </div>
         </div>
     </section>
+    @include('components.product.companions_section',[
+   'heading' => 'Manage quality and safety like industry leaders',
+   'icons' => [
+   'adidasArtboard.svg','ALDIArtboard.svg','AllianzArtboard.svg','ARALArtboard.svg','audi-black-vector-logo.svg','BecksArtboard.svg',
+   'BMWArtboard.svg','BOSCHArtboard.svg','DHlArtboard.svg','DPArtboard.svg','dpd-logo-png.svg','Dr._Oetker-Logo.svg','EDEKAArtboard.svg',
+   'FantaArtboard.svg','hasseroeder-vector-logo.svg','HermesArtboard.svg','HIPPArtboard.svg','KauflandArtboard.svg','KrombacherArtboard.svg',
+   'LIDLArtboard.svg','LufthansaArtboard.svg','Mercedes-BenzArtboard.svg','MieleArtboard.svg','NestleArtboard.svg','NIVEAArtboard.svg',
+   'obi-vector-logo.svg','OTTOArtboard.svg','PUMAArtboard.svg','RittersportArtboard.svg','SchwarzkopfArtboard.svg','Siemens.svg',
+   'tchibo1Artboard.svg','tui-vector-logo.svg'
+
+   ]
+   ])
+    @include('components.product.bottom_form',[
+   'heading' =>'It’s easy to get started with Lumiform. And it’s free of charge..',
+   'sectionBg' =>'green-light',
+   'buttonBg' =>'green-dark',
+   'image' =>'img/home-easy-img.png',
+   ])
+
     {{--<h1>@lang('Digital inspections and audits')</h1>
     <p>@lang('Lumiform is the most flexible form builder bringing light into your internal quality and safety procedures.')</p>
     <input placeholder="@lang('Enter your e-mail address')"/>
