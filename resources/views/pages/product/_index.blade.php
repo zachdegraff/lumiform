@@ -39,28 +39,33 @@
                     'heading' => '<span class="text-light-blue">Start within minutes</span> with forms that are tailored to your needs.',
                     'text' => 'Use ready-made, expert-proofed checklists from the template library, which you can further customise according to your needs. Or, start from scratch and convert manual hard copies or excel lists into digital checklists.',
                     'discoverText' => 'Discover how to create custom forms',
-                    'image' => 'img/group-1105.svg'])
+                    'image' => 'img/group-1105.svg',
+                    'urlTo' => 'product.formBuilder',]
+                    )
                     @include('components.product.tab_content',[
                     'isActive' => false,
                     'textColor' => 'primary',
                     'heading' => '<span class="text-purple">Conduct quickly and reliably</span>, whenever and wherever you need to.',
                     'text' => 'Conduct inspections and audits, whether on a tablet or smartphone, Android or iOS – online or offline. The highly intuitive and easy-to-use app guides you through all checks.. Or, start from scratch and convert manual hard copies or excel lists into digital checklists.',
                     'discoverText' => 'Discover how to conduct via the intuitive app',
-                    'image' => 'img/group-916.svg'])
+                    'image' => 'img/group-916.svg',
+                    'urlTo' => 'product.conduct'])
                     @include('components.product.tab_content',[
                     'isActive' => false,
                     'textColor' => 'red',
                     'heading' => 'Uncover more issues and  resolve them faster.',
                     'text' => 'Make sure all field workers can quickly report quality and safety issues. Keep track of the troubleshooting progress and resolve problems together, with your teammates.. The highly intuitive and easy-to-use app guides you through all checks.. Or, start from scratch and convert manual hard copies or excel lists into digital checklists.',
                     'discoverText' => 'DISCOVER HOW TO SOLVE ISSUES QUICKLY',
-                    'image' => 'img/group-1433.svg'])
+                    'image' => 'img/group-1433.svg',
+                    'urlTo' => 'product.issues'])
                     @include('components.product.tab_content',[
                     'isActive' => false,
                     'textColor' => 'gold',
                     'heading' => 'Custom reports and  detailed analyses',
                     'text' => 'Audit reports are automatically created, so you don’t waste time on post-processing. Uncover areas of your organisation that need your attention, and continuously improve quality and security through in-depth analyses..',
                     'discoverText' => 'DISCOVER CUSTOM REPORTS AND ANALYSES',
-                    'image' => 'img/group-928.svg'])
+                    'image' => 'img/group-928.svg',
+                    'urlTo' => 'product.analysis'])
 
 
                 </div>

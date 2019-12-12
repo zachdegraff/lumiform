@@ -316,7 +316,21 @@ ul.list--circle__check li {
   padding-left: 50px;
   background: url("../img/checkmark.png") no-repeat left;
 }
+.with__check--bg li{
+  background: url("../img/checkmark.png") no-repeat left;
+  padding-left: 50px;
+}
+.banner__icon {
+  position: absolute;
+  bottom: -35px;
+  width: 70px;
+  height: 70px;
 
+}
+.bottom__right{
+  width: 530px;
+  height: 530px;
+}
 img.procedure__image {
 
   top: 61px;
@@ -548,6 +562,29 @@ background: none;
   background: #FAFBFB;
   height: 70px;
   width: 100%;
+}
+#organization__banner .banner__right--img img {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  bottom: -50%;
+}
+#organization__orchestrate .digitise__item--image{
+  margin-left: 0;
+  margin-right: 0;
+}
+.list__border{
+  border-bottom: 1px solid #aaaaaa;
+  padding: 10px 0;
+}
+.list__border:last-child{
+  border-bottom: none;
+}
+.industries__list li span{
+  display: none;
+}
+.industries__list li.active span{
+  display: block;
 }
 @media (max-width: 1660px) {
   .banner__heading {

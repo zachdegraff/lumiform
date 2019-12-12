@@ -8,7 +8,7 @@
         </p>
         @if(isset($urlTo))
 
-            <a href="{{$urlTo['url']}}"
+            <a href="{{route(app()->getLocale().'.'.$urlTo['url'])}}"
                class="flex items-center uppercase text-red text-center block text-17 lg:text-20 tracking-large my-5 lg:mt-10">
                 {!! $urlTo['text'] !!}
                 <img src="{{asset('img/arrow-right-long-red.svg')}}" alt="" class="h-3 ml-8">
@@ -16,10 +16,19 @@
         @endif
         @if(isset($withButton))
 
-            <a href="{{$withButton['url']}}" class="w-290 mt-20  bg-red tracking-large font-extrabold text-white uppercase font-cocogoose text-17 lg:text-20 h-70  rounded-20 items-center justify-center flex"> {!! $withButton['text'] !!}</a>
+            <a href="{{$withButton['url']}}"
+               class="w-290 mt-20  bg-red tracking-large font-extrabold text-white uppercase font-cocogoose text-17 lg:text-20 h-70  rounded-20 items-center justify-center flex"> {!! $withButton['text'] !!}</a>
         @endif
     </div>
     <div class="digitise__item--image  mx-auto">
-        <img src="{{asset('img/'.$image)}}" alt="" >
+        @if(isset($srcset))
+            <img src="{{asset('img/'.$image)}}" alt=""
+                 srcset="
+                    {{asset('img').'/'.$srcset[0]}},
+                    {{asset('img').'/'.$srcset[1]}} 2x"
+            >
+        @else
+            <img src="{{asset('img/'.$image)}}" alt="">
+        @endif
     </div>
 </div>

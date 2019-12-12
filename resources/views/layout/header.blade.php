@@ -66,9 +66,9 @@
         </a>
     </div>
     <ul class="menu__items flex items-center">
-        <li onclick="openMenu(this)" class="menu__item">
+        <li class="menu__item">
             <a class="nav__item nav__item--arrow flex items-center"
-               href="javascript:void(0)"><span>@lang("Product")</span></a>
+               href="@urlTo('product')"><span>@lang("Product")</span></a>
         </li>
 
         <li onclick="openMenu(this)" class="menu__item">

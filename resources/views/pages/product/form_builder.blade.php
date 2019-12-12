@@ -123,7 +123,7 @@
                'image' => 'rect-515.svg',
                'urlTo' => [
                'text' => 'LEARN MORE ABOUT issues',
-               'url' => '#'
+               'url' => 'product.issues'
                ],
                'reversed' => true,
                ]
