@@ -576,6 +576,9 @@ background: none;
 .list__border{
   border-bottom: 1px solid #aaaaaa;
   padding: 10px 0;
+  height: 100%;
+  transition: all ease .3s;
+  cursor: pointer;
 }
 .list__border:last-child{
   border-bottom: none;
@@ -585,6 +588,9 @@ background: none;
 }
 .industries__list li.active span{
   display: block;
+}
+.industries__list li.active img{
+  transform: rotate(90deg);
 }
 @media (max-width: 1660px) {
   .banner__heading {

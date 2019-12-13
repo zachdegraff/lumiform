@@ -3,7 +3,7 @@
          class="pt-64 pb-32"
 >
     <div class="container mx-auto">
-        <div class="w-8/12 mx-auto">
+        <div class="@if(isset($class)){{$class}} @else w-8/12 @endif mx-auto">
             <h1 class="tracking-normal leading-heading text-center text-40 xxl:text-70 mb-8 font-cocogoose uppercase font-extrabold text-white">
                 {!! $heading !!}
             </h1>

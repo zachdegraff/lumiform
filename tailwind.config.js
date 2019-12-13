@@ -18,6 +18,7 @@ module.exports = {
                 'gold': '#FF8500',
                 'green': '#00C389',
                 'purple': '#8D5FD6',
+
             },
             maxWidth: {
                 '3/4': '75%',
@@ -46,6 +47,7 @@ module.exports = {
                 'blue-light': '#00B2FF19',
                 'purple': '#8D5FD6',
                 'purple-light': '#B090E3',
+                'purple-extralight': 'rgba(141,95,214,0.1)',
                 'green-light': '#0EAE8F',
                 'green-dark': '#02A871',
                 'orange-light': '#FFAA4E',
@@ -55,6 +57,7 @@ module.exports = {
                 '360': '360px',
                 '215': '215px',
                 '210': '210px',
+                '230': '230px',
                 '270': '270px',
                 '280': '280px',
                 '290': '295px',

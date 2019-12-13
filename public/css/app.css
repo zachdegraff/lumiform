@@ -1034,6 +1034,10 @@ video {
   background-color: #B090E3;
 }
 
+.bg-purple-extralight {
+  background-color: rgba(141,95,214,0.1);
+}
+
 .bg-green-light {
   background-color: #0EAE8F;
 }
@@ -1322,6 +1326,10 @@ video {
   background-color: #B090E3;
 }
 
+.hover\:bg-purple-extralight:hover {
+  background-color: rgba(141,95,214,0.1);
+}
+
 .hover\:bg-green-light:hover {
   background-color: #0EAE8F;
 }
@@ -1608,6 +1616,10 @@ video {
 
 .focus\:bg-purple-light:focus {
   background-color: #B090E3;
+}
+
+.focus\:bg-purple-extralight:focus {
+  background-color: rgba(141,95,214,0.1);
 }
 
 .focus\:bg-green-light:focus {
@@ -11036,6 +11048,10 @@ video {
   width: 215px;
 }
 
+.w-230 {
+  width: 230px;
+}
+
 .w-270 {
   width: 270px;
 }
@@ -11842,6 +11858,10 @@ header .nav__subitem li {
 .list__border {
   border-bottom: 1px solid #aaaaaa;
   padding: 10px 0;
+  height: 100%;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  cursor: pointer;
 }
 
 .list__border:last-child {
@@ -11854,6 +11874,11 @@ header .nav__subitem li {
 
 .industries__list li.active span {
   display: block;
+}
+
+.industries__list li.active img {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 @media (max-width: 1660px) {
@@ -12408,6 +12433,10 @@ header .nav__subitem li {
     background-color: #B090E3;
   }
 
+  .sm\:bg-purple-extralight {
+    background-color: rgba(141,95,214,0.1);
+  }
+
   .sm\:bg-green-light {
     background-color: #0EAE8F;
   }
@@ -12696,6 +12725,10 @@ header .nav__subitem li {
     background-color: #B090E3;
   }
 
+  .sm\:hover\:bg-purple-extralight:hover {
+    background-color: rgba(141,95,214,0.1);
+  }
+
   .sm\:hover\:bg-green-light:hover {
     background-color: #0EAE8F;
   }
@@ -12982,6 +13015,10 @@ header .nav__subitem li {
 
   .sm\:focus\:bg-purple-light:focus {
     background-color: #B090E3;
+  }
+
+  .sm\:focus\:bg-purple-extralight:focus {
+    background-color: rgba(141,95,214,0.1);
   }
 
   .sm\:focus\:bg-green-light:focus {
@@ -22410,6 +22447,10 @@ header .nav__subitem li {
     width: 215px;
   }
 
+  .sm\:w-230 {
+    width: 230px;
+  }
+
   .sm\:w-270 {
     width: 270px;
   }
@@ -22916,6 +22957,10 @@ header .nav__subitem li {
     background-color: #B090E3;
   }
 
+  .md\:bg-purple-extralight {
+    background-color: rgba(141,95,214,0.1);
+  }
+
   .md\:bg-green-light {
     background-color: #0EAE8F;
   }
@@ -23204,6 +23249,10 @@ header .nav__subitem li {
     background-color: #B090E3;
   }
 
+  .md\:hover\:bg-purple-extralight:hover {
+    background-color: rgba(141,95,214,0.1);
+  }
+
   .md\:hover\:bg-green-light:hover {
     background-color: #0EAE8F;
   }
@@ -23490,6 +23539,10 @@ header .nav__subitem li {
 
   .md\:focus\:bg-purple-light:focus {
     background-color: #B090E3;
+  }
+
+  .md\:focus\:bg-purple-extralight:focus {
+    background-color: rgba(141,95,214,0.1);
   }
 
   .md\:focus\:bg-green-light:focus {
@@ -32918,6 +32971,10 @@ header .nav__subitem li {
     width: 215px;
   }
 
+  .md\:w-230 {
+    width: 230px;
+  }
+
   .md\:w-270 {
     width: 270px;
   }
@@ -33424,6 +33481,10 @@ header .nav__subitem li {
     background-color: #B090E3;
   }
 
+  .lg\:bg-purple-extralight {
+    background-color: rgba(141,95,214,0.1);
+  }
+
   .lg\:bg-green-light {
     background-color: #0EAE8F;
   }
@@ -33712,6 +33773,10 @@ header .nav__subitem li {
     background-color: #B090E3;
   }
 
+  .lg\:hover\:bg-purple-extralight:hover {
+    background-color: rgba(141,95,214,0.1);
+  }
+
   .lg\:hover\:bg-green-light:hover {
     background-color: #0EAE8F;
   }
@@ -33998,6 +34063,10 @@ header .nav__subitem li {
 
   .lg\:focus\:bg-purple-light:focus {
     background-color: #B090E3;
+  }
+
+  .lg\:focus\:bg-purple-extralight:focus {
+    background-color: rgba(141,95,214,0.1);
   }
 
   .lg\:focus\:bg-green-light:focus {
@@ -43426,6 +43495,10 @@ header .nav__subitem li {
     width: 215px;
   }
 
+  .lg\:w-230 {
+    width: 230px;
+  }
+
   .lg\:w-270 {
     width: 270px;
   }
@@ -43932,6 +44005,10 @@ header .nav__subitem li {
     background-color: #B090E3;
   }
 
+  .xl\:bg-purple-extralight {
+    background-color: rgba(141,95,214,0.1);
+  }
+
   .xl\:bg-green-light {
     background-color: #0EAE8F;
   }
@@ -44220,6 +44297,10 @@ header .nav__subitem li {
     background-color: #B090E3;
   }
 
+  .xl\:hover\:bg-purple-extralight:hover {
+    background-color: rgba(141,95,214,0.1);
+  }
+
   .xl\:hover\:bg-green-light:hover {
     background-color: #0EAE8F;
   }
@@ -44506,6 +44587,10 @@ header .nav__subitem li {
 
   .xl\:focus\:bg-purple-light:focus {
     background-color: #B090E3;
+  }
+
+  .xl\:focus\:bg-purple-extralight:focus {
+    background-color: rgba(141,95,214,0.1);
   }
 
   .xl\:focus\:bg-green-light:focus {
@@ -53934,6 +54019,10 @@ header .nav__subitem li {
     width: 215px;
   }
 
+  .xl\:w-230 {
+    width: 230px;
+  }
+
   .xl\:w-270 {
     width: 270px;
   }
@@ -54440,6 +54529,10 @@ header .nav__subitem li {
     background-color: #B090E3;
   }
 
+  .xxl\:bg-purple-extralight {
+    background-color: rgba(141,95,214,0.1);
+  }
+
   .xxl\:bg-green-light {
     background-color: #0EAE8F;
   }
@@ -54728,6 +54821,10 @@ header .nav__subitem li {
     background-color: #B090E3;
   }
 
+  .xxl\:hover\:bg-purple-extralight:hover {
+    background-color: rgba(141,95,214,0.1);
+  }
+
   .xxl\:hover\:bg-green-light:hover {
     background-color: #0EAE8F;
   }
@@ -55014,6 +55111,10 @@ header .nav__subitem li {
 
   .xxl\:focus\:bg-purple-light:focus {
     background-color: #B090E3;
+  }
+
+  .xxl\:focus\:bg-purple-extralight:focus {
+    background-color: rgba(141,95,214,0.1);
   }
 
   .xxl\:focus\:bg-green-light:focus {
@@ -64440,6 +64541,10 @@ header .nav__subitem li {
 
   .xxl\:w-215 {
     width: 215px;
+  }
+
+  .xxl\:w-230 {
+    width: 230px;
   }
 
   .xxl\:w-270 {
