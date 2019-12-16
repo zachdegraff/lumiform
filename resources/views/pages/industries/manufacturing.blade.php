@@ -52,14 +52,11 @@
             </p>
             @include('components.solution.industries_droptown_section',[
             'items' => [
-            ['title' => 'Create forms','desc' => 'Create custom forms within minutes. Organise food inspections, to make sure the right person does all the checklists at the right time.'],
-            ['title' => 'Conduct via App','desc' => 'Create custom forms within minutes. Organise food inspections, to make sure the right person does all the checklists at the right time.'],
-            ['title' => 'Automate temperature and humidity checks','desc' => 'Create custom forms within minutes. Organise food inspections, to make sure the right person does all the checklists at the right time.'],
-            ['title' => 'Solve Issues','desc' => 'Create custom forms within minutes. Organise food inspections, to make sure the right person does all the checklists at the right time.'],
-            ['title' => 'Results, Reports and Analyses','desc' => 'Create custom forms within minutes. Organise food inspections, to make sure the right person does all the checklists at the right time.'],
-            ],
-            'image' => 'group-2832.png',
-            'srcset' => ['group-2832.png','group-2832@2x.png']
+            ['srcset' => ['group-2832.png','group-2832@2x.png'],'title' => 'Create forms','desc' => 'Create forms for inspections and audits within minutes. Organise checks to ensure that it is done reliably in the field.'],
+            ['srcset' => ['group-2834.png','group-2834@2x.png'],'title' => 'Conduct via App','desc' => 'Conduct inspections and audits, whether with a tablet or smartphone, Android or iOS – online or offline.'],
+            ['srcset' => ['group-3430.png','group-3430@2x.png'],'title' => 'Solve Issues','desc' => 'Make sure all issues can be easily reported as soon as they occur and troubleshooting is ensured by the whole team.'],
+            ['srcset' => ['group-4750.png','group-4750@2x.png'],'title' => 'Results, Reports and Analyses','desc' => 'Don’t waste time on post-processing and digitisation of audit and inspection reports – everything is fully automated. Uncover areas that need attention in your manufacturing plant.'],
+            ]
             ])
             <a href="#"
                class="flex items-center justify-center uppercase text-red text-center block text-17 lg:text-20 tracking-large lg:mt-24">
@@ -108,21 +105,21 @@
         'heading' => 'Browse <span class="text-green"> best practices manufacturing </span> forms',
         'text' =>  'Browse the Lumiform template library for tons of resources to walk you through best practices in the manufacturing industry. ',
         'items' => [
-                ['image' => 'rect-35.svg','text' => '5S audit'],
-                ['image' => 'rect-35.svg','text' => 'facility review'],
-                ['image' => 'rect-35.svg','text' => 'high risk machine safety checklist'],
-                ['image' => 'rect-35.svg','text' => 'safety assessment of worklift driver'],
-                ['image' => 'rect-35.svg','text' => 'general risk assessment'],
-                ['image' => 'rect-35.svg','text' => 'gemba walk checklist'],
+                ['image' => 'manufacturing-audit.png','srcset' => ['manufacturing-audit.png','manufacturing-audit@2x.png'],'text' => '5S audit'],
+                ['image' => 'facility-vehicle-inspection.png','srcset' => ['facility-vehicle-inspection.png','facility-vehicle-inspection@2x.png'],'text' => 'facility review'],
+                ['image' => 'construction-weekly.png','srcset' => ['construction-weekly.png','construction-weekly@2x.png'],'text' => 'high risk machine safety checklist'],
+                ['image' => 'manufacturing-safety-assessment.png','srcset' => ['manufacturing-safety-assessment.png','manufacturing-safety-assessment@2x.png'],'text' => 'safety assessment of worklift driver'],
+                ['image' => 'manufacturing-general-risk-assessment.png','srcset' => ['manufacturing-general-risk-assessment.png','manufacturing-general-risk-assessment@2x.png'],'text' => 'general risk assessment'],
+                ['image' => 'manufacturing-gemba-walk.png','srcset' => ['manufacturing-gemba-walk.png','manufacturing-gemba-walk@2x.png'],'text' => 'gemba walk checklist'],
             ],
-        'image' => 'group-1514.png',
+        'image' => 'group-1514.svg',
         'template' => ['text' => 'View all TEMPLATES','url' => '#']
         ])
     @include('components.solution.industries_explore_section',[
     'heading' => 'Explore how <span class="text-purple"> leaders in the food industry </span> use Lumiform',
     'items' => [
-    ['image' => 'rect-840.png','srcset' => ['rect-840.png','rect-840@2x.png'],'template' => ['url' => '#','text' => 'View INSPECTIOn CASE STUDY'] ],
-    ['image' => 'rect-840.png','srcset' => ['rect-840.png','rect-840@2x.png'],'template' => ['url' => '#','text' => 'View AUDIT CASE STUDY'] ],
+    ['image' => 'manufacturing-inspection.png','srcset' => ['manufacturing-inspection.png','manufacturing-inspection@2x.png'],'template' => ['url' => '#','text' => 'View INSPECTIOn CASE STUDY'] ],
+    ['image' => 'manufacturing-5s-audit.png','srcset' => ['manufacturing-5s-audit.png','manufacturing-5s-audit@2x.png'],'template' => ['url' => '#','text' => 'View AUDIT CASE STUDY'] ],
     ]
     ])
     @include('components.solution.industries_quotes',[

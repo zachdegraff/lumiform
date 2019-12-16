@@ -4,7 +4,7 @@
 >
     <div class="container mx-auto">
         <div class="@if(isset($class)){{$class}} @else w-8/12 @endif mx-auto">
-            <h1 class="tracking-normal leading-heading text-center text-40 xxl:text-70 mb-8 font-cocogoose uppercase font-extrabold text-white">
+            <h1 class="tracking-normal  leading-heading text-center text-40 xxl:text-70 mb-8 font-cocogoose uppercase font-extrabold text-white">
                 {!! $heading !!}
             </h1>
             <p class="text-30 font-din font-medium text-white text-center tracking-text mb-16">

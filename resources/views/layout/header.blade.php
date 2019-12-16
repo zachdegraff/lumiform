@@ -94,13 +94,13 @@
                     </ul>
                     <div class="sub__right">
                         <div class="nav__subitem--2" id="industries">
-                            <a href="">@lang("Food & Hospitality")</a>
-                            <a href="">@lang("Construction")</a>
-                            <a href="">@lang("Manufacturing")</a>
-                            <a href="">@lang("Retail")</a>
-                            <a href="">@lang("Logistic & Transportation")</a>
-                            <a href="">@lang("Facility Management")</a>
-                            <a href="">@lang("Pharma & Chemistry")</a>
+                            <a href="@urlTo('industries.food')">@lang("Food & Hospitality")</a>
+                            <a href="@urlTo('industries.construction')">@lang("Construction")</a>
+                            <a href="@urlTo('industries.manufacturing')">@lang("Manufacturing")</a>
+                            <a href="@urlTo('industries.retail')">@lang("Retail")</a>
+                            <a href="@urlTo('industries.logistics')">@lang("Logistic & Transportation")</a>
+                            <a href="@urlTo('industries.facilityManagement')">@lang("Facility Management")</a>
+                            <a href="@urlTo('industries.pharmaChemie')">@lang("Pharma & Chemistry")</a>
                         </div>
                         <div class="nav__subitem--2" id="categories">
                             <a href="@urlTo('useCases.audits')">@lang("Audits")</a>

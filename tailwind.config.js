@@ -24,7 +24,7 @@ module.exports = {
                 '3/4': '75%',
                 '140': '140px',
                 '180': '180px',
-                '270': '270px',
+                '370': '370px',
                 '510': '510px',
             },
             maxHeight: {
@@ -50,6 +50,7 @@ module.exports = {
                 'purple-extralight': 'rgba(141,95,214,0.1)',
                 'green-light': '#0EAE8F',
                 'green-dark': '#02A871',
+                'orange-extralight': 'rgba(255,173,34,0.2)',
                 'orange-light': '#FFAA4E',
                 'orange': '#FF8500',
             }),
@@ -92,7 +93,8 @@ module.exports = {
                 // => @media (min-width: 1660px) { ... }
             },
             borderRadius: {
-                '20': '20px'
+                '20': '20px',
+                '15': '15px'
             },
             height: {
                 '70': '70px',

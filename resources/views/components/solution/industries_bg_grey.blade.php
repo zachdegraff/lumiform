@@ -10,7 +10,8 @@
             <div class="bottom__left w-5/12 flex flex-wrap justify-between">
                 @foreach($items as $item)
                     <div class="bottom__item w-5/12  mb-10">
-                        <img src="{{asset('img/'.$item['image'])}}" alt="" class="w-230 mb-1">
+                        <img src="{{asset('img/'.$item['image'])}}" alt="" class="w-230 mb-3 rounded-15" srcset="{{asset('img'.'/'.$item['srcset'][0])}},
+                    {{asset('img'.'/'.$item['srcset'][1])}} 2x ">
                         <span class="text-20 font-cocogoose font-medium uppercase text-secondary">{!! $item['text'] !!}</span>
                     </div>
                 @endforeach

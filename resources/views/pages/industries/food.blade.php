@@ -51,14 +51,12 @@
             </p>
             @include('components.solution.industries_droptown_section',[
             'items' => [
-            ['title' => 'Create forms','desc' => 'Create custom forms within minutes. Organise food inspections, to make sure the right person does all the checklists at the right time.'],
-            ['title' => 'Conduct via App','desc' => 'Create custom forms within minutes. Organise food inspections, to make sure the right person does all the checklists at the right time.'],
-            ['title' => 'Automate temperature and humidity checks','desc' => 'Create custom forms within minutes. Organise food inspections, to make sure the right person does all the checklists at the right time.'],
-            ['title' => 'Solve Issues','desc' => 'Create custom forms within minutes. Organise food inspections, to make sure the right person does all the checklists at the right time.'],
-            ['title' => 'Results, Reports and Analyses','desc' => 'Create custom forms within minutes. Organise food inspections, to make sure the right person does all the checklists at the right time.'],
-            ],
-            'image' => 'group-3388.png',
-            'srcset' => ['group-3388.png','group-3388@2x.png']
+            ['srcset' => ['group-3388.png','group-3388@2x.png'],'title' => 'Create forms','desc' => 'Create custom forms within minutes. Organise food inspections, to make sure the right person does all the checklists at the right time.'],
+            ['srcset' => ['group-2969.png','group-2969@2x.png'],'title' => 'Conduct via App','desc' => 'Conduct audits and inspections whether with a tablet or smartphone, Android or iOS – online or offline.'],
+            ['srcset' => ['group-4757.png','group-2969@2x.png'],'title' => 'Automate temperature and humidity checks','desc' => 'Use temperature and humidity sensors to automate temperature documentation, while protecting food adequately.'],
+            ['srcset' => ['group-3430.png','group-2969@2x.png'],'title' => 'Solve Issues','desc' => 'Make sure all inspectors can easily raise issues. Keep track of the progress and solve issues together, as a team.'],
+            ['srcset' => ['group-4759.png','group-2969@2x.png'],'title' => 'Results, Reports and Analyses','desc' => 'Don’t waste time on post-processing and digitisation of audit and inspection reports – everything is fully automated. Uncover areas that need your attention through in-depth analyses.'],
+            ]
             ])
             <a href="#"
                class="flex items-center justify-center uppercase text-red text-center block text-17 lg:text-20 tracking-large lg:mt-24">
@@ -127,12 +125,12 @@
         'heading' => 'Quickstart <span class="text-green">with expert-proofed templates</span> for food businesses',
         'text' =>  'Lumiform offers ready-to-use templates, and you can customise them as needed.',
         'items' => [
-                ['image' => 'rect-35.svg','text' => 'Manager cleaning check'],
-                ['image' => 'rect-35.svg','text' => 'Mystery shopper checklist'],
-                ['image' => 'rect-35.svg','text' => 'Daily temperature log'],
-                ['image' => 'rect-35.svg','text' => 'General food safety And hygiene checklist'],
-                ['image' => 'rect-35.svg','text' => 'Self-monitoring checklist for food businesses'],
-                ['image' => 'rect-35.svg','text' => 'Closing the counter checklist '],
+                ['image' => 'food-manager-cleaning-check.png','srcset' => ['food-manager-cleaning-check.png','food-manager-cleaning-check@2x.png'],'text' => 'Manager cleaning check'],
+                ['image' => 'food-mystery-shopper.png','srcset' => ['food-mystery-shopper.png','food-mystery-shopper@2x.png'],'text' => 'Mystery shopper checklist'],
+                ['image' => 'food-daily-temperature-log.png','srcset' => ['food-daily-temperature-log.png','food-daily-temperature-log@2x.png'],'text' => 'Daily temperature log'],
+                ['image' => 'food-hygiene.png','srcset' => ['food-hygiene.png','food-hygiene@2x.png'],'text' => 'General food safety And hygiene checklist'],
+                ['image' => 'food-self-monitoring.png','srcset' => ['food-self-monitoring.png','food-self-monitoring@2x.png'],'text' => 'Self-monitoring checklist for food businesses'],
+                ['image' => 'food-closing-the-counter.png','srcset' => ['food-closing-the-counter.png','food-closing-the-counter@2x.png'],'text' => 'Closing the counter checklist '],
             ],
         'image' => 'group-1509.png',
         'template' => ['text' => 'View all TEMPLATES','url' => '#']
@@ -140,8 +138,8 @@
     @include('components.solution.industries_explore_section',[
     'heading' => 'Explore how <span class="text-gold">leaders in the food industry</span> use Lumiform',
     'items' => [
-    ['image' => 'rect-840.png','srcset' => ['rect-840.png','rect-840@2x.png'],'template' => ['url' => '#','text' => 'View INSPECTIOn CASE STUDY'] ],
-    ['image' => 'rect-840.png','srcset' => ['rect-840.png','rect-840@2x.png'],'template' => ['url' => '#','text' => 'View AUDIT CASE STUDY'] ],
+    ['image' => 'inspections-food.png','srcset' => ['inspections-food.png','inspections-food@2x.png'],'template' => ['url' => '#','text' => 'View INSPECTIOn CASE STUDY'] ],
+    ['image' => 'food-safety.png','srcset' => ['food-safety.png','food-safety@2x.png'],'template' => ['url' => '#','text' => 'View AUDIT CASE STUDY'] ],
     ]
     ])
     @include('components.solution.industries_quotes',[

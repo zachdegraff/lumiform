@@ -52,14 +52,11 @@
             </p>
             @include('components.solution.industries_droptown_section',[
             'items' => [
-            ['title' => 'Create forms','desc' => 'Create custom forms within minutes. Organise food inspections, to make sure the right person does all the checklists at the right time.'],
-            ['title' => 'Conduct via App','desc' => 'Create custom forms within minutes. Organise food inspections, to make sure the right person does all the checklists at the right time.'],
-            ['title' => 'Automate temperature and humidity checks','desc' => 'Create custom forms within minutes. Organise food inspections, to make sure the right person does all the checklists at the right time.'],
-            ['title' => 'Solve Issues','desc' => 'Create custom forms within minutes. Organise food inspections, to make sure the right person does all the checklists at the right time.'],
-            ['title' => 'Results, Reports and Analyses','desc' => 'Create custom forms within minutes. Organise food inspections, to make sure the right person does all the checklists at the right time.'],
-            ],
-            'image' => 'group-2831.png',
-            'srcset' => ['group-2831.png','group-2831@2x.png']
+            ['srcset' => ['group-2831.png','group-2831@2x.png'],'title' => 'Create forms','desc' => 'Create custom forms within minutes. Organise inspections on the construction site, to make sure the right person does all the checklists reliably.'],
+            ['srcset' => ['group-2834.png','group-2834@2x.png'],'title' => 'Conduct via App','desc' => 'Conduct audits and inspections whether with a tablet or smartphone, Android or iOS – online or offline.'],
+            ['srcset' => ['group-3430.png','group-3430@2x.png'],'title' => 'Solve Issues','desc' => 'Make sure all inspectors can easily report issues. Keep track of the progress, and solve issues together as a team.'],
+            ['srcset' => ['group-2835.png','group-2835@2x.png'],'title' => 'Results, Reports and Analyses','desc' => 'Don’t waste time on post-processing and digitisation of audit and inspection reports – everything is fully automated. Uncover areas of your construction site that need your attention.'],
+            ]
             ])
             <a href="#"
                class="flex items-center justify-center uppercase text-red text-center block text-17 lg:text-20 tracking-large lg:mt-24">
@@ -99,21 +96,21 @@
             </div>
             <a href="#"
                class="flex items-center uppercase justify-center text-red text-center block text-17 lg:text-20 tracking-large mt-10">
-                @lang('View all food use cases')
+                @lang('View all construction use cases')
                 <img src="{{asset('img/arrow-right-long-red.svg')}}" alt="" class="h-3 ml-8">
             </a>
         </div>
     </section>
     @include('components.solution.industries_bg_grey',[
-        'heading' => '<span class="text-green">Make your workplace safer</span> while maximising compliance',
+        'heading' => '<span class="text-green"> Make your workplace safer </span> while maximising compliance',
         'text' =>  'Browse the Lumiform construction template library. Get started with expert-proofed checklists for construction businesses.',
         'items' => [
-                ['image' => 'rect-35.svg','text' => 'Manager cleaning check'],
-                ['image' => 'rect-35.svg','text' => 'Mystery shopper checklist'],
-                ['image' => 'rect-35.svg','text' => 'Daily temperature log'],
-                ['image' => 'rect-35.svg','text' => 'General food safety And hygiene checklist'],
-                ['image' => 'rect-35.svg','text' => 'Self-monitoring checklist for food businesses'],
-                ['image' => 'rect-35.svg','text' => 'Closing the counter checklist '],
+                ['image' => 'inspections-osha-self-inspection.png','srcset' => ['inspections-osha-self-inspection.png','inspections-osha-self-inspection@2x.png'],'text' => 'Manager cleaning check'],
+                ['image' => 'facility-vehicle-inspection.png','srcset' => ['facility-vehicle-inspection.png','facility-vehicle-inspection@2x.png'],'text' => 'Mystery shopper checklist'],
+                ['image' => 'construction-weekly.png','srcset' => ['construction-weekly.png','construction-weekly@2x.png'],'text' => 'Daily temperature log'],
+                ['image' => 'construction-daily.png','srcset' => ['construction-daily.png','construction-daily@2x.png'],'text' => 'General food safety And hygiene checklist'],
+                ['image' => 'construction-safety-walk.png','srcset' => ['construction-safety-walk.png','construction-safety-walk@2x.png'],'text' => 'Self-monitoring checklist for food businesses'],
+                ['image' => 'construction-toolbox-check.png','srcset' => ['construction-toolbox-check.png','construction-toolbox-check@2x.png'],'text' => 'Closing the counter checklist '],
             ],
         'image' => 'group-1542.png',
         'template' => ['text' => 'View all TEMPLATES','url' => '#']
@@ -121,8 +118,8 @@
     @include('components.solution.industries_explore_section',[
     'heading' => '<span class="text-gold">Trusted by the world’s best brands</span> in the construction industry',
     'items' => [
-    ['image' => 'rect-840.png','srcset' => ['rect-840.png','rect-840@2x.png'],'template' => ['url' => '#','text' => 'View INSPECTIOn CASE STUDY'] ],
-    ['image' => 'rect-840.png','srcset' => ['rect-840.png','rect-840@2x.png'],'template' => ['url' => '#','text' => 'View AUDIT CASE STUDY'] ],
+    ['image' => 'construction-inspection.png','srcset' => ['construction-inspection.png','construction-inspection@2x.png'],'template' => ['url' => '#','text' => 'View INSPECTIOn CASE STUDY'] ],
+    ['image' => 'construction-audit.png','srcset' => ['construction-audit.png','construction-audit@2x.png'],'template' => ['url' => '#','text' => 'View AUDIT CASE STUDY'] ],
     ]
     ])
     @include('components.solution.industries_quotes',[

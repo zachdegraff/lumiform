@@ -6,9 +6,9 @@
         <div class="flex justify-between">
             @php $i = 0 @endphp
             @foreach($items as $item)
-                <div class="w-1/2 @if ($i == 1) ml-32 @endif">
+                <div >
                     <img src="{{asset('img/'.$item['image'])}}" alt="" srcset="{{asset('img/'.$item['srcset'][0])}},
-                {{asset('img/'.$item['srcset'][1])}} 2x">
+                {{asset('img/'.$item['srcset'][1])}} 2x" class="rounded-15 industries__cases--img">
                     <a href="{{$item['template']['url']}}"
                        class="flex items-center uppercase text-red text-center block text-17 lg:text-20 tracking-large my-5 lg:mt-10">
                         {!! $item['template']['text'] !!}

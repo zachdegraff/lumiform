@@ -15,19 +15,18 @@
             <div class="bottom__left w-6/12 flex flex-wrap justify-between">
                 @foreach($items as $item)
                     <div class="bottom__item w-5/12 flex justify-start items-center  mb-10 pr-10">
-                        <img src="{{'img/'.$item['image']}}" alt="">
+                        <img src="{{'img/'.$item['image']}}" alt="" class="rounded-15 index__image--list" srcset="{{asset('img'.'/'.$item['srcset'][0])}},
+                    {{asset('img'.'/'.$item['srcset'][1])}} 2x
+">
                         <span class="ml-5 text-20 font-cocogoose font-medium uppercase text-secondary">{!! $item['text'] !!}</span>
                     </div>
                 @endforeach
 
             </div>
             <div class="bottom__right w-4/12 mx-auto rounded-full bg-grey-light">
-                <div class="mx-auto max-w-270 h-full flex flex-col justify-around py-16">
+                <div class="mx-auto max-w-370 h-full flex flex-col justify-center py-16">
                     <p class="font-din text-20 font-light text-primary mb-10">{!! $companion['text'] !!}</p>
-                    <span class="text-base font-hairline font-din mb-10">{!! $companion['info'] !!}</span>
-                    @if($companion['logo'])
-                    <img src="{{'img/'.$companion['logo']}}" alt="">
-                    @endif
+                    <span class="text-base grey-bold font-hairline font-din mb-10">{!! $companion['info'] !!}</span>
                 </div>
             </div>
         </div>

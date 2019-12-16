@@ -592,6 +592,24 @@ background: none;
 .industries__list li.active img{
   transform: rotate(90deg);
 }
+.line__break{
+  display: block;
+}
+.industries__cases--img{
+  max-height: 504px;
+}
+.industries__icon{
+  width: 55px;
+}
+.index__image--list{
+  max-width: 176px;
+}
+.industries__list--image{
+  display: none;
+}
+.industries__list--image.active__image{
+  display: block;
+}
 @media (max-width: 1660px) {
   .banner__heading {
     font: 700 55px/80px Cocogoose;

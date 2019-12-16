@@ -51,14 +51,11 @@
             </p>
             @include('components.solution.industries_droptown_section',[
             'items' => [
-            ['title' => 'Create forms','desc' => 'Create custom forms within minutes. Organise food inspections, to make sure the right person does all the checklists at the right time.'],
-            ['title' => 'Conduct via App','desc' => 'Create custom forms within minutes. Organise food inspections, to make sure the right person does all the checklists at the right time.'],
-            ['title' => 'Automate temperature and humidity checks','desc' => 'Create custom forms within minutes. Organise food inspections, to make sure the right person does all the checklists at the right time.'],
-            ['title' => 'Solve Issues','desc' => 'Create custom forms within minutes. Organise food inspections, to make sure the right person does all the checklists at the right time.'],
-            ['title' => 'Results, Reports and Analyses','desc' => 'Create custom forms within minutes. Organise food inspections, to make sure the right person does all the checklists at the right time.'],
-            ],
-            'image' => 'group-2969.png',
-            'srcset' => ['group-2969.png','group-2969@2x.png']
+            ['srcset' => ['group-2969.png','group-2969@2x.png'],'title' => 'Create forms','desc' => 'Create custom forms within minutes. Organise store audits and inspections to make sure they are done reliably.'],
+            ['srcset' => ['group-4764.png','group-4764@2x.png'],'title' => 'Conduct via App','desc' => 'Conduct audits and inspections whether with a tablet or smartphone, Android or iOS – online or offline.'],
+            ['srcset' => ['group-3430.png','group-3430@2x.png'],'title' => 'Solve Issues','desc' => 'Make all field workers can easily raise issues as soon as they occur. Keep track of the progress and solve them together, as a team.'],
+            ['srcset' => ['group-4750.png','group-4750@2x.png'],'title' => 'Results, Reports and Analyses','desc' => 'Don’t waste time on post-processing and digitisation of audit and inspection reports – everything is fully automated. Uncover stores that need your attention through in-depth analyses.'],
+            ]
             ])
             <a href="#"
                class="flex items-center justify-center uppercase text-red text-center block text-17 lg:text-20 tracking-large lg:mt-24">
@@ -106,12 +103,12 @@
         'heading' => '<span class="text-light-blue">Quickstart with ready-to-use forms </span> for your retail store',
         'text' =>  'Lumiform offers an extensive template library, so you can roll out your quality and safety concept within minutes.',
         'items' => [
-                ['image' => 'rect-35.svg','text' => '5S audit'],
-                ['image' => 'rect-35.svg','text' => 'facility review'],
-                ['image' => 'rect-35.svg','text' => 'high risk machine safety checklist'],
-                ['image' => 'rect-35.svg','text' => 'safety assessment of worklift driver'],
-                ['image' => 'rect-35.svg','text' => 'general risk assessment'],
-                ['image' => 'rect-35.svg','text' => 'gemba walk checklist'],
+                ['image' => 'retail-cleaning-checklist.png','srcset' => ['retail-cleaning-checklist.png','retail-cleaning-checklist@2x.png'],'text' => '5S audit'],
+                ['image' => 'retail-incoming-good.png','srcset' => ['retail-incoming-good.png','retail-incoming-good@2x.png'],'text' => 'facility review'],
+                ['image' => 'construction-weekly.png','srcset' => ['construction-weekly.png','construction-weekly@2x.png'],'text' => 'high risk machine safety checklist'],
+                ['image' => 'construction-daily.png','srcset' => ['construction-daily.png','construction-daily@2x.png'],'text' => 'safety assessment of worklift driver'],
+                ['image' => 'retail-store.png','srcset' => ['retail-store.png','retail-store@2x.png'],'text' => 'general risk assessment'],
+                ['image' => 'retail-customer.png','srcset' => ['retail-customer.png','retail-customer@2x.png'],'text' => 'gemba walk checklist'],
             ],
         'image' => 'group-1622.png',
         'template' => ['text' => 'View all TEMPLATES','url' => '#']
@@ -119,8 +116,8 @@
     @include('components.solution.industries_explore_section',[
     'heading' => '<span class="text-gold"> Read success stories </span> about retailers who use Lumiform',
     'items' => [
-    ['image' => 'rect-840.png','srcset' => ['rect-840.png','rect-840@2x.png'],'template' => ['url' => '#','text' => 'View INSPECTIOn CASE STUDY'] ],
-    ['image' => 'rect-840.png','srcset' => ['rect-840.png','rect-840@2x.png'],'template' => ['url' => '#','text' => 'View AUDIT CASE STUDY'] ],
+    ['image' => 'retail-inspection.png','srcset' => ['retail-inspection.png','retail-inspection@2x.png'],'template' => ['url' => '#','text' => 'View INSPECTIOn CASE STUDY'] ],
+    ['image' => 'retail-audit.png','srcset' => ['retail-audit.png','retail-audit@2x.png'],'template' => ['url' => '#','text' => 'View AUDIT CASE STUDY'] ],
     ]
     ])
     @include('components.solution.industries_quotes',[
