@@ -2,6 +2,11 @@ module.exports = {
     theme: {
 
         extend: {
+            borderColor: theme => ({
+                'light-blue': '#00B2FF',
+                'red': '#FD2F58',
+                'green': '#00C389',
+            }),
             fontFamily: {
                 'din': ['Dinosaur'],
                 'cocogoose': ['Cocogoose']
@@ -16,14 +21,17 @@ module.exports = {
                 'light-blue': '#00B2FF',
                 'red': '#FD2F58',
                 'gold': '#FF8500',
+                'light-gold': '#FFAD22',
                 'green': '#00C389',
                 'purple': '#8D5FD6',
+
 
             },
             maxWidth: {
                 '3/4': '75%',
                 '140': '140px',
                 '180': '180px',
+                '240': '240px',
                 '370': '370px',
                 '510': '510px',
             },
@@ -31,6 +39,7 @@ module.exports = {
                 '1/2': '50%',
                 '1/4': '25%',
                 '500': '500px',
+                '120': '120px',
 
             },
             backgroundColor: theme => ({

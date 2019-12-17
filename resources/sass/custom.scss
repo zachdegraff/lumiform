@@ -610,6 +610,30 @@ background: none;
 .industries__list--image.active__image{
   display: block;
 }
+.cases__bottom--right{
+  width: 410px;
+  height: 410px;
+}
+.use-cases__list li{
+  padding-left: 40px;
+  position: relative;
+}
+.use-cases__list li:before{
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: url("../img/icons/checkmark-icon_green.svg") no-repeat;
+
+  top: 13px;
+  left: 0;
+}
+.cases__text__section{
+  max-width: 570px;
+}
+.cases__image__section{
+  max-width: 680px;
+}
 @media (max-width: 1660px) {
   .banner__heading {
     font: 700 55px/80px Cocogoose;

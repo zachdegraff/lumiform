@@ -104,8 +104,8 @@
                         </div>
                         <div class="nav__subitem--2" id="categories">
                             <a href="@urlTo('useCases.audits')">@lang("Audits")</a>
-                            <a href="@urlTo('useCases.audits')">@lang("Inspection")</a>
-                            <a href="@urlTo('useCases.audits')">@lang("Digital checklist")</a>
+                            <a href="@urlTo('useCases.inspections')">@lang("Inspection")</a>
+                            <a href="@urlTo('useCases.digitalChecklists')">@lang("Digital checklist")</a>
                             <a href="@urlTo('useCases.audits')">@lang("Assessment")</a>
                             <a href="@urlTo('useCases.audits')">@lang("Digital documentation")</a>
                             <a href="@urlTo('useCases.audits')">@lang("Issue  management")</a>
