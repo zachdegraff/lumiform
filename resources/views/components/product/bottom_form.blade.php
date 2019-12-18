@@ -1,5 +1,5 @@
-<section id="easy" class="pt-12 lg:pt-24 bg-{{$sectionBg}}">
-    <div class="container mx-auto md:pt-12">
+<section id="easy" class="pt-12 lg:pt-32 bg-{{$sectionBg}}">
+    <div class="container mx-auto">
         <h3 class="text-white text-40 font-extrabold uppercase font-cocogoose md:mx-auto text-center mb-5 lg:mb-20 tracking-heading"
         >{!! $heading !!}</h3>
         <div class="easy__content flex justify-between">

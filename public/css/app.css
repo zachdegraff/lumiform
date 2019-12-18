@@ -1014,6 +1014,10 @@ video {
   background-color: #9690A5;
 }
 
+.bg-grey-extralight {
+  background-color: #9690a50f;
+}
+
 .bg-red-light {
   background-color: #FD2F581A;
 }
@@ -1052,6 +1056,10 @@ video {
 
 .bg-orange-light {
   background-color: #FFAA4E;
+}
+
+.bg-gold {
+  background-color: #ffad22;
 }
 
 .hover\:bg-transparent:hover {
@@ -1310,6 +1318,10 @@ video {
   background-color: #9690A5;
 }
 
+.hover\:bg-grey-extralight:hover {
+  background-color: #9690a50f;
+}
+
 .hover\:bg-red-light:hover {
   background-color: #FD2F581A;
 }
@@ -1348,6 +1360,10 @@ video {
 
 .hover\:bg-orange-light:hover {
   background-color: #FFAA4E;
+}
+
+.hover\:bg-gold:hover {
+  background-color: #ffad22;
 }
 
 .focus\:bg-transparent:focus {
@@ -1606,6 +1622,10 @@ video {
   background-color: #9690A5;
 }
 
+.focus\:bg-grey-extralight:focus {
+  background-color: #9690a50f;
+}
+
 .focus\:bg-red-light:focus {
   background-color: #FD2F581A;
 }
@@ -1644,6 +1664,10 @@ video {
 
 .focus\:bg-orange-light:focus {
   background-color: #FFAA4E;
+}
+
+.focus\:bg-gold:focus {
+  background-color: #ffad22;
 }
 
 .bg-bottom {
@@ -3736,6 +3760,10 @@ video {
   margin: 6rem;
 }
 
+.m-26 {
+  margin: 104px;
+}
+
 .m-32 {
   margin: 8rem;
 }
@@ -3964,6 +3992,16 @@ video {
 .mx-24 {
   margin-left: 6rem;
   margin-right: 6rem;
+}
+
+.my-26 {
+  margin-top: 104px;
+  margin-bottom: 104px;
+}
+
+.mx-26 {
+  margin-left: 104px;
+  margin-right: 104px;
 }
 
 .my-32 {
@@ -4422,6 +4460,22 @@ video {
 
 .ml-24 {
   margin-left: 6rem;
+}
+
+.mt-26 {
+  margin-top: 104px;
+}
+
+.mr-26 {
+  margin-right: 104px;
+}
+
+.mb-26 {
+  margin-bottom: 104px;
+}
+
+.ml-26 {
+  margin-left: 104px;
 }
 
 .mt-32 {
@@ -5182,8 +5236,20 @@ video {
   padding: 6rem;
 }
 
+.p-26 {
+  padding: 104px;
+}
+
+.p-28 {
+  padding: 112px;
+}
+
 .p-32 {
   padding: 8rem;
+}
+
+.p-35 {
+  padding: 140px;
 }
 
 .p-40 {
@@ -5336,6 +5402,26 @@ video {
   padding-right: 6rem;
 }
 
+.py-26 {
+  padding-top: 104px;
+  padding-bottom: 104px;
+}
+
+.px-26 {
+  padding-left: 104px;
+  padding-right: 104px;
+}
+
+.py-28 {
+  padding-top: 112px;
+  padding-bottom: 112px;
+}
+
+.px-28 {
+  padding-left: 112px;
+  padding-right: 112px;
+}
+
 .py-32 {
   padding-top: 8rem;
   padding-bottom: 8rem;
@@ -5344,6 +5430,16 @@ video {
 .px-32 {
   padding-left: 8rem;
   padding-right: 8rem;
+}
+
+.py-35 {
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+.px-35 {
+  padding-left: 140px;
+  padding-right: 140px;
 }
 
 .py-40 {
@@ -5604,6 +5700,38 @@ video {
   padding-left: 6rem;
 }
 
+.pt-26 {
+  padding-top: 104px;
+}
+
+.pr-26 {
+  padding-right: 104px;
+}
+
+.pb-26 {
+  padding-bottom: 104px;
+}
+
+.pl-26 {
+  padding-left: 104px;
+}
+
+.pt-28 {
+  padding-top: 112px;
+}
+
+.pr-28 {
+  padding-right: 112px;
+}
+
+.pb-28 {
+  padding-bottom: 112px;
+}
+
+.pl-28 {
+  padding-left: 112px;
+}
+
 .pt-32 {
   padding-top: 8rem;
 }
@@ -5618,6 +5746,22 @@ video {
 
 .pl-32 {
   padding-left: 8rem;
+}
+
+.pt-35 {
+  padding-top: 140px;
+}
+
+.pr-35 {
+  padding-right: 140px;
+}
+
+.pb-35 {
+  padding-bottom: 140px;
+}
+
+.pl-35 {
+  padding-left: 140px;
 }
 
 .pt-40 {
@@ -10611,6 +10755,10 @@ video {
   font-size: 80px;
 }
 
+.text-100 {
+  font-size: 100px;
+}
+
 .text-110 {
   font-size: 110px;
 }
@@ -11110,6 +11258,8 @@ video {
 
 body {
   overflow-x: hidden;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 ::-webkit-input-placeholder {
@@ -11749,7 +11899,7 @@ header .nav__subitem li {
 
 .list__border {
   border-bottom: 1px solid #aaaaaa;
-  padding: 10px 0;
+  padding: 30px 0;
   height: 100%;
   -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s;
@@ -11805,6 +11955,7 @@ header .nav__subitem li {
 .use-cases__list li {
   padding-left: 40px;
   position: relative;
+  line-height: 1.33;
 }
 
 .use-cases__list li:before {
@@ -11822,7 +11973,28 @@ header .nav__subitem li {
 }
 
 .cases__image__section {
-  max-width: 680px;
+  max-width: 620px;
+}
+
+#solve__issue .issue__circle {
+  width: 400px;
+  height: 400px;
+}
+
+#solve__issue h5 {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#solve__issue h6 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 @media (max-width: 1660px) {
@@ -12357,6 +12529,10 @@ header .nav__subitem li {
     background-color: #9690A5;
   }
 
+  .sm\:bg-grey-extralight {
+    background-color: #9690a50f;
+  }
+
   .sm\:bg-red-light {
     background-color: #FD2F581A;
   }
@@ -12395,6 +12571,10 @@ header .nav__subitem li {
 
   .sm\:bg-orange-light {
     background-color: #FFAA4E;
+  }
+
+  .sm\:bg-gold {
+    background-color: #ffad22;
   }
 
   .sm\:hover\:bg-transparent:hover {
@@ -12653,6 +12833,10 @@ header .nav__subitem li {
     background-color: #9690A5;
   }
 
+  .sm\:hover\:bg-grey-extralight:hover {
+    background-color: #9690a50f;
+  }
+
   .sm\:hover\:bg-red-light:hover {
     background-color: #FD2F581A;
   }
@@ -12691,6 +12875,10 @@ header .nav__subitem li {
 
   .sm\:hover\:bg-orange-light:hover {
     background-color: #FFAA4E;
+  }
+
+  .sm\:hover\:bg-gold:hover {
+    background-color: #ffad22;
   }
 
   .sm\:focus\:bg-transparent:focus {
@@ -12949,6 +13137,10 @@ header .nav__subitem li {
     background-color: #9690A5;
   }
 
+  .sm\:focus\:bg-grey-extralight:focus {
+    background-color: #9690a50f;
+  }
+
   .sm\:focus\:bg-red-light:focus {
     background-color: #FD2F581A;
   }
@@ -12987,6 +13179,10 @@ header .nav__subitem li {
 
   .sm\:focus\:bg-orange-light:focus {
     background-color: #FFAA4E;
+  }
+
+  .sm\:focus\:bg-gold:focus {
+    background-color: #ffad22;
   }
 
   .sm\:bg-bottom {
@@ -15079,6 +15275,10 @@ header .nav__subitem li {
     margin: 6rem;
   }
 
+  .sm\:m-26 {
+    margin: 104px;
+  }
+
   .sm\:m-32 {
     margin: 8rem;
   }
@@ -15307,6 +15507,16 @@ header .nav__subitem li {
   .sm\:mx-24 {
     margin-left: 6rem;
     margin-right: 6rem;
+  }
+
+  .sm\:my-26 {
+    margin-top: 104px;
+    margin-bottom: 104px;
+  }
+
+  .sm\:mx-26 {
+    margin-left: 104px;
+    margin-right: 104px;
   }
 
   .sm\:my-32 {
@@ -15765,6 +15975,22 @@ header .nav__subitem li {
 
   .sm\:ml-24 {
     margin-left: 6rem;
+  }
+
+  .sm\:mt-26 {
+    margin-top: 104px;
+  }
+
+  .sm\:mr-26 {
+    margin-right: 104px;
+  }
+
+  .sm\:mb-26 {
+    margin-bottom: 104px;
+  }
+
+  .sm\:ml-26 {
+    margin-left: 104px;
   }
 
   .sm\:mt-32 {
@@ -16525,8 +16751,20 @@ header .nav__subitem li {
     padding: 6rem;
   }
 
+  .sm\:p-26 {
+    padding: 104px;
+  }
+
+  .sm\:p-28 {
+    padding: 112px;
+  }
+
   .sm\:p-32 {
     padding: 8rem;
+  }
+
+  .sm\:p-35 {
+    padding: 140px;
   }
 
   .sm\:p-40 {
@@ -16679,6 +16917,26 @@ header .nav__subitem li {
     padding-right: 6rem;
   }
 
+  .sm\:py-26 {
+    padding-top: 104px;
+    padding-bottom: 104px;
+  }
+
+  .sm\:px-26 {
+    padding-left: 104px;
+    padding-right: 104px;
+  }
+
+  .sm\:py-28 {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .sm\:px-28 {
+    padding-left: 112px;
+    padding-right: 112px;
+  }
+
   .sm\:py-32 {
     padding-top: 8rem;
     padding-bottom: 8rem;
@@ -16687,6 +16945,16 @@ header .nav__subitem li {
   .sm\:px-32 {
     padding-left: 8rem;
     padding-right: 8rem;
+  }
+
+  .sm\:py-35 {
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
+
+  .sm\:px-35 {
+    padding-left: 140px;
+    padding-right: 140px;
   }
 
   .sm\:py-40 {
@@ -16947,6 +17215,38 @@ header .nav__subitem li {
     padding-left: 6rem;
   }
 
+  .sm\:pt-26 {
+    padding-top: 104px;
+  }
+
+  .sm\:pr-26 {
+    padding-right: 104px;
+  }
+
+  .sm\:pb-26 {
+    padding-bottom: 104px;
+  }
+
+  .sm\:pl-26 {
+    padding-left: 104px;
+  }
+
+  .sm\:pt-28 {
+    padding-top: 112px;
+  }
+
+  .sm\:pr-28 {
+    padding-right: 112px;
+  }
+
+  .sm\:pb-28 {
+    padding-bottom: 112px;
+  }
+
+  .sm\:pl-28 {
+    padding-left: 112px;
+  }
+
   .sm\:pt-32 {
     padding-top: 8rem;
   }
@@ -16961,6 +17261,22 @@ header .nav__subitem li {
 
   .sm\:pl-32 {
     padding-left: 8rem;
+  }
+
+  .sm\:pt-35 {
+    padding-top: 140px;
+  }
+
+  .sm\:pr-35 {
+    padding-right: 140px;
+  }
+
+  .sm\:pb-35 {
+    padding-bottom: 140px;
+  }
+
+  .sm\:pl-35 {
+    padding-left: 140px;
   }
 
   .sm\:pt-40 {
@@ -21954,6 +22270,10 @@ header .nav__subitem li {
     font-size: 80px;
   }
 
+  .sm\:text-100 {
+    font-size: 100px;
+  }
+
   .sm\:text-110 {
     font-size: 110px;
   }
@@ -22773,6 +23093,10 @@ header .nav__subitem li {
     background-color: #9690A5;
   }
 
+  .md\:bg-grey-extralight {
+    background-color: #9690a50f;
+  }
+
   .md\:bg-red-light {
     background-color: #FD2F581A;
   }
@@ -22811,6 +23135,10 @@ header .nav__subitem li {
 
   .md\:bg-orange-light {
     background-color: #FFAA4E;
+  }
+
+  .md\:bg-gold {
+    background-color: #ffad22;
   }
 
   .md\:hover\:bg-transparent:hover {
@@ -23069,6 +23397,10 @@ header .nav__subitem li {
     background-color: #9690A5;
   }
 
+  .md\:hover\:bg-grey-extralight:hover {
+    background-color: #9690a50f;
+  }
+
   .md\:hover\:bg-red-light:hover {
     background-color: #FD2F581A;
   }
@@ -23107,6 +23439,10 @@ header .nav__subitem li {
 
   .md\:hover\:bg-orange-light:hover {
     background-color: #FFAA4E;
+  }
+
+  .md\:hover\:bg-gold:hover {
+    background-color: #ffad22;
   }
 
   .md\:focus\:bg-transparent:focus {
@@ -23365,6 +23701,10 @@ header .nav__subitem li {
     background-color: #9690A5;
   }
 
+  .md\:focus\:bg-grey-extralight:focus {
+    background-color: #9690a50f;
+  }
+
   .md\:focus\:bg-red-light:focus {
     background-color: #FD2F581A;
   }
@@ -23403,6 +23743,10 @@ header .nav__subitem li {
 
   .md\:focus\:bg-orange-light:focus {
     background-color: #FFAA4E;
+  }
+
+  .md\:focus\:bg-gold:focus {
+    background-color: #ffad22;
   }
 
   .md\:bg-bottom {
@@ -25495,6 +25839,10 @@ header .nav__subitem li {
     margin: 6rem;
   }
 
+  .md\:m-26 {
+    margin: 104px;
+  }
+
   .md\:m-32 {
     margin: 8rem;
   }
@@ -25723,6 +26071,16 @@ header .nav__subitem li {
   .md\:mx-24 {
     margin-left: 6rem;
     margin-right: 6rem;
+  }
+
+  .md\:my-26 {
+    margin-top: 104px;
+    margin-bottom: 104px;
+  }
+
+  .md\:mx-26 {
+    margin-left: 104px;
+    margin-right: 104px;
   }
 
   .md\:my-32 {
@@ -26181,6 +26539,22 @@ header .nav__subitem li {
 
   .md\:ml-24 {
     margin-left: 6rem;
+  }
+
+  .md\:mt-26 {
+    margin-top: 104px;
+  }
+
+  .md\:mr-26 {
+    margin-right: 104px;
+  }
+
+  .md\:mb-26 {
+    margin-bottom: 104px;
+  }
+
+  .md\:ml-26 {
+    margin-left: 104px;
   }
 
   .md\:mt-32 {
@@ -26941,8 +27315,20 @@ header .nav__subitem li {
     padding: 6rem;
   }
 
+  .md\:p-26 {
+    padding: 104px;
+  }
+
+  .md\:p-28 {
+    padding: 112px;
+  }
+
   .md\:p-32 {
     padding: 8rem;
+  }
+
+  .md\:p-35 {
+    padding: 140px;
   }
 
   .md\:p-40 {
@@ -27095,6 +27481,26 @@ header .nav__subitem li {
     padding-right: 6rem;
   }
 
+  .md\:py-26 {
+    padding-top: 104px;
+    padding-bottom: 104px;
+  }
+
+  .md\:px-26 {
+    padding-left: 104px;
+    padding-right: 104px;
+  }
+
+  .md\:py-28 {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .md\:px-28 {
+    padding-left: 112px;
+    padding-right: 112px;
+  }
+
   .md\:py-32 {
     padding-top: 8rem;
     padding-bottom: 8rem;
@@ -27103,6 +27509,16 @@ header .nav__subitem li {
   .md\:px-32 {
     padding-left: 8rem;
     padding-right: 8rem;
+  }
+
+  .md\:py-35 {
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
+
+  .md\:px-35 {
+    padding-left: 140px;
+    padding-right: 140px;
   }
 
   .md\:py-40 {
@@ -27363,6 +27779,38 @@ header .nav__subitem li {
     padding-left: 6rem;
   }
 
+  .md\:pt-26 {
+    padding-top: 104px;
+  }
+
+  .md\:pr-26 {
+    padding-right: 104px;
+  }
+
+  .md\:pb-26 {
+    padding-bottom: 104px;
+  }
+
+  .md\:pl-26 {
+    padding-left: 104px;
+  }
+
+  .md\:pt-28 {
+    padding-top: 112px;
+  }
+
+  .md\:pr-28 {
+    padding-right: 112px;
+  }
+
+  .md\:pb-28 {
+    padding-bottom: 112px;
+  }
+
+  .md\:pl-28 {
+    padding-left: 112px;
+  }
+
   .md\:pt-32 {
     padding-top: 8rem;
   }
@@ -27377,6 +27825,22 @@ header .nav__subitem li {
 
   .md\:pl-32 {
     padding-left: 8rem;
+  }
+
+  .md\:pt-35 {
+    padding-top: 140px;
+  }
+
+  .md\:pr-35 {
+    padding-right: 140px;
+  }
+
+  .md\:pb-35 {
+    padding-bottom: 140px;
+  }
+
+  .md\:pl-35 {
+    padding-left: 140px;
   }
 
   .md\:pt-40 {
@@ -32370,6 +32834,10 @@ header .nav__subitem li {
     font-size: 80px;
   }
 
+  .md\:text-100 {
+    font-size: 100px;
+  }
+
   .md\:text-110 {
     font-size: 110px;
   }
@@ -33189,6 +33657,10 @@ header .nav__subitem li {
     background-color: #9690A5;
   }
 
+  .lg\:bg-grey-extralight {
+    background-color: #9690a50f;
+  }
+
   .lg\:bg-red-light {
     background-color: #FD2F581A;
   }
@@ -33227,6 +33699,10 @@ header .nav__subitem li {
 
   .lg\:bg-orange-light {
     background-color: #FFAA4E;
+  }
+
+  .lg\:bg-gold {
+    background-color: #ffad22;
   }
 
   .lg\:hover\:bg-transparent:hover {
@@ -33485,6 +33961,10 @@ header .nav__subitem li {
     background-color: #9690A5;
   }
 
+  .lg\:hover\:bg-grey-extralight:hover {
+    background-color: #9690a50f;
+  }
+
   .lg\:hover\:bg-red-light:hover {
     background-color: #FD2F581A;
   }
@@ -33523,6 +34003,10 @@ header .nav__subitem li {
 
   .lg\:hover\:bg-orange-light:hover {
     background-color: #FFAA4E;
+  }
+
+  .lg\:hover\:bg-gold:hover {
+    background-color: #ffad22;
   }
 
   .lg\:focus\:bg-transparent:focus {
@@ -33781,6 +34265,10 @@ header .nav__subitem li {
     background-color: #9690A5;
   }
 
+  .lg\:focus\:bg-grey-extralight:focus {
+    background-color: #9690a50f;
+  }
+
   .lg\:focus\:bg-red-light:focus {
     background-color: #FD2F581A;
   }
@@ -33819,6 +34307,10 @@ header .nav__subitem li {
 
   .lg\:focus\:bg-orange-light:focus {
     background-color: #FFAA4E;
+  }
+
+  .lg\:focus\:bg-gold:focus {
+    background-color: #ffad22;
   }
 
   .lg\:bg-bottom {
@@ -35911,6 +36403,10 @@ header .nav__subitem li {
     margin: 6rem;
   }
 
+  .lg\:m-26 {
+    margin: 104px;
+  }
+
   .lg\:m-32 {
     margin: 8rem;
   }
@@ -36139,6 +36635,16 @@ header .nav__subitem li {
   .lg\:mx-24 {
     margin-left: 6rem;
     margin-right: 6rem;
+  }
+
+  .lg\:my-26 {
+    margin-top: 104px;
+    margin-bottom: 104px;
+  }
+
+  .lg\:mx-26 {
+    margin-left: 104px;
+    margin-right: 104px;
   }
 
   .lg\:my-32 {
@@ -36597,6 +37103,22 @@ header .nav__subitem li {
 
   .lg\:ml-24 {
     margin-left: 6rem;
+  }
+
+  .lg\:mt-26 {
+    margin-top: 104px;
+  }
+
+  .lg\:mr-26 {
+    margin-right: 104px;
+  }
+
+  .lg\:mb-26 {
+    margin-bottom: 104px;
+  }
+
+  .lg\:ml-26 {
+    margin-left: 104px;
   }
 
   .lg\:mt-32 {
@@ -37357,8 +37879,20 @@ header .nav__subitem li {
     padding: 6rem;
   }
 
+  .lg\:p-26 {
+    padding: 104px;
+  }
+
+  .lg\:p-28 {
+    padding: 112px;
+  }
+
   .lg\:p-32 {
     padding: 8rem;
+  }
+
+  .lg\:p-35 {
+    padding: 140px;
   }
 
   .lg\:p-40 {
@@ -37511,6 +38045,26 @@ header .nav__subitem li {
     padding-right: 6rem;
   }
 
+  .lg\:py-26 {
+    padding-top: 104px;
+    padding-bottom: 104px;
+  }
+
+  .lg\:px-26 {
+    padding-left: 104px;
+    padding-right: 104px;
+  }
+
+  .lg\:py-28 {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .lg\:px-28 {
+    padding-left: 112px;
+    padding-right: 112px;
+  }
+
   .lg\:py-32 {
     padding-top: 8rem;
     padding-bottom: 8rem;
@@ -37519,6 +38073,16 @@ header .nav__subitem li {
   .lg\:px-32 {
     padding-left: 8rem;
     padding-right: 8rem;
+  }
+
+  .lg\:py-35 {
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
+
+  .lg\:px-35 {
+    padding-left: 140px;
+    padding-right: 140px;
   }
 
   .lg\:py-40 {
@@ -37779,6 +38343,38 @@ header .nav__subitem li {
     padding-left: 6rem;
   }
 
+  .lg\:pt-26 {
+    padding-top: 104px;
+  }
+
+  .lg\:pr-26 {
+    padding-right: 104px;
+  }
+
+  .lg\:pb-26 {
+    padding-bottom: 104px;
+  }
+
+  .lg\:pl-26 {
+    padding-left: 104px;
+  }
+
+  .lg\:pt-28 {
+    padding-top: 112px;
+  }
+
+  .lg\:pr-28 {
+    padding-right: 112px;
+  }
+
+  .lg\:pb-28 {
+    padding-bottom: 112px;
+  }
+
+  .lg\:pl-28 {
+    padding-left: 112px;
+  }
+
   .lg\:pt-32 {
     padding-top: 8rem;
   }
@@ -37793,6 +38389,22 @@ header .nav__subitem li {
 
   .lg\:pl-32 {
     padding-left: 8rem;
+  }
+
+  .lg\:pt-35 {
+    padding-top: 140px;
+  }
+
+  .lg\:pr-35 {
+    padding-right: 140px;
+  }
+
+  .lg\:pb-35 {
+    padding-bottom: 140px;
+  }
+
+  .lg\:pl-35 {
+    padding-left: 140px;
   }
 
   .lg\:pt-40 {
@@ -42786,6 +43398,10 @@ header .nav__subitem li {
     font-size: 80px;
   }
 
+  .lg\:text-100 {
+    font-size: 100px;
+  }
+
   .lg\:text-110 {
     font-size: 110px;
   }
@@ -43605,6 +44221,10 @@ header .nav__subitem li {
     background-color: #9690A5;
   }
 
+  .xl\:bg-grey-extralight {
+    background-color: #9690a50f;
+  }
+
   .xl\:bg-red-light {
     background-color: #FD2F581A;
   }
@@ -43643,6 +44263,10 @@ header .nav__subitem li {
 
   .xl\:bg-orange-light {
     background-color: #FFAA4E;
+  }
+
+  .xl\:bg-gold {
+    background-color: #ffad22;
   }
 
   .xl\:hover\:bg-transparent:hover {
@@ -43901,6 +44525,10 @@ header .nav__subitem li {
     background-color: #9690A5;
   }
 
+  .xl\:hover\:bg-grey-extralight:hover {
+    background-color: #9690a50f;
+  }
+
   .xl\:hover\:bg-red-light:hover {
     background-color: #FD2F581A;
   }
@@ -43939,6 +44567,10 @@ header .nav__subitem li {
 
   .xl\:hover\:bg-orange-light:hover {
     background-color: #FFAA4E;
+  }
+
+  .xl\:hover\:bg-gold:hover {
+    background-color: #ffad22;
   }
 
   .xl\:focus\:bg-transparent:focus {
@@ -44197,6 +44829,10 @@ header .nav__subitem li {
     background-color: #9690A5;
   }
 
+  .xl\:focus\:bg-grey-extralight:focus {
+    background-color: #9690a50f;
+  }
+
   .xl\:focus\:bg-red-light:focus {
     background-color: #FD2F581A;
   }
@@ -44235,6 +44871,10 @@ header .nav__subitem li {
 
   .xl\:focus\:bg-orange-light:focus {
     background-color: #FFAA4E;
+  }
+
+  .xl\:focus\:bg-gold:focus {
+    background-color: #ffad22;
   }
 
   .xl\:bg-bottom {
@@ -46327,6 +46967,10 @@ header .nav__subitem li {
     margin: 6rem;
   }
 
+  .xl\:m-26 {
+    margin: 104px;
+  }
+
   .xl\:m-32 {
     margin: 8rem;
   }
@@ -46555,6 +47199,16 @@ header .nav__subitem li {
   .xl\:mx-24 {
     margin-left: 6rem;
     margin-right: 6rem;
+  }
+
+  .xl\:my-26 {
+    margin-top: 104px;
+    margin-bottom: 104px;
+  }
+
+  .xl\:mx-26 {
+    margin-left: 104px;
+    margin-right: 104px;
   }
 
   .xl\:my-32 {
@@ -47013,6 +47667,22 @@ header .nav__subitem li {
 
   .xl\:ml-24 {
     margin-left: 6rem;
+  }
+
+  .xl\:mt-26 {
+    margin-top: 104px;
+  }
+
+  .xl\:mr-26 {
+    margin-right: 104px;
+  }
+
+  .xl\:mb-26 {
+    margin-bottom: 104px;
+  }
+
+  .xl\:ml-26 {
+    margin-left: 104px;
   }
 
   .xl\:mt-32 {
@@ -47773,8 +48443,20 @@ header .nav__subitem li {
     padding: 6rem;
   }
 
+  .xl\:p-26 {
+    padding: 104px;
+  }
+
+  .xl\:p-28 {
+    padding: 112px;
+  }
+
   .xl\:p-32 {
     padding: 8rem;
+  }
+
+  .xl\:p-35 {
+    padding: 140px;
   }
 
   .xl\:p-40 {
@@ -47927,6 +48609,26 @@ header .nav__subitem li {
     padding-right: 6rem;
   }
 
+  .xl\:py-26 {
+    padding-top: 104px;
+    padding-bottom: 104px;
+  }
+
+  .xl\:px-26 {
+    padding-left: 104px;
+    padding-right: 104px;
+  }
+
+  .xl\:py-28 {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .xl\:px-28 {
+    padding-left: 112px;
+    padding-right: 112px;
+  }
+
   .xl\:py-32 {
     padding-top: 8rem;
     padding-bottom: 8rem;
@@ -47935,6 +48637,16 @@ header .nav__subitem li {
   .xl\:px-32 {
     padding-left: 8rem;
     padding-right: 8rem;
+  }
+
+  .xl\:py-35 {
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
+
+  .xl\:px-35 {
+    padding-left: 140px;
+    padding-right: 140px;
   }
 
   .xl\:py-40 {
@@ -48195,6 +48907,38 @@ header .nav__subitem li {
     padding-left: 6rem;
   }
 
+  .xl\:pt-26 {
+    padding-top: 104px;
+  }
+
+  .xl\:pr-26 {
+    padding-right: 104px;
+  }
+
+  .xl\:pb-26 {
+    padding-bottom: 104px;
+  }
+
+  .xl\:pl-26 {
+    padding-left: 104px;
+  }
+
+  .xl\:pt-28 {
+    padding-top: 112px;
+  }
+
+  .xl\:pr-28 {
+    padding-right: 112px;
+  }
+
+  .xl\:pb-28 {
+    padding-bottom: 112px;
+  }
+
+  .xl\:pl-28 {
+    padding-left: 112px;
+  }
+
   .xl\:pt-32 {
     padding-top: 8rem;
   }
@@ -48209,6 +48953,22 @@ header .nav__subitem li {
 
   .xl\:pl-32 {
     padding-left: 8rem;
+  }
+
+  .xl\:pt-35 {
+    padding-top: 140px;
+  }
+
+  .xl\:pr-35 {
+    padding-right: 140px;
+  }
+
+  .xl\:pb-35 {
+    padding-bottom: 140px;
+  }
+
+  .xl\:pl-35 {
+    padding-left: 140px;
   }
 
   .xl\:pt-40 {
@@ -53202,6 +53962,10 @@ header .nav__subitem li {
     font-size: 80px;
   }
 
+  .xl\:text-100 {
+    font-size: 100px;
+  }
+
   .xl\:text-110 {
     font-size: 110px;
   }
@@ -54021,6 +54785,10 @@ header .nav__subitem li {
     background-color: #9690A5;
   }
 
+  .xxl\:bg-grey-extralight {
+    background-color: #9690a50f;
+  }
+
   .xxl\:bg-red-light {
     background-color: #FD2F581A;
   }
@@ -54059,6 +54827,10 @@ header .nav__subitem li {
 
   .xxl\:bg-orange-light {
     background-color: #FFAA4E;
+  }
+
+  .xxl\:bg-gold {
+    background-color: #ffad22;
   }
 
   .xxl\:hover\:bg-transparent:hover {
@@ -54317,6 +55089,10 @@ header .nav__subitem li {
     background-color: #9690A5;
   }
 
+  .xxl\:hover\:bg-grey-extralight:hover {
+    background-color: #9690a50f;
+  }
+
   .xxl\:hover\:bg-red-light:hover {
     background-color: #FD2F581A;
   }
@@ -54355,6 +55131,10 @@ header .nav__subitem li {
 
   .xxl\:hover\:bg-orange-light:hover {
     background-color: #FFAA4E;
+  }
+
+  .xxl\:hover\:bg-gold:hover {
+    background-color: #ffad22;
   }
 
   .xxl\:focus\:bg-transparent:focus {
@@ -54613,6 +55393,10 @@ header .nav__subitem li {
     background-color: #9690A5;
   }
 
+  .xxl\:focus\:bg-grey-extralight:focus {
+    background-color: #9690a50f;
+  }
+
   .xxl\:focus\:bg-red-light:focus {
     background-color: #FD2F581A;
   }
@@ -54651,6 +55435,10 @@ header .nav__subitem li {
 
   .xxl\:focus\:bg-orange-light:focus {
     background-color: #FFAA4E;
+  }
+
+  .xxl\:focus\:bg-gold:focus {
+    background-color: #ffad22;
   }
 
   .xxl\:bg-bottom {
@@ -56743,6 +57531,10 @@ header .nav__subitem li {
     margin: 6rem;
   }
 
+  .xxl\:m-26 {
+    margin: 104px;
+  }
+
   .xxl\:m-32 {
     margin: 8rem;
   }
@@ -56971,6 +57763,16 @@ header .nav__subitem li {
   .xxl\:mx-24 {
     margin-left: 6rem;
     margin-right: 6rem;
+  }
+
+  .xxl\:my-26 {
+    margin-top: 104px;
+    margin-bottom: 104px;
+  }
+
+  .xxl\:mx-26 {
+    margin-left: 104px;
+    margin-right: 104px;
   }
 
   .xxl\:my-32 {
@@ -57429,6 +58231,22 @@ header .nav__subitem li {
 
   .xxl\:ml-24 {
     margin-left: 6rem;
+  }
+
+  .xxl\:mt-26 {
+    margin-top: 104px;
+  }
+
+  .xxl\:mr-26 {
+    margin-right: 104px;
+  }
+
+  .xxl\:mb-26 {
+    margin-bottom: 104px;
+  }
+
+  .xxl\:ml-26 {
+    margin-left: 104px;
   }
 
   .xxl\:mt-32 {
@@ -58189,8 +59007,20 @@ header .nav__subitem li {
     padding: 6rem;
   }
 
+  .xxl\:p-26 {
+    padding: 104px;
+  }
+
+  .xxl\:p-28 {
+    padding: 112px;
+  }
+
   .xxl\:p-32 {
     padding: 8rem;
+  }
+
+  .xxl\:p-35 {
+    padding: 140px;
   }
 
   .xxl\:p-40 {
@@ -58343,6 +59173,26 @@ header .nav__subitem li {
     padding-right: 6rem;
   }
 
+  .xxl\:py-26 {
+    padding-top: 104px;
+    padding-bottom: 104px;
+  }
+
+  .xxl\:px-26 {
+    padding-left: 104px;
+    padding-right: 104px;
+  }
+
+  .xxl\:py-28 {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .xxl\:px-28 {
+    padding-left: 112px;
+    padding-right: 112px;
+  }
+
   .xxl\:py-32 {
     padding-top: 8rem;
     padding-bottom: 8rem;
@@ -58351,6 +59201,16 @@ header .nav__subitem li {
   .xxl\:px-32 {
     padding-left: 8rem;
     padding-right: 8rem;
+  }
+
+  .xxl\:py-35 {
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
+
+  .xxl\:px-35 {
+    padding-left: 140px;
+    padding-right: 140px;
   }
 
   .xxl\:py-40 {
@@ -58611,6 +59471,38 @@ header .nav__subitem li {
     padding-left: 6rem;
   }
 
+  .xxl\:pt-26 {
+    padding-top: 104px;
+  }
+
+  .xxl\:pr-26 {
+    padding-right: 104px;
+  }
+
+  .xxl\:pb-26 {
+    padding-bottom: 104px;
+  }
+
+  .xxl\:pl-26 {
+    padding-left: 104px;
+  }
+
+  .xxl\:pt-28 {
+    padding-top: 112px;
+  }
+
+  .xxl\:pr-28 {
+    padding-right: 112px;
+  }
+
+  .xxl\:pb-28 {
+    padding-bottom: 112px;
+  }
+
+  .xxl\:pl-28 {
+    padding-left: 112px;
+  }
+
   .xxl\:pt-32 {
     padding-top: 8rem;
   }
@@ -58625,6 +59517,22 @@ header .nav__subitem li {
 
   .xxl\:pl-32 {
     padding-left: 8rem;
+  }
+
+  .xxl\:pt-35 {
+    padding-top: 140px;
+  }
+
+  .xxl\:pr-35 {
+    padding-right: 140px;
+  }
+
+  .xxl\:pb-35 {
+    padding-bottom: 140px;
+  }
+
+  .xxl\:pl-35 {
+    padding-left: 140px;
   }
 
   .xxl\:pt-40 {
@@ -63616,6 +64524,10 @@ header .nav__subitem li {
 
   .xxl\:text-80 {
     font-size: 80px;
+  }
+
+  .xxl\:text-100 {
+    font-size: 100px;
   }
 
   .xxl\:text-110 {

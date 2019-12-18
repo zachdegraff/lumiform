@@ -6,8 +6,9 @@
 
                 <li class="list__border @if ($i == 0) active @endif" onclick="openTab(this,event)"
                     data-index="item-{{$i}}">
-                    <p class="text-30 font-cocogoose uppercase text-grey-light font-bold flex items-center">
-                        <img src="{{asset('img/icons/chevron-right.svg')}}" alt="" class="mr-6"> {!! $item['title'] !!}
+                    <p class="text-30 font-cocogoose uppercase text-grey-light font-bold flex items-start">
+                        <img src="{{asset('img/icons/chevron-right.svg')}}" alt=""
+                             class="mr-6 mt-4"> {!! $item['title'] !!}
                     </p>
                     <span class="text-20 font-din font-light tracking-text text-secondary">
                     {!! $item['desc'] !!}
@@ -18,14 +19,22 @@
         </ul>
 
     </div>
-    <div class="w-6/12">
+    <div class="w-7/12 flex flex-col py-8">
         @php $j = 0 @endphp
         @foreach($items as $image)
-            <img src="{{asset('img'.'/'.$image['srcset'][0])}}" alt=""
-                 srcset="{{asset('img'.'/'.$image['srcset'][0])}},
-                    {{asset('img'.'/'.$image['srcset'][1])}} 2x " class="industries__list--image @if ($j == 0) active__image @endif" id="item-{{$j}}">
+            <div class="mx-auto">
+                <img src="{{asset('img'.'/'.$image['srcset'][0])}}" alt=""
+                     srcset="{{asset('img'.'/'.$image['srcset'][0])}},
+                    {{asset('img'.'/'.$image['srcset'][1])}} 2x "
+                     class="industries__list--image @if ($j == 0) active__image @endif " id="item-{{$j}}">
+            </div>
             @php $j++ @endphp
         @endforeach
+        <a href="{{$features['url']}}"
+           class="@if (count($items) < 5)mt-32 @else mt-auto @endif flex items-center justify-center uppercase text-red text-center block text-17 lg:text-20 tracking-heading ">
+            {!! $features['text'] !!}
+            <img src="{{asset('img/arrow-right-long-red.svg')}}" alt="" class="h-3 ml-8">
+        </a>
     </div>
 </div>
 <script>

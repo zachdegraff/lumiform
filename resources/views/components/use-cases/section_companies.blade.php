@@ -1,6 +1,6 @@
-<section class="py-20">
+<section class="pt-16 pb-10">
 <div class="container mx-auto">
-    <h4 class="mb-12 text-center text-40 font-normal font-cocogoose uppercase text-grey-bold">
+    <h4 class="mb-10 text-center text-40 font-normal font-cocogoose uppercase text-grey-bold">
         @lang('TRUSTED BY FORWARD-THINKING COMPANIES OF ALL SHAPES AND SIZES')
     </h4>
     <div class="flex justify-between items-center">

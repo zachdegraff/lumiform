@@ -55,13 +55,9 @@
             ['srcset' => ['group-4764.png','group-4764@2x.png'],'title' => 'Conduct via App','desc' => 'Conduct audits and inspections whether with a tablet or smartphone, Android or iOS – online or offline.'],
             ['srcset' => ['group-3430.png','group-3430@2x.png'],'title' => 'Solve Issues','desc' => 'Make all field workers can easily raise issues as soon as they occur. Keep track of the progress and solve them together, as a team.'],
             ['srcset' => ['group-4750.png','group-4750@2x.png'],'title' => 'Results, Reports and Analyses','desc' => 'Don’t waste time on post-processing and digitisation of audit and inspection reports – everything is fully automated. Uncover stores that need your attention through in-depth analyses.'],
-            ]
+            ],
+            'features' => ['url' => '#','text' => 'Explore more PRODUCT features']
             ])
-            <a href="#"
-               class="flex items-center justify-center uppercase text-red text-center block text-17 lg:text-20 tracking-large lg:mt-24">
-                @lang('Explore more PRODUCT features')
-                <img src="{{asset('img/arrow-right-long-red.svg')}}" alt="" class="h-3 ml-8">
-            </a>
 
         </div>
     </section>

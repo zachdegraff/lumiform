@@ -3,7 +3,7 @@
         <div class="w-0 lg:w-3/12">
             <img src="{{asset('img/'.$image)}}" alt="">
         </div>
-        <div class="w-full lg:w-5/12  flex flex-col justify-around">
+        <div class="w-full lg:w-6/12  flex flex-col justify-around">
             <p class="font-din font-light text-30 text-secondary">
                 {!! $text !!}
             </p>

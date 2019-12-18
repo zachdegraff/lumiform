@@ -3,16 +3,18 @@
 @section("head.title", __(""))
 
 @section("content")
-    <section class="pt-32 pb-40"
+    <section class="py-28"
              style="
                      background-image: url('{{asset('img/group-4200.png')}}');
                      background-color: #FAFBFB;
-                     background-size: 100% 100%;
-                     background-repeat: no-repeat;"
+                     background-size: 86%;
+                     background-repeat: no-repeat;
+                     background-position-y: bottom;
+                     background-position-x: center;"
     >
         <div class="container mx-auto">
             <div class="w-10/12 mx-auto mb-32">
-                <h1 class="text-70 font-cocogoose font-black uppercase text-center tracking-normal text-primary mb-16">
+                <h1 class="text-70 font-cocogoose font-black uppercase text-center tracking-normal text-primary mb-16 leading-none">
                     @lang('Save time and money <span class="line__break"></span> with digital checklists')
                 </h1>
                 <p class="text-30 font-light font-din text-secondary text-center">
@@ -24,7 +26,7 @@
             </button>
         </div>
     </section>
-    <section class="py-24 with__border--bottom">
+    <section class="py-32 with__border--bottom">
         @include('components.use-cases.image_text_horizontal',[
         'heading' => '<span class="text-light-blue">Reduce checklist execution time</span> ',
         'image' => ['group-4364.png','group-4364@2x.png'],
@@ -58,11 +60,11 @@
     </section>
     <section class="py-32 with__border--bottom">
         <div class="container mx-auto">
-            <h2 class="font-bold text-center font-cocogoose text-primary text-30 xl:text-40 lg:mb-4 uppercase tracking-heading">
-                @lang('<span class="text-purple">Create transparency </span> with digital inspections')
+            <h2 class="font-bold text-center font-cocogoose text-primary text-30 xl:text-50 lg:mb-4 uppercase tracking-heading">
+                @lang('<span class="text-purple">more transparency </span> with digital inspections')
             </h2>
             <p class="text-center font-light font-din text-20 lg:text-30 text-secondary tracking-text mb-20">
-                @lang('Customize inspections and workflows to fit your company’s quality and <span class="line__break"> </span> safety standards — so everyone tackles the right tasks at the right time.')
+                @lang('Create standardised checklists, within minutes, or start with ready-to-use checklist templates and customise them <span class="line__break"> </span> to meet your needs. Conduct checklists effectively, via the app, and solve issues quicker than ever before. ')
             </p>
             @include('components.solution.industries_droptown_section',[
             'items' => [
@@ -70,13 +72,9 @@
             ['srcset' => ['group-5149.png','group-5149@2x.png'],'title' => 'Conduct via app','desc' => 'Conduct digital checklists, whether with a tablet or smartphone, Android, or iOS – online or offline.'],
             ['srcset' => ['group-4844.png','group-4844@2x.png'],'title' => 'Solve issues','desc' => 'Don’t waste time on tedious issue reportings. Let issue automation do it for you. Simplify workflows, reduce errors, and save time for solving even more important problems.'],
             ['srcset' => ['group-4846.png','group-4846@2x.png'],'title' => 'Results, reports','desc' => 'Don’t waste time on post-processing and digitisation of checklist reports – everything is fully automated. Uncover areas of your business that need your attention, and continuously improve quality and safety, through in-depth analyses.'],
-            ]
+            ],
+            'features' => ['url' => '#','text' => 'Explore more PRODUCT features']
             ])
-            <a href="#"
-               class="flex items-center justify-center uppercase text-red text-center block text-17 lg:text-20 tracking-large lg:mt-24">
-                @lang('Explore more PRODUCT features')
-                <img src="{{asset('img/arrow-right-long-red.svg')}}" alt="" class="h-3 ml-8">
-            </a>
 
         </div>
     </section>

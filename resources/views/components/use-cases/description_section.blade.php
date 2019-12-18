@@ -15,7 +15,7 @@
                 </a>
             </div>
             <div class="w-3/5">
-                <img src="{{asset('img/'.$image[0])}}" alt="" srcset="{{asset('img/'.$image[0])}}
+                <img src="{{asset('img/'.$image[0])}}" alt="" srcset="{{asset('img/'.$image[0])}},
                 {{asset('img/'.$image[1])}} 2x">
             </div>
         </div>
@@ -24,7 +24,7 @@
                 @foreach($items as $item)
                     <div class="bottom__item w-6/12 flex justify-start items-center  mb-10 pr-10">
                         <img src="{{'img/'.$item['image']}}" alt="" class="rounded-15 index__image--list" srcset="{{asset('img'.'/'.$item['srcset'][0])}},
-                    {{asset('img'.'/'.$item['srcset'][1])}} 2x
+                    {{asset('img'.'/'.$item['srcset'][1])}} 2x">
 ">
                         <span class="ml-5 text-20 font-cocogoose font-medium uppercase text-secondary">{!! $item['text'] !!}</span>
                     </div>

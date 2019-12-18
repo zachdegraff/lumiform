@@ -56,13 +56,10 @@
             ['srcset' => ['group-4757.png','group-2969@2x.png'],'title' => 'Automate temperature and humidity checks','desc' => 'Use temperature and humidity sensors to automate temperature documentation, while protecting food adequately.'],
             ['srcset' => ['group-3430.png','group-2969@2x.png'],'title' => 'Solve Issues','desc' => 'Make sure all inspectors can easily raise issues. Keep track of the progress and solve issues together, as a team.'],
             ['srcset' => ['group-4759.png','group-2969@2x.png'],'title' => 'Results, Reports and Analyses','desc' => 'Don’t waste time on post-processing and digitisation of audit and inspection reports – everything is fully automated. Uncover areas that need your attention through in-depth analyses.'],
-            ]
+            ],
+            'features' => ['url' => '#','text' => 'Explore more PRODUCT features']
             ])
-            <a href="#"
-               class="flex items-center justify-center uppercase text-red text-center block text-17 lg:text-20 tracking-large lg:mt-24">
-                @lang('Explore more PRODUCT features')
-                <img src="{{asset('img/arrow-right-long-red.svg')}}" alt="" class="h-3 ml-8">
-            </a>
+
 
         </div>
     </section>

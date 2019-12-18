@@ -106,9 +106,9 @@
                             <a href="@urlTo('useCases.audits')">@lang("Audits")</a>
                             <a href="@urlTo('useCases.inspections')">@lang("Inspection")</a>
                             <a href="@urlTo('useCases.digitalChecklists')">@lang("Digital checklist")</a>
-                            <a href="@urlTo('useCases.audits')">@lang("Assessment")</a>
-                            <a href="@urlTo('useCases.audits')">@lang("Digital documentation")</a>
-                            <a href="@urlTo('useCases.audits')">@lang("Issue  management")</a>
+                            <a href="@urlTo('useCases.assessment')">@lang("Assessment")</a>
+                            <a href="@urlTo('useCases.documentation')">@lang("Digital documentation")</a>
+                            <a href="@urlTo('useCases.issue')">@lang("Issue  management")</a>
                         </div>
                     </div>
                 </div>

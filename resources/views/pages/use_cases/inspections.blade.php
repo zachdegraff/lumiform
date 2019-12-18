@@ -3,20 +3,21 @@
 @section("head.title", __(""))
 
 @section("content")
-    <section class="pt-32 pb-40"
+    <section class="pt-28 pb-40"
              style="
                      background-image: url('{{asset('img/group-4015.png')}}');
                      background-color: #FAFBFB;
-                     background-size: 100% 100%;
-                     background-repeat: no-repeat;"
+                     background-size: 100% ;
+                     background-repeat: no-repeat;
+                     background-position-y: bottom;"
     >
         <div class="container mx-auto">
-            <div class="w-10/12 mx-auto mb-20">
-                <h1 class="text-70 font-cocogoose font-black uppercase text-center tracking-normal text-primary mb-16">
+            <div class="w-10/12 mx-auto mb-16">
+                <h1 class="text-70 font-cocogoose font-black uppercase text-center tracking-normal text-primary mb-16 leading-none">
                     @lang('Digital inspections: <span class="line__break"></span> easy to handle, for everyone')
                 </h1>
                 <p class="text-30 font-light font-din text-secondary text-center">
-                    @lang('The Lumform app is so easy to handle that anyone can perform standardized, effective inspections in the field - really anyone!')
+                    @lang('The Lumform app is so easy to handle that anyone can perform <span class="line__break"></span> standardized, effective inspections in the field - really anyone!')
                 </p>
             </div>
             <button class="mx-auto w-215  bg-red tracking-large font-extrabold text-white uppercase font-cocogoose text-17 lg:text-20 h-70  rounded-20 items-center justify-center flex">
@@ -24,7 +25,7 @@
             </button>
         </div>
     </section>
-    <section class="py-24 with__border--bottom">
+    <section class="py-32 with__border--bottom">
         @include('components.use-cases.image_text_horizontal',[
         'heading' => 'Make sure all tasks are <span class="text-light-blue">done reliably, and in time</span> ',
         'image' => ['group-4965.png','group-4965@2x.png'],
@@ -58,7 +59,7 @@
     </section>
     <section class="py-32 with__border--bottom">
         <div class="container mx-auto">
-            <h2 class="font-bold text-center font-cocogoose text-primary text-30 xl:text-40 lg:mb-4 uppercase tracking-heading">
+            <h2 class="font-bold text-center font-cocogoose text-primary text-30 xl:text-50 lg:mb-4 uppercase tracking-heading">
                 @lang('<span class="text-purple">Create transparency </span> with digital inspections')
             </h2>
             <p class="text-center font-light font-din text-20 lg:text-30 text-secondary tracking-text mb-20">
@@ -71,13 +72,10 @@
             ['srcset' => ['group-4840.png','group-4840@2x.png'],'title' => 'Conduct via app','desc' => 'Conduct inspections anytime, anywhere, via the inspection app – online and offline. Add photos and comments easily, during the inspection.'],
             ['srcset' => ['group-4469.png','group-4469@2x.png'],'title' => 'Solve Issues','desc' => 'Raise issues on-the-fly, as soon as they occur during an inspection. Assign actions immediately, in order to solve any issues as quickly as possible. Track troubleshooting in real-time.'],
             ['srcset' => ['group-4841.png','group-4841@2x.png'],'title' => 'Results, Reports and Analyses','desc' => 'The system creates inspection reports automatically, so you don’t waste time on post-processing and digitisation. Uncover areas of your business that need your attention.'],
-            ]
+            ],
+            'features' => ['url' => '#','text' => 'Explore more PRODUCT features']
             ])
-            <a href="#"
-               class="flex items-center justify-center uppercase text-red text-center block text-17 lg:text-20 tracking-large lg:mt-24">
-                @lang('Explore more PRODUCT features')
-                <img src="{{asset('img/arrow-right-long-red.svg')}}" alt="" class="h-3 ml-8">
-            </a>
+
 
         </div>
     </section>

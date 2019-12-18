@@ -3,16 +3,17 @@
 @section("head.title", __(""))
 
 @section("content")
-    <section class="pt-32 pb-40"
+    <section class="pt-24 pb-32"
              style="
                      background-image: url('{{asset('img/group-5141.png')}}');
                      background-color: #FAFBFB;
-                     background-size: contain;
-                     background-repeat: no-repeat;"
+                     background-size: 96%;
+                     background-repeat: no-repeat;
+                     background-position-y: bottom;"
     >
         <div class="container mx-auto">
-            <div class="w-10/12 mx-auto mb-40">
-                <h1 class="text-70 font-cocogoose font-black uppercase text-center tracking-normal text-primary mb-20">@lang('Your secret to time-saving audits')</h1>
+            <div class="w-10/12 mx-auto mb-32">
+                <h1 class="text-70 font-cocogoose font-black uppercase text-center tracking-normal text-primary mb-16">@lang('Your secret to time-saving audits')</h1>
                 <p class="text-30 font-light font-din text-secondary text-center">@lang('With Lumiform’s audit app, you cut the inspection time by half. Perform audits anytime and everywhere, get automatically created reports, and analyse with ease. ')</p>
             </div>
             <button class="mx-auto w-215  bg-red tracking-large font-extrabold text-white uppercase font-cocogoose text-17 lg:text-20 h-70  rounded-20 items-center justify-center flex">
@@ -20,7 +21,7 @@
             </button>
         </div>
     </section>
-    <section class="py-24 with__border--bottom">
+    <section class="py-32 with__border--bottom">
         @include('components.use-cases.image_text_horizontal',[
         'heading' => '<span class="text-light-blue">Cut audit time </span> by 50%',
         'image' => ['group-3144.png','group-3144@2x.png'],
@@ -53,28 +54,24 @@
         <a href=""
            class="mx-auto base__button font-extrabold bg-red text-white uppercase font-cocogoose text-xl h-70 px-8 rounded-20 items-center flex">@lang('Get Lumiform FREE')</a>
     </section>
-    <section class="py-32 with__border--bottom">
+    <section class="py-28 with__border--bottom">
         <div class="container mx-auto">
-            <h2 class="font-bold text-center font-cocogoose text-primary text-30 xl:text-40 lg:mb-4 uppercase tracking-heading">
-                @lang('<span class="text-light-blue">Reduce documentation time</span> while increasing food quality')
+            <h2 class="font-bold text-center font-cocogoose text-primary text-30 xl:text-50 lg:mb-2 uppercase tracking-heading">
+                @lang('<span class="text-light-blue">Save time on every audit, </span> while troubleshooting with ease')
             </h2>
-            <p class="text-center font-light font-din text-20 lg:text-30 text-secondary tracking-text mb-20">
-                @lang('Make sure all inspections and audits are done reliably and issues resolved quickly. And get the visibility you need to steer the ship.')
+            <p class="text-center font-light font-din text-20 lg:text-30 text-secondary tracking-text mb-26 ">
+                @lang('Intuitive forms guide you through the audit while reports are automatically <span class="line__break"></span>created. Create a clear path of action when issues occur.')
             </p>
             @include('components.solution.industries_droptown_section',[
             'items' => [
-            ['srcset' => ['group-4892.png','group-4892@2x.png'],'title' => 'Create forms','desc' => 'Lumiform allows you to create audits in just a few minutes, entirely according to your individual needs, with our flexible form and report builder.'],
-            ['srcset' => ['group-2969.png','group-2969@2x.png'],'title' => 'Conduct via App','desc' => 'Perform your audits anywhere, anytime via the app –online or offline. Add photos and comments automatically, while auditing.'],
-            ['srcset' => ['group-4681.png','group-4681@2x.png'],'title' => 'Solve Issues','desc' => 'Let teammates or third parties know if audit checks uncovered issues, and assign corrective action to any stakeholder immediately. Track the troubleshooting process while the system documents everything automatically.'],
-            ['srcset' => ['group-4838.png','group-4838@2x.png'],'title' => 'Automate temperature and humidity checks','desc' => 'Lumiform automatically creates in-depth analyses. View all reports, including images, comments and checks, and share your audit report immediately via e-mail. '],
-            ['srcset' => ['group-5131.png','group-5131@2x.png'],'title' => 'Results, Reports and Analyses','desc' => 'Lumiform presents the standardised data in such a way that you can quickly identify areas that need your special attention.'],
-            ]
+            ['srcset' => ['group-4892.png','group-4892@2x.png'],'title' => 'Create audit forms and report templates','desc' => 'Lumiform allows you to create audits in just a few minutes, entirely according to your individual needs, with our flexible form and report builder.'],
+            ['srcset' => ['group-4837.png','group-4837@2x.png'],'title' => 'Conduct via App','desc' => 'Perform your audits anywhere, anytime via the app –online or offline. Add photos and comments automatically, while auditing.'],
+            ['srcset' => ['group-4838.png','group-4838@2x.png'],'title' => 'Solve Issues','desc' => 'Let teammates or third parties know if audit checks uncovered issues, and assign corrective action to any stakeholder immediately. Track the troubleshooting process while the system documents everything automatically.'],
+            ['srcset' => ['group-4681.png','group-4681@2x.png'],'title' => 'AUTOMATIC AND CUSTOMISABLE AUDIT REPORTS','desc' => 'Lumiform automatically creates in-depth analyses. View all reports, including images, comments and checks, and share your audit report immediately via e-mail. '],
+            ['srcset' => ['group-5131.png','group-5131@2x.png'],'title' => 'Smart analyses','desc' => 'Lumiform presents the standardised data in such a way that you can quickly identify areas that need your special attention.'],
+            ],
+            'features' => ['url' => '#','text' => 'Explore more PRODUCT features']
             ])
-            <a href="#"
-               class="flex items-center justify-center uppercase text-red text-center block text-17 lg:text-20 tracking-large lg:mt-24">
-                @lang('Explore more PRODUCT features')
-                <img src="{{asset('img/arrow-right-long-red.svg')}}" alt="" class="h-3 ml-8">
-            </a>
 
         </div>
     </section>

@@ -1,5 +1,7 @@
 body {
   overflow-x: hidden;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #707070;
@@ -575,7 +577,7 @@ background: none;
 }
 .list__border{
   border-bottom: 1px solid #aaaaaa;
-  padding: 10px 0;
+  padding: 30px 0;
   height: 100%;
   transition: all ease .3s;
   cursor: pointer;
@@ -617,6 +619,7 @@ background: none;
 .use-cases__list li{
   padding-left: 40px;
   position: relative;
+  line-height: 1.33;
 }
 .use-cases__list li:before{
   content: '';
@@ -632,7 +635,23 @@ background: none;
   max-width: 570px;
 }
 .cases__image__section{
-  max-width: 680px;
+  max-width: 620px;
+}
+#solve__issue .issue__circle {
+  width: 400px;
+  height: 400px;
+}
+#solve__issue h5 {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#solve__issue h6{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 @media (max-width: 1660px) {
   .banner__heading {

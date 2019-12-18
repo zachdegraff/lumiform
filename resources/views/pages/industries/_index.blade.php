@@ -59,7 +59,7 @@
     'items' => [
             ['image' => 'food-manager-cleaning-check.png','srcset' =>['food-manager-cleaning-check.png','food-manager-cleaning-check@2x.png'],'text' => 'Manager cleaning check'],
             ['image' => 'food-mystery-shopper.png','srcset' =>['food-mystery-shopper.png','food-mystery-shopper@2x.png'],'text' => 'Mystery shopper checklist'],
-            ['image' => <div class="bottom__left w-6/12 flex flex-wrap justify-between">…</div>'food-daily-temperature-log.png','srcset' =>['food-daily-temperature-log.png','food-daily-temperature-log@2x.png'],'text' => 'Daily temperature log'],
+            ['image' => 'food-daily-temperature-log.png','srcset' =>['food-daily-temperature-log.png','food-daily-temperature-log@2x.png'],'text' => 'Daily temperature log'],
             ['image' => 'food-hygiene.png','srcset' =>['food-hygiene.png','food-hygiene@2x.png'],'text' => 'General food, safety and hygiene checklist'],
             ['image' => 'food-self-monitoring.png','srcset' =>['food-self-monitoring.png','food-self-monitoring@2x.png'],'text' => 'Self monitoring checklist'],
             ['image' => 'food-closing-the-counter.png','srcset' =>['food-closing-the-counter.png','food-closing-the-counter@2x.png'],'text' => 'Closing the counter checklist'],
