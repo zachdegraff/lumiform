@@ -909,8 +909,105 @@ input::-webkit-inner-spin-button {
   outline: none;
 
 }
-.case__item{
+.case__studies .case__item{
   width: 500px;
+}
+.about__text{
+  width: 570px;
+}
+.circle__white{
+  width: 350px ;
+  height: 350px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+.circle__bg__white{
+  width: 400px;
+  position: relative;
+  padding-top: 45px;
+  height: 350px;
+}
+.team__item {
+  width: 450px;
+
+
+  .team__image {
+    border-radius: 50%;
+    overflow: hidden;
+    height: 450px;
+  }
+}
+.gallery__left{
+  width: 392px;
+}
+.gallery__middle{
+  width: 1133px;
+}
+.gallery__right{
+  width: 376px;
+}
+.common__item {
+  width: 540px;
+  height: 400px;
+}
+
+.common__circle{
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  z-index: 0;
+}
+.common__image{
+  height: 194px;
+}
+
+.common__text {
+  position: relative;
+  z-index: 2;
+}
+.item_first {
+  width: 512px;
+  .focus__text {
+    width: 400px;
+  }
+}
+.item_second{
+width: 385px;
+  .focus__text {
+    width: 275px;
+  }
+}
+.item_third{
+  width: 485px;
+  .focus__text {
+    width: 370px;
+  }
+}
+.item__icon img{
+  width: 72px;
+}
+.control__left{
+  width: 390px;
+}
+.control__middle{
+  width: 340px;
+}
+.control__right{
+  width: 340px;
+}
+.control__icon{
+  width: 70px;
+}
+.steps .issue__item--bg{
+  background-size: 240px 240px;
+  background-position-y: top ;
+  background-position-x: left ;
+}
+.steps .issue__item--bg{
+  min-height: 240px;
 }
 @media (max-width: 1660px) {
   .banner__heading {

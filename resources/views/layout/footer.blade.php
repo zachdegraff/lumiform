@@ -65,7 +65,7 @@
     <div class="w-1/2 md:w-1/3 lg:w-auto mb-5">
         <h5 class="mb-8">{{ __('About us') }}</h5>
         <ul>
-            <li><a href="">{{ __('About') }}</a></li>
+            <li><a href="@urlTo('about')">{{ __('About') }}</a></li>
             <li><a href="">{{ __('Jobs') }}</a></li>
             <li><a href="">{{ __('Imprint') }}</a></li>
             <li><a href="">{{ __('Terms') }}</a></li>

@@ -3,7 +3,8 @@
 @section("head.title", __(""))
 
 @section("content")
-    <section class="pt-26 bg-grey-light" >
+    <section class="pt-26 bg-grey-light" style="background: url('{{asset('img/group-2511.svg')}}') no-repeat #E7EBED33;
+            background-position: 25% -33%;">
         <div class="container mx-auto">
             <div class="mb-16">
                 <h1 class="text-70 font-cocogoose font-black uppercase text-center tracking-normal text-primary mb-12 leading-tight">
@@ -16,4 +17,62 @@
             <img src="{{asset('img/group-5138.svg')}}" alt="">
         </div>
     </section>
+    @include('components.resources.case-studies_items',[
+    'items'=> [
+    ['srcset' => ['resources-light-vehicle.png','resources-light-vehicle@2x.png'],
+        'title' => 'Food Truck Inspection',
+        'text'=> 'Download digital irrigation checklist for more efficient irrigation audits and help more clients conserve water in their own landscape properties. ',
+        'url' => '#',
+        'moreText' => 'Find out more'],
+    ['srcset' => ['resources-vehicle-inspection.png','resources-vehicle-inspection@2x.png'],
+        'title' => 'Vehicle Inventory',
+        'text'=> 'Digital Vehicle Inventory Templates: 1. Vehicle Inventory Template; 2. Pre-delivery Inspection Checklist; 3. PDI Report Checklist.',
+        'url' => '#',
+        'moreText' => 'Find out more'],
+    ['srcset' => ['resources-safety.png','resources-safety@2x.png'],
+        'title' => 'Lifeguard Audit',
+        'text'=> 'Easy and accurate fixed assets auditing using free templates: 1. Fixed Assets Audit Template; 2. Fixed Assets Internal Controls Checklist.',
+        'url' => '#',
+        'moreText' => 'Find out more'],
+        ['srcset' => ['resources-light-vehicle.png','resources-light-vehicle@2x.png'],
+        'title' => 'Food Truck Inspection',
+        'text'=> 'Download digital irrigation checklist for more efficient irrigation audits and help more clients conserve water in their own landscape properties. ',
+        'url' => '#',
+        'moreText' => 'Find out more'],
+    ['srcset' => ['resources-vehicle-inspection.png','resources-vehicle-inspection@2x.png'],
+        'title' => 'Vehicle Inventory',
+        'text'=> 'Digital Vehicle Inventory Templates: 1. Vehicle Inventory Template; 2. Pre-delivery Inspection Checklist; 3. PDI Report Checklist.',
+        'url' => '#',
+        'moreText' => 'Find out more'],
+    ['srcset' => ['resources-safety.png','resources-safety@2x.png'],
+        'title' => 'Lifeguard Audit',
+        'text'=> 'Easy and accurate fixed assets auditing using free templates: 1. Fixed Assets Audit Template; 2. Fixed Assets Internal Controls Checklist.',
+        'url' => '#',
+        'moreText' => 'Find out more'],
+        ['srcset' => ['resources-light-vehicle.png','resources-light-vehicle@2x.png'],
+        'title' => 'Food Truck Inspection',
+        'text'=> 'Download digital irrigation checklist for more efficient irrigation audits and help more clients conserve water in their own landscape properties. ',
+        'url' => '#',
+        'moreText' => 'Find out more'],
+    ['srcset' => ['resources-vehicle-inspection.png','resources-vehicle-inspection@2x.png'],
+        'title' => 'Vehicle Inventory',
+        'text'=> 'Digital Vehicle Inventory Templates: 1. Vehicle Inventory Template; 2. Pre-delivery Inspection Checklist; 3. PDI Report Checklist.',
+        'url' => '#',
+        'moreText' => 'Find out more'],
+    ['srcset' => ['resources-safety.png','resources-safety@2x.png'],
+        'title' => 'Lifeguard Audit',
+        'text'=> 'Easy and accurate fixed assets auditing using free templates: 1. Fixed Assets Audit Template; 2. Fixed Assets Internal Controls Checklist.',
+        'url' => '#',
+        'moreText' => 'Find out more'],
+
+    ]
+
+    ])
+    @include('components.product.bottom_form',[
+   'heading' =>'Want to use Lumiform your way?',
+   'sectionBg' =>'blue',
+   'buttonBg' =>'blue-dark',
+   'image' =>'img/group-2527.png',
+   'srcset' =>['group-2527.png','group-2527@2x.png']
+   ])
 @endsection

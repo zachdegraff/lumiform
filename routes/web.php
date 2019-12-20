@@ -67,5 +67,6 @@ foreach (config("app.locales") as $localeSlug => $locale) {
                 });
 
             Route::view(__("pricing", [], $locale), 'pages/pricing')->name('.pricing');
+            Route::view(__("about", [], $locale), 'pages/about')->name('.about');
         });
 }

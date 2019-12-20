@@ -1010,6 +1010,10 @@ video {
   background-color: #E7EBED33;
 }
 
+.bg-grey-opacity {
+  background-color: rgba(150, 144, 165, 0.06);
+}
+
 .bg-grey-dark {
   background-color: #9690A5;
 }
@@ -1318,6 +1322,10 @@ video {
   background-color: #E7EBED33;
 }
 
+.hover\:bg-grey-opacity:hover {
+  background-color: rgba(150, 144, 165, 0.06);
+}
+
 .hover\:bg-grey-dark:hover {
   background-color: #9690A5;
 }
@@ -1624,6 +1632,10 @@ video {
 
 .focus\:bg-grey-light:focus {
   background-color: #E7EBED33;
+}
+
+.focus\:bg-grey-opacity:focus {
+  background-color: rgba(150, 144, 165, 0.06);
 }
 
 .focus\:bg-grey-dark:focus {
@@ -12298,8 +12310,127 @@ input::-webkit-inner-spin-button {
   outline: none;
 }
 
-.case__item {
+.case__studies .case__item {
   width: 500px;
+}
+
+.about__text {
+  width: 570px;
+}
+
+.circle__white {
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 0;
+}
+
+.circle__bg__white {
+  width: 400px;
+  position: relative;
+  padding-top: 45px;
+  height: 350px;
+}
+
+.team__item {
+  width: 450px;
+}
+
+.team__item .team__image {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 450px;
+}
+
+.gallery__left {
+  width: 392px;
+}
+
+.gallery__middle {
+  width: 1133px;
+}
+
+.gallery__right {
+  width: 376px;
+}
+
+.common__item {
+  width: 540px;
+  height: 400px;
+}
+
+.common__circle {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  z-index: 0;
+}
+
+.common__image {
+  height: 194px;
+}
+
+.common__text {
+  position: relative;
+  z-index: 2;
+}
+
+.item_first {
+  width: 512px;
+}
+
+.item_first .focus__text {
+  width: 400px;
+}
+
+.item_second {
+  width: 385px;
+}
+
+.item_second .focus__text {
+  width: 275px;
+}
+
+.item_third {
+  width: 485px;
+}
+
+.item_third .focus__text {
+  width: 370px;
+}
+
+.item__icon img {
+  width: 72px;
+}
+
+.control__left {
+  width: 390px;
+}
+
+.control__middle {
+  width: 340px;
+}
+
+.control__right {
+  width: 340px;
+}
+
+.control__icon {
+  width: 70px;
+}
+
+.steps .issue__item--bg {
+  background-size: 240px 240px;
+  background-position-y: top;
+  background-position-x: left;
+}
+
+.steps .issue__item--bg {
+  min-height: 240px;
 }
 
 @media (max-width: 1660px) {
@@ -12830,6 +12961,10 @@ input::-webkit-inner-spin-button {
     background-color: #E7EBED33;
   }
 
+  .sm\:bg-grey-opacity {
+    background-color: rgba(150, 144, 165, 0.06);
+  }
+
   .sm\:bg-grey-dark {
     background-color: #9690A5;
   }
@@ -13138,6 +13273,10 @@ input::-webkit-inner-spin-button {
     background-color: #E7EBED33;
   }
 
+  .sm\:hover\:bg-grey-opacity:hover {
+    background-color: rgba(150, 144, 165, 0.06);
+  }
+
   .sm\:hover\:bg-grey-dark:hover {
     background-color: #9690A5;
   }
@@ -13444,6 +13583,10 @@ input::-webkit-inner-spin-button {
 
   .sm\:focus\:bg-grey-light:focus {
     background-color: #E7EBED33;
+  }
+
+  .sm\:focus\:bg-grey-opacity:focus {
+    background-color: rgba(150, 144, 165, 0.06);
   }
 
   .sm\:focus\:bg-grey-dark:focus {
@@ -23410,6 +23553,10 @@ input::-webkit-inner-spin-button {
     background-color: #E7EBED33;
   }
 
+  .md\:bg-grey-opacity {
+    background-color: rgba(150, 144, 165, 0.06);
+  }
+
   .md\:bg-grey-dark {
     background-color: #9690A5;
   }
@@ -23718,6 +23865,10 @@ input::-webkit-inner-spin-button {
     background-color: #E7EBED33;
   }
 
+  .md\:hover\:bg-grey-opacity:hover {
+    background-color: rgba(150, 144, 165, 0.06);
+  }
+
   .md\:hover\:bg-grey-dark:hover {
     background-color: #9690A5;
   }
@@ -24024,6 +24175,10 @@ input::-webkit-inner-spin-button {
 
   .md\:focus\:bg-grey-light:focus {
     background-color: #E7EBED33;
+  }
+
+  .md\:focus\:bg-grey-opacity:focus {
+    background-color: rgba(150, 144, 165, 0.06);
   }
 
   .md\:focus\:bg-grey-dark:focus {
@@ -33990,6 +34145,10 @@ input::-webkit-inner-spin-button {
     background-color: #E7EBED33;
   }
 
+  .lg\:bg-grey-opacity {
+    background-color: rgba(150, 144, 165, 0.06);
+  }
+
   .lg\:bg-grey-dark {
     background-color: #9690A5;
   }
@@ -34298,6 +34457,10 @@ input::-webkit-inner-spin-button {
     background-color: #E7EBED33;
   }
 
+  .lg\:hover\:bg-grey-opacity:hover {
+    background-color: rgba(150, 144, 165, 0.06);
+  }
+
   .lg\:hover\:bg-grey-dark:hover {
     background-color: #9690A5;
   }
@@ -34604,6 +34767,10 @@ input::-webkit-inner-spin-button {
 
   .lg\:focus\:bg-grey-light:focus {
     background-color: #E7EBED33;
+  }
+
+  .lg\:focus\:bg-grey-opacity:focus {
+    background-color: rgba(150, 144, 165, 0.06);
   }
 
   .lg\:focus\:bg-grey-dark:focus {
@@ -44570,6 +44737,10 @@ input::-webkit-inner-spin-button {
     background-color: #E7EBED33;
   }
 
+  .xl\:bg-grey-opacity {
+    background-color: rgba(150, 144, 165, 0.06);
+  }
+
   .xl\:bg-grey-dark {
     background-color: #9690A5;
   }
@@ -44878,6 +45049,10 @@ input::-webkit-inner-spin-button {
     background-color: #E7EBED33;
   }
 
+  .xl\:hover\:bg-grey-opacity:hover {
+    background-color: rgba(150, 144, 165, 0.06);
+  }
+
   .xl\:hover\:bg-grey-dark:hover {
     background-color: #9690A5;
   }
@@ -45184,6 +45359,10 @@ input::-webkit-inner-spin-button {
 
   .xl\:focus\:bg-grey-light:focus {
     background-color: #E7EBED33;
+  }
+
+  .xl\:focus\:bg-grey-opacity:focus {
+    background-color: rgba(150, 144, 165, 0.06);
   }
 
   .xl\:focus\:bg-grey-dark:focus {
@@ -55150,6 +55329,10 @@ input::-webkit-inner-spin-button {
     background-color: #E7EBED33;
   }
 
+  .xxl\:bg-grey-opacity {
+    background-color: rgba(150, 144, 165, 0.06);
+  }
+
   .xxl\:bg-grey-dark {
     background-color: #9690A5;
   }
@@ -55458,6 +55641,10 @@ input::-webkit-inner-spin-button {
     background-color: #E7EBED33;
   }
 
+  .xxl\:hover\:bg-grey-opacity:hover {
+    background-color: rgba(150, 144, 165, 0.06);
+  }
+
   .xxl\:hover\:bg-grey-dark:hover {
     background-color: #9690A5;
   }
@@ -55764,6 +55951,10 @@ input::-webkit-inner-spin-button {
 
   .xxl\:focus\:bg-grey-light:focus {
     background-color: #E7EBED33;
+  }
+
+  .xxl\:focus\:bg-grey-opacity:focus {
+    background-color: rgba(150, 144, 165, 0.06);
   }
 
   .xxl\:focus\:bg-grey-dark:focus {
