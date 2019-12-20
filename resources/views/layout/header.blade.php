@@ -143,7 +143,7 @@
                            class="flex items-center justify-between"><span>@lang("Customer stories")</span> </a>
                     </li>
                     <li class="sub__menu--item">
-                        <a href="javascript:void(0)"
+                        <a href="@urlTo('resources.contact')"
                            class="flex items-center justify-between"><span>@lang("Contact sales")</span> </a>
                     </li>
 
