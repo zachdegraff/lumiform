@@ -59,7 +59,7 @@
 </nav>--}}
 
 
-<nav class="container mx-auto flex items-center sm:px-10">
+<nav class="container mx-auto flex items-center">
     <div class="logo mr-auto">
         <a href="@urlTo('index')" class="h-6">
             <img src="{{asset('img/logo.png')}}" alt="">
@@ -154,7 +154,7 @@
             </div>
         </li>
         <li><a class="nav__item flex" href="@urlTo('pricing')">@lang("Pricing")</a></li>
-        <li><a class="nav__item nav__login flex" href="">@lang("Log In")</a></li>
-        <li><a href="" class="btn__red--rounded flex">@lang("Try for FREE")</a></li>
+        <li><a class="nav__item nav__login flex" href="javascript:void(0)">@lang("Log In")</a></li>
+        <li><a href="javascript:void(0)" class="btn__red--rounded flex nav__register">@lang("Try for FREE")</a></li>
     </ul>
 </nav>

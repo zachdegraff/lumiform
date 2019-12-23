@@ -12708,6 +12708,68 @@ input::-webkit-inner-spin-button {
   }
 }
 
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 99;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.57);
+  /* Black w/ opacity */
+}
+
+.modal-content {
+  position: absolute;
+  top: -1000px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+  max-width: 515px;
+  border-radius: 20px;
+  margin: 0 auto;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.modal-content img {
+  max-height: 26px;
+  width: auto;
+}
+
+.modal-content input {
+  height: 70px;
+  border-radius: 20px;
+  background: #ffffff;
+  border: 1px solid #AAAAAA;
+  outline: none;
+}
+
+.input__raw .input__group {
+  max-width: 200px;
+}
+
+.modal-content.modal-opened {
+  top: 15%;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.sign-up {
+  text-decoration: underline;
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;

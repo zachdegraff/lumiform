@@ -20,6 +20,8 @@
 <div class="content wrapper">
     @yield("content")
 </div>
+@include('components.auth.login')
+@include('components.auth.signup')
 <footer class="pt-16">
     @include("layout/footer")
 </footer>
@@ -58,6 +60,43 @@
             subItem.classList.add('active')
         }
     }
+    /* Start Login/Register logic*/
+    let regModal = document.getElementById("signUp");
+    let regContent = document.querySelector("#signUp .modal-content");
+    let regBtn = document.querySelector(".nav__register");
+    let loginModal = document.getElementById("logIn");
+    let loginContent = document.querySelector("#logIn .modal-content");
+    let loginBtn = document.querySelector(".nav__login");
+    let signUp = document.querySelector(".sign-up");
+    let signIn = document.querySelector(".sign-in");
+
+    function openModal(target,content){
+        content.classList.add('modal-opened');
+        target.style.display = "block";
+    }
+    regBtn.onclick = function () {openModal (regModal,regContent)};
+    loginBtn.onclick = function () { openModal (loginModal,loginContent)};
+    function hideModal(target,content){
+        content.classList.remove('modal-opened');
+        target.style.display = "none";
+    }
+    signUp.onclick = function (){
+        hideModal(loginModal,loginContent);
+        openModal (regModal,regContent)
+    };
+    signIn.onclick = function (){
+        openModal (loginModal,loginContent);
+        hideModal (regModal,regContent)
+    };
+    window.onclick = function (event) {
+
+        if (event.target == regModal) {
+            hideModal(regModal,regContent)
+        }else if(event.target == loginModal) {
+            hideModal(loginModal,loginContent)
+        }
+    }
+    /* End Login/Register logic*/
 </script>
 <script src="{{asset('js/app.js')}}"></script>
 </body>
