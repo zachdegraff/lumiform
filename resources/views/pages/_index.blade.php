@@ -5,9 +5,11 @@
 @section("content")
     <section id="home__banner">
         <div class="container mx-auto flex">
-            <div class="banner__left md:flex-2  lg:flex-1 py-16 md:py-32">
-                <h1 class="mb-5 text-20 text-primary md:text-70 font-cocogoose font-extrabold uppercase tracking-normal leading-tight">@lang('A new, easy way for inspections AND audits')</h1>
-                <p class="font-din text-30 font-light text-secondary mb-32">@lang('Equip your team with the Lumiform app and brighten up your quality and
+            <div class="banner__left py-32 w-5/12">
+                <h1 class="mb-5 text-20 text-primary md:text-70 font-cocogoose font-extrabold uppercase tracking-normal leading-tight">
+                    @lang('A new, easy way for inspections AND audits')
+                </h1>
+                <p class="font-din text-30 font-light text-secondary mb-32 w-11/12">@lang('Equip your team with the Lumiform app and brighten up your quality and
                     safety workflows.')</p>
                 @include('components.product.banner_form')
             </div>
@@ -16,44 +18,13 @@
             </div>
         </div>
     </section>
-    <section id="home__trusted">
-        <div class="container mx-auto ">
-            <h4 class="section__title mb-5">@lang('Trusted by forward-thinking of all shapes and sizes')</h4>
-            <div class="flex items-center justify-between trusted__gallery flex-wrap md:flex-no-wrap">
-                <div class="gallery__item">
-                    <img src="{{asset('img/back-factory.png')}}" alt="">
-                </div>
-                <div class="gallery__item">
-                    <img src="{{asset('img/helbing.png')}}" alt="">
-                </div>
-                <div class="gallery__item">
-                    <img src="{{asset('img/beumer.png')}}" alt="">
-                </div>
-                <div class="gallery__item">
-                    <img src="{{asset('img/burger.png')}}" alt="">
-                </div>
-                <div class="gallery__item">
-                    <img src="{{asset('img/rectangle-1.png')}}" alt="">
-                </div>
-                <div class="gallery__item">
-                    <img src="{{asset('img/tatar.png')}}" alt="" class="fixed-height">
-                </div>
-                <div class="gallery__item">
-                    <img src="{{asset('img/oetker.png')}}" alt="">
-                </div>
-                <div class="gallery__item">
-                    <img src="{{asset('img/doco.png')}}" alt="">
-                </div>
-                <div class="gallery__item">
-                    <img src="{{asset('img/pizza-hut.png')}}" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="home__procedure" class="py-10 lg:pt-16 xxl:pt-32 lg:pb-20 xxl:pb-48">
+    @include('components.use-cases.section_companies',['fontSize' => 'text-20','bgColor' => 'grey-light'])
+    <section id="home__procedure" class="py-10 lg:pt-16 xxl:pt-28 lg:pb-20 xxl:pb-48">
         <div class="container mx-auto">
-            <h2 class="section__title-large lg:mb-16 xxl:mb-32 text-center">@lang('AN intuitive app for all quality and safety procedures')</h2>
-            <div class="procedure__content flex">
+            <h2 class="mb-32 text-center text-50 font-cocogoose font-black leading-none tracking-text uppercase text-light-blue">
+                @lang('AN intuitive app for  all quality and safety procedures')
+            </h2>
+            <div class="procedure__content flex pt-5">
                 <div class="w-2/2 mx-auto mt-5  lg:w-3/5 xl:w-2/5">
                     <ul class="list--circle__check mb-20 md:mx-auto">
                         <li>@lang('Create customised forms in minutes')</li>
@@ -78,8 +49,8 @@
         <div class="container mx-auto">
             <div class="case__items w-10/12 mx-auto">
                 <div class="case__item flex mt-24 justify-between">
-                    <div class="item__text w-7/12">
-                        <h6 class="item__heading mb-5 text-green">@lang('Improve quality and safety')</h6>
+                    <div class="item__text ">
+                        <h6 class="text-50 font-cocogoose font-black tracking-middle leading-none uppercase mb-5 text-green">@lang('Improve quality and safety')</h6>
                         <p>@lang('Your reputation is everything – preserve it. Don’t just digitise your inspections and audits: continuously optimise procedures.')</p>
                     </div>
                     <div class="item__image">
@@ -87,7 +58,7 @@
                     </div>
                 </div>
                 <div class="case__item reversed flex mt-24 justify-between">
-                    <div class="item__text w-7/12">
+                    <div class="item__text ">
                         <h6 class="item__heading mb-5 text-gold">@lang('Save time and money')</h6>
                         <p>@lang('Cut your inspection time by up to half, resolve issues up to four times faster, get customised reports that are generated fully automatically, and uncover underperforming areas in a snap.')</p>
                     </div>
@@ -100,10 +71,14 @@
         </div>
     </section>
     <section id="home__start">
-        <div class="container mx-auto flex align-baseline md:pb-10 lg:pb-24">
+        <div class="container mx-auto flex align-baseline ">
             <div class="start__text w-full md:w-3/5 md:w-2/3 md:mx-auto md:text-center lg:w-2/5">
-                <h3 class="md:text-center section__title-large mb-10 lg:text-left">@lang('Start right away, with ready-to-use checklists')</h3>
-                <p class="mb-24">@lang('Lumiform provides free, ready-to-use templates that you can further customise, to enable you to start industry-proofed checklists within minutes.')</p>
+                <h3 class="md:text-center text-50 font-cocogoose uppercase leading-none tracking-middle mb-10 lg:text-left">
+                    @lang('Start right away, with ready-to-use checklists')
+                </h3>
+                <p class="mb-24">
+                    @lang('Lumiform provides free, ready-to-use templates that you can further customise, to enable you to start industry-proofed checklists within minutes.')
+                </p>
                 <a href=""
                    class="flex items-center uppercase text-red text-center block text-17 lg:text-20 tracking-large my-5 lg:mt-10">
                     @lang('DISCOVER TEMPLATES')
@@ -120,9 +95,9 @@
     </section>
     <section id="home__learn">
         <div class="container mx-auto my-12 lg:my-24 xxl:my-48 ">
-            <div class="learn__text w-full md:w-2/3 mx-auto mb-12 lg:mb-32">
-                <h3 class="learn__heading mb-6">@lang('Learn and grow through inspiration')</h3>
-                <p>@lang('We offer you a wide range of inspiring options that show how companies use Lumiform to continuously improve their quality and safety procedures.')</p>
+            <div class=" w-full md:w-2/3 mx-auto mb-12 lg:mb-32">
+                <h3 class="text-50 font-cocogoose font-black text-primary uppercase text-center mb-5">@lang('Learn and grow through <span class="text-purple">inspiration</span>')</h3>
+                <p class="text-center font-din text-30 tracking-text font-light text-secondary">@lang('We offer you a wide range of inspiring options that show how companies use Lumiform to continuously improve their quality and safety procedures.')</p>
             </div>
 
 
@@ -175,9 +150,9 @@
    ]
    ])
     @include('components.product.bottom_form',[
-   'heading' =>'It’s easy to get started with Lumiform. And it’s free of charge..',
-   'sectionBg' =>'green-light',
-   'buttonBg' =>'green-dark',
+   'heading' =>'It’s easy to get started with Lumiform.',
+   'sectionBg' =>'green-opacity',
+   'buttonBg' =>'green',
    'image' =>'img/home-easy-img.png',
    ])
 

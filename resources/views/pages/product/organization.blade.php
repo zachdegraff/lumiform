@@ -3,16 +3,16 @@
 @section("head.title", __(""))
 
 @section("content")
-    <section id="organization__banner" class=" lg:pt-32 lg:pb-24 bg-grey relative">
+    <section id="organization__banner" class="py-20 bg-grey relative">
         <div class="container mx-auto flex">
-            <div class="banner__left lg:w-7/12 w-full ">
+            <div class="banner__left lg:w-7/12 w-full pt-12">
                 <h1 class="tracking-normal text-center lg:text-left text-40 xxl:text-70 mb-16 font-cocogoose uppercase font-extrabold">
                     @lang('Adapt to your complex organisation structure.')
                 </h1>
-                @include('components.product.banner_form')
+                @include('components.product.banner_form',['buttonText' => 'try for free'])
             </div>
-            <div class="banner__right--img hidden lg:block w-5/12 relative">
-                <img class="w-6/12" src="{{asset('img/bildschirm-foto.png')}}" srcset="
+            <div class="banner__right--img hidden lg:block w-5/12 flex">
+                <img  src="{{asset('img/bildschirm-foto.png')}}" srcset="
                                     {{asset('img/bildschirm-foto.png')}},
                                     {{asset('img/bildschirm-foto@2x.png')}} 2x" alt="">
             </div>
@@ -21,31 +21,22 @@
     </section>
     <section id="organization__orchestrate" class="py-12 lg:pt-40 lg:py-20">
         <div class="container mx-auto">
-            @include('components.product.image_text_horizontal',
-                   [
-                   'heading' => 'Orchestrate your organisation and teams ',
-                   'headingColor' => 'purple',
-                   'text' => 'Easily manage users, user roles, groups and locations, in order to customise Lumiform to suit your business and team structure.',
-                   'image' => 'group-3327.png',
-                   'reversed' => true,
-                   'srcset' => ['group-3327.png','group-3327@2x.png']
-                   ]
-                   )
-            <button class="button__base px-8 py-3 lg:py-5 mb-12 lg:mb-40 mx-auto">@lang('Get Lumiform FREE')</button>
+
             @include('components.product.image_text_horizontal',
                   [
-                  'heading' => 'Create users',
+                  'heading' => '<span class="text-50">Create users</span>',
                   'headingColor' => 'light-blue',
                   'text' => 'Easily manage users, user roles, groups and locations, in order to customise Lumiform to suit your business and team structure.',
                   'image' => 'group-3328.png',
                   'srcset' => ['group-3328.png','group-3328@2x.png']
                   ]
                   )
+            <button class="button__base px-8 py-3 lg:py-5 mx-auto">@lang('Get Lumiform FREE')</button>
         </div>
     </section>
     <section id="languages" class="py-12 lg:pb-24 lg:pt-32 bg-grey-light">
         <div class="container mx-auto">
-            <h2 class="font-bold text-center font-cocogoose text-primary text-30 lg:text-40  uppercase tracking-heading">
+            <h2 class="font-bold text-center font-cocogoose text-primary text-30 lg:text-50  uppercase tracking-heading">
                 @lang('Manage your <span class="text-green">language preferences</span>')
             </h2>
             <p class=" text-center font-light font-din text-20  text-secondary tracking-text mb-20">
@@ -81,10 +72,10 @@
             </div>
         </div>
     </section>
-    <section class="py-12 lg:py-40 with__border--bottom">
+    <section class="py-12 lg:py-28 with__border--bottom">
         <div class="container mx-auto">
-            <h2 class="font-bold text-center font-cocogoose text-light-blue text-30 lg:text-40 mb-5 uppercase tracking-heading">
-                @lang('Create highly customised user roles')
+            <h2 class="font-bold text-center font-cocogoose text-primary text-30 lg:text-50 mb-5 uppercase tracking-heading">
+                @lang('highly customised user roles')
             </h2>
             <p class=" text-center font-light font-din text-20 lg:text-30  text-secondary tracking-text mb-32">
                 @lang('Create highly individualised user roles, and determine the granular permissions for each role.')
@@ -112,7 +103,7 @@
                     'items' => ['Manage sites','Manage invoices'],
                 ])
             </div>
-            <p class="text-30 font-light font-din text-secondary my-24 text-center">@lang('… and many more')</p>
+            <p class="text-30 font-light font-din text-secondary my-30 text-center">@lang('… and many more')</p>
             <button class="button__base px-8 py-3 lg:py-5  mx-auto">@lang('Get Lumiform FREE')</button>
         </div>
     </section>

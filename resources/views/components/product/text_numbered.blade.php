@@ -33,6 +33,6 @@
 
     </div>
     <div class="digitise__item--image w-2/5 mx-auto">
-        <img src="{{asset('img/'.$image)}}" alt="" class="mx-auto">
+        <img src="{{asset('img/'.$image)}}" alt="" class="mx-auto" @if(isset($srcset))srcset="{{asset('img/'.$srcset[0])}},{{asset('img/'.$srcset[1])}} 2x" @endif>
     </div>
 </div>

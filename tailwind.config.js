@@ -67,6 +67,8 @@ module.exports = {
                 'purple': '#8D5FD6',
                 'purple-light': '#B090E3',
                 'purple-extralight': 'rgba(141,95,214,0.1)',
+                'green': '#00c389',
+                'green-opacity': '#00c389c2',
                 'green-light': '#0EAE8F',
                 'green-extralight': '#00c389',
                 'green-dark': '#02A871',
@@ -92,11 +94,15 @@ module.exports = {
                 '70': '70px',
                 '50': '50px',
                 '40': '40px',
+                '38': '38px',
+                '34': '34px',
                 '30': '30px',
                 '25': '25px',
+                '24': '24px',
                 '20': '20px',
                 '18': '18px',
                 '17': '17px',
+                '16': '16px',
                 '15': '15px',
                 '12': '12px',
             },
@@ -135,6 +141,7 @@ module.exports = {
             letterSpacing: {
                 'heading': '1.2px',
                 'text': '0.3px',
+                'middle': '0.5px',
                 'large': '2px'
             },
             lineHeight: {

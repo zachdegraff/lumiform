@@ -1,18 +1,52 @@
-<nav class="container mx-auto flex justify-between pb-24 flex-wrap lg:flex-no-wrap">
+<nav class="container mx-auto flex justify-between pb-24 flex-wrap lg:flex-no-wrap relative">
     <div class="w-1/2 md:w-1/3 lg:w-auto mb-5">
         <h5 class="mb-8">{{ __('Language') }}</h5>
-        <select id="languageSwitcher">
-            <option value="en" @if (App::getLocale() === "en") selected @endif
-            style="background-image: url('{{asset('img/arrow-right-long-red.svg')}}')">{{ __('English') }}</option>
-            <option value="de" @if (App::getLocale() === "de") selected @endif >{{ __('German') }}</option>
-        </select>
+        <div class="relative">
+
+            <div class="custom_select">
+                <div class="select" style="background-image: url('../img/icons/{{app()->getLocale()}}.svg')">
+                    {{app()->getLocale() === "en" ? __('English') :  __('German') }}
+                </div>
+                <div class="options">
+                    <div class="language flex items-center" data-lang="en" onclick="selectLanguage(this)">
+                        <img src="{{asset('img/icons/en.svg')}}" alt="{{ __('English') }}" class="mr-5">
+                        {{ __('English') }}
+                    </div>
+                    <div class="language flex items-center" data-lang="de" onclick="selectLanguage(this)">
+                        <img src="{{asset('img/icons/de.svg')}}" alt="{{ __('German') }}" class="mr-5">
+                        {{ __('German') }}
+                    </div>
+                </div>
+
+            </div>
+            <select id="languageSwitcher" class="relative" style="display: none" name="language">
+                <option value="en" @if (App::getLocale() === "en") selected @endif >{{ __('English') }}</option>
+                <option value="de" @if (App::getLocale() === "de") selected @endif >{{ __('German') }}</option>
+            </select>
+        </div>
         <script>
-            document.getElementById('languageSwitcher').addEventListener('change', function(event) {
+            let select = document.querySelector('.select');
+
+            function selectLanguage(target) {
+                let lang = target.dataset.lang;
+                location.href = '/' + (lang === 'en' ? '' : lang);
+            }
+
+            select.addEventListener('click', function (event) {
+                console.log(event)
+                if (event.target.parentElement.classList.contains('open')) {
+                    event.target.parentElement.classList.remove('open')
+                } else {
+                    event.target.parentElement.classList.add('open')
+                }
+            })
+        </script>
+        <script>
+            document.getElementById('languageSwitcher').addEventListener('change', function (event) {
                 location.href = '/' + (event.target.value === 'en' ? '' : event.target.value);
             });
         </script>
     </div>
-
     <div class="w-1/2 md:w-1/3 lg:w-auto mb-5">
         <h5 class="mb-8">{{ __('Lumiform') }}</h5>
         <ul>
@@ -72,6 +106,9 @@
             <li><a href="">{{ __('Privacy') }}</a></li>
         </ul>
     </div>
+    <img src="{{asset('img/footer-img.png')}}" alt=""
+         srcset="{{asset('img/footer-img.png')}},{{asset('img/footer-img@2x.png')}} 2x"
+         class="footer__image">
 </nav>
 <div class="copyrights">
     <p><span>©2018-2019</span>{{__(' ALL RIGHTS RESERVED. LUMIFORM® IS A REGISTERED TRADEMARK OF ZYP.ONE GMBH.')}}</p>

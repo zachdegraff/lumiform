@@ -7,7 +7,7 @@
         <div class="container mx-auto flex">
             <div class="banner__left lg:w-1/2 w-full">
                 <h1 class="tracking-normal text-center lg:text-left text-40 xxl:text-70 mb-16 font-cocogoose uppercase font-extrabold">@lang('Extremely powerful.')</h1>
-                @include('components.product.banner_form')
+                @include('components.product.banner_form',['buttonText' => 'try for free'])
             </div>
             <div class="banner__right hidden lg:block absolute top-0 right-0">
                 <img src="{{asset('img/landing-page-devices.svg')}}" alt="">
@@ -15,14 +15,14 @@
         </div>
 
     </section>
-    <section id="how__works" class="py-16 lg:pt-48 lg:pb-40">
+    <section id="how__works" class="py-32 ">
         <div class="container mx-auto">
-            <h2 class="font-bold text-center font-cocogoose text-light-blue text-30 lg:text-40 mb-3 uppercase tracking-heading">@lang('How Lumiform works')</h2>
-            <p class="font-light text-center font-din md:text-20 lg:text-30 text-secondary tracking-text mb-10 lg:mb-40">@lang('Make sure you’re mastering the whole process – from flexible form building to fast problem solving to in depth analysis.')</p>
+            <h2 class="font-bold text-center font-cocogoose text-primary text-30 lg:text-40 mb-3 uppercase tracking-heading">@lang('How Lumiform works')</h2>
+            <p class="font-light text-center font-din md:text-20 lg:text-30 text-secondary tracking-text mb-24">@lang('Make sure you’re mastering the whole process – from flexible form building to fast problem solving to in depth analysis.')</p>
         </div>
         <div class="container mx-auto">
             <div id="tab" class="px-5 lg:px-0">
-                <div class="mx-auto tab__header flex-wrap sm:flex-no-wrap h-auto sm:h-40 md:h-70 flex md:text-15 lg:text-20 rounded-l-20 rounded-r-20 mb-12 lg:mb-48">
+                <div class="mx-auto tab__header flex-wrap sm:flex-no-wrap h-auto sm:h-40 md:h-70 flex md:text-15 lg:text-20 rounded-l-20 rounded-r-20 mb-12 lg:mb-24">
                     <div class="header__item flex sm:flex-none sm:w-auto justify-center items-center w-1/2  py-2 px-2 md:py-5 md:px-5 xxl:px-24 font-cocogoose font-bold text-secondary active"
                          onclick="openTab(this)" data-index="0">@lang('Create forms')</div>
                     <div class=" header__item flex sm:flex-none sm:w-auto justify-center items-center w-1/2  py-2 px-2 md:py-5 md:px-5 xxl:px-24 font-cocogoose font-bold text-secondary"
@@ -46,7 +46,7 @@
                     'isActive' => false,
                     'textColor' => 'primary',
                     'heading' => '<span class="text-purple">Conduct quickly and reliably</span>, whenever and wherever you need to.',
-                    'text' => 'Conduct inspections and audits, whether on a tablet or smartphone, Android or iOS – online or offline. The highly intuitive and easy-to-use app guides you through all checks.. Or, start from scratch and convert manual hard copies or excel lists into digital checklists.',
+                    'text' => 'Conduct inspections and audits, whether on a tablet or smartphone, Android or iOS – online or offline. The highly intuitive and easy-to-use app guides you through all checks. ',
                     'discoverText' => 'Discover how to conduct via the intuitive app',
                     'image' => 'img/group-916.svg',
                     'urlTo' => 'product.conduct'])
@@ -74,9 +74,9 @@
                class="mx-auto mt-8 base__button font-extrabold bg-red text-white uppercase font-cocogoose text-xl h-70 px-8 rounded-20 items-center flex">@lang('Get Lumiform FREE')</a>
         </div>
     </section>
-    <section id="flow" class="py-12 lg:py-32 bg-grey-light">
+    <section id="flow" class="py-12 lg:py-28 bg-grey-light">
         <div class="container mx-auto">
-            <h2 class="font-bold text-center font-cocogoose text-primary text-30 lg:text-40 mb-8 lg:mb-20 uppercase tracking-heading">@lang('The Lumiform flow')</h2>
+            <h2 class="font-bold text-center font-cocogoose text-primary text-30 lg:text-50 mb-8 lg:mb-8 uppercase tracking-heading">@lang('The Lumiform flow')</h2>
             <p class="px-16 text-center font-light font-din text-20 lg:text-30 text-secondary tracking-text mb-32">
                 @lang('Digitise all quality and safety efforts, and cut down inspection time, with the Lumiform app. And, even more importantly, continuously optimise your quality and safety operations easily, with the Lumiform flow.')
             </p>

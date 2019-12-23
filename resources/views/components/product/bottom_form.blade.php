@@ -1,6 +1,6 @@
 <section id="easy" class="pt-12 lg:pt-32 bg-{{$sectionBg}}">
     <div class="container mx-auto">
-        <h3 class="text-white text-40 font-extrabold uppercase font-cocogoose md:mx-auto text-center mb-5 lg:mb-20 tracking-heading"
+        <h3 class="text-white text-50 font-extrabold uppercase font-cocogoose md:mx-auto text-center mb-5 lg:mb-20 tracking-heading"
         >{!! $heading !!}</h3>
         <div class="easy__content flex justify-between">
 
@@ -20,11 +20,11 @@
 
             <div class="easy__submit w-full  lg:w-5/12">
                 <form action="">
-                    <div class="home__banner--email flex flex-col justify-center  md:flex-row lg:justify-between mb-8">
+                    <div class="home__banner--email flex flex-col justify-center  md:flex-row  mb-8">
 
                         <input class="pl-8 w-360  " type="email"
                                placeholder="{{__('Enter e-mail address')}}">
-                        <button class="mx-auto mt-5 md:mt-0 w-290   bg-{{$buttonBg}} tracking-large font-extrabold text-white uppercase font-cocogoose text-17 lg:text-20 h-70  rounded-20 items-center justify-center flex">@lang('Get Lumiform FREE')</button>
+                        <button class=" mt-5 md:mt-0 ml-3 bg-{{$buttonBg}} tracking-large font-extrabold text-white uppercase font-cocogoose px-8 text-17 lg:text-20 h-70  rounded-20 items-center justify-center flex">@lang('Try for free')</button>
                     </div>
                 </form>
                 <div class="banner__signin">

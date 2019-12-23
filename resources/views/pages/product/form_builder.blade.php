@@ -5,20 +5,22 @@
 @section("content")
     <section id="form__banner" class="py-10 lg:pt-32 lg:pb-24 bg-blue-light relative">
         <div class="container mx-auto flex">
-            <div class="banner__left  w-full">
-                <h1 class="tracking-normal text-center lg:text-left text-40 xxl:text-70 mb-16 font-cocogoose uppercase font-extrabold">
+            <div class="banner__left  w-5/12">
+                <h1 class="tracking-normal leading-none text-center lg:text-left text-40 xxl:text-70 mb-16 font-cocogoose uppercase font-extrabold">
                     @lang('Create custom forms in minutes.')
                 </h1>
-                @include('components.product.banner_form')
+                @include('components.product.banner_form',['buttonText' => 'try for free'])
             </div>
-
+            <div class="banner__right hidden lg:block absolute top-0 right-0 mt-10">
+                <img src="{{asset('img/form-builder-banner.png')}}" alt="" srcset="{{asset('img/form-builder-banner.png')}},{{asset('img/form-builder-banner@2x.png')}} 2x">
+            </div>
         </div>
 
     </section>
     <section id="digitise" class="py-12 lg:py-24">
         <div class="container mx-auto">
-            <h2 class="font-bold text-center font-cocogoose text-primary text-30 xl:text-40 lg:mb-4 uppercase tracking-heading">
-                @lang('<span class="text-light-blue">Digitise</span> your custom forms')
+            <h2 class="font-bold text-center font-cocogoose text-primary text-30 xl:text-50 lg:mb-4 uppercase tracking-heading">
+                @lang('Digitise your<span class="text-light-blue"> custom forms</span>')
             </h2>
             <p class="sm:px-16 text-center font-light font-din text-20 lg:text-30 text-secondary tracking-text mb-24">
                 @lang('Create a check queries form by typing a statement or question and then defining the type of response.')
@@ -29,13 +31,14 @@
                 'heading' => 'Define the <span class="text-light-blue">query</span>',
                 'headingColor' => 'primary',
                 'text' => 'Type in a question or statement to be displayed to the inspector in the field.',
-                'image' => 'group-2699.svg',
+                'image' => 'group-2699.png',
+                'srcset' => ['group-2699.png','group-2699@2x.png'],
                 ]
                 )
                 <div class="digitise__item flex flex-wrap lg:flex-no-wrap justify-between">
-                    <div class="digitise__item--text  sm:w-full lg:w-4/12 sm:pr-12 lg:pr-20 flex flex-col justify-center">
-                        <h3 class="lg:text-30 font-bold font-cocogoose uppercase mb-5 text-grey-light text-center sm:text-left">
-                            @lang('Define the <span class="text-purple">response</span>')
+                    <div class="digitise__item--text  sm:w-full lg:w-4/12  flex flex-col justify-center">
+                        <h3 class="lg:text-38 font-bold font-cocogoose uppercase mb-5 text-grey-light text-center sm:text-left">
+                            @lang('Define the <span class="text-gold">response</span>')
                         </h3>
                         <p class="text-secondary font-hairline lg:text-30 font-din text-center sm:text-left">
                             @lang('Define how the inspector should answer the question or statement in the field.')
@@ -43,7 +46,7 @@
                     </div>
                     <div class="digitise__item--image  w-7/12 flex flex-wrap justify-between">
                         @include('components.product.icons_raw',[
-                            'text' => 'Multiple Choice',
+                            'text' => 'Multiple <br> Choice',
                             'image' => 'group-1261.svg',
                             'class' => 'w-1/5 mb-20',
                             ])
@@ -102,8 +105,8 @@
     <section id="workflow" class="py-12 lg:pt-24 lg:py-32">
 
         <div class="container mx-auto">
-            <h2 class="font-bold text-center font-cocogoose text-primary text-30 mb-5 lg:text-40 lg:mb-24 uppercase tracking-heading">
-                @lang('Create logics and <span class="text-green">define workflows</span>')
+            <h2 class="font-bold text-center font-cocogoose text-primary text-30 mb-5 lg:text-50 lg:mb-24 uppercase tracking-heading">
+                @lang('Create<span class="text-green"> logics</span> and define<span class="text-green"> workflows</span>')
             </h2>
             <div class="workflow__items">
                 @include('components.product.image_text_horizontal',
@@ -120,7 +123,8 @@
                'heading' => 'Automatic issue logics',
                'headingColor' => 'green',
                'text' => 'Predefine issues that the system triggers automatically when receiving a specific response. For example, notify the technician automatically if the coffee machine is damaged.',
-               'image' => 'rect-515.svg',
+               'image' => 'group-5037.png',
+               'srcset' => ['group-5037.png','group-5037@2x.png'],
                'urlTo' => [
                'text' => 'LEARN MORE ABOUT issues',
                'url' => 'product.issues'
@@ -145,11 +149,11 @@
     <section id="forms" class="py-12 lg:pt-24 lg:py-32">
 
         <div class="container mx-auto">
-            <h2 class="font-bold text-center font-cocogoose text-primary text-30 lg:text-40 mb-5 lg:mb-20 uppercase tracking-heading">
-                @lang('<span class="text-gold">structure your forms</span> with sections and pages')
+            <h2 class="font-bold text-center font-cocogoose text-primary text-30 lg:text-50 mb-5 lg:mb-26 uppercase tracking-heading">
+                @lang('structure your forms with <span class="text-gold">sections and pages</span>')
             </h2>
             <div class="workflow__items">
-                <div class="sm:flex mb-12 lg:mb-40 ">
+                <div class="sm:flex mb-12 lg:mb-32">
                     <div class="digitise__item--text w-full sm:w-1/2 lg:w-2/5 sm:pr-12 lg:pr-20 flex flex-col justify-center">
                         <h3 class="text-center sm:text-left lg:text-30 font-bold font-cocogoose uppercase mb-5 text-light-blue">@lang('Create sections and pages')</h3>
                         <p class="text-center sm:text-left text-secondary font-hairline lg:text-30 font-din mb-5">
@@ -177,17 +181,19 @@
     </section>
     <section id="organise" class="py-12 lg:pt-24 lg:py-32">
         <div class="container mx-auto">
-            <h2 class="font-bold text-center font-cocogoose text-primary text-30 lg:text-40 lg:mb-20 mb-5 uppercase tracking-heading">
+            <h2 class="font-bold text-center font-cocogoose text-primary text-30 lg:text-50 lg:mb-20 mb-5 uppercase tracking-heading">
                 @lang('<span class="text-purple">Organise</span> your inspections')
             </h2>
             <div class="workflow__items">
                 <div class="sm:flex mb-12 lg:mb-40 ">
                     <div class="digitise__item--text w-full sm:w-1/2 lg:w-2/5 sm:pr-12 lg:pr-20 flex flex-col justify-center">
-                        <h3 class="text-center sm:text-left lg:text-30 font-bold font-cocogoose uppercase mb-10 text-gold">@lang('Schedule inspections')</h3>
-                        <p class="text-center sm:text-left text-secondary font-hairline lg:text-30 font-din mb-5">
+                        <h3 class="text-center sm:text-left lg:text-38 font-bold font-cocogoose uppercase mb-10 text-gold">
+                            @lang('Schedule inspections')
+                        </h3>
+                        <p class="text-center sm:text-left text-secondary font-hairline lg:text-30 font-din mb-10">
                             @lang('Define the timeframe in which inspectors should complete the assignment, and the cycle in which the check must be repeated.')
                         </p>
-                        <div class="define__block mt-5 sm:mt-24">
+                        <div class="define__block">
                             <h6 class="text-15 lg:text-20 font-bold font-cocogoose uppercase mb-5 text-grey-bold">
                                 @lang('DEFINE THE FOLLOWING PARAMETERS:')
                             </h6>
@@ -208,11 +214,12 @@
                 </div>
                 <div class="sm:flex mb-12 lg:mb-40">
                     <div class="digitise__item--text w-full lg:w-2/5 sm:pr-12 lg:pr-20 flex flex-col justify-center">
-                        <h3 class="text-center sm:text-left lg:text-30 font-bold font-cocogoose uppercase mb-5 text-purple">@lang('Assign inspections')</h3>
-                        <p class="text-center sm:text-left text-secondary font-hairline lg:text-30 font-din">
+                        <h3 class="text-center sm:text-left lg:text-38 font-bold font-cocogoose uppercase mb-5 text-purple">
+                            @lang('Assign inspections')</h3>
+                        <p class="text-center sm:text-left text-secondary font-hairline lg:text-30 font-din mb-10">
                             @lang('Assign inspections to users or groups (e.g. cleaning team) and select the site where it takes place.')
                         </p>
-                        <div class="define__block mt-5 sm:mt-24">
+                        <div class="define__block ">
                             <h6 class="text-15 lg:text-20 font-bold font-cocogoose uppercase mb-10 text-grey-bold">
                                 @lang('DEFINE THE FOLLOWING PARAMETERS:')
                             </h6>
@@ -247,7 +254,8 @@
         <div class="container mx-auto">
             <div class="sm:flex  sm:flex-row-reverse">
                 <div class="digitise__item--text w-full sm:w-1/2 lg:w-2/5 sm:pl-12 lg:pl-20 flex flex-col justify-center">
-                    <h3 class="text-center sm:text-left text-30 lg:text-40 font-bold font-cocogoose uppercase mb-5 text-red">@lang('Restrict the availability of forms')</h3>
+                    <h3 class="text-center sm:text-left text-30 lg:text-50 font-bold font-cocogoose uppercase mb-5 text-red">
+                        @lang('Restrict the availability of forms')</h3>
                     <p class="text-center sm:text-left text-secondary font-hairline text-20 lg:text-30 font-din mb-5 sm:mb-0">
                         @lang('Your checklist is available for all users in your organisation, per default, at any time. To limit the availability of unscheduled lists, you can make them available to individual users only.')</p>
                 </div>
@@ -259,7 +267,7 @@
     </section>
     <section id="features" class="py-12 lg:pt-24 lg:pb-32 bg-grey-light">
         <div class="container mx-auto">
-            <h2 class="font-bold text-center font-cocogoose text-primary text-30 lg:text-40 mb-4 uppercase tracking-heading">
+            <h2 class="font-bold text-center font-cocogoose text-primary text-30 lg:text-50 leading-none mb-4 uppercase tracking-heading">
                 @lang('We offer many more features to improve flexibility')
             </h2>
             <p class=" text-center font-light font-din text-20 lg:text-30 text-secondary tracking-text mb-16">
@@ -288,7 +296,7 @@
 
     </section>
     @include('components.product.bottom_form',[
-    'heading' =>'Use our easy-to-use form builder, and create your first form within minutes.',
+    'heading' =>'Use our easy-to-use form builder',
     'sectionBg' =>'blue',
     'buttonBg' =>'blue-dark',
     'image' =>'img/group-1960.svg',

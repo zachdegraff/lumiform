@@ -26,7 +26,7 @@
             <div class="bottom__right w-4/12 mx-auto rounded-full bg-grey-light">
                 <div class="mx-auto max-w-370 h-full flex flex-col justify-center py-16">
                     <p class="font-din text-20 font-light text-primary mb-10">{!! $companion['text'] !!}</p>
-                    <span class="text-base grey-bold font-hairline font-din mb-10">{!! $companion['info'] !!}</span>
+                    <span class="text-base grey-bold font-hairline font-din ">{!! $companion['info'] !!}</span>
                 </div>
             </div>
         </div>

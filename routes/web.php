@@ -1,5 +1,13 @@
 <?php
 
+use Illuminate\Http\Request;
+
+Route::post('/language',function (Request $request){
+
+   app()->setLocale($request->language);
+
+   return redirect()->back();
+})->name('language');
 foreach (config("app.locales") as $localeSlug => $locale) {
     Route::name($locale)
         ->prefix($localeSlug)

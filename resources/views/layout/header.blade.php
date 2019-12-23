@@ -67,7 +67,7 @@
     </div>
     <ul class="menu__items flex items-center">
         <li class="menu__item">
-            <a class="nav__item nav__item--arrow flex items-center"
+            <a class="nav__item flex items-center"
                href="@urlTo('product')"><span>@lang("Product")</span></a>
         </li>
 
