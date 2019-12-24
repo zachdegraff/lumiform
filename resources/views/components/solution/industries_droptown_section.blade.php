@@ -22,7 +22,7 @@
     <div class="w-7/12 flex flex-col py-8">
         @php $j = 0 @endphp
         @foreach($items as $image)
-            <div class="mx-auto">
+            <div class="ml-auto">
                 <img src="{{asset('img'.'/'.$image['srcset'][0])}}" alt=""
                      srcset="{{asset('img'.'/'.$image['srcset'][0])}},
                     {{asset('img'.'/'.$image['srcset'][1])}} 2x "

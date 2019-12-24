@@ -67,7 +67,7 @@
     <section class="py-24">
         <div class="container mx-auto">
             <h3 class="text-primary text-center uppercase text-40 font-cocogoose tracking-heading font-bold mb-32">
-                @lang('<span class="text-purple">Check all of your quality standards</span> with one app')
+                @lang('<span class="text-gold">All quality and safety inspections </span> with aN intuitive app')
             </h3>
             <div class="industry__icons flex justify-between flex-wrap">
                 @include('components.solution.industries_icon_list',[
@@ -99,7 +99,7 @@
         </div>
     </section>
     @include('components.solution.industries_bg_grey',[
-        'heading' => '<span class="text-green"> Make your workplace safer </span> while maximising compliance',
+        'heading' => 'Start with<span class="text-green"> FREE CHECKLISTS</span> for CONSTRUCTION',
         'text' =>  'Browse the Lumiform construction template library. Get started with expert-proofed checklists for construction businesses.',
         'items' => [
                 ['image' => 'inspections-osha-self-inspection.png','srcset' => ['inspections-osha-self-inspection.png','inspections-osha-self-inspection@2x.png'],'text' => 'Manager cleaning check'],

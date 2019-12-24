@@ -17,7 +17,7 @@
 
     </div>
 
-    <div class="w-0 sm:w-1/5 lg:w-6/12 tab__content--img">
+    <div class="w-0 sm:w-1/5 lg:w-6/12 tab__content--img flex justify-end">
         <img src="{{asset($image)}}" alt="" class="h-full w-auto mx-auto">
     </div>
 </div>

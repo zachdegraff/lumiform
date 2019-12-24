@@ -6,7 +6,8 @@
     <section id="product__banner" class="py-10 lg:pt-32 lg:pb-24 bg-grey relative">
         <div class="container mx-auto flex">
             <div class="banner__left lg:w-1/2 w-full">
-                <h1 class="tracking-normal text-center lg:text-left text-40 xxl:text-70 mb-16 font-cocogoose uppercase font-extrabold">@lang('Extremely powerful.')</h1>
+                <h1 class="tracking-normal text-center lg:text-left text-40 xxl:text-70 mb-16 font-cocogoose uppercase font-extrabold">
+                    @lang('Extremely powerful. Surprisingly simple.')</h1>
                 @include('components.product.banner_form',['buttonText' => 'try for free'])
             </div>
             <div class="banner__right hidden lg:block absolute top-0 right-0">
@@ -54,17 +55,17 @@
                     'isActive' => false,
                     'textColor' => 'red',
                     'heading' => 'Uncover more issues and  resolve them faster.',
-                    'text' => 'Make sure all field workers can quickly report quality and safety issues. Keep track of the troubleshooting progress and resolve problems together, with your teammates.. The highly intuitive and easy-to-use app guides you through all checks.. Or, start from scratch and convert manual hard copies or excel lists into digital checklists.',
+                    'text' => 'Make sure all field workers can quickly report quality and safety issues. Keep track of the troubleshooting progress and resolve problems together, with your teammates.',
                     'discoverText' => 'DISCOVER HOW TO SOLVE ISSUES QUICKLY',
-                    'image' => 'img/group-1433.svg',
+                    'image' => 'img/group-4610.png',
                     'urlTo' => 'product.issues'])
                     @include('components.product.tab_content',[
                     'isActive' => false,
-                    'textColor' => 'gold',
+                    'textColor' => 'green',
                     'heading' => 'Custom reports and  detailed analyses',
                     'text' => 'Audit reports are automatically created, so you don’t waste time on post-processing. Uncover areas of your organisation that need your attention, and continuously improve quality and security through in-depth analyses..',
                     'discoverText' => 'DISCOVER CUSTOM REPORTS AND ANALYSES',
-                    'image' => 'img/group-928.svg',
+                    'image' => 'img/group-4614.png',
                     'urlTo' => 'product.analysis'])
 
 

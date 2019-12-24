@@ -28,14 +28,16 @@
                 'heading' => 'Raise Issue',
                 'color' => 'red',
                 'image' => 'rise-image.svg',
+                'class' => 'first',
                 ])
                 @include('components.product.image_with_title',[
                 'heading' => 'Solve issue together',
                 'color' => 'green',
                 'image' => 'group-1374.svg',
+                 'class' => 'second',
                 ])
                 @include('components.product.image_with_title',[
-                'heading' => 'Get an overview',
+                'heading' => 'Track from Remote',
                 'color' => 'light-blue',
                 'image' => 'group-880.svg',
                 ])

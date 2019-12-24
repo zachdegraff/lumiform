@@ -185,8 +185,8 @@
                 @lang('<span class="text-purple">Organise</span> your inspections')
             </h2>
             <div class="workflow__items">
-                <div class="sm:flex mb-12 lg:mb-40 ">
-                    <div class="digitise__item--text w-full sm:w-1/2 lg:w-2/5 sm:pr-12 lg:pr-20 flex flex-col justify-center">
+                <div class="sm:flex mb-12 lg:mb-40 justify-between">
+                    <div class="digitise__item--text w-full sm:w-1/2 lg:w-5/12  flex flex-col justify-center">
                         <h3 class="text-center sm:text-left lg:text-38 font-bold font-cocogoose uppercase mb-10 text-gold">
                             @lang('Schedule inspections')
                         </h3>
@@ -208,12 +208,12 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="digitise__item--image w-1/2 lg:w-3/5 mx-auto">
+                    <div class="digitise__item--image w-1/2 lg:w-6/12 ">
                         <img src="{{asset('img/group-2711.svg')}}" alt="" class="mx-auto">
                     </div>
                 </div>
-                <div class="sm:flex mb-12 lg:mb-40">
-                    <div class="digitise__item--text w-full lg:w-2/5 sm:pr-12 lg:pr-20 flex flex-col justify-center">
+                <div class="sm:flex mb-12 lg:mb-40 justify-between">
+                    <div class="digitise__item--text w-full lg:w-5/12  flex flex-col justify-center">
                         <h3 class="text-center sm:text-left lg:text-38 font-bold font-cocogoose uppercase mb-5 text-purple">
                             @lang('Assign inspections')</h3>
                         <p class="text-center sm:text-left text-secondary font-hairline lg:text-30 font-din mb-10">
@@ -239,8 +239,8 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="digitise__item--image w-1/2 lg:w-3/5 mx-auto">
-                        <img src="{{asset('img/group-2712.svg')}}" alt="" class="mx-auto">
+                    <div class="digitise__item--image w-1/2 lg:w-6/12">
+                        <img src="{{asset('img/group-2712.svg')}}" alt="" class="mx-auto w-4/5">
                     </div>
                 </div>
 
@@ -252,14 +252,14 @@
     </section>
     <section id="restrict" class="py-12 lg:py-32">
         <div class="container mx-auto">
-            <div class="sm:flex  sm:flex-row-reverse">
-                <div class="digitise__item--text w-full sm:w-1/2 lg:w-2/5 sm:pl-12 lg:pl-20 flex flex-col justify-center">
+            <div class="sm:flex  sm:flex-row-reverse justify-between">
+                <div class="digitise__item--text w-full sm:w-1/2 lg:w-2/5  flex flex-col justify-center">
                     <h3 class="text-center sm:text-left text-30 lg:text-50 font-bold font-cocogoose uppercase mb-5 text-red">
                         @lang('Restrict the availability of forms')</h3>
-                    <p class="text-center sm:text-left text-secondary font-hairline text-20 lg:text-30 font-din mb-5 sm:mb-0">
+                    <p class="text-center sm:text-left text-secondary font-hairline text-20 lg:text-30 font-din mb-5 sm:mb-0 pr-8">
                         @lang('Your checklist is available for all users in your organisation, per default, at any time. To limit the availability of unscheduled lists, you can make them available to individual users only.')</p>
                 </div>
-                <div class="digitise__item--image w-1/2 lg:w-3/5 mx-auto">
+                <div class="digitise__item--image w-1/2 lg:w-2/5 ">
                     <img src="{{asset('img/group-2745.svg')}}" alt="" class="mx-auto">
                 </div>
             </div>
@@ -296,7 +296,7 @@
 
     </section>
     @include('components.product.bottom_form',[
-    'heading' =>'Use our easy-to-use form builder',
+    'heading' =>'Use our easy-to-use form builder,<span class="line__break"></span> and create your first form within minutes.',
     'sectionBg' =>'blue',
     'buttonBg' =>'blue-dark',
     'image' =>'img/group-1960.svg',

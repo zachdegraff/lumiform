@@ -1,6 +1,6 @@
 <section class="py-32 bg-grey-light">
     <div class="container mx-auto">
-        <h3 class="text-primary text-center uppercase text-40 font-cocogoose tracking-heading font-bold mb-6">
+        <h3 class="text-primary text-center uppercase text-50 font-cocogoose tracking-heading font-bold mb-6">
             {!! $heading !!}
         </h3>
         <p class="font-din font-light text-30 tracking-text text-secondary text-center mb-24">

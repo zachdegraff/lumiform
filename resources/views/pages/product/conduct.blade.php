@@ -111,18 +111,19 @@
     <section id="messages" class="py-12 lg:py-32 bg-grey-light">
         <div class="container mx-auto">
             <div class="flex items-center justify-around">
-                <h2 class="font-bold text-center font-cocogoose text-primary text-30 lg:text-30  uppercase tracking-heading">
+                <h2 class="font-bold text-center font-cocogoose text-primary text-30 lg:text-30 ml-4 uppercase tracking-heading">
                     @lang('CHOOSE BETWEEN <span class="text-light-blue"> TWO TYPES OF MESSAGES</span>')
                 </h2>
 
-
-                <div class="feature__item w-1/2 max-w-140 mx-5 text-center mb-2 sm:mb-0">
-                    <img src="{{asset('img/group-1402.svg')}}" alt="" class="mb-6 mx-auto">
-                    <span class="uppercase text-secondary text-12 lg:text-20 tracking-heading">@lang('Assignee')</span>
-                </div>
-                <div class="feature__item w-1/2 max-w-140 mx-5 text-center mb-2 sm:mb-0">
-                    <img src="{{asset('img/group-1262_1.svg')}}" alt="" class="mb-6 mx-auto">
-                    <span class="uppercase text-secondary text-12 lg:text-20 tracking-heading">@lang('Priority')</span>
+                <div class="w-5/12 flex message_items">
+                    <div class="feature__item w-1/2  text-center mb-2 sm:mb-0">
+                        <img src="{{asset('img/icons/notification-icon_gold.svg')}}" alt="" class="mb-6 mx-auto">
+                        <span class="uppercase text-secondary text-12 lg:text-20 tracking-heading">@lang('Push notification')</span>
+                    </div>
+                    <div class="feature__item  max-w-140 ml-40 text-center mb-2 sm:mb-0">
+                        <img src="{{asset('img/icons/message-icon_blue.svg')}}" alt="" class="mb-6 mx-auto">
+                        <span class="uppercase text-secondary text-12 lg:text-20 tracking-heading">@lang('Email')</span>
+                    </div>
                 </div>
 
             </div>
@@ -198,7 +199,8 @@
         </div>
         <div class="report__items container mx-auto text-center lg:text-left flex flex-wrap lg:flex-no-wrap">
             <div class="team__itemw-full sm:w-1/2 lg:w-1/3 mb-10 px-5 lg:px-0">
-                <img src="{{asset('img/group-5240.png')}}" alt="" srcset="{{asset('img/group-5240.png')}}, {{asset('img/group-5240@2x.png')}} 2x"
+                <img src="{{asset('img/group-5240.png')}}" alt=""
+                     srcset="{{asset('img/group-5240.png')}}, {{asset('img/group-5240@2x.png')}} 2x"
                      class="mb-16 mx-auto  sm:max-h-1/4 lg:max-h-500">
                 <h3 class="font-cocogoose font-black text-purple uppercase text-20 md:text-38 mb-10">
                     @lang('Manage reports')

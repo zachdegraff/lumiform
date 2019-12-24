@@ -41,17 +41,17 @@
             </a>
         </div>
     </section>
-    <section class="py-32">
+    <section class="py-32 food__dropdown">
         <div class="container mx-auto">
             <h2 class="font-bold text-center font-cocogoose text-primary text-30 xl:text-40 lg:mb-4 uppercase tracking-heading">
                 @lang('<span class="text-light-blue">Reduce documentation time</span> while increasing food quality')
             </h2>
             <p class="text-center font-light font-din text-20 lg:text-30 text-secondary tracking-text mb-20">
-                @lang('Make sure all inspections and audits are done reliably and issues resolved quickly. And get the visibility you need to steer the ship.')
+                @lang('Make sure all inspections and audits are done reliably and issues resolved quickly. Get the visibility you need to steer the ship.')
             </p>
             @include('components.solution.industries_droptown_section',[
             'items' => [
-            ['srcset' => ['group-3388.png','group-3388@2x.png'],'title' => 'Create forms','desc' => 'Create custom forms within minutes. Organise food inspections, to make sure the right person does all the checklists at the right time.'],
+            ['srcset' => ['group-4752.png','group-4752@2x.png'],'title' => 'Create forms','desc' => 'Create custom forms within minutes. Organise food inspections, to make sure the right person does all the checklists at the right time.'],
             ['srcset' => ['group-2969.png','group-2969@2x.png'],'title' => 'Conduct via App','desc' => 'Conduct audits and inspections whether with a tablet or smartphone, Android or iOS – online or offline.'],
             ['srcset' => ['group-4757.png','group-2969@2x.png'],'title' => 'Automate temperature and humidity checks','desc' => 'Use temperature and humidity sensors to automate temperature documentation, while protecting food adequately.'],
             ['srcset' => ['group-3430.png','group-2969@2x.png'],'title' => 'Solve Issues','desc' => 'Make sure all inspectors can easily raise issues. Keep track of the progress and solve issues together, as a team.'],
@@ -65,12 +65,12 @@
     </section>
     <section id="temperature">
         <div class="container mx-auto flex items-center justify-between">
-            <div class="w-5/12">
+            <div class="w-6/12">
                 <img src="{{asset('img/group-3311.png')}}" alt="" srcset="{{asset('img/group-3311.png')}},
                 {{asset('img/group-3311@2x.png')}}">
             </div>
             <div class="w-5/12">
-                <h3 class="text-red uppercase text-40 font-cocogoose tracking-heading font-bold mb-6">
+                <h3 class="text-red uppercase text-40 font-cocogoose tracking-heading font-bold mb-6 w-7/12">
                     @lang('Add automatic temperature monitoring')
                 </h3>
                 <p class="font-din font-light text-30 tracking-text text-secondary mb-10">
@@ -119,8 +119,8 @@
         </div>
     </section>
     @include('components.solution.industries_bg_grey',[
-        'heading' => 'Quickstart <span class="text-green">with expert-proofed templates</span> for food businesses',
-        'text' =>  'Lumiform offers ready-to-use templates, and you can customise them as needed.',
+        'heading' => 'Quickstart <span class="text-green">free Checklists</span> for food businesses',
+        'text' =>  'Lumiform offers expert-proofed, ready-to-use templates, and you can customise them as needed.',
         'items' => [
                 ['image' => 'food-manager-cleaning-check.png','srcset' => ['food-manager-cleaning-check.png','food-manager-cleaning-check@2x.png'],'text' => 'Manager cleaning check'],
                 ['image' => 'food-mystery-shopper.png','srcset' => ['food-mystery-shopper.png','food-mystery-shopper@2x.png'],'text' => 'Mystery shopper checklist'],

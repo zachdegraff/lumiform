@@ -74,7 +74,7 @@
         <div class="container mx-auto flex align-baseline ">
             <div class="start__text w-full md:w-3/5 md:w-2/3 md:mx-auto md:text-center lg:w-2/5">
                 <h3 class="md:text-center text-50 font-cocogoose uppercase leading-none tracking-middle mb-10 lg:text-left">
-                    @lang('Start right away, with ready-to-use checklists')
+                    @lang('Start right away, with <span class="text-gold">ready-to-use checklists</span>')
                 </h3>
                 <p class="mb-24">
                     @lang('Lumiform provides free, ready-to-use templates that you can further customise, to enable you to start industry-proofed checklists within minutes.')
@@ -96,8 +96,12 @@
     <section id="home__learn">
         <div class="container mx-auto my-12 lg:my-24 xxl:my-48 ">
             <div class=" w-full md:w-2/3 mx-auto mb-12 lg:mb-32">
-                <h3 class="text-50 font-cocogoose font-black text-primary uppercase text-center mb-5">@lang('Learn and grow through <span class="text-purple">inspiration</span>')</h3>
-                <p class="text-center font-din text-30 tracking-text font-light text-secondary">@lang('We offer you a wide range of inspiring options that show how companies use Lumiform to continuously improve their quality and safety procedures.')</p>
+                <h3 class="text-50 font-cocogoose font-black text-primary uppercase text-center mb-5">
+                    @lang('Learn and grow through <span class="text-purple">inspiration</span>')
+                </h3>
+                <p class="ml-10 font-din text-30 tracking-text font-light text-secondary">
+                    @lang('We offer you a wide range of inspiring options that show how companies <span class="line__break"> </span>use  Lumiform to continuously improve their quality and safety procedures.')
+                </p>
             </div>
 
 
