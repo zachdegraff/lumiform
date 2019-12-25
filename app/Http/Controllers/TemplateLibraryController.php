@@ -52,11 +52,13 @@ class TemplateLibraryController extends Controller
 
     public function show($templateSlug, $templateId)
     {
+        $categories = Category::topLevel()->active()->inActiveLanguage()->ordered();
         $template = Template::findOrFail($templateId);
         $template->form = json_decode($template->form);
         //dd($template->form);
         return View::make('/pages/template_library/template', [
             'template' => $template,
+            'categories' => $categories,
         ]);
     }
 }

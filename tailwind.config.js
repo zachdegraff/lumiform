@@ -76,6 +76,7 @@ module.exports = {
                 'orange-light': '#FFAA4E',
                 'orange': '#FF8500',
                 'gold': '#ffad22',
+                'lighter-grey': '#fafbfc',
             }),
             width: {
                 '360': '360px',
