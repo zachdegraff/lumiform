@@ -1,4 +1,4 @@
-<li>
+<li class="mb-3">
 
     @if ($category->subcategories->count() > 0)
         <button class="toggleExpand font-din font-light text-20 leading-snug tracking-text text-secondary capitalize flex items-center">

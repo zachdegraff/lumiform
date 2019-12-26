@@ -38,7 +38,8 @@
             el.classList.add('active')
         }
     }
-    function showChild(event,element) {
+
+    function showChild(event, element) {
         let items = document.querySelectorAll('.sub__menu--item')
         let subItems = document.querySelectorAll('.nav__subitem--2')
         console.log(event)
@@ -60,6 +61,7 @@
             subItem.classList.add('active')
         }
     }
+
     /* Start Login/Register logic*/
     let regModal = document.getElementById("signUp");
     let regContent = document.querySelector("#signUp .modal-content");
@@ -70,33 +72,80 @@
     let signUp = document.querySelector(".sign-up");
     let signIn = document.querySelector(".sign-in");
 
-    function openModal(target,content){
+    function openModal(target, content) {
         content.classList.add('modal-opened');
         target.style.display = "block";
     }
-    regBtn.onclick = function () {openModal (regModal,regContent)};
-    loginBtn.onclick = function () { openModal (loginModal,loginContent)};
-    function hideModal(target,content){
+
+    regBtn.onclick = function () {
+        openModal(regModal, regContent)
+    };
+    loginBtn.onclick = function () {
+        openModal(loginModal, loginContent)
+    };
+
+    function hideModal(target, content) {
         content.classList.remove('modal-opened');
         target.style.display = "none";
     }
-    signUp.onclick = function (){
-        hideModal(loginModal,loginContent);
-        openModal (regModal,regContent)
+
+    signUp.onclick = function () {
+        hideModal(loginModal, loginContent);
+        openModal(regModal, regContent)
     };
-    signIn.onclick = function (){
-        openModal (loginModal,loginContent);
-        hideModal (regModal,regContent)
+    signIn.onclick = function () {
+        openModal(loginModal, loginContent);
+        hideModal(regModal, regContent)
     };
     window.onclick = function (event) {
 
         if (event.target == regModal) {
-            hideModal(regModal,regContent)
-        }else if(event.target == loginModal) {
-            hideModal(loginModal,loginContent)
+            hideModal(regModal, regContent)
+        } else if (event.target == loginModal) {
+            hideModal(loginModal, loginContent)
         }
     }
     /* End Login/Register logic*/
+    let filters = [];
+    let sections = document.querySelectorAll('.category__section');
+    document.querySelectorAll('.filter__item').forEach(function (filter) {
+        filter.addEventListener('click', function () {
+
+            this.classList.contains('active') ? this.classList.remove('active') : this.classList.add('active')
+            let cat = this.dataset.category;
+            if (cat) {
+                if (filters.includes(cat)) {
+                    let index = filters.indexOf(cat);
+                    filters.splice(index, 1);
+                    if (!filter.length){
+                        sections.forEach(function (section) {
+                            section.style.display = 'block'
+                        });
+                    } else{
+                        sections.forEach(function (section) {
+                            section.style.display = 'block'
+                        });
+                        let item = document.getElementById(cat);
+                        item.style.display = 'none'
+                    }
+
+                } else {
+                    filters.push(cat);
+                    sections.forEach(function (section) {
+                        section.style.display = 'none'
+                    });
+                    filters.forEach(function (filter) {
+                        document.getElementById(filter).style.display = 'block'
+                    })
+
+                }
+
+
+            }
+
+
+        })
+    });
 </script>
 <script src="{{asset('js/app.js')}}"></script>
 </body>

@@ -7,7 +7,7 @@
   font-size: 20px;
   font-family: Cocogoose,sans-serif;
   color: #707070;
-  padding-left: 15px;
+  padding-left: 75px;
 }
 .filter__item{
   .custom__checkbox {
@@ -42,7 +42,7 @@
   width: 100%;
   max-width: 1150px;
 }
-.template__content h2{
+.template__content--item h2{
   color: #FD2F58;
   svg {
     path {
@@ -50,7 +50,7 @@
     }
   }
 }
-.template__content h2:nth-child(2n+0) {
+.color-green h2 {
   color: #00c389;
   svg {
     path {
@@ -58,7 +58,7 @@
     }
   }
 }
-.template__content h2:nth-child(3n+0) {
+.color-blue h2 {
   color: #00b2ff;
   svg {
     path {
@@ -66,7 +66,7 @@
     }
   }
 }
-.template__content h2:nth-child(4n+0) {
+.color-gold h2 {
   color: #ff8500;
   svg {
     path {
@@ -74,7 +74,7 @@
     }
   }
 }
-.template__content h2:nth-child(5n+0) {
+.color-purple h2 {
   color: #8d5fd6;
   svg {
     path {
@@ -110,3 +110,18 @@
     height: auto;
   }
 }
+.featured__items li {
+  width: 100%;
+  max-width: 275px;
+  height: 160px;
+  background: #f0f3f4;
+  display: flex;
+  .featured__block {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: #6e6a7882;
+  }
+}
+
