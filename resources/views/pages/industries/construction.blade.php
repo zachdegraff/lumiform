@@ -1,13 +1,18 @@
 @extends('layout/base')
 
-@section("head.title", __(""))
-
+@section("head.title", __("industry/construction.title"))
+@section('meta-tags')
+    @foreach(__('industry/construction.keywords') as $keyword)
+        <meta name="keywords" content="{{$keyword}}">
+    @endforeach
+    <meta name="description" content="@lang('industry/construction.description')">
+@endsection
 @section("content")
     @include('components.solution.industries_banner_section',[
   'imageBg' => 'construction-banner.png',
   'class' => 'w-full py-16',
-  'heading' => 'Improve safety on the construction site',
-  'text' => 'Only Lumiform is designed to help construction businesses in making their sites safer, within minutes.',
+  'heading' => __('industry/construction.bannerTitle'),
+  'text' => __('industry/construction.bannerText'),
   ])
 
     <section class="py-32 with__border--bottom">

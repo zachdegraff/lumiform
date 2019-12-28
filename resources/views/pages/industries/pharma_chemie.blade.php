@@ -1,15 +1,18 @@
 @extends('layout/base')
 
-@section("head.title", __(""))
-
+@section("head.title", __("industry/pharmaceuticals-chemicals.title"))
+@section('meta-tags')
+    @foreach(__('industry/pharmaceuticals-chemicals.keywords') as $keyword)
+        <meta name="keywords" content="{{$keyword}}">
+    @endforeach
+    <meta name="description" content="@lang('industry/pharmaceuticals-chemicals.description')">
+@endsection
 @section("content")
     @include('components.solution.industries_banner_section',[
          'imageBg' => 'pharma-banner.png',
          'class' => 'w-9/12',
-         'heading' => 'Make your company  <span class="line__break"></span> a safer place to be',
-         'text' => 'Increase work safety with Lumiform, by creating more transparency <span class="line__break"></span>
-          and efficiency, with digital audits and inspections.. Raise issues as
-          ',
+         'heading' => __('industry/pharmaceuticals-chemicals.bannerTitle'),
+         'text' =>  __('industry/pharmaceuticals-chemicals.bannerText'),
          ])
     <section class="py-32 with__border--bottom">
         <div class="container mx-auto">

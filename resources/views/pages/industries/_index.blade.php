@@ -1,12 +1,17 @@
 @extends('layout/base')
 
-@section("head.title", __(""))
-
+@section("head.title", __("industry/index.title"))
+@section('meta-tags')
+    @foreach(__('industry/index.keywords') as $keyword)
+        <meta name="keywords" content="{{$keyword}}">
+    @endforeach
+    <meta name="description" content="@lang('industry/index.description')">
+@endsection
 @section("content")
     <section class="py-12 lg:py-40">
         <div class="container mx-auto">
             <h1 class="tracking-normal text-primary text-center  text-40 xxl:text-70 mb-16 font-cocogoose uppercase font-extrabold">
-                @lang('Lumiform, specifically for your industry')
+                @lang('industry/index.bannerTitle')
             </h1>
             <div class="flex justify-center">
                 @include('components.product.icons_raw',[

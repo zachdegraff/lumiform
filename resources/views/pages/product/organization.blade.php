@@ -1,15 +1,18 @@
 @extends('layout/base')
 
-@section("head.title", __(""))
+@section("head.title", __("product/organization.title"))
+@section('meta-tags')
 
+    <meta name="description" content="@lang('product/organization.description')">
+@endsection
 @section("content")
     <section id="organization__banner" class="py-20 bg-grey relative">
         <div class="container mx-auto flex">
             <div class="banner__left lg:w-7/12 w-full pt-12">
                 <h1 class="tracking-normal text-center lg:text-left text-40 xxl:text-70 mb-16 font-cocogoose uppercase font-extrabold">
-                    @lang('Adapt to your complex organisation structure.')
+                    @lang('product/organization.bannerTitle')
                 </h1>
-                @include('components.product.banner_form',['buttonText' => 'try for free'])
+                @include('components.product.banner_form',['buttonText' => 'product/organization.buttonText'])
             </div>
             <div class="banner__right--img hidden lg:block w-5/12 flex">
                 <img  src="{{asset('img/bildschirm-foto.png')}}" srcset="

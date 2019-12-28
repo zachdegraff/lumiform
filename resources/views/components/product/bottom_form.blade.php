@@ -27,9 +27,10 @@
                         <button class=" mt-5 md:mt-0 ml-3 bg-{{$buttonBg}} tracking-large font-extrabold text-white uppercase font-cocogoose px-8 text-17 lg:text-20 h-70  rounded-20 items-center justify-center flex">@lang('Try for free')</button>
                     </div>
                 </form>
+                @php $url = '' @endphp
                 <div class="banner__signin">
                     <small class="text-20 font-din text-center font-medium block text-white"
-                    >@lang('We also offer <a href="" class="font-bold underline"> paid plans </a> with additional features, storage and support.')
+                    >We also offer <a href="@urlTo('pricing')" class="font-bold underline"> paid plans </a> with additional features, storage and support.
                     </small>
                 </div>
             </div>

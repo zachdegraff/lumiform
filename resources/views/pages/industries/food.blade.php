@@ -1,12 +1,17 @@
 @extends('layout/base')
 
-@section("head.title", __(""))
-
+@section("head.title", __("industry/food.title"))
+@section('meta-tags')
+    @foreach(__('industry/food.keywords') as $keyword)
+        <meta name="keywords" content="{{$keyword}}">
+    @endforeach
+    <meta name="description" content="@lang('industry/food.description')">
+@endsection
 @section("content")
     @include('components.solution.industries_banner_section',[
     'imageBg' => 'food-banner.png',
-    'heading' => 'Digital quality assurance for your food business.',
-    'text' => 'Lumiform helps your business within the food industry to comply with regulations and improve quality through more transparent processes.',
+    'heading' => __('industry/food.bannerTitle'),
+    'text' => __('industry/food.bannerText'),
     ])
 
     <section class="py-32 with__border--bottom">

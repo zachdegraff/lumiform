@@ -1,13 +1,18 @@
 @extends('layout/base')
 
-@section("head.title", __(""))
-
+@section("head.title", __("industry/manufacturing.title"))
+@section('meta-tags')
+    @foreach(__('industry/manufacturing.keywords') as $keyword)
+        <meta name="keywords" content="{{$keyword}}">
+    @endforeach
+    <meta name="description" content="@lang('industry/manufacturing.description')">
+@endsection
 @section("content")
     @include('components.solution.industries_banner_section',[
     'imageBg' => 'manufacturing-banner.png',
     'class' => 'w-8/12',
-    'heading' => 'Improve quality and safety in manufacturing plants',
-    'text' => 'Check regularly whether quality and safety standards are met during the manufacturing process and act quickly as soon as errors occur.',
+     'heading' => __('industry/manufacturing.bannerTitle'),
+    'text' => __('industry/manufacturing.bannerText'),
     ])
 
     <section class="py-32 with__border--bottom">

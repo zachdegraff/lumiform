@@ -1,6 +1,12 @@
 @extends('layout/base')
 
-@section("head.title", __(""))
+@section("head.title", __("use-cases/issue.title"))
+@section('meta-tags')
+    @foreach(__('use-cases/issue.keywords') as $keyword)
+        <meta name="keywords" content="{{$keyword}}">
+    @endforeach
+    <meta name="description" content="@lang('use-cases/issue.description')">
+@endsection
 
 @section("content")
     <section class="pt-26 pb-28"
@@ -15,15 +21,14 @@
         <div class="container mx-auto">
             <div class="w-10/12 mx-auto mb-12">
                 <h1 class="text-70 font-cocogoose font-black uppercase text-center tracking-normal text-primary mb-16 leading-tight">
-                    @lang('Resolve issues quickly,
-                        <span class="line__break"></span> through collaboration')
+                    @lang('use-cases/issue.bannerTitle')
                 </h1>
                 <p class="text-30 font-light font-din text-secondary text-center">
-                    @lang('Solve issues immediately, by reporting them quickly, via the app and resolving <span class="line__break"></span>  them with seamless collaboration between field operations and head office.')
+                    @lang('use-cases/issue.bannerText')
                 </p>
             </div>
             <button class="mx-auto w-215  bg-red tracking-large font-extrabold text-white uppercase font-cocogoose text-17 lg:text-20 h-70  rounded-20 items-center justify-center flex">
-                @lang('try for FREE')
+                @lang('use-cases/issue.buttonText')
             </button>
         </div>
     </section>

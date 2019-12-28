@@ -1,7 +1,13 @@
 @extends('layout/base')
 
-@section("head.title", __(""))
+@section("head.title", __("use-cases/inspections.title"))
 
+@section('meta-tags')
+    @foreach(__('use-cases/inspections.keywords') as $keyword)
+        <meta name="keywords" content="{{$keyword}}">
+    @endforeach
+    <meta name="description" content="@lang('use-cases/inspections.description')">
+@endsection
 @section("content")
     <section class="pt-28 pb-40"
              style="
@@ -14,14 +20,14 @@
         <div class="container mx-auto">
             <div class="w-10/12 mx-auto mb-16">
                 <h1 class="text-70 font-cocogoose font-black uppercase text-center tracking-normal text-primary mb-16 leading-none">
-                    @lang('Digital inspections: <span class="line__break"></span> easy to handle, for everyone')
+                    @lang('use-cases/inspections.bannerTitle')
                 </h1>
                 <p class="text-30 font-light font-din text-secondary text-center">
-                    @lang('The Lumform app is so easy to handle that anyone can perform <span class="line__break"></span> standardized, effective inspections in the field - really anyone!')
+                    @lang('use-cases/inspections.bannerText')
                 </p>
             </div>
             <button class="mx-auto w-215  bg-red tracking-large font-extrabold text-white uppercase font-cocogoose text-17 lg:text-20 h-70  rounded-20 items-center justify-center flex">
-                @lang('try for FREE')
+                @lang('use-cases/inspections.buttonText')
             </button>
         </div>
     </section>

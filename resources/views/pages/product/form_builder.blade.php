@@ -1,18 +1,22 @@
 @extends('layout/base')
 
-@section("head.title", __(""))
+@section("head.title", __("product/create_forms.title"))
+@section('meta-tags')
 
+    <meta name="description" content="@lang('product/create_forms.description')">
+@endsection
 @section("content")
     <section id="form__banner" class="py-10 lg:pt-32 lg:pb-24 bg-blue-light relative">
         <div class="container mx-auto flex">
             <div class="banner__left  w-5/12">
                 <h1 class="tracking-normal leading-none text-center lg:text-left text-40 xxl:text-70 mb-16 font-cocogoose uppercase font-extrabold">
-                    @lang('Create custom forms in minutes.')
+                    @lang('product/create_forms.bannerTitle')
                 </h1>
-                @include('components.product.banner_form',['buttonText' => 'try for free'])
+                @include('components.product.banner_form',['buttonText' => 'product/create_forms.buttonText'])
             </div>
             <div class="banner__right hidden lg:block absolute top-0 right-0 mt-10">
-                <img src="{{asset('img/form-builder-banner.png')}}" alt="" srcset="{{asset('img/form-builder-banner.png')}},{{asset('img/form-builder-banner@2x.png')}} 2x">
+                <img src="{{asset('img/form-builder-banner.png')}}" alt=""
+                     srcset="{{asset('img/form-builder-banner.png')}},{{asset('img/form-builder-banner@2x.png')}} 2x">
             </div>
         </div>
 

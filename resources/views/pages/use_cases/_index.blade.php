@@ -1,12 +1,17 @@
 @extends('layout/base')
 
-@section("head.title", __(""))
-
+@section("head.title", __("use-cases/index.title"))
+@section('meta-tags')
+    @foreach(__('use-cases/index.keywords') as $keyword)
+        <meta name="keywords" content="{{$keyword}}">
+    @endforeach
+    <meta name="description" content="@lang('use-cases/index.description')">
+@endsection
 @section("content")
     <section id="use-cases-top" class="bg-grey-light relative pt-32 pb-32">
         <div class="container mx-auto flex flex-wrap">
             <div class="page-title w-full text-center ">
-                <h1 class="tracking-normal text-center lg:text-center text-40 xxl:text-70 mb-16 font-cocogoose uppercase font-extrabold text-primary">@lang('Specific for all types of use cases')</h1>
+                <h1 class="tracking-normal text-center lg:text-center text-40 xxl:text-70 mb-16 font-cocogoose uppercase font-extrabold text-primary">@lang('use-cases/index.bannerTitle')</h1>
             </div>
             <div class="icon-block w-full flex">
                 <div class="icon-block-child w-2/12">

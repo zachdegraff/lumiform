@@ -1,15 +1,18 @@
 @extends('layout/base')
 
-@section("head.title", __(""))
+@section("head.title", __("product/analysis.title"))
+@section('meta-tags')
 
+    <meta name="description" content="@lang('product/analysis.description')">
+@endsection
 @section("content")
     <section id="analysis__banner" class="py-16 bg-red-light">
         <div class="container mx-auto flex ">
             <div class="banner__left  w-full lg:w-7/12 mt-16">
                 <h1 class="tracking-normal text-center lg:text-left text-40 xxl:text-70 mb-16 font-cocogoose uppercase font-extrabold">
-                    @lang('Fully automated reports and in-depth analyses.')
+                    @lang('product/analysis.bannerTitle')
                 </h1>
-                @include('components.product.banner_form',['buttonText' => 'try for free'])
+                @include('components.product.banner_form',['buttonText' => 'product/analysis.buttonText'])
             </div>
             <div class="analysis__banner--image   w-5/12 flex">
                 <img src="{{asset('img/group-5045.png')}}" alt=""

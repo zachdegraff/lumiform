@@ -1,7 +1,12 @@
 @extends('layout/base')
 
-@section("head.title", __(""))
-
+@section("head.title", __("use-cases/checklists.title"))
+@section('meta-tags')
+    @foreach(__('use-cases/checklists.keywords') as $keyword)
+        <meta name="keywords" content="{{$keyword}}">
+    @endforeach
+    <meta name="description" content="@lang('use-cases/assessments.description')">
+@endsection
 @section("content")
     <section class="py-28"
              style="
@@ -15,14 +20,14 @@
         <div class="container mx-auto">
             <div class="w-10/12 mx-auto mb-32">
                 <h1 class="text-70 font-cocogoose font-black uppercase text-center tracking-normal text-primary mb-16 leading-none">
-                    @lang('Save time and money <span class="line__break"></span> with digital checklists')
+                    @lang('use-cases/checklists.bannerTitle')
                 </h1>
                 <p class="text-30 font-light font-din text-secondary text-center">
-                    @lang('Improve quality and security in your business, with digital lists tailored to meet your needs. ')
+                    @lang('use-cases/checklists.bannerText')
                 </p>
             </div>
             <button class="mx-auto w-215  bg-red tracking-large font-extrabold text-white uppercase font-cocogoose text-17 lg:text-20 h-70  rounded-20 items-center justify-center flex">
-                @lang('try for FREE')
+                @lang('use-cases/checklists.buttonText')
             </button>
         </div>
     </section>

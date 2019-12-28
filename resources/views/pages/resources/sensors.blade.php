@@ -1,17 +1,22 @@
 @extends('layout/base')
 
-@section("head.title", __(""))
-
+@section("head.title", __("resources/sensors.title"))
+@section('meta-tags')
+    @foreach(__('resources/sensors.keywords') as $keyword)
+        <meta name="keywords" content="{{$keyword}}">
+    @endforeach
+    <meta name="description" content="@lang('resources/sensors.description')">
+@endsection
 @section("content")
     <section class="py-35 bg-red-light">
         <div class="container mx-auto">
             <h1 class="text-70 font-cocogoose font-black uppercase text-center tracking-normal text-primary mb-12 leading-tight">
-                @lang('Automated and affordable temperature and humidity monitoring')
+                @lang('resources/sensors.bannerTitle')
             </h1>
             <div class="flex justify-center">
                 <a href="#"
                    class="font-extrabold text-20 bg-red text-white uppercase font-cocogoose  h-70 px-12 py-6 rounded-20 tracking-large">
-                    @lang('Buy hardware now & test software for free')
+                    @lang('resources/sensors.buttonText')
                 </a>
             </div>
         </div>

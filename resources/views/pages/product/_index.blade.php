@@ -1,14 +1,19 @@
 @extends('layout/base')
 
-@section("head.title", __(""))
-
+@section("head.title", __("product/index.title"))
+@section('meta-tags')
+    @foreach(__('product/index.keywords') as $keyword)
+        <meta name="keywords" content="{{$keyword}}">
+    @endforeach
+    <meta name="description" content="@lang('product/index.description')">
+@endsection
 @section("content")
     <section id="product__banner" class="py-10 lg:pt-32 lg:pb-24 bg-grey relative">
         <div class="container mx-auto flex">
             <div class="banner__left lg:w-1/2 w-full">
                 <h1 class="tracking-normal text-center lg:text-left text-40 xxl:text-70 mb-16 font-cocogoose uppercase font-extrabold">
-                    @lang('Extremely powerful. Surprisingly simple.')</h1>
-                @include('components.product.banner_form',['buttonText' => 'try for free'])
+                    @lang('product/index.bannerTitle')</h1>
+                @include('components.product.banner_form',['buttonText' => 'product/index.buttonText'])
             </div>
             <div class="banner__right hidden lg:block absolute top-0 right-0">
                 <img src="{{asset('img/landing-page-devices.svg')}}" alt="">

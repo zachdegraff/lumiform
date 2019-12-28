@@ -50,37 +50,39 @@
     <div class="w-1/2 md:w-1/3 lg:w-auto mb-5">
         <h5 class="mb-8">{{ __('Lumiform') }}</h5>
         <ul>
-            <li><a href="">{{ __('Product') }}</a></li>
-            <li><a href="">{{ __('Templates') }}</a></li>
-            <li><a href="">{{ __('Pricing') }}</a></li>
-            <li><a href="">{{ __('All Use Cases') }}</a></li>
-            <li><a href="">{{ __('Sensors') }}</a></li>
-            <li><a href="">{{ __('Form Builder') }}</a></li>
-            <li><a href="">{{ __('Workflows') }}</a></li>
-            <li><a href="">{{ __('Mobile App') }}</a></li>
-            <li><a href="">{{ __('Reports & Analysis') }}</a></li>
+            <li><a href="@urlTo('product')">{{ __('Product') }}</a></li>
+            <li><a href="@urlTo('pricing')">{{ __('Pricing') }}</a></li>
+            <li><a href="@urlTo('product.formBuilder')">{{ __('Create Forms ') }}</a></li>
+            <li><a href="@urlTo('product.conduct')">{{ __('Conduct via App') }}</a></li>
+            <li><a href="@urlTo('product.issues')">{{ __('Solve Issues') }}</a></li>
+            <li><a href="@urlTo('product.analysis')">{{ __('Results Reports & Analysis') }}</a></li>
+            <li><a href="@urlTo('product.organization')">{{ __('Administration ') }}</a></li>
+            <li><a href="@urlTo('resources.sensors')">{{ __('Temperature monitoring') }}</a></li>
         </ul>
     </div>
 
     <div class="w-1/2 md:w-1/3 lg:w-auto mb-5">
         <h5 class="mb-8">{{ __('Industry Solutions') }}</h5>
         <ul>
-            <li><a href="">{{ __('Food') }}</a></li>
-            <li><a href="">{{ __('Construction') }}</a></li>
-            <li><a href="">{{ __('Manufacturing') }}</a></li>
-            <li><a href="">{{ __('Retail') }}</a></li>
-            <li><a href="">{{ __('Logistics') }}</a></li>
-            <li><a href="">{{ __('Pharma') }}</a></li>
+            <li><a href="@urlTo('industries.food')">{{ __('Food & Hospiatlity') }}</a></li>
+            <li><a href="@urlTo('industries.construction')">{{ __('Construction') }}</a></li>
+            <li><a href="@urlTo('industries.manufacturing')">{{ __('Manufacturing') }}</a></li>
+            <li><a href="@urlTo('industries.retail')">{{ __('Retail') }}</a></li>
+            <li><a href="@urlTo('industries.logistics')">{{ __('Logistics & transportation') }}</a></li>
+            <li><a href="@urlTo('industries.facilityManagement')">{{ __('facility management') }}</a></li>
+            <li><a href="@urlTo('industries.pharmaChemie')">{{ __('Pharmaceuticals & Chemicals') }}</a></li>
         </ul>
     </div>
 
     <div class="w-1/2 md:w-1/3 lg:w-auto mb-5">
         <h5 class="mb-8">{{ __('Use Cases Solutions') }}</h5>
         <ul>
-            <li><a href="">{{ __('Audits') }}</a></li>
-            <li><a href="">{{ __('Inspections') }}</a></li>
-            <li><a href="">{{ __('Digital Checklists') }}</a></li>
-            <li><a href="">{{ __('Process Documentation') }}</a></li>
+            <li><a href="@urlTo('useCases.audits')">{{ __('Audits') }}</a></li>
+            <li><a href="@urlTo('useCases.inspections')">{{ __('Inspections') }}</a></li>
+            <li><a href="@urlTo('useCases.digitalChecklists')">{{ __('Checklists') }}</a></li>
+            <li><a href="@urlTo('useCases.assessment')">{{ __('Assessment') }}</a></li>
+            <li><a href="@urlTo('useCases.documentation')">{{ __('Documentation') }}</a></li>
+            <li><a href="@urlTo('useCases.issue')">{{ __('Issue Management') }}</a></li>
         </ul>
     </div>
 
@@ -90,9 +92,13 @@
             <li><a href="">{{ __('Watch a demo') }}</a></li>
             <li><a href="">{{ __('Help Center') }}</a></li>
             <li><a href="">{{ __('Blog') }}</a></li>
-            <li><a href="">{{ __('Success Stories') }}</a></li>
-            <li><a href="">{{ __('All Use Cases') }}</a></li>
-            <li><a href="">{{ __('Contact Sales') }}</a></li>
+            <li><a href="@urlTo('resources')">{{ __('Case Studies') }}</a></li>
+            <li><a href="@urlTo('resources')">{{ __('All Use Cases') }}</a></li>
+            <li><a href="@urlTo('resources.contact')">{{ __('Contact Sales') }}</a></li>
+            <li><a href="">{{ __('app uses') }}</a></li>
+            <li><a href="">{{ __('topics') }}</a></li>
+            <li><a href="">{{ __('checklists') }}</a></li>
+            <li><a href="@urlTo('templateLibrary')">{{ __('templates') }}</a></li>
         </ul>
     </div>
 

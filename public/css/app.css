@@ -11234,7 +11234,6 @@ video {
 
 body {
   overflow-x: hidden;
-  max-width: 1920px;
   margin: 0 auto;
 }
 
@@ -11438,22 +11437,19 @@ header {
   display: block;
 }
 
-.nav__subitem--2 {
-  display: none;
-  padding-left: 30px;
-  padding-right: 30px;
-  border-left: 2px solid #aaaaaa;
-}
-
-.nav__subitem--2.active {
-  display: block;
-}
-
 .nav__subitem a {
   font: 500 20px/26px Cocogoose;
   text-transform: uppercase;
   letter-spacing: 1.2px;
   color: #707070;
+}
+
+.nav__subitem .nav__subitem--2 a {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-bottom: 15px;
+  display: block;
 }
 
 nav ul li {
@@ -11495,7 +11491,8 @@ nav ul .active > .nav__item--arrow img {
   border-radius: 20px;
   color: #FFFFFF;
   text-transform: uppercase;
-  padding: 10px 25px;
+  padding: 16px 25px;
+  line-height: 1;
 }
 
 footer {
@@ -11573,8 +11570,21 @@ button.banner__button {
   outline: none;
 }
 
-li.sub__menu--item.active a, .menu__item.active .nav__item {
+.menu__item.active .nav__item {
   color: #000;
+}
+
+.menu__item.active .sub__menu--item a span {
+  color: #000;
+}
+
+.menu__item.active .arrow-right svg {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.menu__item.active .arrow-right svg line {
+  stroke: #000000;
 }
 
 .banner__small-text {
@@ -11584,7 +11594,7 @@ li.sub__menu--item.active a, .menu__item.active .nav__item {
 }
 
 .banner__small-text a {
-  font: 500 20px/27px DINosaur;
+  font: 900 20px/27px DINosaur;
   text-decoration: underline;
 }
 
@@ -11604,6 +11614,8 @@ section#home__trusted {
 
 #home__banner input {
   border: 1px solid #8D5FD666;
+  color: #aaa;
+  font-size: 24px;
 }
 
 .section__title {
@@ -11861,10 +11873,6 @@ section#home__start {
   display: none;
 }
 
-header.fixed {
-  border-bottom: 1px solid #AAAAAA;
-}
-
 .content__item.active {
   display: -webkit-box;
   display: flex;
@@ -11884,6 +11892,10 @@ header .nav__subitem li {
 
 #digitise, #forms, #workflow, #organise, .with__border--bottom {
   border-bottom: 1px solid #EEE7F9;
+}
+
+.border-right {
+  border-right: 1px solid #aaaaaa;
 }
 
 .circle {
@@ -12536,6 +12548,23 @@ input::-webkit-inner-spin-button {
   padding: 0;
 }
 
+#easy .home__banner--email input {
+  border: none;
+}
+
+.bg-white-95 {
+  background: rgba(255, 255, 255, 0.94);
+}
+
+footer ul li a {
+  text-transform: capitalize;
+}
+
+.logo svg {
+  max-width: 212px;
+  width: 100%;
+}
+
 @media (max-width: 1660px) {
   .banner__heading {
     font: 700 55px/80px Cocogoose;
@@ -12598,10 +12627,6 @@ input::-webkit-inner-spin-button {
     width: 13px;
     height: 14px;
     margin-left: 5px;
-  }
-
-  .logo {
-    max-width: 150px;
   }
 
   .nav__subitem {

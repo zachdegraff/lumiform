@@ -1,14 +1,18 @@
 @extends('layout/base')
 
-@section("head.title", __(""))
-
+@section("head.title", __("industry/logistics.title"))
+@section('meta-tags')
+    @foreach(__('industry/logistics.keywords') as $keyword)
+        <meta name="keywords" content="{{$keyword}}">
+    @endforeach
+    <meta name="description" content="@lang('industry/logistics.description')">
+@endsection
 @section("content")
     @include('components.solution.industries_banner_section',[
   'imageBg' => 'logistics-banner.png',
   'class' => 'w-9/12',
-  'heading' => 'Safer logistic and transportation procedures',
-  'text' => 'Create a safer workplace with individual safety and quality forms.<span class="line__break"></span>
-Ensure reliable vehicles and better drivers with the Lumiform mobile inspection app.',
+  'heading' => __('industry/logistics.bannerTitle'),
+  'text' => __('industry/logistics.bannerText'),
   ])
     <section class="py-32 with__border--bottom">
         <div class="container mx-auto">

@@ -1,24 +1,29 @@
 @extends('layout/base')
 
-@section("head.title", __(""))
+@section("head.title", __("resources/contact.title"))
+@section('meta-tags')
+    @foreach(__('resources/contact.keywords') as $keyword)
+        <meta name="keywords" content="{{$keyword}}">
+    @endforeach
+    <meta name="description" content="@lang('resources/contact.description')">
+@endsection
 
 @section("content")
     <section class="bg-grey-light pt-28 pb-28">
         <div class="container mx-auto">
             <h1 class="tracking-normal text-primary text-center  text-40 xxl:text-70 mb-8 font-cocogoose uppercase font-extrabold">
-                @lang('Talk to our sales team')
+                @lang('resources/contact.bannerTitle')
             </h1>
             <p class="text-30 font-light font-din text-secondary text-center mb-16">
-                @lang('Looking for more information or want to try Lumiform Enterprise? <span class="line__break"></span>
- Send us a request and a Lumiform representative will follow up with you as soon as possible. ')
+                @lang('resources/contact.bannerText')
             </p>
             <div class="flex justify-center items-center mb-12">
                 <p class="text-20 font-black font-cocogoose text-grey-bold text-center uppercase">
-                    @lang('Have a simple question? ')
+                    @lang('resources/contact.question')
                 </p>
                 <a href="#"
                    class="ml-12 flex items-center justify-center uppercase text-red text-center block text-17 lg:text-20 tracking-heading ">
-                    @lang('Check out our FAQ')
+                    @lang('resources/contact.faqText')
                     <img src="{{asset('img/arrow-right-long-red.svg')}}" alt="" class="h-3 ml-8">
                 </a>
             </div>

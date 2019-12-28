@@ -1,16 +1,20 @@
 @extends('layout/base')
 
-@section("head.title", __("Lumiform - Easy & FREE Digital Inspection / Audit App"))
-
+@section("head.title", __("home/index.title"))
+@section('meta-tags')
+    @foreach(__('home/index.keywords') as $keyword)
+        <meta name="keywords" content="{{$keyword}}">
+    @endforeach
+    <meta name="description" content="@lang('home/index.description')">
+@endsection
 @section("content")
     <section id="home__banner">
         <div class="container mx-auto flex">
             <div class="banner__left py-32 w-5/12">
                 <h1 class="mb-5 text-20 text-primary md:text-70 font-cocogoose font-extrabold uppercase tracking-normal leading-tight">
-                    @lang('A new, easy way for inspections AND audits')
+                    @lang('home/index.bannerTitle')
                 </h1>
-                <p class="font-din text-30 font-light text-secondary mb-32 w-11/12">@lang('Equip your team with the Lumiform app and brighten up your quality and
-                    safety workflows.')</p>
+                <p class="font-din text-30 font-light text-secondary mb-32 w-11/12"> @lang('home/index.bannerText')</p>
                 @include('components.product.banner_form')
             </div>
             <div class="banner__right md:flex-shrink-0 lg:flex-1 relative">
@@ -30,10 +34,11 @@
                         <li>@lang('Create customised forms in minutes')</li>
                         <li>@lang('Start with expert-proofed templates')</li>
                         <li>@lang('Conduct inspections faster via app')</li>
+                        <li>@lang('Solve issues together with teammates.')</li>
                         <li>@lang('Fully automated, customisable reports')</li>
                         <li>@lang('Data analysis')</li>
                     </ul>
-                    <a href=""
+                    <a href="@urlTo('product')"
                        class="flex items-center uppercase text-red text-center block text-17 lg:text-20 tracking-large my-5 lg:mt-10">
                         @lang('LEARN MORE ABOUT THE PRODUCT')
                         <img src="{{asset('img/arrow-right-long-red.svg')}}" alt="" class="h-3 ml-8">
@@ -59,7 +64,7 @@
                 </div>
                 <div class="case__item reversed flex mt-24 justify-between">
                     <div class="item__text ">
-                        <h6 class="item__heading mb-5 text-gold">@lang('Save time and money')</h6>
+                        <h6 class="text-50 font-cocogoose font-black tracking-middle leading-none uppercase mb-5 text-gold">@lang('Save time and money')</h6>
                         <p>@lang('Cut your inspection time by up to half, resolve issues up to four times faster, get customised reports that are generated fully automatically, and uncover underperforming areas in a snap.')</p>
                     </div>
                     <div class="item__image ">
@@ -79,7 +84,7 @@
                 <p class="mb-24">
                     @lang('Lumiform provides free, ready-to-use templates that you can further customise, to enable you to start industry-proofed checklists within minutes.')
                 </p>
-                <a href=""
+                <a href="@urlTo('templateLibrary')"
                    class="flex items-center uppercase text-red text-center block text-17 lg:text-20 tracking-large my-5 lg:mt-10">
                     @lang('DISCOVER TEMPLATES')
                     <img src="{{asset('img/arrow-right-long-red.svg')}}" alt="" class="h-3 ml-8">
@@ -112,7 +117,7 @@
                         <img src="{{asset('img/industries.png')}}" alt="">
                     </div>
 
-                        @include('components.product.arrow-right',['color' => '#00B2FF','text' => 'SOLUTION BY INDUSTRIES'])
+                    @include('components.product.arrow-right',['color' => '#00B2FF','text' => 'SOLUTION BY INDUSTRIES'])
 
                 </div>
                 <div class="learn__item w-full md:w-1/2 lg:flex-1 text-center mb-5">
@@ -132,7 +137,7 @@
                 </div>
                 <div class="learn__item w-full md:w-1/2 lg:flex-1 text-center mb-5">
                     <div class="with__circle  mb-10 lg:mb-24 mx-auto">
-                        <div class="image__circle" style="background:#8D5FD6;"></div>
+                        <div class="image__circle" style="background:#00B2FF19;"></div>
                         <img src="{{asset('img/use-cases.png')}}" alt="">
                     </div>
 

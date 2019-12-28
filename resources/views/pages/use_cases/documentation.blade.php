@@ -1,6 +1,12 @@
 @extends('layout/base')
 
-@section("head.title", __(""))
+@section("head.title", __("use-cases/documentation.title"))
+@section('meta-tags')
+    @foreach(__('use-cases/documentation.keywords') as $keyword)
+        <meta name="keywords" content="{{$keyword}}">
+    @endforeach
+    <meta name="description" content="@lang('use-cases/documentation.description')">
+@endsection
 
 @section("content")
     <section class="py-26"
@@ -15,15 +21,14 @@
         <div class="container mx-auto">
             <div class="w-10/12 mx-auto mb-24">
                 <h1 class="text-70 font-cocogoose font-black uppercase text-center tracking-normal text-primary mb-16 leading-tight">
-                    @lang('Remain compliant
-                        <span class="line__break"></span> with the documentation app')
+                    @lang('use-cases/documentation.bannerTitle')
                 </h1>
                 <p class="text-30 font-light font-din text-secondary text-center">
-                    @lang('Legally compliant documentation has never been easier and faster than with Lumiform.')
+                    @lang('use-cases/documentation.bannerText')
                 </p>
             </div>
             <button class="mx-auto w-215  bg-red tracking-large font-extrabold text-white uppercase font-cocogoose text-17 lg:text-20 h-70  rounded-20 items-center justify-center flex">
-                @lang('try for FREE')
+                @lang('use-cases/documentation.buttonText')
             </button>
         </div>
     </section>

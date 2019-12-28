@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>@yield("head.title")</title>
-
+    @yield('meta-tags')
     {{-- <link rel="stylesheet" type="text/css" href="/theme.css">--}}
     <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
+    <link rel="shortcut icon" type="image/png" href="{{asset('img/icons/favicon.png')}}"/>
 
     @if (app()->environment() !== 'production')
         <meta name="robots" content="noindex, nofollow">
     @endif
 </head>
 <body>
-<header class="w-full xl:h-20 xxl:h-32 flex items-center z-50 bg-white">
+<header class="w-full xl:h-20 xxl:h-24 flex items-center z-50 bg-white-95">
     @include("layout/header")
 </header>
 <div class="content wrapper">

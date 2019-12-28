@@ -1,15 +1,17 @@
 @extends('layout/base')
 
-@section("head.title", __(""))
-
+@section("head.title", __("product/conduct.title"))
+@section('meta-tags')
+    <meta name="description" content="@lang('product/conduct.description')">
+@endsection
 @section("content")
     <section id="conduct__banner" class="py-10 lg:pt-32 lg:pb-24 bg-red-light relative">
         <div class="container mx-auto flex">
             <div class="banner__left lg:w-3/4 w-full">
                 <h1 class="tracking-normal text-center lg:text-left text-40 xxl:text-70 mb-16 font-cocogoose uppercase font-extrabold">
-                    @lang('Conduct audits and inspections via the mobile app.')
+                    @lang('product/conduct.bannerTitle')
                 </h1>
-                @include('components.product.banner_form',['buttonText' => 'try for free'])
+                @include('components.product.banner_form',['buttonText' => 'product/conduct.buttonText'])
             </div>
 
         </div>

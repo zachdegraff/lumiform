@@ -1,15 +1,18 @@
 @extends('layout/base')
 
-@section("head.title", __(""))
+@section("head.title", __("product/issues.title"))
+@section('meta-tags')
 
+    <meta name="description" content="@lang('product/issues.description')">
+@endsection
 @section("content")
     <section id="issues__banner" class="py-10 lg:pt-32 lg:pb-24 bg-blue-light relative">
         <div class="container mx-auto flex">
             <div class="banner__left  w-full lg:w-2/3">
                 <h1 class="tracking-normal text-center lg:text-left text-40 xxl:text-70 mb-16 font-cocogoose uppercase font-extrabold">
-                    @lang('Uncover more issues and solve them faster.')
+                    @lang('product/issues.bannerTitle')
                 </h1>
-                @include('components.product.banner_form',['buttonText' => 'try for free'])
+                @include('components.product.banner_form',['buttonText' => 'product/issues.buttonText'])
             </div>
             <img src="{{asset('img/group-phones.png')}}" alt="" class="group__phones">
         </div>

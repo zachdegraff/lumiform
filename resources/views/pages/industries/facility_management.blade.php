@@ -1,15 +1,18 @@
 @extends('layout/base')
 
-@section("head.title", __(""))
-
+@section("head.title", __("industry/facility-management.title"))
+@section('meta-tags')
+    @foreach(__('industry/facility-management.keywords') as $keyword)
+        <meta name="keywords" content="{{$keyword}}">
+    @endforeach
+    <meta name="description" content="@lang('industry/facility-management.description')">
+@endsection
 @section("content")
     @include('components.solution.industries_banner_section',[
      'imageBg' => 'facility-banner.png',
      'class' => 'w-9/12',
-     'heading' => 'Save time and money on every facility inspection',
-     'text' => 'Lumiform reliably reminds you of all the different tasks in facility <span class="line__break"></span>
-      management, and saves you time during each inspection. Raise issues as
-      <span class="line__break"></span>soon as they happen.',
+     'heading' => __('industry/facility-management.bannerTitle'),
+     'text' => __('industry/facility-management.bannerText'),
      ])
     <section class="py-32 with__border--bottom">
         <div class="container mx-auto">

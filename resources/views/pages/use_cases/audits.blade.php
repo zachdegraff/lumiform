@@ -1,7 +1,12 @@
 @extends('layout/base')
 
-@section("head.title", __(""))
-
+@section("head.title", __("use-cases/audits.title"))
+@section('meta-tags')
+    @foreach(__('use-cases/audits.keywords') as $keyword)
+        <meta name="keywords" content="{{$keyword}}">
+    @endforeach
+    <meta name="description" content="@lang('use-cases/assessments.description')">
+@endsection
 @section("content")
     <section class="pt-24 pb-32"
              style="
@@ -13,11 +18,15 @@
     >
         <div class="container mx-auto">
             <div class="w-10/12 mx-auto mb-32">
-                <h1 class="text-70 font-cocogoose font-black uppercase text-center tracking-normal text-primary mb-16">@lang('Your secret to time-saving audits')</h1>
-                <p class="text-30 font-light font-din text-secondary text-center">@lang('With Lumiform’s audit app, you cut the inspection time by half. Perform audits anytime and everywhere, get automatically created reports, and analyse with ease. ')</p>
+                <h1 class="text-70 font-cocogoose font-black uppercase text-center tracking-normal text-primary mb-16">
+                    @lang('use-cases/audits.bannerTitle')
+                </h1>
+                <p class="text-30 font-light font-din text-secondary text-center">
+                    @lang('use-cases/audits.bannerText')
+                </p>
             </div>
             <button class="mx-auto w-215  bg-red tracking-large font-extrabold text-white uppercase font-cocogoose text-17 lg:text-20 h-70  rounded-20 items-center justify-center flex">
-                @lang('try for FREE')
+                @lang('use-cases/audits.buttonText')
             </button>
         </div>
     </section>

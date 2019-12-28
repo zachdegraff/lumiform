@@ -1,5 +1,5 @@
 <li class="app-use imgbox">
-    <a href="@urlTo("resources.appUses.appUse", ["appUseSlug" => $appUse->slug])">
+    <a href="@urlTo('resources.appUses.appUse', ['appUseSlug' => $appUse->slug])">
         <div class="image"
             @if ($appUse->image)
                 style="background-image: url(@urlToImage($appUse->image));"

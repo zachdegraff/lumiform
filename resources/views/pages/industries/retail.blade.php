@@ -1,13 +1,18 @@
 @extends('layout/base')
 
-@section("head.title", __(""))
-
+@section("head.title", __("industry/retail.title"))
+@section('meta-tags')
+    @foreach(__('industry/retail.keywords') as $keyword)
+        <meta name="keywords" content="{{$keyword}}">
+    @endforeach
+    <meta name="description" content="@lang('industry/retail.description')">
+@endsection
 @section("content")
     @include('components.solution.industries_banner_section',[
         'imageBg' => 'retail-banner.png',
         'class' => 'w-9/12 py-16',
-        'heading' => 'Protect your retail brand',
-        'text' => 'Ensure a positive on-site experience for your customers. Collect consistent data, standardise operations, identify areas that have failed and get problems resolved quickly!',
+        'heading' =>  __('industry/retail.bannerTitle'),
+        'text' => __('industry/retail.bannerText'),
         ])
     <section class="py-32 with__border--bottom">
         <div class="container mx-auto">
