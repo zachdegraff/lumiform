@@ -16,7 +16,7 @@
         ])
     <section class="py-32 with__border--bottom">
         <div class="container mx-auto">
-            <h2 class="font-bold text-center font-cocogoose text-primary text-30 xl:text-40 mb-32 uppercase tracking-heading">
+            <h2 class="font-bold text-center font-cocogoose text-primary text-30 xl:text-50 mb-32 uppercase tracking-heading">
                 @lang('Retailers use Lumiform to …')
             </h2>
 
@@ -26,18 +26,21 @@
                 'heading' => 'Create brand consistency',
                 'color' => 'light-blue',
                 'text' => 'Assess the in-store experience and report on brand consistency. Coordinate all aspects of brand experience from remote.',
+                'width' => '440'
                 ])
                 @include('components.solution.industries_icon_with_text',[
                 'icon' => 'icons/home-icon_red.svg',
                 'heading' => 'Reduce stock loss',
                 'color' => 'red',
                 'text' => 'Continuously track what’s causing stock shrinkage and identify the problem stores with Lumiform.',
+                'width' => '450'
                 ])
                 @include('components.solution.industries_icon_with_text',[
                 'icon' => 'icons/improve-icon_purple.svg',
                 'heading' => 'Improve PoS campaigns',
                 'color' => 'purple',
                 'text' => 'Use Lumiform’s checklists to roll out your next promotion or merchandise initiative faster, and get better results..',
+                'width' => '410'
                 ])
             </div>
             <a href="#"
@@ -48,8 +51,8 @@
     </section>
     <section class="py-32 with__border--bottom">
         <div class="container mx-auto">
-            <h2 class="font-bold text-center font-cocogoose text-primary text-30 xl:text-40 lg:mb-4 uppercase tracking-heading">
-                @lang('<span class="text-purple">Boost quality and safety standards </span> in your retail stores')
+            <h2 class="font-bold text-center font-cocogoose text-primary text-30 xl:text-50 lg:mb-4 uppercase tracking-heading">
+                @lang('Boost<span class="text-purple"> quality and safety standards </span> in your retail stores')
             </h2>
             <p class="text-center font-light font-din text-20 lg:text-30 text-secondary tracking-text mb-20">
                 @lang('Carry out regular inspections in the field to ensure consistent quality across all stores and improve brand awareness.')
@@ -58,7 +61,7 @@
             'items' => [
             ['srcset' => ['group-2969.png','group-2969@2x.png'],'title' => 'Create forms','desc' => 'Create custom forms within minutes. Organise store audits and inspections to make sure they are done reliably.'],
             ['srcset' => ['group-4764.png','group-4764@2x.png'],'title' => 'Conduct via App','desc' => 'Conduct audits and inspections whether with a tablet or smartphone, Android or iOS – online or offline.'],
-            ['srcset' => ['group-3430.png','group-3430@2x.png'],'title' => 'Solve Issues','desc' => 'Make all field workers can easily raise issues as soon as they occur. Keep track of the progress and solve them together, as a team.'],
+            ['srcset' => ['group-5134.png','group-5134@2x.png'],'title' => 'Solve Issues','desc' => 'Make all field workers can easily raise issues as soon as they occur. Keep track of the progress and solve them together, as a team.'],
             ['srcset' => ['group-4750.png','group-4750@2x.png'],'title' => 'Results, Reports and Analyses','desc' => 'Don’t waste time on post-processing and digitisation of audit and inspection reports – everything is fully automated. Uncover stores that need your attention through in-depth analyses.'],
             ],
             'features' => ['url' => '#','text' => 'Explore more PRODUCT features']
@@ -68,8 +71,8 @@
     </section>
     <section class="py-24">
         <div class="container mx-auto">
-            <h3 class="text-primary text-center uppercase text-40 font-cocogoose tracking-heading font-bold mb-32">
-                @lang('<span class="text-green">Check all your quality standards </span> with one app')
+            <h3 class="text-primary text-center uppercase text-50 font-cocogoose tracking-heading font-bold mb-32">
+                @lang('<span class="text-green">Check  your quality standards </span> with one app')
             </h3>
             <div class="industry__icons flex justify-between flex-wrap">
                 @include('components.solution.industries_icon_list',[
@@ -115,7 +118,7 @@
         'template' => ['text' => 'View all TEMPLATES','url' => '#']
         ])
     @include('components.solution.industries_explore_section',[
-    'heading' => '<span class="text-gold"> Read success stories </span> about retailers who use Lumiform',
+    'heading' => '<span class="text-gold"> Read success stories </span> about<span class="line__break"></span> retailers who use Lumiform',
     'items' => [
     ['image' => 'retail-inspection.png','srcset' => ['retail-inspection.png','retail-inspection@2x.png'],'template' => ['url' => '#','text' => 'View INSPECTIOn CASE STUDY'] ],
     ['image' => 'retail-audit.png','srcset' => ['retail-audit.png','retail-audit@2x.png'],'template' => ['url' => '#','text' => 'View AUDIT CASE STUDY'] ],

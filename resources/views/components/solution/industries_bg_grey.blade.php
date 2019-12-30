@@ -20,7 +20,7 @@
             <div class="bottom__right w-6/12 ">
                 <div class="mx-auto  h-full flex flex-col justify-center items-center ">
                     <img src="{{asset('img/'.$image)}}" alt="" class="w-full">
-                    <a href="{{$template['url']}}"
+                    <a href="{{route(app()->getLocale().'.templateLibrary')}}"
                        class="flex items-center uppercase text-red text-center block text-17 lg:text-20 tracking-large my-5 lg:mt-10">
                         {!! $template['text'] !!}
                         <img src="{{asset('img/arrow-right-long-red.svg')}}" alt="" class="h-3 ml-8">

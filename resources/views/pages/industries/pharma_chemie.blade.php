@@ -16,7 +16,7 @@
          ])
     <section class="py-32 with__border--bottom">
         <div class="container mx-auto">
-            <h2 class="font-bold text-center font-cocogoose text-primary text-30 xl:text-40 mb-32 uppercase tracking-heading">
+            <h2 class="font-bold text-center font-cocogoose text-primary text-30 xl:text-50 mb-32 uppercase tracking-heading">
                 @lang('Chemical and pharmaceutical companies use Lumiform to …')
             </h2>
 
@@ -26,18 +26,21 @@
                 'heading' => 'Remain fully compliant',
                 'color' => 'purple',
                 'text' => 'Remind employees of their upcoming tasks, so that they are completed on time and reliably, while maintaining safety standards. Keep track of what’s happening on site. ',
+                'width' => '450'
                 ])
                 @include('components.solution.industries_icon_with_text',[
                 'icon' => 'icons/time-icon_green.svg',
                 'heading' => 'Solve issues faster',
                 'color' => 'green',
                 'text' => 'Report issues immediately, as they occur, and delegate tasks. Lumiform informs managers about deadline and site, priority level and corrective actions. ',
+                'width' => '490'
                 ])
                 @include('components.solution.industries_icon_with_text',[
                 'icon' => 'icons/safe-icon_orange.svg',
                 'heading' => 'Increase work safety',
                 'color' => 'gold',
                 'text' => 'Gain real-time visibility of all issues and inspections, to prevent incidents in advance and achieve higher safety and quality standards. ',
+                'width' => '440'
                 ])
             </div>
             <a href="#"
@@ -48,7 +51,7 @@
     </section>
     <section class="py-32 with__border--bottom">
         <div class="container mx-auto">
-            <h2 class="font-bold text-center font-cocogoose text-primary text-30 xl:text-40 lg:mb-4 uppercase tracking-heading">
+            <h2 class="font-bold text-center font-cocogoose text-primary text-30 xl:text-50 lg:mb-4 uppercase tracking-heading">
                 @lang('Collect consistent  <span class="text-purple">work health and safety data </span>  in a snap')
             </h2>
             <p class="text-center font-light font-din text-20 lg:text-30 text-secondary tracking-text mb-20">
@@ -69,7 +72,7 @@
     </section>
     <section class="py-24 with__border--bottom">
         <div class="container mx-auto">
-            <h3 class="text-primary text-center uppercase text-40 font-cocogoose tracking-heading font-bold mb-32">
+            <h3 class="text-primary text-center uppercase text-50 font-cocogoose tracking-heading font-bold mb-32">
                 @lang('The <span class="text-gold"> pharmaceutical and chemical industry
  <span class="line__break"></span>  </span> uses Lumiform for diverse use cases')
             </h3>
@@ -104,7 +107,7 @@
     </section>
     @include('components.solution.industries_bg_grey',[
         'heading' => 'Improve work safety and employee health <span class="line__break"></span>
-        with <span class="text-green">expert-proofed checklist templates </span> ',
+        with <span class="text-red">expert-proofed checklist templates </span> ',
         'text' =>  '',
         'items' => [
                 ['image' => 'inspections-osha-self-inspection.png','srcset' => ['inspections-osha-self-inspection.png','inspections-osha-self-inspection@2x.png'],'text' => 'Cleaning test'],

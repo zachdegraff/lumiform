@@ -20,7 +20,7 @@
                 </div>
                 <div class="about__text">
                     <h3 class="text-50 font-cocogoose font-black text-primary uppercase leading-none mb-10">
-                        @lang('We are <span class="text-light-blue">changing the direction </span>of quality ')
+                        @lang('We are <span class="text-light-blue">changing the direction </span>of quality and safety procedures')
                     </h3>
                     <p class="text-20 font-din font-light tracking-text text-secondary leading-snug">@lang('Most businesses conduct quality and safety checks analogously, communicate via email or hand over documents personally or via SharePoint. Information is scattered, responsibilities are unclear and the status is non-transparent. They try to overcome the chaos with even more checklists and regular audits, spending even more time with analogue forms, sinking ever further into chaos and finally losing the overview entirely.
                             <br><br>Think about your everyday life, how you use apps, how you communicate, how you collaborate with your teammates digitally and how lean processes simplify your everyday working life. That is how quality and safety management should be!')</p>
@@ -95,17 +95,17 @@
                 'items' => [
                      ['image' => 'team-1.png',
                      'name' => 'Lukas Blasberg, CEO ',
-                     'linkedin' => '#',
+                     'linkedin' => 'https://www.linkedin.com/in/lukas-blasberg/',
                      'text' => 'Lukas recognised the tragedy that occurs due to manual processes in quality and safety management: poor quality in terms of products and services, serious accidents at work and a very high workload. <br><br>Since Lukas and Philip are an experienced founding team (they have already founded a successful business together), they decided to sit down together to work out a solution.',
                                 ],
                      ['image' => 'team-2.png',
                      'name' => 'Philip Blasberg, CEO ',
-                     'linkedin' => '#',
+                     'linkedin' => 'https://www.linkedin.com/in/philip-roelen-blasberg-38201873/',
                      'text' => 'Philip has always questioned the manual processes that he was regularly confronted with – even in well-established companies – while working at the digital consultancy where he was previously employed. <br><br>So, after he and Lukas had put their heads together, he came up with the idea of Lumiform, in order to enable digital processes in quality and safety management, thereby reducing the number of accidents in the workplace and eliminating quality defects.',
                                 ],
                      ['image' => 'team-3.png',
                      'name' => 'Marton Farago, CTO ',
-                     'linkedin' => '#',
+                     'linkedin' => 'https://www.linkedin.com/in/martonfarago/',
                      'text' => 'Marton heard about the tools that were being used for quality and safety checks, and could not believe his ears. He thought about how they could solve the lack of transparency and the inefficient conduction process technically. <br><br>All forms needed to be digitised, inspections had to be organised, smooth conduction via a mobile app was required, issues needed to be tracked and resolved quickly, in a team, and data had to be used to help businesses to improve procedures continually. Lumiform was born!',
                                 ]
                                 ]
@@ -144,18 +144,11 @@
 
         </div>
         <div class="container mx-auto flex items-center">
-            <div class="flex-1">
-                <a href="#"
-                   class="ml-3 flex items-center  uppercase text-red text-center block text-17 lg:text-20 tracking-heading ">
-                    @lang('View available roles')
-                    <img src="{{asset('img/arrow-right-long-red.svg')}}" alt="" class="h-3 ml-8">
-                </a>
-            </div>
             <div class="flex-1 flex justify-center">
                 <a href="#"
                    class="font-extrabold text-20 bg-red text-white uppercase font-cocogoose  h-70 px-8 py-6 rounded-20 ">@lang('Join us!')</a>
             </div>
-            <div class="flex-1"></div>
+
         </div>
     </section>
     <section id="common" class="bg-grey-opacity pt-26 pb-16">
@@ -190,7 +183,7 @@
                     </div>
                     <div class="focus__text ml-10">
                         <p class="mb-8 text-30 font-din text-secondary tracking-text leading-snug font-light">@lang('We are developing an app that improves product/service quality and occupational safety in companies. ')</p>
-                        <a href="#"
+                        <a href="@urlTo('product')"
                            class="flex items-center  uppercase text-red text-center block text-17 lg:text-20 tracking-heading ">
                             @lang('LUMIFORM PRODUCT')
                             <img src="{{asset('img/arrow-right-long-red.svg')}}" alt="" class="h-3 ml-8">

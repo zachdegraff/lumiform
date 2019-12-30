@@ -71,7 +71,7 @@
 
         </div>
     </section>
-    <section id="temperature">
+    <section id="temperature" class="with__border--bottom">
         <div class="container mx-auto flex items-center justify-between">
             <div class="w-6/12">
                 <img src="{{asset('img/group-3311.png')}}" alt="" srcset="{{asset('img/group-3311.png')}},

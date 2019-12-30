@@ -8,7 +8,7 @@
                 <p class="mt-10 font-din text-left font-light text-secondary text-20 mb-5">
                     {!! $text !!}
                 </p>
-                <a href="{{$explore['url']}}"
+                <a href="{{route(app()->getLocale().'.'.$explore['url'])}}"
                    class="flex items-center uppercase text-red text-center block text-17 lg:text-20 tracking-large">
                     {{$explore['text']}}
                     <img src="{{asset('img/arrow-right-long-red.svg')}}" alt="" class="h-3 ml-6">
@@ -25,7 +25,7 @@
                     <div class="bottom__item w-6/12 flex justify-start items-center  mb-10 pr-10">
                         <img src="{{'img/'.$item['image']}}" alt="" class="rounded-15 index__image--list" srcset="{{asset('img'.'/'.$item['srcset'][0])}},
                     {{asset('img'.'/'.$item['srcset'][1])}} 2x">
-">
+
                         <span class="ml-5 text-20 font-cocogoose font-medium uppercase text-secondary">{!! $item['text'] !!}</span>
                     </div>
                 @endforeach

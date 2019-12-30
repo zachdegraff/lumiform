@@ -1,6 +1,6 @@
 <section id="industries_explore" class="py-32">
     <div class="container mx-auto">
-        <h3 class="text-primary text-center uppercase text-40 font-cocogoose tracking-heading font-bold mb-24">
+        <h3 class="text-primary text-center uppercase text-50 font-cocogoose tracking-heading font-bold mb-24">
             {!! $heading !!}
         </h3>
         <div class="flex justify-between">

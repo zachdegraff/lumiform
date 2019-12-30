@@ -157,6 +157,18 @@
     <script>
         const tabElement = document.getElementsByClassName('header__item');
         const tabContent = document.getElementsByClassName('content__item');
+        let activeIndex = 0;
+        let maxCount = tabElement.length -1 ;
+        setInterval(function () {
+            console.log(maxCount)
+            if (activeIndex < maxCount){
+                activeIndex++;
+            } else{
+                activeIndex = 0
+            }
+
+            getActiveTab(activeIndex)
+        }, 15000);
 
         function removeClases(data) {
             [].forEach.call(data, function (el) {
@@ -164,13 +176,19 @@
             });
         }
 
-        function openTab(event) {
-            removeClases(tabElement)
-            removeClases(tabContent)
+        function getActiveTab(idx) {
+            removeClases(tabElement);
+            removeClases(tabContent);
 
+            tabElement[idx].classList.add('active');
+            tabContent[idx].classList.add('active');
+        }
+
+        function openTab(event) {
             let index = event.dataset.index;
-            event.classList.add('active');
-            tabContent[index].classList.add('active');
-        };
+
+            activeIndex = index;
+            getActiveTab(index)
+        }
     </script>
 @endsection

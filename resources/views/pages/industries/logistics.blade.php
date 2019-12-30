@@ -16,7 +16,7 @@
   ])
     <section class="py-32 with__border--bottom">
         <div class="container mx-auto">
-            <h2 class="font-bold text-center font-cocogoose text-primary text-30 xl:text-40 mb-32 uppercase tracking-heading">
+            <h2 class="font-bold text-center font-cocogoose text-primary text-30 xl:text-50 mb-32 uppercase tracking-heading">
                 @lang('Lumiform is the easiest way for construction companies to…')
             </h2>
 
@@ -26,18 +26,21 @@
                 'heading' => 'Avoid costly damage to vehicles',
                 'color' => 'red',
                 'text' => 'Improve vehicle quality through regular vehicle inspections. Make sure inspectors conduct checks in time and fix issues immediately.',
+                'width' => '450'
                 ])
                 @include('components.solution.industries_icon_with_text',[
                 'icon' => 'icons/time-icon_blue.svg',
                 'heading' => 'Cut inspection time by 30%',
                 'color' => 'light-blue',
                 'text' => 'Not only does each individual inspection take less time, but the automated issue management and fast analysis also save time.',
+                'width' => '420'
                 ])
                 @include('components.solution.industries_icon_with_text',[
                 'icon' => 'icons/safe-icon_orange.svg',
                 'heading' => 'Enhance safety',
                 'color' => 'green',
                 'text' => 'Fix issues immediately, in case of deviations from the standards, and meet all safety standards in terms of your transport and logistics initiatives.',
+                'width' => '470'
                 ])
             </div>
             <a href="#"
@@ -48,8 +51,8 @@
     </section>
     <section class="py-32 with__border--bottom">
         <div class="container mx-auto">
-            <h2 class="font-bold text-center font-cocogoose text-primary text-30 xl:text-40 lg:mb-4 uppercase tracking-heading">
-                @lang('<span class="text-gold">Ensure safe procedures </span> in the logistics industry')
+            <h2 class="font-bold text-center font-cocogoose text-primary text-30 xl:text-50 lg:mb-4 uppercase tracking-heading">
+                @lang('<span class="text-light-blue">Ensure safe procedures </span> in the logistics industry')
             </h2>
             <p class="text-center font-light font-din text-20 lg:text-30 text-secondary tracking-text mb-20">
                 @lang('Empower your team in the field to conduct frequent inspections in an easy and simple way.')
@@ -58,8 +61,8 @@
             'items' => [
             ['srcset' => ['group-2995.png','group-2995@2x.png'],'title' => 'Create forms','desc' => 'Create custom forms within minutes. Organise inspections to make sure the right person does all the checklists reliably.'],
             ['srcset' => ['group-4773.png','group-4773@2x.png'],'title' => 'Conduct via App','desc' => 'Conduct audits and inspections whether with a tablet or smartphone, Android or iOS – online or offline.'],
-            ['srcset' => ['group-3430.png','group-3430@2x.png'],'title' => 'Solve Issues','desc' => 'Make sure all inspectors can easily report issues. Keep track of the progress, and solve issues together as a team.'],
-            ['srcset' => ['group-4750.png','group-4750@2x.png'],'title' => 'Results, Reports and Analyses','desc' => 'Don’t waste time on post-processing and digitisation of audit and inspection reports – everything is fully automated. Uncover areas of your logistics and transportation process that need your attention.'],
+            ['srcset' => ['group-5134.png','group-5134@2x.png'],'title' => 'Solve Issues','desc' => 'Make sure all inspectors can easily report issues. Keep track of the progress, and solve issues together as a team.'],
+            ['srcset' => ['group-4775.png','group-4775@2x.png'],'title' => 'Results, Reports and Analyses','desc' => 'Don’t waste time on post-processing and digitisation of audit and inspection reports – everything is fully automated. Uncover areas of your logistics and transportation process that need your attention.'],
             ],
             'features' => ['url' => '#','text' => 'Explore more PRODUCT features']
             ])
@@ -69,7 +72,7 @@
     </section>
     <section class="py-24 with__border--bottom">
         <div class="container mx-auto">
-            <h3 class="text-primary text-center uppercase text-40 font-cocogoose tracking-heading font-bold mb-32">
+            <h3 class="text-primary text-center uppercase text-50 font-cocogoose tracking-heading font-bold mb-32">
                 @lang('<span class="text-gold">Implement all your quality and <span class="line__break"></span> safety inspections </span>within Lumiform ')
             </h3>
             <div class="industry__icons flex justify-between flex-wrap">
@@ -116,7 +119,7 @@
         'template' => ['text' => 'View all TEMPLATES','url' => '#']
         ])
     @include('components.solution.industries_explore_section',[
-    'heading' => 'Read success stories about <span class="text-gold"> <span class="line__break"></span>
+    'heading' => 'Read success stories about <span class="text-light-gold"> <span class="line__break"></span>
 Logistics Professionals </span> who use Lumiform',
     'items' => [
     ['image' => 'logistic-inspection.png','srcset' => ['logistic-inspection.png','logistic-inspection@2x.png'],'template' => ['url' => '#','text' => 'View logistics INSPECTIOn CASE STUDY'] ],
@@ -131,8 +134,8 @@ Logistics Professionals </span> who use Lumiform',
     ])
     @include('components.product.bottom_form',[
     'heading' =>'Improve security in transportation and logistics – <span class="line__break"></span> Start free of charge!',
-    'sectionBg' =>'green-light',
-    'buttonBg' =>'green-dark',
+    'sectionBg' =>'green-opacity',
+    'buttonBg' =>'green',
     'image' =>'img/group-5137.png',
     'srcset' => ['group-5137.png','group-5137@2x.png'],
     'left' => true

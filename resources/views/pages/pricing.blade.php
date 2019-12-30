@@ -1,6 +1,6 @@
 @extends('layout/base')
 
-@section("head.title", __("pricing.title"))
+@section("head.title", __("pricing-page.title"))
 
 @section("content")
     <section class="bg-grey-light pt-28 pb-32">

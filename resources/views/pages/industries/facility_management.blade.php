@@ -26,18 +26,21 @@
                 'heading' => 'Remain fully compliant',
                 'color' => 'red',
                 'text' => 'Remind everyone of the inspections they need to conduct, so that inspectors perform all their checks reliably.',
+                'width' => '475'
                 ])
                 @include('components.solution.industries_icon_with_text',[
                 'icon' => 'icons/check-icon_green.svg',
                 'heading' => 'Solve issues quicker',
                 'color' => 'green',
                 'text' => 'Make sure field workers take appropriate corrective action whenever issues occur, and quickly solve them with teammates.',
+                'width' => '485'
                 ])
                 @include('components.solution.industries_icon_with_text',[
                 'icon' => 'icons/time-icon_blue.svg',
                 'heading' => 'Cut inspection time by 30%',
                 'color' => 'light-blue',
                 'text' => 'Automated issue management and fast analysis save time while the inspection itself takes less time. ',
+                'width' => '440'
                 ])
             </div>
             <a href="#"
@@ -48,8 +51,8 @@
     </section>
     <section class="py-32 with__border--bottom">
         <div class="container mx-auto">
-            <h2 class="font-bold text-center font-cocogoose text-primary text-30 xl:text-40 lg:mb-4 uppercase tracking-heading">
-                @lang('<span class="text-gold">Capture consistent data</span>  in a fraction of the time')
+            <h2 class="font-bold text-center font-cocogoose text-primary text-30 xl:text-50 lg:mb-4 uppercase tracking-heading">
+                @lang('<span class="text-light-blue">Capture consistent data</span>  in a fraction of the time')
             </h2>
             <p class="text-center font-light font-din text-20 lg:text-30 text-secondary tracking-text mb-20">
                 @lang('Raise standards across all facilities. Ensure the accuracy and reliability of regular safety and quality inspections.')
@@ -69,8 +72,9 @@
     </section>
     <section class="py-24 with__border--bottom">
         <div class="container mx-auto">
-            <h3 class="text-primary text-center uppercase text-40 font-cocogoose tracking-heading font-bold mb-32">
-                @lang('<span class="text-gold">Implement all your quality and <span class="line__break"></span> safety inspections </span>within Lumiform ')
+            <h3 class="text-primary text-center uppercase text-50 font-cocogoose tracking-heading font-bold mb-32">
+                @lang('Explore which use cases
+<span class="text-purple">facility managers  <span class="line__break"></span> </span>implemented with Lumiform ')
             </h3>
             <div class="industry__icons flex justify-between flex-wrap">
                 @include('components.solution.industries_icon_list',[

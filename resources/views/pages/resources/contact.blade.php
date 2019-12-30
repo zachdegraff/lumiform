@@ -21,7 +21,7 @@
                 <p class="text-20 font-black font-cocogoose text-grey-bold text-center uppercase">
                     @lang('resources/contact.question')
                 </p>
-                <a href="#"
+                <a href="@urlTo('pricing')#faq"
                    class="ml-12 flex items-center justify-center uppercase text-red text-center block text-17 lg:text-20 tracking-heading ">
                     @lang('resources/contact.faqText')
                     <img src="{{asset('img/arrow-right-long-red.svg')}}" alt="" class="h-3 ml-8">
