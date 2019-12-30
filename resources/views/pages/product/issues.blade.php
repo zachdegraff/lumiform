@@ -57,7 +57,7 @@
             </h2>
             @include('components.product.text_numbered',[
             'heading' => 'Raise issues <span class="text-light-blue">automatically</span>',
-            'text' => 'Your checklist is available for all users in your organisation, per default, at any time. To limit the availability of unscheduled lists, you can make them available to individual users only.',
+            'text' => 'In the form builder, predefine which events trigger an issue automatically and indicate to whom the resolution should be assigned, and who is responsible for resolving it.',
             'color' => 'grey-light',
             'number' => 1,
             'subItem' => true,
@@ -66,7 +66,7 @@
             ])
             @include('components.product.text_numbered',[
             'heading' => 'Raise <span class="text-red"> ad-hoc issues</span>',
-            'text' => 'Inspectors have the option of reporting an issue at any time, via the mobile app. Either raise an issue by defining everything from scratch or select from a predefined set of issues. . To limit the availability of unscheduled lists, you can make them available to individual users only.',
+            'text' => 'Inspectors have the option of reporting an issue at any time, via the mobile app. Either raise an issue by defining everything from scratch or select from a predefined set of issues. ',
             'color' => 'grey-light',
             'number' => 2,
             'image' => 'group-5340.png',
@@ -74,7 +74,7 @@
             ])
             @include('components.product.text_numbered',[
             'heading' => 'Raise <span class="text-gold">in-form Issues</span>',
-            'text' => 'During an inspection, inspectors have the option of reporting a problem relating to a particular check. The solution workflow is then attached to the inspection report.. Either raise an issue by defining everything from scratch or select from a predefined set of issues. . To limit the availability of unscheduled lists, you can make them available to individual users only.',
+            'text' => 'During an inspection, inspectors have the option of reporting a problem relating to a particular check. The solution workflow is then attached to the inspection report.',
             'color' => 'grey-light',
             'number' => 3,
             'image' => 'group-5089.png',
@@ -147,7 +147,7 @@
 
             @include('components.product.image_text_vertical',[
                                                'heading' => 'Messaging with teammates',
-                                               'text' => 'Write messages and share them with teammates who are also assigned to the issue, in order to speed up resolution. .',
+                                               'text' => 'Write messages and share them with teammates who are also assigned to the issue, in order to speed up resolution.',
                                                'color' => 'purple',
                                                'image' => 'group-5043.png',
                                                 'srcset' => ['group-5043.png','group-5043@2x.png'],
@@ -179,7 +179,7 @@
         </div>
     </section>
     @include('components.product.bottom_form',[
-   'heading' =>'Improve your quality and safety efforts with meaningful analyses.',
+   'heading' =>'Improve your quality and safety <span class="line__break"> </span> efforts with meaningful analyses',
    'sectionBg' =>'green-opacity',
    'buttonBg' =>'green',
    'image' =>'img/group-1836.svg',

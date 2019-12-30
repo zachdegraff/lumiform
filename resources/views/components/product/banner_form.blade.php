@@ -1,5 +1,6 @@
 <div class="banner__submit">
     <form action=""
+          id="subscribe"
           class="mb-10 flex flex-col md:flex-row items-center md:justify-center lg:flex-none lg:justify-start">
         <input type="email" class="w-full sm:w-360 pl-8 h-50 xxl:h-70 rounded-20"
                placeholder="@lang('Enter e-mail address')">

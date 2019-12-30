@@ -1,4 +1,4 @@
-<section class="py-32 bg-grey-light">
+<section class="py-32 bg-grey-light section__items">
     <div class="container mx-auto">
         <h3 class="text-primary text-center uppercase text-50 font-cocogoose tracking-heading font-bold mb-6">
             {!! $heading !!}
@@ -19,7 +19,7 @@
             </div>
             <div class="bottom__right w-6/12 ">
                 <div class="mx-auto  h-full flex flex-col justify-center items-center ">
-                    <img src="{{asset('img/'.$image)}}" alt="">
+                    <img src="{{asset('img/'.$image)}}" alt="" class="w-full">
                     <a href="{{$template['url']}}"
                        class="flex items-center uppercase text-red text-center block text-17 lg:text-20 tracking-large my-5 lg:mt-10">
                         {!! $template['text'] !!}

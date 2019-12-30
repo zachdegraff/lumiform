@@ -141,7 +141,8 @@
                    'heading' => 'Notification-logics',
                    'headingColor' => 'light-blue',
                    'text' => 'Notify users via push-notification or email, when the inspector gives a particular answer.',
-                   'image' => 'group-2700.svg',
+                   'image' => 'group-2700.png',
+                   'srcset' => ['group-2700.png','group-2700@2x.png'],
                    'reversed' => true
                    ]
                    )
@@ -159,12 +160,13 @@
             <div class="workflow__items">
                 <div class="sm:flex mb-12 lg:mb-32">
                     <div class="digitise__item--text w-full sm:w-1/2 lg:w-2/5 sm:pr-12 lg:pr-20 flex flex-col justify-center">
-                        <h3 class="text-center sm:text-left lg:text-30 font-bold font-cocogoose uppercase mb-5 text-light-blue">@lang('Create sections and pages')</h3>
+                        <h3 class="text-center sm:text-left lg:text-30 font-bold font-cocogoose uppercase mb-5 text-light-blue">
+                            @lang('Create sections and pages')</h3>
                         <p class="text-center sm:text-left text-secondary font-hairline lg:text-30 font-din mb-5">
                             @lang('Use sections to bundle elements relating to one topic (for example, a ‘Product inspection’ section can be comprised of several checks), and pages to separate checks on different screens.')</p>
                     </div>
                     <div class="digitise__item--image  w-1/2 lg:w-3/5 mx-auto">
-                        <img src="{{asset('img/group-2701.svg')}}" alt="" class="mx-auto">
+                        <img src="{{asset('img/group-2701.png')}}" alt="" class="mx-auto" srcset="{{asset('img/group-2701.png')}},{{asset('img/group-2701@2x.png')}} 2x">
                     </div>
                 </div>
                 <div class="sm:flex mb-12 lg:mb-40">
@@ -202,10 +204,10 @@
                                 @lang('DEFINE THE FOLLOWING PARAMETERS:')
                             </h6>
                             <ul class="parameters">
-                                <li class="text-secondary text-15 lg:text-20 font-cocogoose tracking-heading flex items-center mb-8">
+                                <li class="text-secondary text-15 lg:text-20 font-cocogoose tracking-heading flex items-center mb-8 uppercase">
                                     <img src="{{asset('img/group-1287.svg')}}" alt=""
                                          class="mr-6"> @lang('Schedule start & end time')</li>
-                                <li class="text-secondary text-15 lg:text-20 font-cocogoose tracking-heading flex items-center mb-8">
+                                <li class="text-secondary text-15 lg:text-20 font-cocogoose tracking-heading flex items-center mb-8 uppercase">
                                     <img src="{{asset('img/group-1288.svg')}}" alt=""
                                          class="mr-6"> @lang('Schedule repeats <br>(e.g. daily, weekly, monthly, custom)')
                                 </li>
@@ -228,15 +230,15 @@
                                 @lang('DEFINE THE FOLLOWING PARAMETERS:')
                             </h6>
                             <ul class="parameters">
-                                <li class="text-secondary text-15 lg:text-20 font-cocogoose tracking-heading flex items-center mb-8">
+                                <li class="text-secondary text-15 lg:text-20 font-cocogoose tracking-heading flex items-center mb-8 uppercase">
                                     <img src="{{asset('img/group-1290.svg')}}" alt="" class="mr-6">
                                     @lang('Groups')
                                 </li>
-                                <li class="text-secondary text-15 lg:text-20 font-cocogoose tracking-heading flex items-center mb-8">
+                                <li class="text-secondary text-15 lg:text-20 font-cocogoose tracking-heading flex items-center mb-8 uppercase">
                                     <img src="{{asset('img/group-1289.svg')}}" alt="" class="mr-6">
                                     @lang('Users')
                                 </li>
-                                <li class="text-secondary text-15 lg:text-20 font-cocogoose tracking-heading flex items-center mb-8">
+                                <li class="text-secondary text-15 lg:text-20 font-cocogoose tracking-heading flex items-center mb-8 uppercase">
                                     <img src="{{asset('img/group-1290.svg')}}" alt="" class="mr-6">
                                     @lang('Site')
                                 </li>
@@ -264,7 +266,7 @@
                         @lang('Your checklist is available for all users in your organisation, per default, at any time. To limit the availability of unscheduled lists, you can make them available to individual users only.')</p>
                 </div>
                 <div class="digitise__item--image w-1/2 lg:w-2/5 ">
-                    <img src="{{asset('img/group-2745.svg')}}" alt="" class="mx-auto">
+                    <img src="{{asset('img/group-2745.png')}}" alt="" class="mx-auto" srcset="{{asset('img/group-2745.png')}},{{asset('img/group-2745@2x.png')}} 2x">
                 </div>
             </div>
         </div>

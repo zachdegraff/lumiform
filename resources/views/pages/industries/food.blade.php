@@ -24,20 +24,23 @@
                 @include('components.solution.industries_icon_with_text',[
                 'icon' => 'icons/umbrella-icon.svg',
                 'heading' => 'Protect your brand',
-                'color' => 'grey-bold',
+                'color' => 'light-blue',
                 'text' => 'Track whether checks are done in time and solve issues as soon as they occur.',
+                'width' => '415'
                 ])
                 @include('components.solution.industries_icon_with_text',[
                 'icon' => 'icons/time-icon.svg',
                 'heading' => 'Save on documentation time',
-                'color' => 'grey-bold',
+                'color' => 'purple',
                 'text' => 'Cut your inspection time by 30%, through faster conduction and automated documentation.',
+                'width' => '440'
                 ])
                 @include('components.solution.industries_icon_with_text',[
                 'icon' => 'icons/check-icon.svg',
                 'heading' => 'Comply 100% with regulations',
-                'color' => 'grey-bold',
+                'color' => 'green',
                 'text' => 'We help you to comply with all the laws and to ensure that you have all the documents available at the right time.',
+                'width' => '480'
                 ])
             </div>
             <a href="#"
@@ -81,7 +84,7 @@
                 <p class="font-din font-light text-30 tracking-text text-secondary mb-10">
                     @lang('Explore the most affordable temperature tracking system on the market. It’s manufacturer-independent and very easy to install.')
                 </p>
-                <a href="#"
+                <a href="{{route(app()->getLocale().'.resources.sensors')}}"
                    class="flex items-center uppercase text-red text-center block text-17 lg:text-20 tracking-large">
                     @lang('Discover the sensor solution')
                     <img src="{{asset('img/arrow-right-long-red.svg')}}" alt="" class="h-3 ml-8">
@@ -147,7 +150,7 @@
     @include('components.solution.industries_quotes',[
     'image' => 'group-1031.svg',
     'text' => '„In the past, we used paper, pen and camera for our audit reports. Now we can use Lumiform and we get everything we need in one tool.“',
-    'position' => '- VIP, TItle <br> Company Name',
+    'position' => 'Sven,  <br>Head of Quality Management',
     ])
     @include('components.product.bottom_form',[
     'heading' =>'Start improving food quality now – free of charge!',

@@ -42,9 +42,6 @@
                             <h4 class="text-20 text-light-blue font-black tracking-text text-center font-cocogoose uppercase mb-4">
                                 @lang('user / month')
                             </h4>
-                            <p class="text-20 font-din text-secondary tracking-text font-light text-center">
-                                @lang('free trial')
-                            </p>
                         </div>
                     </div>
                     <div class="button__bottom  w-full">
@@ -141,7 +138,7 @@
                            class="font-extrabold text-20 bg-red text-white uppercase font-cocogoose  h-70 px-8 py-6 rounded-20 items-center mx-auto">@lang('Contact Sales')</a>
                         <div class="functions mt-16">
                             <p class="text-18 font-cocogoose font-black text-grey-bold mb-6">TOP FUNCTIONS ↓</p>
-                            <ul class="starter">
+                            <ul class="enterprise">
                                 <li class="font-din text-20 tracking-text text-secondary pl-10 mb-3">@lang('Custom onboarding')</li>
                                 <li class="font-din text-20 tracking-text text-secondary pl-10 mb-3">@lang('Single Sign On')</li>
                                 <li class="font-din text-20 tracking-text text-secondary pl-10 mb-3">@lang('Advanced support')</li>
@@ -162,7 +159,7 @@
     <section id="easy" class="pt-12 lg:pt-32 bg-green-extralight">
         <div class="container mx-auto">
             <h3 class="text-white text-40 font-extrabold uppercase font-cocogoose md:mx-auto text-center mb-5 lg:mb-20 tracking-heading"
-            >@lang('questions?')</h3>
+            >@lang('Start your free trial now!')</h3>
             <div class="easy__content flex justify-between">
 
                 <div class="easy__image w-0 lg:w-3/12 flex justify-center">

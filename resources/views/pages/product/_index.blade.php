@@ -11,7 +11,7 @@
     <section id="product__banner" class="py-10 lg:pt-32 lg:pb-24 bg-grey relative">
         <div class="container mx-auto flex">
             <div class="banner__left lg:w-1/2 w-full">
-                <h1 class="tracking-normal text-center lg:text-left text-40 xxl:text-70 mb-16 font-cocogoose uppercase font-extrabold">
+                <h1 class="tracking-normal leading-snug text-center lg:text-left text-40 xxl:text-70 mb-16 font-cocogoose uppercase font-extrabold">
                     @lang('product/index.bannerTitle')</h1>
                 @include('components.product.banner_form',['buttonText' => 'product/index.buttonText'])
             </div>
@@ -29,13 +29,13 @@
         <div class="container mx-auto">
             <div id="tab" class="px-5 lg:px-0">
                 <div class="mx-auto tab__header flex-wrap sm:flex-no-wrap h-auto sm:h-40 md:h-70 flex md:text-15 lg:text-20 rounded-l-20 rounded-r-20 mb-12 lg:mb-24">
-                    <div class="header__item flex sm:flex-none sm:w-auto justify-center items-center w-1/2  py-2 px-2 md:py-5 md:px-5 xxl:px-24 font-cocogoose font-bold text-secondary active"
+                    <div class="header__item flex sm:flex-none sm:w-auto justify-center items-center w-1/2  py-2 px-2 md:py-5 md:px-5 xxl:px-24 font-cocogoose font-bold text-secondary active uppercase"
                          onclick="openTab(this)" data-index="0">@lang('Create forms')</div>
-                    <div class=" header__item flex sm:flex-none sm:w-auto justify-center items-center w-1/2  py-2 px-2 md:py-5 md:px-5 xxl:px-24 font-cocogoose font-bold text-secondary"
+                    <div class=" header__item flex sm:flex-none sm:w-auto justify-center items-center w-1/2  py-2 px-2 md:py-5 md:px-5 xxl:px-24 font-cocogoose font-bold text-secondary uppercase"
                          onclick="openTab(this)" data-index="1">@lang('Conduct via app')</div>
-                    <div class=" header__item flex sm:flex-none sm:w-auto justify-center items-center w-1/2  py-2 px-2 md:py-5 md:px-5 xxl:px-24 font-cocogoose font-bold text-secondary"
+                    <div class=" header__item flex sm:flex-none sm:w-auto justify-center items-center w-1/2  py-2 px-2 md:py-5 md:px-5 xxl:px-24 font-cocogoose font-bold text-secondary uppercase"
                          onclick="openTab(this)" data-index="2">@lang('Resolve issues')</div>
-                    <div class=" header__item flex sm:flex-none sm:w-auto justify-center items-center w-1/2   py-2 px-2 md:py-5 md:px-5 xxl:px-24 font-cocogoose font-bold text-secondary"
+                    <div class=" header__item flex sm:flex-none sm:w-auto justify-center items-center w-1/2   py-2 px-2 md:py-5 md:px-5 xxl:px-24 font-cocogoose font-bold text-secondary uppercase"
                          onclick="openTab(this)" data-index="3">@lang('Results, reports, & analyses')</div>
                 </div>
                 <div class="tab__content">
@@ -45,16 +45,18 @@
                     'heading' => '<span class="text-light-blue">Start within minutes</span> with forms that are tailored to your needs.',
                     'text' => 'Use ready-made, expert-proofed checklists from the template library, which you can further customise according to your needs. Or, start from scratch and convert manual hard copies or excel lists into digital checklists.',
                     'discoverText' => 'Discover how to create custom forms',
-                    'image' => 'img/group-1105.svg',
+                    'image' => 'img/group-1105.png',
+                    'srcset' => ['img/group-1105.png','img/group-1105@2x.png'],
                     'urlTo' => 'product.formBuilder',]
                     )
                     @include('components.product.tab_content',[
                     'isActive' => false,
                     'textColor' => 'primary',
-                    'heading' => '<span class="text-purple">Conduct quickly and reliably</span>, whenever and wherever you need to.',
+                    'heading' => '<span class="text-purple">Conduct quickly and reliably</span>, whenever and wherever',
                     'text' => 'Conduct inspections and audits, whether on a tablet or smartphone, Android or iOS – online or offline. The highly intuitive and easy-to-use app guides you through all checks. ',
                     'discoverText' => 'Discover how to conduct via the intuitive app',
-                    'image' => 'img/group-916.svg',
+                    'image' => 'img/group-917.png',
+                    'srcset' => ['img/group-917.png','img/group-917@2x.png'],
                     'urlTo' => 'product.conduct'])
                     @include('components.product.tab_content',[
                     'isActive' => false,
@@ -68,7 +70,7 @@
                     'isActive' => false,
                     'textColor' => 'green',
                     'heading' => 'Custom reports and  detailed analyses',
-                    'text' => 'Audit reports are automatically created, so you don’t waste time on post-processing. Uncover areas of your organisation that need your attention, and continuously improve quality and security through in-depth analyses..',
+                    'text' => 'Audit reports are automatically created, so you don’t waste time on post-processing. Uncover areas of your organisation that need your attention, and continuously improve quality and security through in-depth analyses.',
                     'discoverText' => 'DISCOVER CUSTOM REPORTS AND ANALYSES',
                     'image' => 'img/group-4614.png',
                     'urlTo' => 'product.analysis'])
@@ -80,7 +82,7 @@
                class="mx-auto mt-8 base__button font-extrabold bg-red text-white uppercase font-cocogoose text-xl h-70 px-8 rounded-20 items-center flex">@lang('Get Lumiform FREE')</a>
         </div>
     </section>
-    <section id="flow" class="py-12 lg:py-28 bg-grey-light">
+    <section id="flow" class="py-12 lg:py-28 bg-grey-opacity">
         <div class="container mx-auto">
             <h2 class="font-bold text-center font-cocogoose text-primary text-30 lg:text-50 mb-8 lg:mb-8 uppercase tracking-heading">@lang('The Lumiform flow')</h2>
             <p class="px-16 text-center font-light font-din text-20 lg:text-30 text-secondary tracking-text mb-32">

@@ -31,7 +31,7 @@
             @php $j++ @endphp
         @endforeach
         @if(isset($features))
-            <a href="{{$features['url']}}"
+            <a href="{{route(app()->getLocale().'.product')}}"
                class="@if (count($items) < 5)mt-32 @else mt-auto @endif flex items-center justify-center uppercase text-red text-center block text-17 lg:text-20 tracking-heading ">
                 {!! $features['text'] !!}
                 <img src="{{asset('img/arrow-right-long-red.svg')}}" alt="" class="h-3 ml-8">

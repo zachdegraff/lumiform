@@ -27,18 +27,21 @@
                 'heading' => 'Prevent injuries and reduce risks',
                 'color' => 'gold',
                 'text' => 'Track whether checks are done in time and solve issues as soon as they occur.',
+                'width' => '415'
                 ])
                 @include('components.solution.industries_icon_with_text',[
                 'icon' => 'icons/glass-icon_blue.svg',
                 'heading' => 'Ensure full transparency',
                 'color' => 'light-blue',
                 'text' => 'Cut your inspection time by 30% through faster conduction and automated documentation.',
+                'width' => '415'
                 ])
                 @include('components.solution.industries_icon_with_text',[
                 'icon' => 'icons/time-icon_green.svg',
                 'heading' => 'Save time',
                 'color' => 'green',
                 'text' => 'We help you to comply with all the laws and to ensure that you have all the documents available at the right time.',
+                'width' => '415'
                 ])
             </div>
             <a href="#"

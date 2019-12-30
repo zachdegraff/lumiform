@@ -36,11 +36,7 @@
                         </a>
                     </div>
                 </div>
-                <a href=""
-                   class="flex items-center uppercase text-red text-center block text-17 lg:text-20 tracking-large mt-12">
-                    @lang('LEARN MORE ABOUT THE PRODUCT')
-                    <img src="{{asset('img/arrow-right-long-red.svg')}}" alt="" class="h-3 ml-8">
-                </a>
+
             </div>
 
             <img src="{{asset('img/group-3327.png')}}" alt="" class="from__image "
@@ -215,7 +211,7 @@
                 <img src="{{asset('img/group-2732.svg')}}" alt=""
                      class="mb-16 mx-auto sm:max-h-1/4 lg:max-h-500">
                 <h3 class="font-cocogoose font-black text-red uppercase text-20 md:text-38 mb-10">
-                    @lang('Manage reports')
+                    @lang('Share reports')
                 </h3>
                 <p class="font-light font-din text-20 md:text-30 text-secondary">
                     @lang('Send your automatically created audit reports to all stakeholders via email, as a PDF report.')

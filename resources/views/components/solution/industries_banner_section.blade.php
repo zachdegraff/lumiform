@@ -1,6 +1,6 @@
 <section id="intusry__banner"
          style="background: url({{asset('img/'.$imageBg)}}) no-repeat; background-size: cover"
-         class="pt-64 pb-32"
+         class="pt-35 pb-28"
 >
     <div class="container mx-auto">
         <div class="@if(isset($class)){{$class}} @else w-8/12 @endif mx-auto">

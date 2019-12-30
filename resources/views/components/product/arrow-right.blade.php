@@ -1,4 +1,4 @@
-<a href="" class="text-20 font-extrabold font-cocogoose uppercase flex items-center justify-center" style="color: {{$color}};">
+
    {!! $text !!}
     <div class="ml-8">
     <svg xmlns="http://www.w3.org/2000/svg" width="40.5" height="16.994" viewBox="0 0 40.5 16.994">
@@ -8,4 +8,3 @@
         </g>
     </svg>
     </div>
-</a>

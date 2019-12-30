@@ -49,7 +49,7 @@
                class="leading-none bg-red tracking-large font-extrabold text-white uppercase font-cocogoose text-17 lg:text-20 h-70  rounded-20 px-8 py-6"> @lang('Get Lumiform FREE')</a>
         </div>
     </section>
-    <section class="py-10 lg:pt-32 lg:pb-24 with__border--bottom">
+    <section class="py-10 lg:pt-32 lg:pb-24 with__border--bottom" id="analysis__need">
         <div class="container mx-auto custom-text-size">
             <h2 class="font-bold text-center font-cocogoose text-green text-30 lg:text-50 mb-10 lg:mb-32 uppercase tracking-heading">
                 @lang('Customise all reports easily <span class="text-primary">to meet your specific needs</span>')
@@ -58,7 +58,7 @@
                 [
                 'heading' => 'Define header page',
                 'headingColor' => 'gold',
-                'text' => 'In the form builder, define which information should appear on your header page in the customised audit report. Use both fields, which are automatically filled out by the system (date and inspector) and individual queries, such as comment fields or second inspector..',
+                'text' => 'In the form builder, define which information should appear on your header page in the customised audit report. Use both fields, which are automatically filled out by the system (date and inspector) and individual queries, such as comment fields or second inspector.',
                 'image' => 'group-1328.svg',
                 ]
                 )
@@ -208,8 +208,8 @@
                 </div>
                 <div class="w-full md:w-4/12 lg:w-5/12">
                     <img src="{{asset('img/group-2750.png')}}" alt=""
-                         srcset="{{asset('img/group-2771.png')}},
-                                 {{asset('img/group-2771@2x.png')}} 2x"
+                         srcset="{{asset('img/group-2750.png')}},
+                                 {{asset('img/group-2750@2x.png')}} 2x"
                          class="mx-auto ">
                 </div>
 
@@ -218,7 +218,7 @@
         </div>
     </section>
     @include('components.product.bottom_form',[
-   'heading' =>'Improve your quality and safety efforts with meaningful analyses',
+   'heading' =>'Improve your quality and safety <span class="line__break"> </span> efforts with meaningful analyses',
    'sectionBg' =>'orange-light',
    'buttonBg' =>'orange',
    'image' =>'img/group-1919.svg',

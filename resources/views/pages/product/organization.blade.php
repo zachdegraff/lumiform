@@ -106,7 +106,7 @@
                     'items' => ['Manage sites','Manage invoices'],
                 ])
             </div>
-            <p class="text-30 font-light font-din text-secondary my-30 text-center">@lang('… and many more')</p>
+            <p class="text-30 font-light font-din text-secondary my-30 text-center mt-20 mb-16">@lang('… and many more')</p>
             <button class="button__base px-8 py-3 lg:py-5  mx-auto">@lang('Get Lumiform FREE')</button>
         </div>
     </section>

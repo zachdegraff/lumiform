@@ -92,7 +92,7 @@
 
             </div>
             <div class="start__image w-0 md:w-2/5 lg:w-3/5">
-                <img src="{{asset('img/checklists-tablet.png')}}" alt="">
+                <img src="{{asset('img/checklists-tablet.png')}}" alt="" srcset="{{asset('img/checklists-tablet.png')}},{{asset('img/checklists-tablet@2x.png')}} 2x">
             </div>
 
         </div>
@@ -117,22 +117,28 @@
                         <img src="{{asset('img/industries.png')}}" alt="">
                     </div>
 
-                    @include('components.product.arrow-right',['color' => '#00B2FF','text' => 'SOLUTION BY INDUSTRIES'])
-
+                    <a href=" @urlTo('industries')" class="text-20 font-extrabold font-cocogoose uppercase flex items-center justify-center" style="color: #00B2FF;">
+                        @include('components.product.arrow-right',['color' => '#00B2FF','text' => 'SOLUTION BY INDUSTRIES'])
+                    </a>
                 </div>
                 <div class="learn__item w-full md:w-1/2 lg:flex-1 text-center mb-5">
                     <div class="with__circle  mb-10 lg:mb-24 mx-auto">
                         <div class="image__circle" style="background:#FD2F581A ;"></div>
                         <img src="{{asset('img/type-solution.png')}}" alt="">
                     </div>
-                    @include('components.product.arrow-right',['color' => '#FD2F58','text' => 'SOLUTION BY TYPE'])
+                    <a href=" @urlTo('useCases')" class="text-20 font-extrabold font-cocogoose uppercase flex items-center justify-center" style="color: #FD2F58;">
+                        @include('components.product.arrow-right',['color' => '#FD2F58','text' => 'SOLUTION BY category'])
+                    </a>
                 </div>
+
                 <div class="learn__item w-full md:w-1/2 lg:flex-1 text-center mb-5">
                     <div class="with__circle  mb-10 lg:mb-24 mx-auto">
                         <div class="image__circle" style="background:#F3EFFB ;"></div>
                         <img src="{{asset('img/case-study.png')}}" alt="">
                     </div>
-                    @include('components.product.arrow-right',['color' => '#8D5FD6','text' => 'CASE STUDIES'])
+                    <a href=" @urlTo('resources')" class="text-20 font-extrabold font-cocogoose uppercase flex items-center justify-center" style="color: #8D5FD6;">
+                        @include('components.product.arrow-right',['color' => '#8D5FD6','text' => 'CASE STUDIES'])
+                    </a>
 
                 </div>
                 <div class="learn__item w-full md:w-1/2 lg:flex-1 text-center mb-5">
@@ -140,8 +146,9 @@
                         <div class="image__circle" style="background:#00B2FF19;"></div>
                         <img src="{{asset('img/use-cases.png')}}" alt="">
                     </div>
-
-                    @include('components.product.arrow-right',['color' => '#00C389','text' => 'APP USES'])
+                    <a href=" @urlTo('resources.appUses')" class="text-20 font-extrabold font-cocogoose uppercase flex items-center justify-center" style="color: #00C389;">
+                        @include('components.product.arrow-right',['color' => '#00C389','text' => 'APP USES'])
+                    </a>
                 </div>
             </div>
         </div>
@@ -155,7 +162,6 @@
    'LIDLArtboard.svg','LufthansaArtboard.svg','Mercedes-BenzArtboard.svg','MieleArtboard.svg','NestleArtboard.svg','NIVEAArtboard.svg',
    'obi-vector-logo.svg','OTTOArtboard.svg','PUMAArtboard.svg','RittersportArtboard.svg','SchwarzkopfArtboard.svg','Siemens.svg',
    'tchibo1Artboard.svg','tui-vector-logo.svg'
-
    ]
    ])
     @include('components.product.bottom_form',[

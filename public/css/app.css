@@ -12104,6 +12104,10 @@ h1 {
           transform: translateX(-50%);
 }
 
+#subscribe input {
+  border: 1px solid #8D5FD666;
+}
+
 /* switch button*/
 
 .subscribtion .switch {
@@ -12563,6 +12567,20 @@ footer ul li a {
 .logo svg {
   max-width: 212px;
   width: 100%;
+}
+
+#analysis__need .horizontal__section {
+  width: 100%;
+  max-width: 575px;
+}
+
+.solution__section .bottom__left {
+  width: 100%;
+  max-width: 915px;
+}
+
+.section__items .bottom__right {
+  height: auto;
 }
 
 @media (max-width: 1660px) {
