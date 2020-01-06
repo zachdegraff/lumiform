@@ -3,7 +3,7 @@
         <div class="flex issue__item--bg pt-12 pl-12 lg:max-w-3/4">
             <span class="text-50 md:text-80 text-secondary leading-none font-cocogoose">{{$number}}</span>
             <div class="pl-4 sm:pl-8">
-                <h3 class="text-left text-20 lg:text-38 font-bold font-cocogoose uppercase mb-5 text-{{$color}}">
+                <h3 class="text-left text-38 font-bold font-cocogoose uppercase mb-5 text-{{$color}}">
                     {!! $heading !!}
                 </h3>
                 <p class="text-left text-secondary font-hairline text-15 lg:text-30 font-din mb-5 sm:mb-0 font-light">
@@ -13,7 +13,7 @@
         </div>
         @if(isset($subItem) && $subItem === true)
             <div class="w-full issue__subitem lg:max-w-3/4 mt-16">
-                <h5 class="pl-32 md:pl-40 text-15 lg:text-20 font-cocogoose font-extrabold mb-5">@lang('EXAMPLE USE CASES FOR AUTOMATIC ISSUES')</h5>
+                <h5 class="pl-32 md:pl-40 text-20 font-cocogoose font-extrabold mb-5">@lang('EXAMPLE USE CASES FOR AUTOMATIC ISSUES')</h5>
                 <ul>
                     <li class="flex items-center font-light text-20 font-din text-secondary mb-1"><img
                                 src="{{asset('img/group-1392.svg')}}" alt=""

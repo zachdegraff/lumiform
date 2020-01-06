@@ -79,7 +79,7 @@
             </a>
             <div class="nav__subitem">
                 <div class="flex with-border">
-                    <ul class="flex">
+                    <ul class="lg:flex">
                         <li onclick="showChild(event,this)" class="sub__menu--item  border-right" data-id="industries">
                             <a href="javascript:void(0)"
                                class="flex items-center justify-between mb-4"><span>@lang("Industries")</span></a>
@@ -93,7 +93,7 @@
                                 <a href="@urlTo('industries.pharmaChemie')">@lang("Pharma & Chemistry")</a>
                             </div>
                         </li>
-                        <li onclick="showChild(event,this)" class="sub__menu--item pl-8" data-id="categories">
+                        <li onclick="showChild(event,this)" class="sub__menu--item lg:pl-8" data-id="categories">
                             <a href="javascript:void(0)"
                                class="flex items-center justify-between mb-4"><span>@lang("Categories")</span></a>
                             <div class="nav__subitem--2 " id="categories">
@@ -157,4 +157,12 @@
         <li><a class="nav__item nav__login flex" href="javascript:void(0)">@lang("Log In")</a></li>
         <li><a href="javascript:void(0)" class="btn__red--rounded flex nav__register text-20">@lang("Try for FREE")</a></li>
     </ul>
+    <div class="hamburger-button">
+        <div id="nav-icon3">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
 </nav>

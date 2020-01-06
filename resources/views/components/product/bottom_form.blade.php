@@ -22,9 +22,9 @@
                 <form action="">
                     <div class="home__banner--email flex flex-col justify-center  md:flex-row  mb-8">
 
-                        <input class="pl-8 w-360  " type="email"
+                        <input class="pl-8 w-full md:w-1/2 xxl:w-360  " type="email"
                                placeholder="{{__('Enter e-mail address')}}">
-                        <button class=" mt-5 md:mt-0 ml-3 bg-{{$buttonBg}} tracking-large font-extrabold text-white uppercase font-cocogoose px-8 text-17 lg:text-20 h-70  rounded-20 items-center justify-center flex">@lang('Try for free')</button>
+                        <button class=" mt-5 md:mt-0 md:ml-3 bg-{{$buttonBg}} tracking-large font-extrabold text-white uppercase font-cocogoose px-8 text-17 lg:text-20 h-70  rounded-20 items-center justify-center flex">@lang('Try for free')</button>
                     </div>
                 </form>
                 @php $url = '' @endphp

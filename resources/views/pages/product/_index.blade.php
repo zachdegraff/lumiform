@@ -21,7 +21,7 @@
         </div>
 
     </section>
-    <section id="how__works" class="py-32 ">
+    <section id="how__works" class="py-12 lg:py-32 ">
         <div class="container mx-auto">
             <h2 class="font-bold text-center font-cocogoose text-primary text-30 lg:text-40 mb-3 uppercase tracking-heading">@lang('How Lumiform works')</h2>
             <p class="font-light text-center font-din md:text-20 lg:text-30 text-secondary tracking-text mb-24">@lang('Make sure you’re mastering the whole process – from flexible form building to fast problem solving to in depth analysis.')</p>
@@ -79,7 +79,7 @@
                 </div>
             </div>
             <a href=""
-               class="mx-auto mt-8 base__button font-extrabold bg-red text-white uppercase font-cocogoose text-xl h-70 px-8 rounded-20 items-center flex">@lang('Get Lumiform FREE')</a>
+               class="mx-auto mt-8 base__button font-extrabold bg-red text-white uppercase font-cocogoose text-20 h-70 px-8 rounded-20 items-center flex">@lang('Get Lumiform FREE')</a>
         </div>
     </section>
     <section id="flow" class="py-12 lg:py-28 bg-grey-opacity">

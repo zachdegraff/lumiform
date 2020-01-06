@@ -8,13 +8,13 @@
     <meta name="description" content="@lang('home/index.description')">
 @endsection
 @section("content")
-    <section id="home__banner">
+    <section id="home__banner" class="relative">
         <div class="container mx-auto flex">
-            <div class="banner__left py-32 w-5/12">
-                <h1 class="mb-5 text-20 text-primary md:text-70 font-cocogoose font-extrabold uppercase tracking-normal leading-tight">
+            <div class="banner__left py-12 md:py-20 xxl:py-32 w-full lg:w-6/12 xxl:w-5/12">
+                <h1 class="mb-5 text-primary text-70 font-cocogoose font-extrabold uppercase tracking-normal leading-tight">
                     @lang('home/index.bannerTitle')
                 </h1>
-                <p class="font-din text-30 font-light text-secondary mb-32 w-11/12"> @lang('home/index.bannerText')</p>
+                <p class="font-din text-30 font-light text-secondary mb-12 xxl:mb-32 w-11/12"> @lang('home/index.bannerText')</p>
                 @include('components.product.banner_form')
             </div>
             <div class="banner__right md:flex-shrink-0 lg:flex-1 relative">
@@ -25,11 +25,11 @@
     @include('components.use-cases.section_companies',['fontSize' => 'text-20','bgColor' => 'grey-light'])
     <section id="home__procedure" class="py-10 lg:pt-16 xxl:pt-28 lg:pb-20 xxl:pb-48">
         <div class="container mx-auto">
-            <h2 class="mb-32 text-center text-50 font-cocogoose font-black leading-none tracking-text uppercase text-light-blue">
+            <h2 class="md:mb-32 mb-10 text-center text-50 font-cocogoose font-black leading-none tracking-text uppercase text-light-blue">
                 @lang('AN intuitive app for  all quality and safety procedures')
             </h2>
             <div class="procedure__content flex pt-5">
-                <div class="w-2/2 mx-auto mt-5  lg:w-3/5 xl:w-2/5">
+                <div class="w-full mx-auto mt-5  md:w-1/2 xl:w-2/5">
                     <ul class="list--circle__check mb-20 md:mx-auto">
                         <li>@lang('Create customised forms in minutes')</li>
                         <li>@lang('Start with expert-proofed templates')</li>
@@ -44,7 +44,7 @@
                         <img src="{{asset('img/arrow-right-long-red.svg')}}" alt="" class="h-3 ml-8">
                     </a>
                 </div>
-                <div class="w-0 lg:w-2/5 xl:w-3/5">
+                <div class="w-0 md:w-1/2 xl:w-3/5">
                     <img src="{{asset('img/landing-page-devices.png')}}" alt="" class="procedure__image">
                 </div>
             </div>
@@ -52,7 +52,7 @@
     </section>
     <section id="home__cases" class="pb-10 lg:pb-64">
         <div class="container mx-auto">
-            <div class="case__items w-10/12 mx-auto">
+            <div class="case__items md:w-10/12 mx-auto">
                 <div class="case__item flex mt-24 justify-between">
                     <div class="item__text ">
                         <h6 class="text-50 font-cocogoose font-black tracking-middle leading-none uppercase mb-5 text-green">@lang('Improve quality and safety')</h6>
@@ -92,7 +92,7 @@
 
             </div>
             <div class="start__image w-0 md:w-2/5 lg:w-3/5">
-                <img src="{{asset('img/checklists-tablet.png')}}" alt="" srcset="{{asset('img/checklists-tablet.png')}},{{asset('img/checklists-tablet@2x.png')}} 2x">
+                <img src="{{asset('img/checklists-tablet.png')}}" alt="" srcset="{{asset('img/checklists-tablet.png')}}, {{asset('img/checklists-tablet@2x.png')}} 2x">
             </div>
 
         </div>
@@ -100,7 +100,7 @@
     </section>
     <section id="home__learn">
         <div class="container mx-auto my-12 lg:my-24 xxl:my-48 ">
-            <div class=" w-full md:w-2/3 mx-auto mb-12 lg:mb-32">
+            <div class=" w-full lg:w-2/3 mx-auto mb-12 lg:mb-32">
                 <h3 class="text-50 font-cocogoose font-black text-primary uppercase text-center mb-5">
                     @lang('Learn and grow through <span class="text-purple">inspiration</span>')
                 </h3>

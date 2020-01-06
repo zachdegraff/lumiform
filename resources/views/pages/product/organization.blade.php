@@ -6,7 +6,7 @@
     <meta name="description" content="@lang('product/organization.description')">
 @endsection
 @section("content")
-    <section id="organization__banner" class="py-20 bg-grey relative">
+    <section id="organization__banner" class="py-8 lg:py-20 bg-grey relative">
         <div class="container mx-auto flex">
             <div class="banner__left lg:w-7/12 w-full pt-12">
                 <h1 class="tracking-normal text-center lg:text-left text-40 xxl:text-70 mb-16 font-cocogoose uppercase font-extrabold">
@@ -46,7 +46,7 @@
                 @lang('Display the Lumiform app in a number of languages:')
             </p>
 
-            <div class="flex justify-between">
+            <div class="flex justify-between flex-wrap lg:flex-no-wrap">
                 @include('components.product.flag',[
                     'text' => 'English',
                     'color' => 'light-blue',
@@ -80,11 +80,11 @@
             <h2 class="font-bold text-center font-cocogoose text-primary text-30 lg:text-50 mb-5 uppercase tracking-heading">
                 @lang('highly customised user roles')
             </h2>
-            <p class=" text-center font-light font-din text-20 lg:text-30  text-secondary tracking-text mb-32">
+            <p class=" text-center font-light font-din text-20 lg:text-30  text-secondary tracking-text mb-12 lg:mb-32">
                 @lang('Create highly individualised user roles, and determine the granular permissions for each role.')
             </p>
 
-            <div class="flex justify-between">
+            <div class="flex justify-around lg:justify-between lg:flex-no-wrap flex-wrap">
                 @include('components.product.title_with_list',[
                     'text' => 'Forms & inspections',
                     'color' => 'red',
@@ -106,7 +106,7 @@
                     'items' => ['Manage sites','Manage invoices'],
                 ])
             </div>
-            <p class="text-30 font-light font-din text-secondary my-30 text-center mt-20 mb-16">@lang('… and many more')</p>
+            <p class="text-30 font-light font-din text-secondary text-center my-5 sm:mt-20 sm:mb-16">@lang('… and many more')</p>
             <button class="button__base px-8 py-3 lg:py-5  mx-auto">@lang('Get Lumiform FREE')</button>
         </div>
     </section>

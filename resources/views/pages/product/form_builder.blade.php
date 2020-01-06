@@ -8,7 +8,7 @@
 @section("content")
     <section id="form__banner" class="py-10 lg:pt-32 lg:pb-24 bg-blue-light relative">
         <div class="container mx-auto flex">
-            <div class="banner__left  w-5/12">
+            <div class="banner__left w-full  lg:w-5/12">
                 <h1 class="tracking-normal leading-none text-center lg:text-left text-40 xxl:text-70 mb-16 font-cocogoose uppercase font-extrabold">
                     @lang('product/create_forms.bannerTitle')
                 </h1>
@@ -26,7 +26,7 @@
             <h2 class="font-bold text-center font-cocogoose text-primary text-30 xl:text-50 lg:mb-4 uppercase tracking-heading">
                 @lang('Digitise your<span class="text-light-blue"> custom forms</span>')
             </h2>
-            <p class="sm:px-16 text-center font-light font-din text-20 lg:text-30 text-secondary tracking-text mb-24">
+            <p class="sm:px-16 text-center font-light font-din text-20 lg:text-30 text-secondary tracking-text mb-8 md:mb-24">
                 @lang('Create a check queries form by typing a statement or question and then defining the type of response.')
             </p>
             <div class="digitise__items">
@@ -40,15 +40,15 @@
                 ]
                 )
                 <div class="digitise__item flex flex-wrap lg:flex-no-wrap justify-between">
-                    <div class="digitise__item--text  sm:w-full lg:w-4/12  flex flex-col justify-center">
-                        <h3 class="lg:text-38 font-bold font-cocogoose uppercase mb-5 text-grey-light text-center sm:text-left">
+                    <div class="digitise__item--text  w-full lg:w-4/12  flex flex-col justify-center">
+                        <h3 class="lg:text-38 font-bold font-cocogoose uppercase mb-5 text-grey-light text-center lg:text-left">
                             @lang('Define the <span class="text-gold">response</span>')
                         </h3>
-                        <p class="text-secondary font-hairline lg:text-30 font-din text-center sm:text-left">
+                        <p class="text-secondary font-hairline lg:text-30 font-din text-center lg:text-left lg:mb-0 mb-8">
                             @lang('Define how the inspector should answer the question or statement in the field.')
                         </p>
                     </div>
-                    <div class="digitise__item--image  w-7/12 flex flex-wrap justify-between">
+                    <div class="digitise__item--image w-full lg:w-7/12 flex flex-wrap justify-between">
                         @include('components.product.icons_raw',[
                             'text' => 'Multiple <br> Choice',
                             'image' => 'group-1261.svg',
@@ -103,7 +103,7 @@
                     </div>
                 </div>
             </div>
-            <button class="button__base px-8 py-3 lg:py-5 mt-20 mx-auto">@lang('Get Lumiform FREE')</button>
+            <button class="button__base px-8 py-3 lg:py-5 mt-0 lg:mt-20 mx-auto">@lang('Get Lumiform FREE')</button>
         </div>
     </section>
     <section id="workflow" class="py-12 lg:pt-24 lg:py-32">
@@ -265,7 +265,7 @@
                     <p class="text-center sm:text-left text-secondary font-hairline text-20 lg:text-30 font-din mb-5 sm:mb-0 pr-8">
                         @lang('Your checklist is available for all users in your organisation, per default, at any time. To limit the availability of unscheduled lists, you can make them available to individual users only.')</p>
                 </div>
-                <div class="digitise__item--image w-1/2 lg:w-2/5 ">
+                <div class="digitise__item--image w-1/2 lg:w-2/5 mx-auto sm:mx-0 ">
                     <img src="{{asset('img/group-2745.png')}}" alt="" class="mx-auto" srcset="{{asset('img/group-2745.png')}},{{asset('img/group-2745@2x.png')}} 2x">
                 </div>
             </div>

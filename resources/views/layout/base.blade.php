@@ -15,7 +15,7 @@
     @endif
 </head>
 <body>
-<header class="w-full xl:h-20 xxl:h-24 flex items-center z-50 bg-white-95">
+<header class="w-full h-20 xxl:h-24 flex items-center z-50 bg-white-95">
     @include("layout/header")
 </header>
 <div class="content wrapper">
@@ -27,6 +27,13 @@
     @include("layout/footer")
 </footer>
 <script>
+
+    let hamburger = document.querySelector('#nav-icon3');
+    let menu = document.querySelector('.menu__items');
+    hamburger.addEventListener('click',function () {
+        this.classList.contains('open') ? this.classList.remove('open') : this.classList.add('open')
+        menu.classList.contains('open') ? menu.classList.remove('open') : menu.classList.add('open')
+    })
     function openMenu(el) {
         let items = document.querySelectorAll('.menu__item')
 

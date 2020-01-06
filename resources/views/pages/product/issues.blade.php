@@ -9,7 +9,7 @@
     <section id="issues__banner" class="py-10 lg:pt-32 lg:pb-24 bg-blue-light relative">
         <div class="container mx-auto flex">
             <div class="banner__left  w-full lg:w-2/3">
-                <h1 class="tracking-normal text-center lg:text-left text-40 xxl:text-70 mb-16 font-cocogoose uppercase font-extrabold">
+                <h1 class="tracking-normal text-center lg:text-left text-70 mb-16 font-cocogoose uppercase font-extrabold">
                     @lang('product/issues.bannerTitle')
                 </h1>
                 @include('components.product.banner_form',['buttonText' => 'product/issues.buttonText'])
@@ -20,10 +20,10 @@
     </section>
     <section id="management" class="py-12 lg:py-24 with__border--bottom">
         <div class="container mx-auto">
-            <h2 class="font-bold text-center font-cocogoose text-primary text-30 xl:text-50 lg:mb-4 uppercase tracking-heading">
+            <h2 class="font-bold text-center font-cocogoose text-primary text-50 lg:mb-4 uppercase tracking-heading">
                 @lang('No back and forth, just <span class="text-gold">effective issue management</span>')
             </h2>
-            <p class="sm:px-16 text-center font-light font-din text-20 lg:text-30 text-secondary tracking-text mb-24">
+            <p class="sm:px-16 text-center font-light font-din text-30 text-secondary tracking-text mb-8 lg:mb-24">
                 @lang('We invented the first issue management feature, to make issue workflows more effective and traceable.')
             </p>
             <div class="management__tools flex flex-wrap justify-center lg:flex-no-wrap lg:justify-between">
@@ -52,7 +52,7 @@
     </section>
     <section id="restrict" class="py-12 lg:py-32">
         <div class="container mx-auto">
-            <h2 class="font-bold text-center font-cocogoose text-primary text-30 xl:text-50 mb-12 lg:mb-24 uppercase tracking-heading">
+            <h2 class="font-bold text-center font-cocogoose text-primary text-50 mb-12 lg:mb-24 uppercase tracking-heading">
                 @lang('Raise issues in <span class="text-red">three different ways:</span>')
             </h2>
             @include('components.product.text_numbered',[
