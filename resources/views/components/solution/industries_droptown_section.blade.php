@@ -1,5 +1,5 @@
-<div class="flex justify-between">
-    <div class="w-3/12">
+<div class="sm:flex-no-wrap flex-wrap sm:flex-row flex-col flex justify-between">
+    <div class="w-full sm:w-5/12 xl:w-3/12">
         <ul class="industries__list">
             @php $i = 0 @endphp
             @foreach($items as $item)
@@ -8,7 +8,7 @@
                     data-index="item-{{$i}}">
                     <p class="text-30 font-cocogoose uppercase text-grey-light font-bold flex items-start">
                         <img src="{{asset('img/icons/chevron-right.svg')}}" alt=""
-                             class="mr-6 mt-4"> {!! $item['title'] !!}
+                             class="mr-6 mt-2 dropdown__arrow"> {!! $item['title'] !!}
                     </p>
                     <span class="text-20 font-din font-light tracking-text text-secondary">
                     {!! $item['desc'] !!}
@@ -19,10 +19,10 @@
         </ul>
 
     </div>
-    <div class="w-7/12 flex flex-col py-8">
+    <div class="w-full sm:w-6/12 xl:w-7/12 flex flex-col py-8">
         @php $j = 0 @endphp
         @foreach($items as $image)
-            <div class="ml-auto">
+            <div class="ml-auto w-0 sm:w-auto">
                 <img src="{{asset('img'.'/'.$image['srcset'][0])}}" alt=""
                      srcset="{{asset('img'.'/'.$image['srcset'][0])}},
                     {{asset('img'.'/'.$image['srcset'][1])}} 2x "
@@ -32,7 +32,7 @@
         @endforeach
         @if(isset($features))
             <a href="{{route(app()->getLocale().'.product')}}"
-               class="@if (count($items) < 5)mt-32 @else mt-auto @endif flex items-center justify-center uppercase text-red text-center block text-17 lg:text-20 tracking-heading ">
+               class="@if (count($items) < 5)mt-5 sm:mt-32 @else mt-auto @endif flex items-center justify-center uppercase text-red text-center block text-20 tracking-heading ">
                 {!! $features['text'] !!}
                 <img src="{{asset('img/arrow-right-long-red.svg')}}" alt="" class="h-3 ml-8">
             </a>

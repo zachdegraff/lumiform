@@ -9,29 +9,22 @@
     <meta name="description" content="@lang('use-cases/inspections.description')">
 @endsection
 @section("content")
-    <section class="pt-28 pb-40"
-             style="
-                     background-image: url('{{asset('img/group-4015.png')}}');
-                     background-color: #FAFBFB;
-                     background-size: 100% ;
-                     background-repeat: no-repeat;
-                     background-position-y: bottom;"
-    >
+    <section class="xxl:pt-28 xxl:pb-40 py-16 cases--inspection"    >
         <div class="container mx-auto">
-            <div class="w-10/12 mx-auto mb-16">
-                <h1 class="text-70 font-cocogoose font-black uppercase text-center tracking-normal text-primary mb-16 leading-none">
+            <div class="w-full lg:w-10/12 mx-auto lg:mb-16 mb-12">
+                <h1 class="text-70 font-cocogoose font-black uppercase text-center tracking-normal text-primary lg:mb-16 mb-10 leading-none">
                     @lang('use-cases/inspections.bannerTitle')
                 </h1>
                 <p class="text-30 font-light font-din text-secondary text-center">
                     @lang('use-cases/inspections.bannerText')
                 </p>
             </div>
-            <button class="mx-auto w-215  bg-red tracking-large font-extrabold text-white uppercase font-cocogoose text-17 lg:text-20 h-70  rounded-20 items-center justify-center flex">
+            <button class="mx-auto w-215  bg-red tracking-large font-extrabold text-white uppercase font-cocogoose text-20 h-70  rounded-20 items-center justify-center flex">
                 @lang('use-cases/inspections.buttonText')
             </button>
         </div>
     </section>
-    <section class="py-32 with__border--bottom">
+    <section class="py-16 lg:py-32 with__border--bottom">
         @include('components.use-cases.image_text_horizontal',[
         'heading' => 'Make sure all tasks are <span class="text-light-blue">done reliably, and in time</span> ',
         'image' => ['group-4965.png','group-4965@2x.png'],
@@ -63,12 +56,12 @@
         <a href=""
            class="mx-auto base__button font-extrabold bg-red text-white uppercase font-cocogoose text-xl h-70 px-8 rounded-20 items-center flex">@lang('Get Lumiform FREE')</a>
     </section>
-    <section class="py-32 with__border--bottom">
+    <section class="py-16 lg:py-32 with__border--bottom">
         <div class="container mx-auto">
-            <h2 class="font-bold text-center font-cocogoose text-primary text-30 xl:text-50 lg:mb-4 uppercase tracking-heading">
+            <h2 class="font-bold text-center font-cocogoose text-primary text-50 lg:mb-4 uppercase tracking-heading">
                 @lang('<span class="text-purple">Create transparency </span> with digital inspections')
             </h2>
-            <p class="text-center font-light font-din text-20 lg:text-30 text-secondary tracking-text mb-20">
+            <p class="text-center font-light font-din text-30 text-secondary tracking-text mb-10 lg:mb-20">
                 @lang('Customize inspections and workflows to fit your company’s quality and <span class="line__break"> </span> safety standards — so everyone tackles the right tasks at the right time.')
             </p>
             @include('components.solution.industries_droptown_section',[

@@ -1,12 +1,12 @@
-<div class="container mx-auto mb-40">
-    <div class="flex justify-around items-center @if (isset($reversed) && $reversed == true) flex-row-reverse @endif">
-        <div class="w-1/2">
-            <div class="cases__image__section  mx-auto">
+<div class="container mx-auto mb-12 md:mb-40">
+    <div class="flex justify-around items-center @if (isset($reversed) && $reversed == true) flex-row-reverse @endif flex-col-reverse md:flex-row">
+        <div class="w-6/12 xxl:w-1/2 md:w-5/12">
+            <div class="cases__image__section  mx-auto w-auto ">
                 <img src="{{asset('img/'.$image[0])}}" alt="" srcset="{{asset('img/'.$image[0])}},
                 {{asset('img/'.$image[1])}} 2x">
             </div>
         </div>
-        <div class="w-1/2">
+        <div class="w-full md:w-1/2 md:mb-0 mb-5">
             <div class="cases__text__section  mx-auto">
                 <h3 class="text-50 font-cocogoose uppercase text-primary mb-10">{!! $heading !!}</h3>
                 <ul class="use-cases__list mb-10">

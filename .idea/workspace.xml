@@ -5,26 +5,35 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/sass/custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/custom.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/global/header-arrow.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/global/header-arrow.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/product/banner_form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/product/banner_form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/product/bottom_form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/product/bottom_form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/product/companions_section.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/product/companions_section.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/product/image_text_horizontal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/product/image_text_horizontal.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/product/image_text_vertical.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/product/image_text_vertical.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/product/icons_raw.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/product/icons_raw.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/components/product/image_with_title.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/product/image_with_title.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/product/tab_content.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/product/tab_content.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/components/product/text_numbered.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/product/text_numbered.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/product/title_with_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/product/title_with_list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/solution/banner_with_text.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/solution/banner_with_text.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/solution/description_section.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/solution/description_section.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/solution/industries_banner_section.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/solution/industries_banner_section.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/solution/industries_bg_grey.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/solution/industries_bg_grey.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/solution/industries_droptown_section.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/solution/industries_droptown_section.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/solution/industries_explore_section.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/solution/industries_explore_section.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/solution/industries_icon_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/solution/industries_icon_list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/solution/industries_icon_with_text.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/solution/industries_icon_with_text.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/solution/industries_quotes.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/solution/industries_quotes.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/use-cases/image_text_horizontal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/use-cases/image_text_horizontal.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/components/use-cases/section_companies.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/use-cases/section_companies.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/base.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/base.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/_index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/_index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/product/_index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/product/_index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/product/analysis.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/product/analysis.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/product/conduct.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/product/conduct.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/product/form_builder.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/product/form_builder.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/industries/_index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/industries/_index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/industries/construction.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/industries/construction.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/industries/facility_management.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/industries/facility_management.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/industries/food.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/industries/food.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/industries/logistics.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/industries/logistics.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/industries/manufacturing.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/industries/manufacturing.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/industries/pharma_chemie.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/industries/pharma_chemie.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/industries/retail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/industries/retail.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/pages/product/issues.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/product/issues.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/product/organization.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/product/organization.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/use_cases/assessment.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/use_cases/assessment.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/use_cases/audits.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/use_cases/audits.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/use_cases/digital_checklists.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/use_cases/digital_checklists.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/use_cases/documentation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/use_cases/documentation.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/use_cases/inspections.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/use_cases/inspections.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/use_cases/issue.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/use_cases/issue.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -55,71 +64,74 @@
       <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="26" column="41" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="48" />
+            <state relative-caret-position="203">
+              <caret line="42" column="40" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="organization.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/pages/product/organization.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="108" column="81" selection-start-line="108" selection-start-column="81" selection-end-line="108" selection-end-column="81" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="issues.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/pages/product/issues.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="131" column="53" selection-start-line="131" selection-start-column="53" selection-end-line="131" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="image_text_vertical.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/components/product/image_text_vertical.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="20" selection-start-column="20" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_index.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/pages/product/_index.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="form_builder.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/pages/product/form_builder.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="267" column="78" selection-start-line="267" selection-start-column="78" selection-end-line="267" selection-end-column="78" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="custom.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="custom.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/sass/custom.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="1571" column="18" selection-start-line="1571" selection-start-column="18" selection-end-line="1571" selection-end-column="18" />
+            <state relative-caret-position="207">
+              <caret line="1426" column="49" lean-forward="true" selection-start-line="1426" selection-start-column="49" selection-end-line="1426" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="banner_form.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/components/product/banner_form.blade.php">
+      <file leaf-file-name="audits.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/pages/use_cases/audits.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="58" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
+            <state relative-caret-position="153">
+              <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="inspections.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/pages/use_cases/inspections.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="assessment.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/pages/use_cases/assessment.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1156">
+              <caret line="68" column="42" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="42" />
+              <folding>
+                <element signature="e#429#766#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="documentation.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/pages/use_cases/documentation.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-153">
+              <caret line="63" column="107" lean-forward="true" selection-start-line="63" selection-start-column="107" selection-end-line="63" selection-end-column="107" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="issue.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/pages/use_cases/issue.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="59" lean-forward="true" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tailwind.config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tailwind.config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="119" column="31" selection-start-line="119" selection-start-column="31" selection-end-line="119" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -128,18 +140,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>workflow__items</find>
-      <find>email</find>
-      <find>mx-5</find>
-      <find>585</find>
-      <find>115</find>
-      <find>id=</find>
-      <find>qweqweqweqwe</find>
-      <find>header</find>
-      <find>menu__item</find>
-      <find>subitem--</find>
-      <find>.nav__subitem a</find>
-      <find>with__border</find>
       <find>nav__subitem a</find>
       <find>btn</find>
       <find>form</find>
@@ -158,6 +158,18 @@
       <find>md:text</find>
       <find>.button__base</find>
       <find>text-40</find>
+      <find>.index__image--list</find>
+      <find>.industries__icon</find>
+      <find>industry__icons</find>
+      <find>industries__icon</find>
+      <find>1280</find>
+      <find>sm</find>
+      <find>text-70</find>
+      <find>640</find>
+      <find>.cases</find>
+      <find>768</find>
+      <find>cases--</find>
+      <find>1024</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -173,36 +185,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/lang/en/use-cases/inspections.php" />
-        <option value="$PROJECT_DIR$/resources/lang/en/use-cases/issue.php" />
-        <option value="$PROJECT_DIR$/resources/views/pages/use_cases/issue.blade.php" />
-        <option value="$PROJECT_DIR$/resources/lang/en/resources/contact.php" />
-        <option value="$PROJECT_DIR$/resources/views/layout/footer.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/components/product/arrow-right.blade.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/tailwind.config.js" />
-        <option value="$PROJECT_DIR$/resources/sass/app.scss" />
-        <option value="$PROJECT_DIR$/resources/views/components/product/icons_raw.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/components/solution/description_section.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/pages/industries/_index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/components/solution/industries_droptown_section.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/components/solution/industries_banner_section.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/pages/industries/construction.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/components/solution/industries_icon_with_text.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/pages/industries/food.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/components/solution/industries_bg_grey.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/components/solution/industries_explore_section.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/pages/industries/manufacturing.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/pages/industries/retail.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/pages/industries/logistics.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/pages/industries/facility_management.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/pages/industries/pharma_chemie.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/components/use-cases/description_section.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/use_cases/_index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/resources/contact.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/pricing.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/about.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/components/use-cases/section_companies.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/components/product/bottom_form.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/components/product/companions_section.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/_index.blade.php" />
@@ -219,11 +205,37 @@
         <option value="$PROJECT_DIR$/resources/views/pages/product/conduct.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/components/product/image_text_horizontal.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/product/analysis.blade.php" />
-        <option value="$PROJECT_DIR$/resources/sass/custom.scss" />
+        <option value="$PROJECT_DIR$/resources/views/components/product/image_text_vertical.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/components/product/image_with_title.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/product/issues.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/components/product/text_numbered.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/components/product/image_text_vertical.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/components/product/icons_raw.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/industries/_index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/components/solution/banner_with_text.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/components/solution/description_section.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/components/solution/industries_banner_section.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/components/solution/industries_icon_with_text.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/components/solution/industries_icon_list.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/components/solution/industries_bg_grey.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/components/solution/industries_quotes.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/industries/food.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/components/solution/industries_droptown_section.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/industries/construction.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/industries/manufacturing.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/industries/retail.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/industries/logistics.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/industries/facility_management.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/industries/pharma_chemie.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/components/use-cases/image_text_horizontal.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/components/use-cases/section_companies.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/components/solution/industries_explore_section.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/use_cases/audits.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/use_cases/digital_checklists.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/use_cases/inspections.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/use_cases/assessment.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/use_cases/documentation.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/use_cases/issue.blade.php" />
+        <option value="$PROJECT_DIR$/resources/sass/custom.scss" />
       </list>
     </option>
   </component>
@@ -340,6 +352,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -417,14 +430,6 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="industries" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zyp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zyp" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="product" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -452,7 +457,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -518,18 +522,19 @@
       <workItem from="1577619411210" duration="15914000" />
       <workItem from="1577690935617" duration="11055000" />
       <workItem from="1577737050245" duration="5000" />
-      <workItem from="1578297080081" duration="28544000" />
+      <workItem from="1578297080081" duration="28838000" />
+      <workItem from="1578378127586" duration="22617000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="700943000" />
+    <option name="totallyTimeSpent" value="723854000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2473525" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25113463" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5030257" side_tool="true" weight="0.27722773" />
@@ -555,22 +560,22 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2700454" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Command Line Tools Console" order="13" weight="0.32838285" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49848714" visible="true" weight="0.27722773" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5015129" side_tool="true" weight="0.27722773" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32838285" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
@@ -582,157 +587,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/img/group-2700.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="46" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/components/product/icons_raw.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="45" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/components/solution/description_section.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="71" lean-forward="true" selection-start-line="6" selection-start-column="71" selection-end-line="6" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/industries/_index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1175">
-          <caret line="212" column="22" lean-forward="true" selection-start-line="212" selection-start-column="22" selection-end-line="212" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/components/solution/industries_droptown_section.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="33" column="50" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/components/solution/industries_banner_section.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/components/solution/industries_icon_with_text.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="51" selection-start-column="51" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/img/group-2832.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/img/group-2831.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/img/group-4750.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/industries/construction.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1224">
-          <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/industries/food.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="73" column="57" selection-start-line="73" selection-start-column="57" selection-end-line="73" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/components/solution/industries_bg_grey.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="22" column="73" selection-start-line="22" selection-start-column="73" selection-end-line="22" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/components/solution/industries_explore_section.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="60" selection-start-line="2" selection-start-column="60" selection-end-line="2" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/industries/manufacturing.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1107">
-          <caret line="132" column="38" lean-forward="true" selection-start-line="132" selection-start-column="38" selection-end-line="132" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/img/group-2969.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/industries/retail.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/industries/logistics.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/industries/pharma_chemie.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-239">
-          <caret line="109" column="34" selection-start-line="109" selection-start-column="34" selection-end-line="109" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/components/use-cases/description_section.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/industries/facility_management.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/lang/en/pricing-page.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/pricing.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/about.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-119">
-          <caret line="185" column="48" selection-start-line="185" selection-start-column="48" selection-end-line="185" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/pages/resources/contact.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -744,13 +598,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="305">
           <caret line="200" column="8" selection-start-line="200" selection-start-column="4" selection-end-line="250" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/components/use-cases/section_companies.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -831,24 +678,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tailwind.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="137" column="20" selection-start-line="137" selection-start-column="17" selection-end-line="137" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/pages/product/conduct.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="154" column="86" selection-start-line="154" selection-start-column="86" selection-end-line="154" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/product/_index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -859,17 +692,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="26" column="41" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/pages/product/analysis.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="56" column="47" lean-forward="true" selection-start-line="56" selection-start-column="47" selection-end-line="56" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/components/product/image_text_vertical.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -880,38 +713,243 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/sass/custom.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="1571" column="18" selection-start-line="1571" selection-start-column="18" selection-end-line="1571" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/components/product/image_with_title.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+        <state>
+          <caret column="50" selection-start-column="50" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/components/product/text_numbered.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+        <state relative-caret-position="306">
+          <caret line="27" column="49" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/pages/product/issues.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="131" column="53" selection-start-line="131" selection-start-column="53" selection-end-line="131" selection-end-column="53" />
+        <state relative-caret-position="170">
+          <caret line="93" column="49" selection-start-line="93" selection-start-column="49" selection-end-line="93" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/components/product/image_text_vertical.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/components/product/icons_raw.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" selection-start-column="20" selection-end-column="20" />
+        <state relative-caret-position="34">
+          <caret line="2" column="81" selection-start-line="2" selection-start-column="71" selection-end-line="2" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/components/solution/description_section.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="26" column="85" selection-start-line="26" selection-start-column="85" selection-end-line="26" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/components/solution/banner_with_text.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="73" selection-start-line="2" selection-start-column="63" selection-end-line="2" selection-end-column="73" />
+          <folding>
+            <element signature="n#style#0;n#section#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/industries/_index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="67" column="45" selection-start-line="67" selection-start-column="45" selection-end-line="67" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/components/solution/industries_icon_with_text.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/components/solution/industries_icon_list.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="81" selection-start-line="1" selection-start-column="81" selection-end-line="1" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="42" column="40" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/components/solution/industries_bg_grey.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="92" selection-start-line="5" selection-start-column="92" selection-end-line="5" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/components/solution/industries_quotes.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="69" selection-start-line="6" selection-start-column="69" selection-end-line="6" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tailwind.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="119" column="31" selection-start-line="119" selection-start-column="31" selection-end-line="119" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/components/solution/industries_droptown_section.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/industries/food.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/components/solution/industries_banner_section.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/industries/logistics.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-443">
+          <caret line="100" column="92" selection-start-line="100" selection-start-column="92" selection-end-line="100" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/industries/retail.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-85">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/industries/manufacturing.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-409">
+          <caret line="102" column="92" selection-start-line="102" selection-start-column="92" selection-end-line="102" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/industries/construction.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="54" column="57" selection-start-line="54" selection-start-column="57" selection-end-line="54" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/industries/pharma_chemie.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="122" column="48" selection-start-line="122" selection-start-column="48" selection-end-line="122" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/industries/facility_management.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-477">
+          <caret line="101" column="92" selection-start-line="101" selection-start-column="92" selection-end-line="101" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/product/_index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/components/use-cases/image_text_horizontal.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="48" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/components/use-cases/section_companies.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="78" lean-forward="true" selection-start-line="3" selection-start-column="78" selection-end-line="3" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/components/solution/industries_explore_section.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="109" selection-start-line="2" selection-start-column="109" selection-end-line="2" selection-end-column="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/use_cases/audits.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/use_cases/digital_checklists.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/use_cases/inspections.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/use_cases/assessment.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1156">
+          <caret line="68" column="42" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="42" />
+          <folding>
+            <element signature="e#429#766#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/use_cases/documentation.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="63" column="107" lean-forward="true" selection-start-line="63" selection-start-column="107" selection-end-line="63" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/use_cases/issue.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="59" lean-forward="true" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/sass/custom.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="1426" column="49" lean-forward="true" selection-start-line="1426" selection-start-column="49" selection-end-line="1426" selection-end-column="49" />
         </state>
       </provider>
     </entry>

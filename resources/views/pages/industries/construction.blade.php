@@ -15,9 +15,9 @@
   'text' => __('industry/construction.bannerText'),
   ])
 
-    <section class="py-32 with__border--bottom">
+    <section class="py-16 lg:py-32 with__border--bottom">
         <div class="container mx-auto">
-            <h2 class="font-bold text-center font-cocogoose text-primary text-30 xl:text-40 mb-32 uppercase tracking-heading">
+            <h2 class="font-bold text-center font-cocogoose text-primary text-50 mb-10 lg:mb-32 uppercase tracking-heading">
                 @lang('Lumiform is the easiest way for construction companies to…')
             </h2>
 
@@ -45,14 +45,14 @@
                 ])
             </div>
             <a href="#"
-               class="font-extrabold w-290 mt-5 flex justify-center items-center mx-auto bg-red text-white uppercase font-cocogoose text-17 text-20 tracking-large  h-50 xxl:h-70 px-8 rounded-20">
+               class="font-extrabold w-290 mt-5 flex justify-center items-center mx-auto bg-red text-white uppercase font-cocogoose text-20 tracking-large  h-50 xxl:h-70 px-8 rounded-20">
                 @lang('Get Lumiform FREE')
             </a>
         </div>
     </section>
-    <section class="py-32">
+    <section class="py-16 lg:py-32 with__border--bottom">
         <div class="container mx-auto">
-            <h2 class="font-bold text-center font-cocogoose text-primary text-30 xl:text-40 lg:mb-4 uppercase tracking-heading">
+            <h2 class="font-bold text-center font-cocogoose text-primary text-50 lg:mb-4 uppercase tracking-heading">
                 @lang('Reduce the time required for audits while <span class="text-gold">improving safety</span>')
             </h2>
             <p class="text-center font-light font-din text-20 lg:text-30 text-secondary tracking-text mb-20">
@@ -72,7 +72,7 @@
         </div>
     </section>
 
-    <section class="py-24">
+    <section class="py-16 lg:py-24">
         <div class="container mx-auto">
             <h3 class="text-primary text-center uppercase text-40 font-cocogoose tracking-heading font-bold mb-32">
                 @lang('<span class="text-gold">All quality and safety inspections </span> with aN intuitive app')

@@ -4,7 +4,7 @@
             <img src="{{asset('img/'.$image)}}" alt="">
         </div>
         <div class="w-full lg:w-6/12  flex flex-col justify-around">
-            <p class="font-din font-light text-30 text-secondary">
+            <p class="font-din font-light text-30 text-secondary mt-5">
                 {!! $text !!}
             </p>
             <div class="signature flex items-center">

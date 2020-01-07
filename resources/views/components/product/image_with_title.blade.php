@@ -1,4 +1,4 @@
-<div class="tool__item w-full sm:w-1/2 lg:w-1/3">
+<div class="tool__item w-full sm:w-1/2 lg:w-1/3 lg:mb-0 mb-8">
     <h3 class="text-center text-38 font-bold font-cocogoose uppercase mb-10 text-{{$color}}">
         {!! $heading !!}
     </h3>

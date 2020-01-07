@@ -8,30 +8,25 @@
     <meta name="description" content="@lang('use-cases/assessments.description')">
 @endsection
 @section("content")
-    <section class="pt-28 pb-40"
+    <section class="lg:pt-28 lg:pb-40 py-16 cases--assessment"
              style="
-                     background-image: url('{{asset('img/group-4299.png')}}');
-                     background-color: #FAFBFB;
-                     background-size: 96% 100%;
-                     background-repeat: no-repeat;
-                     background-position-y: bottom;
-                     background-position-x: right;"
+                   "
     >
         <div class="container mx-auto">
-            <div class="w-10/12 mx-auto mb-16">
-                <h1 class="text-70 font-cocogoose font-black uppercase text-center tracking-normal text-primary mb-16 leading-none">
+            <div class="w-full lg:w-10/12 mx-auto lg:mb-16 mb-12">
+                <h1 class="text-70 font-cocogoose font-black uppercase text-center tracking-normal text-primary lg:mb-16 mb-10 leading-none">
                     @lang('use-cases/assessments.bannerTitle')
                 </h1>
                 <p class="text-30 font-light font-din text-secondary text-center">
                     @lang('use-cases/assessments.bannerText')
                 </p>
             </div>
-            <button class="mx-auto w-215  bg-red tracking-large font-extrabold text-white uppercase font-cocogoose text-17 lg:text-20 h-70  rounded-20 items-center justify-center flex">
+            <button class="mx-auto w-215  bg-red tracking-large font-extrabold text-white uppercase font-cocogoose text-20 h-70  rounded-20 items-center justify-center flex">
                 @lang('use-cases/assessments.buttonText')
             </button>
         </div>
     </section>
-    <section class="py-32 with__border--bottom">
+    <section class="py-16 lg:py-32 with__border--bottom">
         @include('components.use-cases.image_text_horizontal',[
         'heading' => '<span class="text-light-blue">Cut assessment time </span>',
         'image' => ['group-4390.png','group-4390@2x.png'],
@@ -63,12 +58,12 @@
         <a href=""
            class="mx-auto base__button font-extrabold bg-red text-white uppercase font-cocogoose text-xl h-70 px-8 rounded-20 items-center flex">@lang('Get Lumiform FREE')</a>
     </section>
-    <section class="py-28 with__border--bottom">
+    <section class="py-16 lg:py-28 with__border--bottom">
         <div class="container mx-auto">
-            <h2 class="font-bold text-center font-cocogoose text-primary text-30 xl:text-50 lg:mb-2 uppercase tracking-heading">
+            <h2 class="font-bold text-center font-cocogoose text-primary text-50 lg:mb-2 uppercase tracking-heading">
                 @lang('<span class="text-light-blue">Gain more transparency </span> through digital assessments')
             </h2>
-            <p class="text-left font-light font-din text-20 lg:text-30 text-secondary tracking-text mb-26 pl-26">
+            <p class="text-left font-light font-din text-30 text-secondary tracking-text mb-10 lg:mb-26 lg:pl-26">
                 @lang('Create assessments and individual reports, within minutes, or start immediately with ready to-use-templates.<span class="line__break"></span> Conduct audits via the mobile app, assign issues on the fly, and solve them together faster, as a team. <span class="line__break"></span>Analyse all data in a snap, in order to continuously improve procedures.')
             </p>
             @include('components.solution.industries_droptown_section',[

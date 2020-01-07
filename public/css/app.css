@@ -12039,11 +12039,14 @@ h1 {
 }
 
 .industries__icon {
-  width: 55px;
+  max-width: 55px;
+  min-width: 55px;
+  width: 100%;
 }
 
 .index__image--list {
   max-width: 176px;
+  width: 100%;
 }
 
 .industries__list--image {
@@ -12653,14 +12656,94 @@ footer ul li a {
   left: 50%;
 }
 
+.icon__item {
+  width: 72px;
+  height: 72px;
+}
+
+.icon__left {
+  width: 32px;
+  height: 32px;
+}
+
+.dropdown__arrow {
+  width: 100%;
+  max-width: 9px;
+}
+
 /*  End Hamburger Button*/
 
+.cases--audit {
+  background-image: url("../img/group-5141.png");
+  background-color: #FAFBFB;
+  background-size: 96%;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+}
+
+.cases--inspection {
+  background-image: url("../img/group-4015.png");
+  background-color: #FAFBFB;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+}
+
+.cases--checklist {
+  background-image: url("../img/group-4200.png");
+  background-color: #FAFBFB;
+  background-size: 86%;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: center;
+}
+
+.cases--assessment {
+  background-image: url("../img/group-4299.png");
+  background-color: #FAFBFB;
+  background-size: 96% 100%;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: right;
+}
+
+.cases--documentation {
+  background-image: url("../img/group-5144.png");
+  background-color: #FAFBFB;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: center;
+}
+
+.cases--issue {
+  background-image: url("../img/group-5442.png");
+  background-color: #FAFBFB;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: center;
+}
+
 @media (max-width: 1660px) {
+  .solution__section .bottom__left {
+    max-width: 700px;
+  }
+
+  .cases--assessment {
+    background-size: contain;
+  }
+
+  .bottom__right {
+    width: 450px;
+    height: 450px;
+  }
+
   .group__phones {
     max-width: 650px;
   }
 
-  .text-70, .md\:text-70 {
+  .text-70 {
     font: 700 55px/60px Cocogoose;
   }
 
@@ -12762,6 +12845,14 @@ footer ul li a {
     right: 0;
     max-width: 550px;
   }
+
+  .cases--audit {
+    background-size: cover;
+  }
+
+  .cases--checklist {
+    background-size: 100%;
+  }
 }
 
 @media (max-width: 1400px) {
@@ -12856,6 +12947,14 @@ footer ul li a {
     max-width: 500px;
   }
 
+  .list__border {
+    padding: 15px 0;
+  }
+
+  .industries__icon {
+    margin: 0 auto 15px;
+  }
+
   .container {
     padding-left: 40px;
     padding-right: 40px;
@@ -12892,6 +12991,10 @@ footer ul li a {
   .from__image {
     max-width: 450px;
   }
+
+  .text-110 {
+    font-size: 80px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -12899,9 +13002,30 @@ footer ul li a {
     display: none;
   }
 
+  .solution__section .bottom__left {
+    max-width: initial;
+    width: 100%;
+  }
+
+  .cases--inspection {
+    background-size: cover;
+  }
+
+  .cases--documentation {
+    background-size: contain;
+  }
+
+  .cases--assessment p .line__break {
+    display: inline-block;
+  }
+
   .container {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .banner__bg.h-400 {
+    height: 350px;
   }
 
   .banner__right {
@@ -12989,6 +13113,10 @@ footer ul li a {
     font-size: 17px;
   }
 
+  .text-70 {
+    font: 700 40px/60px Cocogoose;
+  }
+
   .custom-text-size p {
     font-size: 17px;
   }
@@ -13002,7 +13130,11 @@ footer ul li a {
   }
 
   .leading-heading {
-    line-height: 40px;
+    line-height: 50px;
+  }
+
+  .text-110 {
+    font-size: 60px;
   }
 
   .copyrights {
@@ -13058,7 +13190,7 @@ footer ul li a {
   }
 
   .text-70 {
-    font: 700 40px/50px Cocogoose;
+    font: 700 30px/40px Cocogoose;
   }
 
   .text-30 {
@@ -13078,7 +13210,11 @@ footer ul li a {
   }
 
   .leading-heading {
-    line-height: 30px;
+    line-height: 40px;
+  }
+
+  .text-110 {
+    font-size: 40px;
   }
 
   .copyrights {
@@ -13088,6 +13224,41 @@ footer ul li a {
 
   .workflow__items .digitise__item--image, #organization__orchestrate .digitise__item--image {
     margin: 0 auto;
+  }
+
+  .banner__bg.h-400 {
+    height: 200px;
+  }
+
+  .cases--assessment .p .line__break {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 640px) {
+  .index__image--list {
+    max-width: initial;
+  }
+
+  .bottom__left span {
+    text-align: center;
+    display: block;
+    margin: 20px auto 0;
+  }
+
+  .bottom__left span .line__break {
+    display: inline-block;
+  }
+
+  .cases--inspection p .line__break {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 500px) {
+  .bottom__right {
+    width: 300px;
+    height: 300px;
   }
 }
 

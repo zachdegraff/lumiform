@@ -1,6 +1,6 @@
 <section
         style="background: url('{{asset("img/".$image)}}') no-repeat; background-size: cover"
-        class="h-400 flex items-center justify-center relative"
+        class="h-400 flex items-center justify-center relative banner__bg"
 >
 <h3 class="text-white font-extrabold font-cocogoose text-110 text-center">
     {!! $text !!}

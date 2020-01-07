@@ -1,6 +1,6 @@
 <section class="pt-16 pb-10 @if(isset($bgColor)) bg-{{$bgColor}} @endif">
 <div class="container mx-auto">
-    <h4 class="mb-10 text-center @if(isset($fontSize)) {{$fontSize}} @else text-40 @endif font-normal font-cocogoose uppercase text-grey-bold">
+    <h4 class="mb-10 text-center @if(isset($fontSize)) {{$fontSize}} @else text-38 @endif font-normal font-cocogoose uppercase text-grey-bold">
         @lang('TRUSTED BY FORWARD-THINKING COMPANIES OF ALL SHAPES AND SIZES')
     </h4>
     <div class="lg:flex-no-wrap flex-wrap flex justify-between items-center">

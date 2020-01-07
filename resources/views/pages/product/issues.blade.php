@@ -47,7 +47,7 @@
 
 
             </div>
-            <button class="button__base px-8 py-3 lg:py-5 mt-20 mx-auto">@lang('Get Lumiform FREE')</button>
+            <button class="button__base px-8 py-3 lg:py-5 lg:mt-20 mt-8 mx-auto">@lang('Get Lumiform FREE')</button>
         </div>
     </section>
     <section id="restrict" class="py-12 lg:py-32">

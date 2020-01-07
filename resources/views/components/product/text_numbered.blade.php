@@ -13,19 +13,19 @@
         </div>
         @if(isset($subItem) && $subItem === true)
             <div class="w-full issue__subitem lg:max-w-3/4 mt-16">
-                <h5 class="pl-32 md:pl-40 text-20 font-cocogoose font-extrabold mb-5">@lang('EXAMPLE USE CASES FOR AUTOMATIC ISSUES')</h5>
+                <h5 class="pl-20 md:pl-40 text-20 font-cocogoose font-extrabold mb-5">@lang('EXAMPLE USE CASES FOR AUTOMATIC ISSUES')</h5>
                 <ul>
                     <li class="flex items-center font-light text-20 font-din text-secondary mb-1"><img
                                 src="{{asset('img/group-1392.svg')}}" alt=""
-                                class="px-12 md:pl-16">@lang('Inform the technician when employee marked Coffee machine as damaged.')
+                                class="pl-12 pr-8 md:pl-16">@lang('Inform the technician when employee marked Coffee machine as damaged.')
                     </li>
                     <li class="flex items-center font-light text-20 font-din text-secondary mb-1"><img
                                 src="{{asset('img/group-1382.svg')}}" alt=""
-                                class="px-12 md:pl-16">@lang('Inform the safety officer if first aid kit is marked as incomplete.')
+                                class="pl-12 pr-8 md:pl-16">@lang('Inform the safety officer if first aid kit is marked as incomplete.')
                     </li>
                     <li class="flex items-center font-light text-20 font-din text-secondary mb-1"><img
                                 src="{{asset('img/group-1383.svg')}}" alt=""
-                                class="px-12 md:pl-16">@lang('Inform the manager if mould infestation is detected during the monthly audit.')
+                                class="pl-12 pr-8 md:pl-16">@lang('Inform the manager if mould infestation is detected during the monthly audit.')
                     </li>
                 </ul>
             </div>

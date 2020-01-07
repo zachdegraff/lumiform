@@ -13,47 +13,47 @@
             <h1 class="tracking-normal text-primary text-center  text-40 xxl:text-70 mb-16 font-cocogoose uppercase font-extrabold">
                 @lang('industry/index.bannerTitle')
             </h1>
-            <div class="flex justify-center">
+            <div class="flex justify-center lg:flex-no-wrap flex-wrap">
                 @include('components.product.icons_raw',[
                             'text' => 'Food',
                             'image' => 'icons/burger.svg',
-                            'class' => 'mx-10 w-1/2 mb-20',
+                            'class' => 'mx-5 xl:mx-10 w-1/4 lg:w-1/2 mb-12',
                             'url' => 'industries.food',
                             ])
                 @include('components.product.icons_raw',[
                             'text' => 'Construction',
                             'image' => 'icons/construction.svg',
-                            'class' => 'mx-10 w-1/2 mb-20',
+                            'class' => 'mx-5 xl:mx-10 w-1/4 lg:w-1/2 mb-12',
                              'url' => 'industries.construction',
                             ])
                 @include('components.product.icons_raw',[
                             'text' => 'Manufacturing',
                             'image' => 'icons/manufactur.svg',
-                            'class' => 'mx-10 w-1/2 mb-20',
+                            'class' => 'mx-5 xl:mx-10 w-1/4 lg:w-1/2 mb-12',
                             'url' => 'industries.manufacturing',
                             ])
                 @include('components.product.icons_raw',[
                             'text' => 'Retail',
                             'image' => 'icons/retail.svg',
-                            'class' => 'mx-10 w-1/2 mb-20',
+                            'class' => 'mx-5 xl:mx-10 w-1/4 lg:w-1/2 mb-12',
                             'url' => 'industries.retail',
                             ])
                 @include('components.product.icons_raw',[
                             'text' => 'Logistics',
                             'image' => 'icons/car.svg',
-                            'class' => 'mx-10 w-1/2 mb-20',
+                            'class' => 'mx-5 xl:mx-10 w-1/4 lg:w-1/2 mb-12',
                             'url' => 'industries.logistics',
                             ])
                 @include('components.product.icons_raw',[
                             'text' => 'Facility',
                             'image' => 'icons/facility.svg',
-                            'class' => 'mx-10 w-1/2 mb-20',
+                            'class' => 'mx-5 xl:mx-10 w-1/4 lg:w-1/2 mb-12',
                             'url' => 'industries.facilityManagement',
                             ])
                 @include('components.product.icons_raw',[
                             'text' => 'Pharma & chemistry',
                             'image' => 'icons/pharma.svg',
-                            'class' => 'mx-10 w-1/2 mb-20',
+                            'class' => 'mx-5 xl:mx-10 w-1/4 lg:w-1/2 mb-12',
                             'url' => 'industries.pharmaChemie',
                             ])
             </div>

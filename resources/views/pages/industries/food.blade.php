@@ -14,13 +14,13 @@
     'text' => __('industry/food.bannerText'),
     ])
 
-    <section class="py-32 with__border--bottom">
+    <section class="py-16 lg:py-32 with__border--bottom">
         <div class="container mx-auto">
-            <h2 class="font-bold text-center font-cocogoose text-primary text-30 xl:text-40 mb-32 uppercase tracking-heading">
+            <h2 class="font-bold text-center font-cocogoose text-primary text-50 mb-10 lg:mb-32 uppercase tracking-heading">
                 @lang('With Lumiform, your <span class="text-gold">food and hospitality</span> company can…')
             </h2>
 
-            <div class="flex justify-between mb-20">
+            <div class="flex justify-between mb-20 md:flex-no-wrap flex-wrap">
                 @include('components.solution.industries_icon_with_text',[
                 'icon' => 'icons/umbrella-icon.svg',
                 'heading' => 'Protect your brand',
@@ -49,7 +49,7 @@
             </a>
         </div>
     </section>
-    <section class="py-32 food__dropdown">
+    <section class="py-16 lg:py-32 food__dropdown">
         <div class="container mx-auto">
             <h2 class="font-bold text-center font-cocogoose text-primary text-30 xl:text-40 lg:mb-4 uppercase tracking-heading">
                 @lang('<span class="text-light-blue">Reduce documentation time</span> while increasing food quality')
@@ -71,14 +71,14 @@
 
         </div>
     </section>
-    <section id="temperature" class="with__border--bottom">
-        <div class="container mx-auto flex items-center justify-between">
-            <div class="w-6/12">
+    <section id="temperature" class="with__border--bottom pb-16 sm:pb-0">
+        <div class="container mx-auto flex items-center justify-between sm:flex-row flex-col">
+            <div class="w-6/12 mb-5 sm:mb-0">
                 <img src="{{asset('img/group-3311.png')}}" alt="" srcset="{{asset('img/group-3311.png')}},
                 {{asset('img/group-3311@2x.png')}}">
             </div>
-            <div class="w-5/12">
-                <h3 class="text-red uppercase text-40 font-cocogoose tracking-heading font-bold mb-6 w-7/12">
+            <div class="w-full sm:w-5/12">
+                <h3 class="text-red uppercase text-50 font-cocogoose tracking-heading font-bold mb-6 w-7/12">
                     @lang('Add automatic temperature monitoring')
                 </h3>
                 <p class="font-din font-light text-30 tracking-text text-secondary mb-10">
@@ -92,9 +92,9 @@
             </div>
         </div>
     </section>
-    <section class="py-24">
+    <section class="py-16 lg:py-24">
         <div class="container mx-auto">
-            <h3 class="text-primary text-center uppercase text-40 font-cocogoose tracking-heading font-bold mb-32">
+            <h3 class="text-primary text-center uppercase text-50 font-cocogoose tracking-heading font-bold mb-16 lg:mb-32">
                 @lang('<span class="text-purple">Check all of your quality standards</span> with one app')
             </h3>
             <div class="industry__icons flex justify-between flex-wrap">
@@ -120,7 +120,7 @@
                 ])
             </div>
             <a href="#"
-               class="flex items-center uppercase justify-center text-red text-center block text-17 lg:text-20 tracking-large mt-10">
+               class="flex items-center uppercase justify-center text-red text-center block text-20 tracking-large xl:mt-10">
                 @lang('View all food use cases')
                 <img src="{{asset('img/arrow-right-long-red.svg')}}" alt="" class="h-3 ml-8">
             </a>
@@ -150,7 +150,7 @@
     @include('components.solution.industries_quotes',[
     'image' => 'group-1031.svg',
     'text' => '„In the past, we used paper, pen and camera for our audit reports. Now we can use Lumiform and we get everything we need in one tool.“',
-    'position' => 'Sven,  <br>Head of Quality Management',
+    'position' => '-Sven,  <br>Head of Quality Management',
     ])
     @include('components.product.bottom_form',[
     'heading' =>'Start improving food quality now – free of charge!',

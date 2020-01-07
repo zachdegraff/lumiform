@@ -9,30 +9,22 @@
 @endsection
 
 @section("content")
-    <section class="py-26"
-             style="
-                     background-image: url('{{asset('img/group-5144.png')}}');
-                     background-color: #FAFBFB;
-                     background-size: 100% 100%;
-                     background-repeat: no-repeat;
-                     background-position-y: bottom;
-                     background-position-x: center;"
-    >
+    <section class="lg:py-26 py-16 cases--documentation" >
         <div class="container mx-auto">
-            <div class="w-10/12 mx-auto mb-24">
-                <h1 class="text-70 font-cocogoose font-black uppercase text-center tracking-normal text-primary mb-16 leading-tight">
+            <div class="w-full lg:w-10/12 mx-auto mb-12 lg:mb-24">
+                <h1 class="text-70 font-cocogoose font-black uppercase text-center tracking-normal text-primary mb-10 lg:mb-16 leading-tight">
                     @lang('use-cases/documentation.bannerTitle')
                 </h1>
                 <p class="text-30 font-light font-din text-secondary text-center">
                     @lang('use-cases/documentation.bannerText')
                 </p>
             </div>
-            <button class="mx-auto w-215  bg-red tracking-large font-extrabold text-white uppercase font-cocogoose text-17 lg:text-20 h-70  rounded-20 items-center justify-center flex">
+            <button class="mx-auto w-215  bg-red tracking-large font-extrabold text-white uppercase font-cocogoose text-20 h-70  rounded-20 items-center justify-center flex">
                 @lang('use-cases/documentation.buttonText')
             </button>
         </div>
     </section>
-    <section class="py-32 with__border--bottom">
+    <section class="py-16 lg:py-32 with__border--bottom">
         @include('components.use-cases.image_text_horizontal',[
         'heading' => '<span class="text-light-blue">Cut documentation time </span> by 20%',
         'image' => ['group-4912.png','group-4912@2x.png'],
@@ -64,12 +56,12 @@
         <a href=""
            class="mx-auto base__button font-extrabold bg-red text-white uppercase font-cocogoose text-xl h-70 px-8 rounded-20 items-center flex">@lang('Get Lumiform FREE')</a>
     </section>
-    <section class="py-28 with__border--bottom">
+    <section class="py-16 lg:py-28 with__border--bottom">
         <div class="container mx-auto">
-            <h2 class="font-bold text-center font-cocogoose text-primary text-30 xl:text-50 lg:mb-2 uppercase tracking-heading">
+            <h2 class="font-bold text-center font-cocogoose text-primary text-50 lg:mb-2 uppercase tracking-heading">
                 @lang('Provide <span class="text-light-blue"> compliant documentation </span>automatically')
             </h2>
-            <p class="text-center font-light font-din text-20 lg:text-30 text-secondary tracking-text mb-26">
+            <p class="text-center font-light font-din text-30 text-secondary tracking-text mb-10 lg:mb-26">
                 @lang('Digitise documentation in all areas of your business, conduct checks via <span class="line__break"></span> the app and get fully automated, fully compliant reports.')
             </p>
             @include('components.solution.industries_droptown_section',[

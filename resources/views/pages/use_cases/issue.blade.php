@@ -9,17 +9,9 @@
 @endsection
 
 @section("content")
-    <section class="pt-26 pb-28"
-             style="
-                     background-image: url('{{asset('img/group-5442.png')}}');
-                     background-color: #FAFBFB;
-                     background-size: 100% 100%;
-                     background-repeat: no-repeat;
-                     background-position-y: bottom;
-                     background-position-x: center;"
-    >
+    <section class="lg:pt-26 lg:pb-28 py-16 cases--issue" >
         <div class="container mx-auto">
-            <div class="w-10/12 mx-auto mb-12">
+            <div class="w-full lg:w-10/12 mx-auto mb-12">
                 <h1 class="text-70 font-cocogoose font-black uppercase text-center tracking-normal text-primary mb-16 leading-tight">
                     @lang('use-cases/issue.bannerTitle')
                 </h1>

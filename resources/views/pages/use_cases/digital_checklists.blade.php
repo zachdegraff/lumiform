@@ -8,18 +8,10 @@
     <meta name="description" content="@lang('use-cases/assessments.description')">
 @endsection
 @section("content")
-    <section class="py-28"
-             style="
-                     background-image: url('{{asset('img/group-4200.png')}}');
-                     background-color: #FAFBFB;
-                     background-size: 86%;
-                     background-repeat: no-repeat;
-                     background-position-y: bottom;
-                     background-position-x: center;"
-    >
+    <section class="lg:py-28 py-16 cases--checklist">
         <div class="container mx-auto">
-            <div class="w-10/12 mx-auto mb-32">
-                <h1 class="text-70 font-cocogoose font-black uppercase text-center tracking-normal text-primary mb-16 leading-none">
+            <div class="w-full lg:w-10/12 mx-auto lg:mb-32 mb-12">
+                <h1 class="text-70 font-cocogoose font-black uppercase text-center tracking-normal text-primary lg:mb-16 mb-10 leading-none">
                     @lang('use-cases/checklists.bannerTitle')
                 </h1>
                 <p class="text-30 font-light font-din text-secondary text-center">
@@ -31,7 +23,7 @@
             </button>
         </div>
     </section>
-    <section class="py-32 with__border--bottom">
+    <section class="py-16 lg:py-32 with__border--bottom">
         @include('components.use-cases.image_text_horizontal',[
         'heading' => '<span class="text-light-blue">Reduce checklist execution time</span> ',
         'image' => ['group-4364.png','group-4364@2x.png'],
@@ -63,12 +55,12 @@
         <a href=""
            class="mx-auto base__button font-extrabold bg-red text-white uppercase font-cocogoose text-xl h-70 px-8 rounded-20 items-center flex">@lang('Get Lumiform FREE')</a>
     </section>
-    <section class="py-32 with__border--bottom">
+    <section class="py-16 lg:py-32 with__border--bottom">
         <div class="container mx-auto">
-            <h2 class="font-bold text-center font-cocogoose text-primary text-30 xl:text-50 lg:mb-4 uppercase tracking-heading">
+            <h2 class="font-bold text-center font-cocogoose text-primary text-50 lg:mb-4 uppercase tracking-heading">
                 @lang('<span class="text-purple">more transparency </span> with digital inspections')
             </h2>
-            <p class="text-center font-light font-din text-20 lg:text-30 text-secondary tracking-text mb-20">
+            <p class="text-center font-light font-din text-30 text-secondary tracking-text mb-10 lg:mb-20">
                 @lang('Create standardised checklists, within minutes, or start with ready-to-use checklist templates and customise them <span class="line__break"> </span> to meet your needs. Conduct checklists effectively, via the app, and solve issues quicker than ever before. ')
             </p>
             @include('components.solution.industries_droptown_section',[

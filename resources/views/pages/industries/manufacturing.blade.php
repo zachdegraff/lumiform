@@ -15,9 +15,9 @@
     'text' => __('industry/manufacturing.bannerText'),
     ])
 
-    <section class="py-32 with__border--bottom">
+    <section class="py-16 lg:py-32 with__border--bottom">
         <div class="container mx-auto">
-            <h2 class="font-bold text-center font-cocogoose text-primary text-30 xl:text-50 mb-32 uppercase tracking-heading">
+            <h2 class="font-bold text-center font-cocogoose text-primary text-50 mb-10 lg:mb-32 uppercase tracking-heading">
                 @lang('Lumiform is the best way for manufacturers to …')
             </h2>
 
@@ -50,12 +50,12 @@
             </a>
         </div>
     </section>
-    <section class="py-32 with__border--bottom">
+    <section class="py-16 lg:py-32 with__border--bottom">
         <div class="container mx-auto">
-            <h2 class="font-bold text-center font-cocogoose text-primary text-30 xl:text-50 lg:mb-4 uppercase tracking-heading">
+            <h2 class="font-bold text-center font-cocogoose text-primary text-50 lg:mb-4 uppercase tracking-heading">
                 @lang('<span class="text-gold">Increase quality and safety</span> in manufacturing plants')
             </h2>
-            <p class="text-center font-light font-din text-20 lg:text-30 text-secondary tracking-text mb-20">
+            <p class="text-center font-light font-din text-30 text-secondary tracking-text mb-10 lg:mb-20">
                 @lang('Easily perform regular safety and quality checks and report issues immediately while getting standardized data from the field.')
             </p>
             @include('components.solution.industries_droptown_section',[
@@ -72,9 +72,9 @@
         </div>
     </section>
 
-    <section class="py-24">
+    <section class=" py-16 lg:py-24">
         <div class="container mx-auto">
-            <h3 class="text-primary text-center uppercase text-50 font-cocogoose tracking-heading font-bold mb-32">
+            <h3 class="text-primary text-center uppercase text-50 font-cocogoose tracking-heading font-bold mb-10 lg:mb-32">
                 @lang('<span class="text-light-blue">Digitise all the paperwork </span>in manufacturing plants')
             </h3>
             <div class="industry__icons flex justify-between flex-wrap">
@@ -100,7 +100,7 @@
                 ])
             </div>
             <a href="#"
-               class="flex items-center uppercase justify-center text-red text-center block text-17 lg:text-20 tracking-large mt-10">
+               class="flex items-center uppercase justify-center text-red text-center block text-20 tracking-large mt-10">
                 @lang('View all Manufacturing use cases')
                 <img src="{{asset('img/arrow-right-long-red.svg')}}" alt="" class="h-3 ml-8">
             </a>

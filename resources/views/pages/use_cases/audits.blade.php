@@ -8,29 +8,22 @@
     <meta name="description" content="@lang('use-cases/assessments.description')">
 @endsection
 @section("content")
-    <section class="pt-24 pb-32"
-             style="
-                     background-image: url('{{asset('img/group-5141.png')}}');
-                     background-color: #FAFBFB;
-                     background-size: 96%;
-                     background-repeat: no-repeat;
-                     background-position-y: bottom;"
-    >
+    <section class="xxl:pt-24 xxl:pb-32 py-16 cases--audit">
         <div class="container mx-auto">
-            <div class="w-10/12 mx-auto mb-32">
-                <h1 class="text-70 font-cocogoose font-black uppercase text-center tracking-normal text-primary mb-16">
+            <div class="w-full lg:w-10/12 mx-auto lg:mb-32 mb-12">
+                <h1 class="text-70 font-cocogoose font-black uppercase  text-center tracking-normal text-primary lg:mb-16 mb-10">
                     @lang('use-cases/audits.bannerTitle')
                 </h1>
                 <p class="text-30 font-light font-din text-secondary text-center">
                     @lang('use-cases/audits.bannerText')
                 </p>
             </div>
-            <button class="mx-auto w-215  bg-red tracking-large font-extrabold text-white uppercase font-cocogoose text-17 lg:text-20 h-70  rounded-20 items-center justify-center flex">
+            <button class="mx-auto w-215  bg-red tracking-large font-extrabold text-white uppercase font-cocogoose text-20 h-70  rounded-20 items-center justify-center flex">
                 @lang('use-cases/audits.buttonText')
             </button>
         </div>
     </section>
-    <section class="py-32 with__border--bottom">
+    <section class="py-16 lg:py-32 with__border--bottom">
         @include('components.use-cases.image_text_horizontal',[
         'heading' => '<span class="text-light-blue">Cut audit time </span> by 50%',
         'image' => ['group-3144.png','group-3144@2x.png'],
@@ -63,12 +56,12 @@
         <a href=""
            class="mx-auto base__button font-extrabold bg-red text-white uppercase font-cocogoose text-xl h-70 px-8 rounded-20 items-center flex">@lang('Get Lumiform FREE')</a>
     </section>
-    <section class="py-28 with__border--bottom">
+    <section class="py-16 lg:py-28 with__border--bottom">
         <div class="container mx-auto">
-            <h2 class="font-bold text-center font-cocogoose text-primary text-30 xl:text-50 lg:mb-2 uppercase tracking-heading">
+            <h2 class="font-bold text-center font-cocogoose text-primary text-50 lg:mb-2 uppercase tracking-heading">
                 @lang('<span class="text-light-blue">Save time on every audit, </span> while troubleshooting with ease')
             </h2>
-            <p class="text-center font-light font-din text-20 lg:text-30 text-secondary tracking-text mb-26 ">
+            <p class="text-center font-light font-din text-20 lg:text-30 text-secondary tracking-text mb-10 lg:mb-26 ">
                 @lang('Intuitive forms guide you through the audit while reports are automatically <span class="line__break"></span>created. Create a clear path of action when issues occur.')
             </p>
             @include('components.solution.industries_droptown_section',[
