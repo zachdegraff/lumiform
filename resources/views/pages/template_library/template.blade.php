@@ -6,15 +6,15 @@
     <div class="sidebar-wrapper">
         <div class="container mx-auto">
 
-            <h1 class="page-title text-center text-70 font-cocogoose font-bold leading-snug text-primary uppercase tracking-normal pb-24 pt-26">
+            <h1 class="page-title text-center text-70 font-cocogoose font-bold leading-snug text-primary uppercase tracking-normal lg:pb-24 lg:pt-26 py-16">
                 @lang('Lumiform Template Library')
             </h1>
-            <div class="flex justify-between pb-32">
+            <div class="flex justify-between lg:pb-32 pb-8">
                 <aside class="sidebar template-library-categories">
                     @include('pages/template_library/sidebar', ['categories' => $categories])
                 </aside>
                 <div class="template__content template-page">
-                    <div class="back__section py-6">
+                    <div class="back__section lg:py-6 py-3">
                         <a href="javascript:void(0)"
                            class="back__btn text-20 font-cocogoose font-bold uppercase tracking-large">
                             <svg xmlns="http://www.w3.org/2000/svg" width="40.5" height="16.994"
@@ -34,14 +34,14 @@
                     </div>
                     @if ($template->image)
                         {{--<img src="@urlToImage($template->image)" />--}}
-                        <div class="template__img mb-16">
+                        <div class="template__img lg:mb-16 mb-5">
                             <img src="{{asset('img').'/'.$template->image}}"/>
                         </div>
                     @endif
                     <div class="flex justify-between items-center mb-8">
-                        <h1 class="uppercase font-cocogoose font-bold text-40 text-red tracking-heading leading-snug ">{{ $template->title }}</h1>
+                        <h1 class="uppercase font-cocogoose font-bold text-50 text-red tracking-heading leading-snug ">{{ $template->title }}</h1>
                         <a href=""
-                           class="base__button font-extrabold bg-red text-white uppercase font-cocogoose text-xl h-70 px-8 rounded-20 items-center flex">
+                           class="base__button font-extrabold bg-red text-white uppercase font-cocogoose text-20 h-70 px-8 rounded-20 items-center flex">
                             @lang('Use template')
                         </a>
                     </div>

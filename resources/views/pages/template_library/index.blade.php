@@ -5,7 +5,7 @@
 @section("content")
     <div class="sidebar-wrapper">
         <div class="container mx-auto">
-            <h1 class="page-title text-center text-70 font-cocogoose font-bold leading-snug text-primary uppercase tracking-normal pb-24 pt-26">
+            <h1 class="page-title text-center text-70 font-cocogoose font-bold leading-snug text-primary uppercase tracking-normal py-16 lg:pb-24 lg:pt-26">
                 @lang('Lumiform Template Library')
             </h1>
             <div class="flex justify-between">
@@ -15,7 +15,7 @@
 
                 <section class="template__content">
 
-                    <h3 class="section-title font-cocogoose font-bold text-40 tracking-heading text-light-blue uppercase mb-5">
+                    <h3 class="section-title font-cocogoose font-bold text-50 tracking-heading text-light-blue uppercase mb-5">
                         @if ($category)
                             @if ($search) <span
                                     style="color: #aaaaaa;">{{count($templates)}} @lang('results for') </span>
@@ -32,7 +32,7 @@
                         @endif
                     </h3>
 
-                    <ul class="templates mb-10 flex justify-between flex-wrap">
+                    <ul class="templates mb-10 flex justify-between sm:flex-no-wrap flex-wrap">
                         {{--@foreach($templates as $template)
                             @include('pages/template_library/template_item', ["template" => $template])
                         @endforeach--}}

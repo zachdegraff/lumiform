@@ -7,10 +7,10 @@
 
     <div class="sidebar-wrapper">
         <div class="container mx-auto">
-            <h1 class="page-title text-center text-70 font-cocogoose font-bold leading-snug text-primary uppercase tracking-normal pb-24 pt-26">
+            <h1 class="page-title text-center text-70 font-cocogoose font-bold leading-snug text-primary uppercase tracking-normal lg:pb-24 lg:pt-26 py-12">
                 @lang('Lumiform Template Library')
             </h1>
-            <div class="flex justify-between">
+            <div class="flex justify-between relative">
                 <aside class="sidebar template-library-categories">
                     @include('pages/template_library/sidebar', ['categories' => $categories])
                 </aside>
@@ -21,10 +21,10 @@
                             <div class="template__content--item
                                                     @if($i % 4 == 0) color-gold @elseif($i % 3 == 0) color-blue @elseif($i % 2 == 0 ) color-green @elseif($i % 5 == 0) color-purple @endif
                                     ">
-                                <h2 class="subtitle text-40 font-cocogoose tracking-heading text-left uppercase text-primary font-bold mb-4">
+                                <h2 class="subtitle text-50 font-cocogoose tracking-heading text-left uppercase text-primary font-bold mb-4">
                                     <a
                                             href='@urlTo("templateLibrary.index", ["categories" => $category->slug])'
-                                            class="flex items-center">
+                                            class="flex items-center sm:justify-start justify-center">
                                         {{ $category->title }}
                                         <svg xmlns="http://www.w3.org/2000/svg" width="40.5" height="16.994"
                                              viewBox="0 0 40.5 16.994" class="ml-5">
@@ -41,7 +41,7 @@
                                         </svg>
                                     </a>
                                 </h2>
-                                <ul class="templates mb-10 flex justify-between">
+                                <ul class="templates mb-10 flex sm:flex-no-wrap flex-wrap justify-between">
                                     {{--@foreach($category->featuredTemplates()->take(3)->get() as $template)
                                         @include('pages/template_library/template_item', ["template" => $template])
                                     @endforeach--}}
@@ -53,10 +53,10 @@
                     </div>
                     <div id="is_use_case" class="category__section" style="display: block">
                         <div class="featured__items template__content--item color-purple">
-                            <h2 class="subtitle text-40 font-cocogoose tracking-heading text-left uppercase text-primary font-bold mb-4">
+                            <h2 class="subtitle text-50 font-cocogoose tracking-heading text-left uppercase text-primary font-bold mb-4">
                                 <a
                                         href='@urlTo("templateLibrary.index", ["categories" => $category->slug])'
-                                        class="flex items-center">
+                                        class="flex items-center sm:justify-start justify-center ">
                                     @lang('Featured')
                                     <svg xmlns="http://www.w3.org/2000/svg" width="40.5" height="16.994"
                                          viewBox="0 0 40.5 16.994" class="ml-5">
@@ -83,10 +83,10 @@
                             <div class="template__content--item
                                                     @if($i % 4 == 0) color-gold @elseif($i % 3 == 0) color-blue @elseif($i % 2 == 0 ) color-green @elseif($i % 5 == 0) color-purple @endif
                                     ">
-                                <h2 class="subtitle text-40 font-cocogoose tracking-heading text-left uppercase text-primary font-bold mb-4">
+                                <h2 class="subtitle text-50 font-cocogoose tracking-heading text-left uppercase text-primary font-bold mb-4">
                                     <a
                                             href='@urlTo("templateLibrary.index", ["categories" => $category->slug])'
-                                            class="flex items-center">
+                                            class="flex items-center sm:justify-start justify-center ">
                                         {{ $category->title }}
                                         <svg xmlns="http://www.w3.org/2000/svg" width="40.5" height="16.994"
                                              viewBox="0 0 40.5 16.994" class="ml-5">
@@ -103,7 +103,7 @@
                                         </svg>
                                     </a>
                                 </h2>
-                                <ul class="templates mb-10 flex justify-between">
+                                <ul class="templates mb-10 flex sm:flex-no-wrap flex-wrap justify-between">
                                     {{--@foreach($category->featuredTemplates()->take(3)->get() as $template)
                                         @include('pages/template_library/template_item', ["template" => $template])
                                     @endforeach--}}
@@ -138,7 +138,7 @@
                                     </svg>
                                 </a>
                             </h2>
-                            <ul class="templates mb-10 flex justify-between">
+                            <ul class="templates mb-10 flex sm:flex-no-wrap flex-wrap justify-between">
                                 {{--@foreach($category->featuredTemplates()->take(3)->get() as $template)
                                     @include('pages/template_library/template_item', ["template" => $template])
                                 @endforeach--}}
@@ -148,6 +148,7 @@
                         @php $i++ @endphp
                     @endforeach
                 </section>
+
             </div>
             </div>
         </div>

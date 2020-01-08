@@ -1,6 +1,6 @@
 <form action="" class="searchform">
     <div class="flex justify-between">
-        <img src="{{asset('img/icons/home-icon_grey.svg')}}" alt="">
+        <img src="{{asset('img/icons/home-icon_grey.svg')}}" alt="" class="form__image">
         <input name="search" type="search" value="{{ isset($search) ? $search : '' }}" class="search__input" placeholder=" Search"/>
     </div>
 </form>
@@ -17,26 +17,26 @@
     </form>
     <div class="filter__item w-5/12 mb-8" data-category="is_industry">
         <label for="industries_filter" class="text-20 font-cocogoose uppercase leading-snug tracking-heading text-secondary flex items-center">
-            <div class="custom__checkbox  mr-5"></div>
+            <div class="custom__checkbox  xl:mr-5 mr-2"></div>
             industries
         </label>
     </div>
-    <div class="filter__item  ml-10 w-5/12 mb-8"  data-category="is_use_case">
+    <div class="filter__item ml-5 lg:ml-10 w-5/12 mb-8"  data-category="is_use_case">
         <label for="categories_filter" class="text-20 font-cocogoose uppercase leading-snug tracking-heading text-secondary flex items-center">
-            <div class="custom__checkbox mr-5"></div>
+            <div class="custom__checkbox xl:mr-5 mr-2"></div>
             categories
         </label>
     </div>
 
     <div class="filter__item w-5/12 mb-8 @if (app()->getLocale() === 'en') active @endif ">
         <label for="en" class="text-20 font-cocogoose uppercase leading-snug tracking-heading text-secondary flex items-center">
-            <div class="custom__checkbox  mr-5"></div>
+            <div class="custom__checkbox  xl:mr-5 mr-2"></div>
             English
         </label>
     </div>
-    <div class="filter__item  ml-10 w-5/12 mb-8 @if (app()->getLocale() === 'de') active @endif ">
+    <div class="filter__item  ml-5 lg:ml-10 w-5/12 mb-8 @if (app()->getLocale() === 'de') active @endif ">
         <label for="de" class="text-20 font-cocogoose uppercase leading-snug tracking-heading text-secondary flex items-center">
-            <div class="custom__checkbox mr-5"></div>
+            <div class="custom__checkbox xl:mr-5 mr-2"></div>
             German
         </label>
     </div>
@@ -61,7 +61,9 @@
         @include('pages/template_library/category_tree_item', ['category' => $category])
     @endforeach
 </ul>
-
+<div class="icon__hamburger">
+    <img src="{{asset('img/icons/home-icon_grey.svg')}}" alt="">
+</div>
 <script>
 
     document.querySelectorAll('.toggleExpand').forEach(function (button) {

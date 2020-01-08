@@ -11,20 +11,20 @@
 @section("content")
     <section class="lg:pt-26 lg:pb-28 py-16 cases--issue" >
         <div class="container mx-auto">
-            <div class="w-full lg:w-10/12 mx-auto mb-12">
-                <h1 class="text-70 font-cocogoose font-black uppercase text-center tracking-normal text-primary mb-16 leading-tight">
+            <div class="w-full lg:w-10/12 mx-auto mb-8 lg:mb-12">
+                <h1 class="text-70 font-cocogoose font-black uppercase text-center tracking-normal text-primary lg:mb-16 mb-8 leading-tight">
                     @lang('use-cases/issue.bannerTitle')
                 </h1>
                 <p class="text-30 font-light font-din text-secondary text-center">
                     @lang('use-cases/issue.bannerText')
                 </p>
             </div>
-            <button class="mx-auto w-215  bg-red tracking-large font-extrabold text-white uppercase font-cocogoose text-17 lg:text-20 h-70  rounded-20 items-center justify-center flex">
+            <button class="mx-auto w-215  bg-red tracking-large font-extrabold text-white uppercase font-cocogoose text-20 h-70  rounded-20 items-center justify-center flex">
                 @lang('use-cases/issue.buttonText')
             </button>
         </div>
     </section>
-    <section class="py-32 with__border--bottom">
+    <section class="py-16 lg:py-32 with__border--bottom">
         @include('components.use-cases.image_text_horizontal',[
         'heading' => '<span class="text-light-blue">Save time and effort</span> ',
         'image' => ['group-4364.png','group-4364@2x.png'],
@@ -54,14 +54,14 @@
         'bottom' => ['text' => 'Issues are solved four times faster if they are raised within the first 30 minutes, after their occurrence.','borderColor' => 'green']
         ])
         <a href=""
-           class="mx-auto base__button font-extrabold bg-red text-white uppercase font-cocogoose text-xl h-70 px-8 rounded-20 items-center flex">@lang('Get Lumiform FREE')</a>
+           class="mx-auto base__button font-extrabold bg-red text-white uppercase font-cocogoose text-20 h-70 px-8 rounded-20 items-center flex">@lang('Get Lumiform FREE')</a>
     </section>
-    <section class="py-28 with__border--bottom">
+    <section class="py-16 lg:py-28 with__border--bottom">
         <div class="container mx-auto">
-            <h2 class="font-bold text-center font-cocogoose text-primary text-30 xl:text-50 lg:mb-2 uppercase tracking-heading">
+            <h2 class="font-bold text-center font-cocogoose text-primary text-50 lg:mb-2 uppercase tracking-heading">
                 @lang('Resolve issues effectively by <span class="text-green"> collaborating as a team </span>')
             </h2>
-            <p class="text-center font-light font-din text-20 lg:text-30 text-secondary tracking-text mb-26">
+            <p class="text-center font-light font-din text-30 text-secondary tracking-text lg:mb-26 mb-10">
                 @lang('Work together with your team to recognize, address and resolve issues quickly, as soon as problems occur.')
             </p>
             @include('components.solution.industries_droptown_section',[
@@ -76,7 +76,7 @@
 
         </div>
     </section>
-    <section id="solve__issue" class="py-32 bg-grey-extralight">
+    <section id="solve__issue" class="py-16 lg:py-32 bg-grey-extralight">
         <div class="flex justify-center items-center relative mb-16">
             <div class="issue__circle bg-white rounded-full">
             </div>
@@ -87,7 +87,7 @@
 
         </div>
         <a href=""
-           class="mx-auto base__button font-extrabold bg-red text-white uppercase font-cocogoose text-xl h-70 px-8 rounded-20 items-center flex">@lang('Solve your first issue')</a>
+           class="mx-auto base__button font-extrabold bg-red text-white uppercase font-cocogoose text-20 h-70 px-8 rounded-20 items-center flex">@lang('Solve your first issue')</a>
     </section>
     @include('components.solution.industries_explore_section',[
     'heading' => 'Explore how we help teams to

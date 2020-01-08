@@ -54,7 +54,7 @@
         'bottom' => ['text' => 'With Lumiform, Benfleet managed to solve issues 60% faster.','borderColor' => 'green']
         ])
         <a href=""
-           class="mx-auto base__button font-extrabold bg-red text-white uppercase font-cocogoose text-xl h-70 px-8 rounded-20 items-center flex">@lang('Get Lumiform FREE')</a>
+           class="mx-auto base__button font-extrabold bg-red text-white uppercase font-cocogoose text-20 h-70 px-8 rounded-20 items-center flex">@lang('Get Lumiform FREE')</a>
     </section>
     <section class="py-16 lg:py-32 with__border--bottom">
         <div class="container mx-auto">
