@@ -3,16 +3,16 @@
 @section("head.title", __("pricing-page.title"))
 
 @section("content")
-    <section class="bg-grey-light pt-28 pb-32">
+    <section class="bg-grey-light lg:pt-28 lg:pb-32 py-16">
         <div class="container mx-auto">
             <h1 class="tracking-normal text-primary text-center  text-40 xxl:text-70 mb-10 font-cocogoose uppercase font-extrabold">
                 @lang('Choose the plan that works best for you')
             </h1>
-            <div class="subscribtion flex justify-center items-center mb-26">
+            <div class="subscribtion flex justify-center items-center mb-10 lg:mb-26">
                 <p class="text-20 font-din font-light tracking-text text-secondary">
                     @lang('Pay annually (20% off)')
                 </p>
-                <label class="switch mx-8">
+                <label class="switch mx-3 sm:mx-8">
                     <input type="checkbox">
                     <span class="slider round"></span>
                 </label>
@@ -20,7 +20,7 @@
                     @lang('Pay monthly')
                 </p>
             </div>
-            <div class="plans flex justify-around">
+            <div class="plans flex justify-around xl:flex-no-wrap flex-wrap">
                 <div class="plan__item--small item__left flex flex-col">
                     <div class="plan__circle pt-2 absolute">
                     </div>
@@ -33,7 +33,7 @@
                                 @lang('Essential features')
                             </p>
                         </div>
-                        <div class="price mb-8">
+                        <div class="price mb-3 lg:mb-8">
                             <span class="text-80 text-primary font-cocogoose font-hairline text-center mx-auto block">
                                 0€
                             </span>
@@ -46,8 +46,8 @@
                     </div>
                     <div class="button__bottom  w-full">
                         <a href=""
-                           class="mx-auto font-extrabold text-20 bg-red text-white uppercase font-cocogoose  h-70 px-8 py-6 rounded-20 items-center ">@lang('Get Started')</a>
-                        <div class="functions mt-16">
+                           class="mx-auto font-extrabold text-20 bg-red text-white uppercase font-cocogoose  h-70 px-8  rounded-20 items-center ">@lang('Get Started')</a>
+                        <div class="functions mt-6 lg:mt-16">
                             <p class="text-18 font-cocogoose font-black text-grey-bold mb-6 ">TOP FUNCTIONS ↓</p>
                             <ul class="starter">
                                 <li class="font-din text-20 tracking-text text-secondary pl-10 mb-3">@lang('Up to 5 users')</li>
@@ -59,7 +59,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="plan__item--large relative flex flex-col">
+                <div class="plan__item--large relative flex flex-col mb-4 lg:mb-0">
                     <div class="plan__circle absolute">
                     </div>
                     <div class="item__content">
@@ -95,8 +95,8 @@
                     </div>
                     <div class="button__bottom w-full">
                         <a href=""
-                           class="font-extrabold text-20 bg-red text-white uppercase font-cocogoose  h-70 px-8 py-6 rounded-20 items-center mx-auto">@lang('Start free trial')</a>
-                        <div class="functions mt-16 ml-32">
+                           class="font-extrabold text-20 bg-red text-white uppercase font-cocogoose  h-70 px-8  rounded-20 items-center mx-auto">@lang('Start free trial')</a>
+                        <div class="functions mt-6 lg:mt-16 sm:ml-40 lg:ml-32">
                             <p class="text-18 font-cocogoose font-black text-grey-bold mb-6">TOP FUNCTIONS ↓</p>
                             <ul class="pro">
                                 <li class="font-din text-20 tracking-text text-secondary pl-10 mb-3">@lang('Issues')</li>
@@ -112,7 +112,7 @@
                     <div class="plan__circle absolute">
                     </div>
                     <div class="item__content">
-                        <div class="text__top mb-5 w-full">
+                        <div class="text__top mb-2 sm:mb-5 w-full">
                             <h4 class="text-50 text-gold font-black tracking-text text-center font-cocogoose uppercase leading-none">
                                 @lang('ENTERPRISE')
                             </h4>
@@ -120,11 +120,11 @@
                                 @lang('Maximum business value')
                             </p>
                         </div>
-                        <div class="price mt-8 mb-10">
+                        <div class="price mb-2 sm:mt-8 sm:mb-10 ">
                             <img src="{{asset('img/icons/pricing-icon.svg')}}" alt="" class="mx-auto">
                         </div>
                         <div class="text__bottom w-full">
-                            <h4 class="text-20 text-gold font-black tracking-text text-center font-cocogoose uppercase mb-4">
+                            <h4 class="text-20 text-gold font-black tracking-text text-center font-cocogoose uppercase sm:mb-4">
                                 @lang('Custom Pricing')
                             </h4>
                             <p class="text-20 font-din text-secondary tracking-text font-light text-center">
@@ -136,7 +136,7 @@
                     <div class="button__bottom w-full">
                         <a href=""
                            class="font-extrabold text-20 bg-red text-white uppercase font-cocogoose  h-70 px-8 py-6 rounded-20 items-center mx-auto">@lang('Contact Sales')</a>
-                        <div class="functions mt-16">
+                        <div class="functions mt-6 lg:mt-16">
                             <p class="text-18 font-cocogoose font-black text-grey-bold mb-6">TOP FUNCTIONS ↓</p>
                             <ul class="enterprise">
                                 <li class="font-din text-20 tracking-text text-secondary pl-10 mb-3">@lang('Custom onboarding')</li>
@@ -158,7 +158,7 @@
     @include('components.price.faq')
     <section id="easy" class="pt-12 lg:pt-32 bg-green-extralight">
         <div class="container mx-auto">
-            <h3 class="text-white text-40 font-extrabold uppercase font-cocogoose md:mx-auto text-center mb-5 lg:mb-20 tracking-heading"
+            <h3 class="text-white text-50 font-extrabold uppercase font-cocogoose md:mx-auto text-center mb-5 lg:mb-20 tracking-heading"
             >@lang('Start your free trial now!')</h3>
             <div class="easy__content flex justify-between">
 
@@ -172,12 +172,13 @@
                 </div>
 
                 <div class="easy__submit w-full  lg:w-5/12">
-                    <form action="">
-                        <div class="home__banner--email flex flex-col justify-center  md:flex-row lg:justify-between mb-8">
 
-                            <input class="pl-8 w-360  " type="email"
+                    <form action="">
+                        <div class="home__banner--email flex flex-col justify-center  md:flex-row  mb-8">
+
+                            <input class="pl-8 w-full md:w-1/2 xxl:w-360  " type="email"
                                    placeholder="{{__('Enter e-mail address')}}">
-                            <button class="mx-auto mt-5 md:mt-0 w-290   bg-green-dark tracking-large font-extrabold text-white uppercase font-cocogoose text-17 lg:text-20 h-70  rounded-20 items-center justify-center flex">@lang('Get Lumiform FREE')</button>
+                            <button class=" mt-5 md:mt-0 md:ml-3 bg-green-dark tracking-large font-extrabold text-white uppercase font-cocogoose px-8 text-17 lg:text-20 h-70  rounded-20 items-center justify-center flex">@lang('Try for free')</button>
                         </div>
                     </form>
                     <div class="banner__signin">

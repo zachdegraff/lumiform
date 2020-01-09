@@ -7,7 +7,7 @@
                 <img src="{{asset('img/logo.png')}}" alt="">
             </div>
             <div class="modal-body">
-                <h2 class="font-cocogoose text-20 font-normal text-secondary tracking-heading leading-snug text-center uppercase mb-16">
+                <h2 class="font-cocogoose text-20 font-normal text-secondary tracking-heading leading-snug text-center uppercase mb-8 lg:mb-16">
                     @lang('Sign In')
                 </h2>
                 <form action="" id="loginForm">

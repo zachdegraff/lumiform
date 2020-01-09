@@ -3,23 +3,23 @@
 @section("head.title", __(""))
 
 @section("content")
-    <section class="pt-35 pb-26 bg-blue-light">
+    <section class="py-16 lg:pt-35 lg:pb-26 bg-blue-light">
         <div class="container mx-auto">
             <h1 class="text-70 font-cocogoose font-black uppercase text-center tracking-normal text-primary mb-12 leading-tight">
                 @lang('We enable businesses to exceed their promises in terms of quality, and <span class="line__break"></span> make workplaces safe.')
             </h1>
         </div>
     </section>
-    <section class="pt-32">
+    <section class="pt-16 lg:pt-32">
         <div class="container mx-auto ">
-            <div class="flex justify-between mb-32">
-                <div class="w-7/12">
+            <div class="lg:flex justify-between mb-10 lg:mb-32">
+                <div class="w-full sm:w-7/12 lg:mb-0 mb-5 lg:mx-0 mx-auto">
                     <img src="{{asset('img/analog-checklist.png')}}" alt=""
                          srcset="{{asset('img/analog-checklist.png')}},
                                                                                 {{asset('img/analog-checklist@2x.png')}} 2x">
                 </div>
                 <div class="about__text">
-                    <h3 class="text-50 font-cocogoose font-black text-primary uppercase leading-none mb-10">
+                    <h3 class="text-50 font-cocogoose font-black text-primary uppercase leading-none mb-5 lg:mb-10">
                         @lang('We are <span class="text-light-blue">changing the direction </span>of quality and safety procedures')
                     </h3>
                     <p class="text-20 font-din font-light tracking-text text-secondary leading-snug">@lang('Most businesses conduct quality and safety checks analogously, communicate via email or hand over documents personally or via SharePoint. Information is scattered, responsibilities are unclear and the status is non-transparent. They try to overcome the chaos with even more checklists and regular audits, spending even more time with analogue forms, sinking ever further into chaos and finally losing the overview entirely.
@@ -27,14 +27,14 @@
 
                 </div>
             </div>
-            <div class="flex justify-between mb-32 flex-row-reverse">
-                <div class="w-7/12">
+            <div class="lg:flex justify-between mb-10 lg:mb-32 flex-row-reverse">
+                <div class="w-full sm:w-7/12 lg:mb-0 mb-5 lg:mx-0 mx-auto">
                     <img src="{{asset('img/self-monitoring.png')}}" alt=""
                          srcset="{{asset('img/self-monitoring.png')}},
                             {{asset('img/self-monitoring@2x.png')}} 2x">
                 </div>
                 <div class="about__text">
-                    <h3 class="text-50 font-cocogoose font-black text-primary uppercase leading-none mb-10">
+                    <h3 class="text-50 font-cocogoose font-black text-primary uppercase leading-none mb-5 lg:mb-10">
                         @lang('Quality and safety management should be <span class="text-green">practical and smooth</span>')
                     </h3>
                     <p class="text-20 font-din font-light tracking-text text-secondary leading-snug">@lang('At Lumiform, we develop solutions in which all quality and safety checks – from small daily checks to extensive audits – can be organised and efficiently conducted, digitally. Every individual knows when and how to carry out inspections, and what to do if issues arise. Through collaboration, you solve problems even faster than before!
@@ -44,11 +44,11 @@
             </div>
         </div>
     </section>
-    <section class="py-20 bg-grey-light">
+    <section class="py-16 lg:py-20 bg-grey-light">
         <div class="container mx-auto">
-            <div class="flex justify-around">
+            <div class="flex justify-around lg:flex-no-wrap flex-wrap ">
 
-                <div class="circle__bg__white font-black uppercase font-cocogoose text-center">
+                <div class="circle__bg__white font-black uppercase font-cocogoose text-center mb-5 lg:mb-0">
                     <div class="circle__white bg-white rounded-full"></div>
                     <div class="relative flex flex-col justify-between h-full">
                         <p class=" text-20  tracking-heading  text-grey-bold">
@@ -60,7 +60,7 @@
                 </div>
 
 
-                <div class="circle__bg__white font-black uppercase font-cocogoose text-center">
+                <div class="circle__bg__white font-black uppercase font-cocogoose text-center mb-5 lg:mb-0">
                     <div class="circle__white bg-white rounded-full"></div>
                     <div class="relative flex flex-col justify-between h-full">
                         <p class=" text-20  tracking-heading  text-grey-bold">
@@ -71,7 +71,7 @@
                     </div>
                 </div>
 
-                <div class="circle__bg__white font-black uppercase font-cocogoose text-center">
+                <div class="circle__bg__white font-black uppercase font-cocogoose text-center mb-5 lg:mb-0">
                     <div class="circle__white bg-white rounded-full"></div>
                     <div class="relative flex flex-col justify-between h-full">
                         <p class=" text-20  tracking-heading  text-grey-bold">
@@ -85,12 +85,12 @@
 
         </div>
     </section>
-    <section class="pt-26 pb-32">
+    <section class="py-16 lg:pt-26 lg:pb-32">
         <div class="container mx-auto">
-            <h2 class="text-70 font-cocogoose font-black text-primary uppercase text-center mb-26">@lang('Get to know our <span class="text-light-blue">management team</span>')</h2>
+            <h2 class="text-70 font-cocogoose font-black text-primary uppercase text-center mb-10 lg:mb-26">@lang('Get to know our <span class="text-light-blue">management team</span>')</h2>
 
 
-            <div class="team__items flex justify-around mb-20">
+            <div class="team__items flex justify-around mb-20 lg:flex-no-wrap flex-wrap">
                 @include('components.resources.team_items',[
                 'items' => [
                      ['image' => 'team-1.png',
@@ -112,9 +112,9 @@
                 ])
             </div>
         </div>
-        <div class="team__gallery flex justify-between mb-24">
-            <div class="gallery__left">
-                <div class="gallery__item mb-2">
+        <div class="team__gallery flex justify-between mb-10 lg:mb-24">
+            <div class="gallery__left mr-3">
+                <div class="gallery__item mb-3">
                     <img src="{{asset('img/gallery-1.png')}}" alt=""
                          srcset="{{asset('img/gallery-1.png')}},{{asset('img/gallery-1@2x.png')}} 2x">
                 </div>
@@ -123,15 +123,15 @@
                          srcset="{{asset('img/gallery-2.png')}},{{asset('img/gallery-2@2x.png')}} 2x">
                 </div>
             </div>
-            <div class="gallery__middle">
-                <div class="gallery__item mb-2">
+            <div class="gallery__middle mr-3">
+                <div class="gallery__item mb-3">
                     <img src="{{asset('img/gallery-3.png')}}" alt=""
                          srcset="{{asset('img/gallery-3.png')}},{{asset('img/gallery-3@2x.png')}} 2x">
                 </div>
                 <div class="gallery__item flex justify-between">
-                    <img src="{{asset('img/gallery-4.png')}}" alt=""
+                    <img src="{{asset('img/gallery-4.png')}}" alt=""  class="mr-3"
                          srcset="{{asset('img/gallery-4.png')}},{{asset('img/gallery-4@2x.png')}} 2x">
-                    <img src="{{asset('img/gallery-5.png')}}" alt="" class="ml-2"
+                    <img src="{{asset('img/gallery-5.png')}}" alt=""
                          srcset="{{asset('img/gallery-5.png')}},{{asset('img/gallery-5@2x.png')}} 2x">
                 </div>
             </div>
@@ -146,14 +146,14 @@
         <div class="container mx-auto flex items-center">
             <div class="flex-1 flex justify-center">
                 <a href="#"
-                   class="font-extrabold text-20 bg-red text-white uppercase font-cocogoose  h-70 px-8 py-6 rounded-20 ">@lang('Join us!')</a>
+                   class="font-extrabold text-20 bg-red text-white uppercase font-cocogoose  h-70 px-8 py-4 lg:py-6 rounded-20 ">@lang('Join us!')</a>
             </div>
 
         </div>
     </section>
-    <section id="common" class="bg-grey-opacity pt-26 pb-16">
+    <section id="common" class="bg-grey-opacity pt-16 lg:pt-26 pb-16">
         <div class="container mx-auto">
-            <h2 class="text-70 font-cocogoose font-black leading-none text-primary uppercase text-center mb-20">
+            <h2 class="text-70 font-cocogoose font-black leading-none text-primary uppercase text-center mb-10 lg:mb-20">
                 @lang('<span class="text-gold">Common values </span> unite us')
             </h2>
             <div class="common__items flex justify-around flex-wrap">
@@ -170,49 +170,49 @@
             </div>
         </div>
     </section>
-    <section id="focus" class="pt-26 pb-32">
+    <section id="focus" class="lg:pt-26 lg:pb-32 py-16">
         <div class="container mx-auto">
-            <h2 class="text-70 font-cocogoose font-black leading-none text-primary uppercase text-center mb-24">
+            <h2 class="text-70 font-cocogoose font-black leading-none text-primary uppercase text-center lg:mb-24 mb-10">
                 @lang('We focus on <span class="text-light-blue">quality and safety</span> ')
             </h2>
-            <div class="focus__items flex justify-between">
-                <div class="focus__item flex justify-between item_first">
-                    <div class="item__icon">
-                        <img src="{{asset('img/icons/message-icon.svg')}}" alt="">
+            <div class="focus__items flex justify-between xl:flex-no-wrap flex-wrap">
+                <div class="focus__item xxl:flex justify-between item_first xl:mx-0 mx-auto mb-5">
+                    <div class="item__icon xxl:mb-0 mb-5 ">
+                        <img src="{{asset('img/icons/message-icon.svg')}}" alt="" class="mx-auto">
 
                     </div>
-                    <div class="focus__text ml-10">
-                        <p class="mb-8 text-30 font-din text-secondary tracking-text leading-snug font-light">@lang('We are developing an app that improves product/service quality and occupational safety in companies. ')</p>
+                    <div class="focus__text ml-5 xxl:ml-10">
+                        <p class="mb-2 sm:mb-8 text-30 font-din text-secondary tracking-text leading-snug font-light">@lang('We are developing an app that improves product/service quality and occupational safety in companies. ')</p>
                         <a href="@urlTo('product')"
-                           class="flex items-center  uppercase text-red text-center block text-17 lg:text-20 tracking-heading ">
+                           class="flex items-center  uppercase text-red text-center block text-20 tracking-heading ">
                             @lang('LUMIFORM PRODUCT')
                             <img src="{{asset('img/arrow-right-long-red.svg')}}" alt="" class="h-3 ml-8">
                         </a>
                     </div>
                 </div>
-                <div class="focus__item flex justify-between item_second">
-                    <div class="item__icon">
-                        <img src="{{asset('img/icons/list-icon_purple.svg')}}" alt="">
+                <div class="focus__item xxl:flex justify-between item_second xl:mx-0 mx-auto mb-5">
+                    <div class="item__icon xxl:mb-0 mb-5 ">
+                        <img src="{{asset('img/icons/list-icon_purple.svg')}}" alt="" class="mx-auto">
 
                     </div>
-                    <div class="focus__text ml-10">
-                        <p class="mb-8 text-30 font-din text-secondary tracking-text leading-snug font-light">@lang('We are proud of how Lumiform supports our customers in their daily work.')</p>
+                    <div class="focus__text ml-5 xxl:ml-10">
+                        <p class="mb-2 sm:mb-8 text-30 font-din text-secondary tracking-text leading-snug font-light">@lang('We are proud of how Lumiform supports our customers in their daily work.')</p>
                         <a href="#"
-                           class="flex items-center  uppercase text-red text-center block text-17 lg:text-20 tracking-heading ">
+                           class="flex items-center  uppercase text-red text-center block text-20 tracking-heading ">
                             @lang('Case Studies')
                             <img src="{{asset('img/arrow-right-long-red.svg')}}" alt="" class="h-3 ml-8">
                         </a>
                     </div>
                 </div>
-                <div class="focus__item flex justify-between item_third">
-                    <div class="item__icon">
-                        <img src="{{asset('img/icons/inventory-icon.svg')}}" alt="">
+                <div class="focus__item xxl:flex justify-between item_third xl:mx-0 mx-auto mb-5">
+                    <div class="item__icon xxl:mb-0 mb-5 ">
+                        <img src="{{asset('img/icons/inventory-icon.svg')}}" alt="" class="mx-auto">
 
                     </div>
-                    <div class="focus__text ml-10">
-                        <p class="mb-8 text-30 font-din text-secondary tracking-text leading-snug font-light">@lang('We are impressed by the number of different use cases for which customers are using Lumiform.')</p>
+                    <div class="focus__text ml-5 xxl:ml-10">
+                        <p class="mb-2 sm:mb-8 text-30 font-din text-secondary tracking-text leading-snug font-light">@lang('We are impressed by the number of different use cases for which customers are using Lumiform.')</p>
                         <a href="#"
-                           class="flex items-center  uppercase text-red text-center block text-17 lg:text-20 tracking-heading ">
+                           class="flex items-center  uppercase text-red text-center block text-20 tracking-heading ">
                             @lang('All app uses')
                             <img src="{{asset('img/arrow-right-long-red.svg')}}" alt="" class="h-3 ml-8">
                         </a>

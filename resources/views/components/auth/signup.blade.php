@@ -10,7 +10,7 @@
                     @lang('Sign In')
                 </h2>
                 <form action="" id="loginForm">
-                    <div class="input__raw flex justify-between">
+                    <div class="input__raw flex justify-between sm:flex-no-wrap flex-wrap">
                         <div class="input__group mb-4">
                             <label for="fName"
                                    class="font-din font-light text-20 text-secondary capitalize w-full mb-2 leading-snug tracking-text">

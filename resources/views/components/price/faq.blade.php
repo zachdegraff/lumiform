@@ -1,17 +1,17 @@
-<section id="faq" class="pt-32 pb-24">
+<section id="faq" class="py-16 lg:pt-32 lg:pb-24">
     <div class="container mx-auto ">
-        <h2 class="text-50 font-black font-cocogoose text-primary text-center mb-26">@lang('FREQUENTLY ASKED QUESTIONS')</h2>
-        <div class="flex justify-around">
+        <h2 class="text-50 font-black font-cocogoose text-primary text-center lg:mb-26 mb-8">@lang('FREQUENTLY ASKED QUESTIONS')</h2>
+        <div class="flex justify-around lg:flex-no-wrap flex-wrap">
             <div class="faq__container">
-                <div class="mb-6">
-                    <h3 class="mb-4 font-cocogoose text-20 font-black tracking-heading text-grey-bold">
+                <div class="mb-3 lg:mb-6">
+                    <h3 class="mb-2 lg:mb-4 font-cocogoose text-20 font-black tracking-heading text-grey-bold">
                         @lang('What is a user?')
                     </h3>
                     <p class="font-din text-20 tracking-text font-light text-secondary">
                         @lang('A user is defined as a unique email address within a Lumiform organization. Each user can have up to 3 mobile devices synced to their account.')
                     </p>
                 </div>
-                <div class="mb-6">
+                <div class="mb-3 lg:mb-6">
                     <h3 class="mb-4 font-cocogoose text-20 font-black tracking-heading text-grey-bold">
                         @lang('Can I cancel at any time?')
                     </h3>
@@ -19,7 +19,7 @@
                         @lang('Yes, if you are on a monthly plan, you can cancel at the end of your billing cycle.')
                     </p>
                 </div>
-                <div class="mb-6">
+                <div class="mb-3 lg:mb-6">
                     <h3 class="mb-4 font-cocogoose text-20 font-black tracking-heading text-grey-bold">
                         @lang('Can I test the Professional package for a month at no charge?')
                     </h3>
@@ -27,7 +27,7 @@
                         @lang('Yes, if you upgrade to Professional, you will receive a free 30-day trial period before we charge any fees to your account. You can return to your free account after 30 days if you wish.')
                     </p>
                 </div>
-                <div class="mb-6">
+                <div class="mb-3 lg:mb-6">
                     <h3 class="mb-4 font-cocogoose text-20 font-black tracking-heading text-grey-bold">
                         @lang('Is there an on-premises version?')
                     </h3>
@@ -38,7 +38,7 @@
 
             </div>
             <div class="faq__container">
-                <div class="mb-6">
+                <div class="mb-3 lg:mb-6">
                     <h3 class="mb-4 font-cocogoose text-20 font-black tracking-heading text-grey-bold">
                         @lang('Can I upgrade Lumiform just for myself, rather than for everyone in our workspace?')
                     </h3>
@@ -46,7 +46,7 @@
                         @lang('Unfortunately not. We developed Lumiform for quality and safety teams. If you want to update Lumiform, you need to update your entire workspace.')
                     </p>
                 </div>
-                <div class="mb-6">
+                <div class="mb-3 lg:mb-6">
                     <h3 class="mb-4 font-cocogoose text-20 font-black tracking-heading text-grey-bold">
                         @lang('What are my payment options – credit card and invoice?')
                     </h3>
@@ -54,7 +54,7 @@
                         @lang('You can use your credit card to pay for any plan. Invoicing is available for organisations with 20 or more users, on our Annual Premium or Annual Enterprise plans. Or contact us to get the matter rolling.')
                     </p>
                 </div>
-                <div class="mb-6">
+                <div class="mb-3 lg:mb-6">
                     <h3 class="mb-4 font-cocogoose text-20 font-black tracking-heading text-grey-bold">
                         @lang('Can I flexibly add and remove users?')
                     </h3>
@@ -65,7 +65,7 @@
 
             </div>
             <div class="faq__container">
-                <div class="mb-6">
+                <div class="mb-3 lg:mb-6">
                     <h3 class="mb-4 font-cocogoose text-20 font-black tracking-heading text-grey-bold">
                         @lang('Is there a limit to the number of users or checklists in any of the pricing plans?')
                     </h3>
@@ -73,7 +73,7 @@
                         @lang('No, all pricing plans allow you to have an unlimited number of users and checklists. We charge the license cost per user in the Professional and Enterprise plans.')
                     </p>
                 </div>
-                <div class="mb-6">
+                <div class="mb-3 lg:mb-6">
                     <h3 class="mb-4 font-cocogoose text-20 font-black tracking-heading text-grey-bold">
                         @lang('We need to add new users to our team. How is this billed?')
                     </h3>

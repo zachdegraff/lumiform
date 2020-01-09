@@ -12445,11 +12445,14 @@ h1 {
 }
 
 .button__bottom a {
-  display: block;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  margin-top: -25px;
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
-  margin-top: -25px;
 }
 
 .plan__item--large .plan__circle {
@@ -12457,6 +12460,10 @@ h1 {
   height: 500px;
   background: #ffffff;
   border-radius: 50%;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .plan__count {
@@ -12490,6 +12497,7 @@ input::-webkit-inner-spin-button {
   background: url("../img/icons/checked-icon_gold.svg") no-repeat center;
   width: 100%;
   height: 100%;
+  min-height: 20px;
 }
 
 .checked-green {
@@ -12497,12 +12505,14 @@ input::-webkit-inner-spin-button {
   width: 100%;
   height: 100%;
   background-size: 19px 19px;
+  min-height: 20px;
 }
 
 .checked-blue {
   background: url("../img/icons/checked-icon_blue.svg") no-repeat center;
   width: 100%;
   height: 100%;
+  min-height: 20px;
 }
 
 /* Range Slider*/
@@ -12553,7 +12563,8 @@ input::-webkit-inner-spin-button {
 }
 
 .faq__table {
-  width: 1400px;
+  width: 100%;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -12616,7 +12627,8 @@ input::-webkit-inner-spin-button {
 }
 
 .about__text {
-  width: 570px;
+  width: 100%;
+  max-width: 570px;
 }
 
 .circle__white {
@@ -12681,27 +12693,33 @@ input::-webkit-inner-spin-button {
 }
 
 .item_first {
-  width: 512px;
+  max-width: 512px;
+  width: 100%;
 }
 
 .item_first .focus__text {
-  width: 400px;
+  max-width: 400px;
+  width: 100%;
 }
 
 .item_second {
-  width: 385px;
+  max-width: 385px;
+  width: 100%;
 }
 
 .item_second .focus__text {
-  width: 275px;
+  max-width: 275px;
+  width: 100%;
 }
 
 .item_third {
-  width: 485px;
+  max-width: 485px;
+  width: 100%;
 }
 
 .item_third .focus__text {
-  width: 370px;
+  max-width: 360px;
+  width: 100%;
 }
 
 .item__icon img {
@@ -12958,6 +12976,11 @@ footer ul li a {
   transition: all ease 0.3s;
 }
 
+.team__gallery {
+  max-width: 1920px;
+  margin: 0 auto 20px;
+}
+
 @media (max-width: 1660px) {
   .solution__section .bottom__left {
     max-width: 700px;
@@ -13126,6 +13149,36 @@ footer ul li a {
     width: 350px;
     height: 350px;
   }
+
+  .faq__container {
+    max-width: 30%;
+  }
+
+  .about__text {
+    max-width: 40%;
+  }
+
+  .team__item {
+    width: 350px;
+  }
+
+  .team__item .team__image {
+    height: 350px;
+  }
+
+  .common__item {
+    width: 450px;
+    height: 350px;
+  }
+
+  .common__circle {
+    width: 350px;
+    height: 350px;
+  }
+
+  .common__image {
+    height: 170px;
+  }
 }
 
 @media (max-width: 1400px) {
@@ -13214,8 +13267,38 @@ footer ul li a {
     width: 50%;
   }
 
+  .text-38, .md\:text-38 {
+    font-size: 32px;
+  }
+
+  .text-30 {
+    font-size: 25px;
+  }
+
+  .text-70 {
+    font: 700 60px/70px Cocogoose;
+  }
+
+  .text-50 {
+    font-size: 40px;
+  }
+
+  .text-110, .text-100 {
+    font-size: 70px;
+  }
+
   .text-80 {
-    font-size: 60px;
+    font-size: 70px;
+  }
+
+  .circle__white {
+    width: 300px;
+    height: 300px;
+  }
+
+  .circle__bg__white {
+    width: 300px;
+    height: 300px;
   }
 }
 
@@ -13269,7 +13352,7 @@ footer ul li a {
     max-width: 450px;
   }
 
-  .text-110 {
+  .text-110, .text-100 {
     font-size: 80px;
   }
 
@@ -13314,6 +13397,14 @@ footer ul li a {
 
   .sensor__faq__items:last-child {
     max-width: 30%;
+  }
+
+  .team__item {
+    width: 300px;
+  }
+
+  .team__item .team__image {
+    height: 300px;
   }
 }
 
@@ -13449,6 +13540,10 @@ footer ul li a {
     font: 700 40px/50px Cocogoose;
   }
 
+  .text-80 {
+    font-size: 40px;
+  }
+
   .custom-text-size p {
     font-size: 17px;
   }
@@ -13461,12 +13556,12 @@ footer ul li a {
     font-size: 30px;
   }
 
-  .leading-heading {
-    line-height: 50px;
+  .text-110, .text-100 {
+    font-size: 60px;
   }
 
-  .text-110 {
-    font-size: 60px;
+  .leading-heading {
+    line-height: 50px;
   }
 
   .copyrights {
@@ -13547,6 +13642,55 @@ footer ul li a {
   .sensor__faq__items:last-child {
     max-width: initial;
   }
+
+  .button__bottom a {
+    margin-top: 0;
+  }
+
+  .plan__item--small {
+    padding: 0;
+    margin: 0 0 15px;
+  }
+
+  .plan__item--small .functions {
+    margin-left: 165px;
+  }
+
+  .about__text {
+    max-width: initial;
+  }
+
+  .circle__white {
+    width: 250px;
+    height: 250px;
+  }
+
+  .circle__bg__white {
+    width: 250px;
+    height: 250px;
+  }
+
+  .team__gallery .mr-3 {
+    margin-right: 5px;
+  }
+
+  .team__gallery .mb-3 {
+    margin-bottom: 5px;
+  }
+
+  .common__item {
+    width: 350px;
+    height: 300px;
+  }
+
+  .common__circle {
+    width: 300px;
+    height: 300px;
+  }
+
+  .common__image {
+    height: 125px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -13604,7 +13748,7 @@ footer ul li a {
     line-height: 40px;
   }
 
-  .text-110 {
+  .text-110, .text-100 {
     font-size: 40px;
   }
 
@@ -13666,6 +13810,23 @@ footer ul li a {
   .control__left {
     max-width: initial;
   }
+
+  .faq__container {
+    max-width: 100%;
+  }
+
+  .focus__item {
+    max-width: 70%;
+  }
+
+  .focus__item .focus__text {
+    width: 100%;
+    max-width: initial;
+  }
+
+  .modal-content input {
+    height: 60px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -13706,6 +13867,74 @@ footer ul li a {
     min-height: 150px;
     margin: 0 auto 20px;
   }
+
+  .button__bottom {
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .button__bottom a {
+    max-width: initial;
+  }
+
+  .plan__item--small .functions {
+    margin-left: 0;
+  }
+
+  .text-80 {
+    font-size: 30px;
+  }
+
+  .plan__item--small .plan__circle {
+    width: 200px;
+    height: 200px;
+  }
+
+  .plan__item--large .plan__circle {
+    width: 300px;
+    height: 300px;
+  }
+
+  .plan__item--large .item__content {
+    padding: 30px 0 0;
+    min-height: 300px;
+    width: 300px;
+  }
+
+  .section__raw {
+    flex-wrap: wrap;
+  }
+
+  .section__raw .text-left {
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    color: #000;
+    margin-bottom: 5px;
+    -webkit-box-flex: initial;
+            flex: initial;
+  }
+
+  .table__header > div:first-child {
+    display: none;
+  }
+
+  .checked-blue, .checked-green, .checked-gold {
+    min-width: 50px;
+    min-height: 20px;
+    margin: 0 auto;
+  }
+
+  .modal-content {
+    max-width: 330px;
+  }
+
+  .input__raw .input__group {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 500px) {
@@ -13732,6 +13961,10 @@ footer ul li a {
 
   .contact__input {
     width: 100%;
+  }
+
+  .focus__item {
+    max-width: 100%;
   }
 }
 

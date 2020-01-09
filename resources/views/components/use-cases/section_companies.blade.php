@@ -5,19 +5,24 @@
     </h4>
     <div class="lg:flex-no-wrap flex-wrap flex justify-between items-center">
         <div class="max-h-120 w-1/5 lg:w-auto">
-            <img src="{{asset('img/companions/kitchentown.svg')}}" alt="">
+            <img src="{{asset('img/companions/kitchentown.png')}}" alt=""
+                 srcset="{{asset('img/companions/kitchentown.png')}}, {{asset('img/companions/kitchentown@2x.png')}} 2x">
         </div>
         <div class="max-h-120 w-1/5 lg:w-auto">
-            <img src="{{asset('img/companions/burgerista.svg')}}" alt="">
+            <img src="{{asset('img/companions/burgerista.png')}}" alt=""
+                 srcset="{{asset('img/companions/burgerista.png')}}, {{asset('img/companions/burgerista@2x.png')}} 2x">
         </div>
         <div class="max-h-120 w-1/5 lg:w-auto">
-            <img src="{{asset('img/companions/beumer.svg')}}" alt="">
+            <img src="{{asset('img/companions/beumer.svg')}}" alt=""
+                 srcset="{{asset('img/companions/beumer.png')}}, {{asset('img/companions/beumer@2x.png')}} 2x">
         </div>
         <div class="max-h-120 w-1/5 lg:w-auto">
-            <img src="{{asset('img/companions/okin.svg')}}" alt="">
+            <img src="{{asset('img/companions/okin.svg')}}" alt=""
+                 srcset="{{asset('img/companions/okin.png')}}, {{asset('img/companions/okin@2x.png')}} 2x">
         </div>
         <div class="max-h-120 w-1/5 lg:w-auto">
-            <img src="{{asset('img/companions/elen.svg')}}" alt="">
+            <img src="{{asset('img/companions/elen.svg')}}" alt=""
+                 srcset="{{asset('img/companions/elen.png')}}, {{asset('img/companions/elen@2x.png')}} 2x">
         </div>
         <div class="max-h-120 w-1/5 lg:w-auto">
             <img src="{{asset('img/companions/myGoodness.svg')}}" alt="">
@@ -26,10 +31,12 @@
             <img src="{{asset('img/companions/nordsee.svg')}}" alt="">
         </div>
         <div class="max-h-120">
-            <img src="{{asset('img/companions/curry.svg')}}" alt="">
+            <img src="{{asset('img/companions/curry.svg')}}" alt=""
+                 srcset="{{asset('img/companions/curry.png')}}, {{asset('img/companions/curry@2x.png')}} 2x">
         </div>
         <div class="max-h-120 w-1/5 lg:w-auto">
-            <img src="{{asset('img/companions/pizza-hut.svg')}}" alt="">
+            <img src="{{asset('img/companions/pizza-hut.svg')}}" alt=""
+                 srcset="{{asset('img/companions/pizza-hut.png')}}, {{asset('img/companions/pizza-hut@2x.png')}} 2x">
         </div>
     </div>
 </div>

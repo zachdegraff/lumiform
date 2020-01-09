@@ -32,14 +32,18 @@
     let hamburgerIcon = document.querySelector('.icon__hamburger');
     let filterSection = document.querySelector('.sidebar');
     let menu = document.querySelector('.menu__items');
-    hamburger.addEventListener('click',function () {
-        this.classList.contains('open') ? this.classList.remove('open') : this.classList.add('open')
-        menu.classList.contains('open') ? menu.classList.remove('open') : menu.classList.add('open')
-    });
-    hamburgerIcon.addEventListener('click',function () {
-        this.classList.contains('open') ? this.classList.remove('open') : this.classList.add('open')
-        filterSection.classList.contains('open') ? filterSection.classList.remove('open') : filterSection.classList.add('open')
-    });
+    if (hamburger) {
+        hamburger.addEventListener('click', function () {
+            this.classList.contains('open') ? this.classList.remove('open') : this.classList.add('open')
+            menu.classList.contains('open') ? menu.classList.remove('open') : menu.classList.add('open')
+        });
+    }
+    if (hamburgerIcon) {
+        hamburgerIcon.addEventListener('click', function () {
+            this.classList.contains('open') ? this.classList.remove('open') : this.classList.add('open')
+            filterSection.classList.contains('open') ? filterSection.classList.remove('open') : filterSection.classList.add('open')
+        });
+    }
     function openMenu(el) {
         let items = document.querySelectorAll('.menu__item')
 
