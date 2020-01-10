@@ -3,7 +3,7 @@
 
             <a href='@urlTo("templateLibrary.index", ["categories" => $category->slug])'
                class="font-cocogoose text-white uppercase text-18 tracking-normal leading-snug font-bold text-center">
-                {{$category->title}}
+                {{__($category->title)}}
             </a>
 
     </div>

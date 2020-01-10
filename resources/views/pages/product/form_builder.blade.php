@@ -1,18 +1,18 @@
 @extends('layout/base')
 
-@section("head.title", __("product/create_forms.title"))
+@section("head.title", __("Lumiform - Create digital checklists - FREE"))
 @section('meta-tags')
 
-    <meta name="description" content="@lang('product/create_forms.description')">
+    <meta name="description" content="@lang('Convert your paper forms into mobile-friendly inspection and audit checklists in minutes. Try the incredibly powerful form builder. FOR FREE!')">
 @endsection
 @section("content")
     <section id="form__banner" class="py-10 lg:pt-32 lg:pb-24 bg-blue-light relative">
         <div class="container mx-auto flex">
             <div class="banner__left w-full  lg:w-5/12">
                 <h1 class="tracking-normal leading-none text-center lg:text-left text-40 xxl:text-70 mb-16 font-cocogoose uppercase font-extrabold">
-                    @lang('product/create_forms.bannerTitle')
+                    @lang('Create custom forms in minutes.')
                 </h1>
-                @include('components.product.banner_form',['buttonText' => 'product/create_forms.buttonText'])
+                @include('components.product.banner_form',['buttonText' => 'try for free'])
             </div>
             <div class="banner__right hidden lg:block absolute top-0 right-0 mt-10">
                 <img src="{{asset('img/form-builder-banner.png')}}" alt=""
@@ -32,9 +32,9 @@
             <div class="digitise__items">
                 @include('components.product.image_text_horizontal',
                 [
-                'heading' => 'Define the <span class="text-light-blue">query</span>',
+                'heading' => __('Define the <span class="text-light-blue">query</span>'),
                 'headingColor' => 'primary',
-                'text' => 'Type in a question or statement to be displayed to the inspector in the field.',
+                'text' => __('Type in a question or statement to be displayed to the inspector in the field.'),
                 'image' => 'group-2699.png',
                 'srcset' => ['group-2699.png','group-2699@2x.png'],
                 ]
@@ -50,52 +50,52 @@
                     </div>
                     <div class="digitise__item--image w-full lg:w-7/12 flex flex-wrap justify-between">
                         @include('components.product.icons_raw',[
-                            'text' => 'Multiple <br> Choice',
+                            'text' => __('Multiple <br> Choice'),
                             'image' => 'group-1261.svg',
                             'class' => 'w-1/5 mb-20',
                             ])
                         @include('components.product.icons_raw',[
-                            'text' => 'Text',
+                            'text' => __('Text'),
                             'image' => 'group-1262.svg',
                              'class' => 'w-1/5 mb-20',
                             ])
                         @include('components.product.icons_raw',[
-                            'text' => 'Number',
+                            'text' => __('Number'),
                             'image' => 'group-1265.svg',
                              'class' => 'w-1/5 mb-20',
                             ])
                         @include('components.product.icons_raw',[
-                            'text' => 'Checkbox',
+                            'text' => __('Checkbox'),
                             'image' => 'group-1266.svg',
                              'class' => 'w-1/5 mb-20',
                             ])
                         @include('components.product.icons_raw',[
-                            'text' => 'Date & Time',
+                            'text' => __('Date & Time'),
                             'image' => 'group-1268.svg',
                              'class' => 'w-1/5 mb-20',
                             ])
                         @include('components.product.icons_raw',[
-                            'text' => 'photo',
+                            'text' => __('photo'),
                             'image' => 'group-1260.svg',
                              'class' => 'w-1/5 mb-20',
                             ])
                         @include('components.product.icons_raw',[
-                            'text' => 'Annotation',
+                            'text' => __('Annotation'),
                             'image' => 'group-1263.svg',
                              'class' => 'w-1/5 mb-20',
                             ])
                         @include('components.product.icons_raw',[
-                            'text' => 'Signature',
+                            'text' => __('Signature'),
                             'image' => 'group-1264.svg',
                              'class' => 'w-1/5 mb-20',
                             ])
                         @include('components.product.icons_raw',[
-                            'text' => 'Dropdown',
+                            'text' => __('Dropdown'),
                             'image' => 'group-1267.svg',
                              'class' => 'w-1/5 mb-20',
                             ])
                         @include('components.product.icons_raw',[
-                            'text' => 'Instruction',
+                            'text' => __('Instruction'),
                             'image' => 'group-1269.svg',
                              'class' => 'w-1/5 mb-20',
                             ])
@@ -115,22 +115,23 @@
             <div class="workflow__items">
                 @include('components.product.image_text_horizontal',
                 [
-                'heading' => 'Check-logics',
+                'heading' => __('Check-logics'),
                 'headingColor' => 'gold',
-                'text' => 'Create if-then logics, and only make inspection elements visible when the inspector gives a particular answer.',
-                'image' => 'group-2743.svg',
+                'text' => __('Create if-then logics, and only make inspection elements visible when the inspector gives a particular answer.'),
+                'image' => 'group-2743.png',
+                'srcset' => ['group-2743.png','group-2743@2x.png'],
                 'reversed' => true
                 ]
                 )
                 @include('components.product.image_text_horizontal',
                [
-               'heading' => 'Automatic issue logics',
+               'heading' => __('Automatic issue logics'),
                'headingColor' => 'green',
-               'text' => 'Predefine issues that the system triggers automatically when receiving a specific response. For example, notify the technician automatically if the coffee machine is damaged.',
+               'text' => __('Predefine issues that the system triggers automatically when receiving a specific response. For example, notify the technician automatically if the coffee machine is damaged.'),
                'image' => 'group-5037.png',
                'srcset' => ['group-5037.png','group-5037@2x.png'],
                'urlTo' => [
-               'text' => 'LEARN MORE ABOUT issues',
+               'text' => __('LEARN MORE ABOUT issues'),
                'url' => 'product.issues'
                ],
                'reversed' => true,
@@ -138,9 +139,9 @@
                )
                 @include('components.product.image_text_horizontal',
                    [
-                   'heading' => 'Notification-logics',
+                   'heading' => __('Notification-logics'),
                    'headingColor' => 'light-blue',
-                   'text' => 'Notify users via push-notification or email, when the inspector gives a particular answer.',
+                   'text' => __('Notify users via push-notification or email, when the inspector gives a particular answer.'),
                    'image' => 'group-2700.png',
                    'srcset' => ['group-2700.png','group-2700@2x.png'],
                    'reversed' => true
@@ -176,7 +177,8 @@
                             @lang('Use repeatable sections to perform a series of checks, as often as you like, and duplicate the questions on the fly.')</p>
                     </div>
                     <div class="digitise__item--image w-1/2 lg:w-3/5 mx-auto">
-                        <img src="{{asset('img/group-2744.svg')}}" alt="" class="mx-auto">
+                        <img src="{{asset('img/group-2744.png')}}"
+                             srcset="{{asset('img/group-2744.png')}},{{asset('img/group-2744@2x.png')}} 2x" alt="" class="mx-auto">
                     </div>
                 </div>
 
@@ -215,7 +217,8 @@
                         </div>
                     </div>
                     <div class="digitise__item--image w-1/2 lg:w-6/12 ">
-                        <img src="{{asset('img/group-2711.svg')}}" alt="" class="mx-auto">
+                        <img src="{{asset('img/group-2711.png')}}"
+                             srcset="{{asset('img/group-2711.png')}},{{asset('img/group-2711@2x.png')}} 2x" alt="" class="mx-auto">
                     </div>
                 </div>
                 <div class="sm:flex mb-12 lg:mb-40 justify-between">
@@ -246,7 +249,8 @@
                         </div>
                     </div>
                     <div class="digitise__item--image w-1/2 lg:w-6/12">
-                        <img src="{{asset('img/group-2712.svg')}}" alt="" class="mx-auto w-4/5">
+                        <img src="{{asset('img/group-2712.png')}}"
+                             srcset="{{asset('img/group-2712.png')}},{{asset('img/group-2712@2x.png')}} 2x" alt="" class="mx-auto w-4/5">
                     </div>
                 </div>
 
@@ -302,7 +306,7 @@
 
     </section>
     @include('components.product.bottom_form',[
-    'heading' =>'Use our easy-to-use form builder,<span class="line__break"></span> and create your first form within minutes.',
+    'heading' => __('Use our easy-to-use form builder,<span class="line__break"></span> and create your first form within minutes.'),
     'sectionBg' =>'blue',
     'buttonBg' =>'blue-dark',
     'image' =>'img/group-1960.svg',

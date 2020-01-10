@@ -20,7 +20,7 @@
                             @if ($search) <span
                                     style="color: #aaaaaa;">{{count($templates)}} @lang('results for') </span>
                             @else
-                                {{ $category->title }}
+                                {{ __($category->title) }}
                             @endif
 
                         @endif

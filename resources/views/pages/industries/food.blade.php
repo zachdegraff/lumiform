@@ -1,17 +1,18 @@
 @extends('layout/base')
 
-@section("head.title", __("industry/food.title"))
+@section("head.title", __("Food & Hospitality Hygiene App & Inspection Software - FREE"))
 @section('meta-tags')
-    @foreach(__('industry/food.keywords') as $keyword)
-        <meta name="keywords" content="{{$keyword}}">
-    @endforeach
-    <meta name="description" content="@lang('industry/food.description')">
+        <meta name="keywords" content="@lang('Food hygiene app')">
+        <meta name="keywords" content="@lang('Food safety app')">
+        <meta name="keywords" content="@lang('Food quality management software')">
+        <meta name="keywords" content="@lang('Food inspection software')">
+    <meta name="description" content="@lang('Start with easy quality management software. Use the food safety / hygiene app for adequate food inspections and avoid reputational damages. FOR FREE!')">
 @endsection
 @section("content")
     @include('components.solution.industries_banner_section',[
     'imageBg' => 'food-banner.png',
-    'heading' => __('industry/food.bannerTitle'),
-    'text' => __('industry/food.bannerText'),
+    'heading' => __('Digital quality assurance for your food business.'),
+    'text' => __('Lumiform helps your business within the food industry to comply with regulations and improve quality through more transparent processes.'),
     ])
 
     <section class="py-16 lg:py-32 with__border--bottom">
@@ -23,23 +24,23 @@
             <div class="flex justify-between mb-20 md:flex-no-wrap flex-wrap">
                 @include('components.solution.industries_icon_with_text',[
                 'icon' => 'icons/umbrella-icon.svg',
-                'heading' => 'Protect your brand',
+                'heading' => __('Protect your brand'),
                 'color' => 'light-blue',
-                'text' => 'Track whether checks are done in time and solve issues as soon as they occur.',
+                'text' => __('Track whether checks are done in time and solve issues as soon as they occur.'),
                 'width' => '415'
                 ])
                 @include('components.solution.industries_icon_with_text',[
                 'icon' => 'icons/time-icon.svg',
-                'heading' => 'Save on documentation time',
+                'heading' => __('Save on documentation time'),
                 'color' => 'purple',
-                'text' => 'Cut your inspection time by 30%, through faster conduction and automated documentation.',
+                'text' => __('Cut your inspection time by 30%, through faster conduction and automated documentation.'),
                 'width' => '440'
                 ])
                 @include('components.solution.industries_icon_with_text',[
                 'icon' => 'icons/check-icon.svg',
-                'heading' => 'Comply 100% with regulations',
+                'heading' => __('Comply 100% with regulations'),
                 'color' => 'green',
-                'text' => 'We help you to comply with all the laws and to ensure that you have all the documents available at the right time.',
+                'text' => __('We help you to comply with all the laws and to ensure that you have all the documents available at the right time.'),
                 'width' => '480'
                 ])
             </div>
@@ -59,13 +60,13 @@
             </p>
             @include('components.solution.industries_droptown_section',[
             'items' => [
-            ['srcset' => ['group-4752.png','group-4752@2x.png'],'title' => 'Create forms','desc' => 'Create custom forms within minutes. Organise food inspections, to make sure the right person does all the checklists at the right time.'],
-            ['srcset' => ['group-2969.png','group-2969@2x.png'],'title' => 'Conduct via App','desc' => 'Conduct audits and inspections whether with a tablet or smartphone, Android or iOS – online or offline.'],
-            ['srcset' => ['group-4757.png','group-2969@2x.png'],'title' => 'Automate temperature and humidity checks','desc' => 'Use temperature and humidity sensors to automate temperature documentation, while protecting food adequately.'],
-            ['srcset' => ['group-3430.png','group-2969@2x.png'],'title' => 'Solve Issues','desc' => 'Make sure all inspectors can easily raise issues. Keep track of the progress and solve issues together, as a team.'],
-            ['srcset' => ['group-4759.png','group-2969@2x.png'],'title' => 'Results, Reports and Analyses','desc' => 'Don’t waste time on post-processing and digitisation of audit and inspection reports – everything is fully automated. Uncover areas that need your attention through in-depth analyses.'],
+            ['srcset' => ['group-4752.png','group-4752@2x.png'],'title' => __('Create forms'),'desc' => __('Create custom forms within minutes. Organise food inspections, to make sure the right person does all the checklists at the right time.')],
+            ['srcset' => ['group-2969.png','group-2969@2x.png'],'title' => __('Conduct via App'),'desc' => __('Conduct audits and inspections whether with a tablet or smartphone, Android or iOS – online or offline.')],
+            ['srcset' => ['group-4757.png','group-2969@2x.png'],'title' => __('Automate temperature and humidity checks'),'desc' => __('Use temperature and humidity sensors to automate temperature documentation, while protecting food adequately.')],
+            ['srcset' => ['group-3430.png','group-2969@2x.png'],'title' => __('Solve Issues'),'desc' => __('Make sure all inspectors can easily raise issues. Keep track of the progress and solve issues together, as a team.')],
+            ['srcset' => ['group-4759.png','group-2969@2x.png'],'title' => __('Results, Reports and Analyses'),'desc' => __('Don’t waste time on post-processing and digitisation of audit and inspection reports – everything is fully automated. Uncover areas that need your attention through in-depth analyses.')],
             ],
-            'features' => ['url' => '#','text' => 'Explore more PRODUCT features']
+            'features' => ['url' => '#','text' => __('Explore more PRODUCT features')]
             ])
 
 
@@ -100,22 +101,22 @@
             <div class="industry__icons flex justify-between flex-wrap">
                 @include('components.solution.industries_icon_list',[
                 'items' => [
-                ['icon' => 'haccr-icon.svg', 'text' => 'HACCP documentation'],
-                ['icon' => 'equipment-icon.svg', 'text' => 'Equipment log'],
-                ['icon' => 'glass-icon.svg', 'text' => 'Glass breakage documentation'],
-                ['icon' => 'loading-icon.svg', 'text' => 'Bearing inspections'],
-                ['icon' => 'goods-icon.svg', 'text' => 'Incoming goods inspection'],
-                ['icon' => 'inventory-icon.svg', 'text' => 'Inventory control'],
-                ['icon' => 'visitor-icon.svg', 'text' => 'Visitor documentation'],
-                ['icon' => 'frying-icon.svg', 'text' => 'Frying fat control'],
-                ['icon' => 'cleaning-icon.svg', 'text' => 'Cleaning documentation'],
-                ['icon' => 'complaint-icon.svg', 'text' => 'Complaint form'],
-                ['icon' => 'temperature-icon.svg', 'text' => 'Temperature logs'],
-                ['icon' => 'hazard-icon.svg', 'text' => 'Hazard assessment'],
-                ['icon' => 'audits-icon.svg', 'text' => 'Store audits'],
-                ['icon' => 'pest-icon.svg', 'text' => 'Pest control'],
-                ['icon' => 'training-icon.svg', 'text' => 'Training documentation'],
-                ['icon' => 'alergen-icon.svg', 'text' => 'Allergen documentation'],
+                ['icon' => 'haccr-icon.svg', 'text' => __('HACCP documentation')],
+                ['icon' => 'equipment-icon.svg', 'text' => __('Equipment log')],
+                ['icon' => 'glass-icon.svg', 'text' => __('Glass breakage documentation')],
+                ['icon' => 'loading-icon.svg', 'text' => __('Bearing inspections')],
+                ['icon' => 'goods-icon.svg', 'text' => __('Incoming goods inspection')],
+                ['icon' => 'inventory-icon.svg', 'text' => __('Inventory control')],
+                ['icon' => 'visitor-icon.svg', 'text' => __('Visitor documentation')],
+                ['icon' => 'frying-icon.svg', 'text' => __('Frying fat control')],
+                ['icon' => 'cleaning-icon.svg', 'text' => __('Cleaning documentation')],
+                ['icon' => 'complaint-icon.svg', 'text' => __('Complaint form')],
+                ['icon' => 'temperature-icon.svg', 'text' => __('Temperature logs')],
+                ['icon' => 'hazard-icon.svg', 'text' => __('Hazard assessment')],
+                ['icon' => 'audits-icon.svg', 'text' => __('Store audits')],
+                ['icon' => 'pest-icon.svg', 'text' => __('Pest control')],
+                ['icon' => 'training-icon.svg', 'text' => __('Training documentation')],
+                ['icon' => 'alergen-icon.svg', 'text' => __('Allergen documentation')],
                 ]
                 ])
             </div>
@@ -127,33 +128,33 @@
         </div>
     </section>
     @include('components.solution.industries_bg_grey',[
-        'heading' => 'Quickstart <span class="text-green">free Checklists</span> for food businesses',
-        'text' =>  'Lumiform offers expert-proofed, ready-to-use templates, and you can customise them as needed.',
+        'heading' => __('Quickstart <span class="text-green">free Checklists</span> for food businesses'),
+        'text' =>  __('Lumiform offers expert-proofed, ready-to-use templates, and you can customise them as needed.'),
         'items' => [
-                ['image' => 'food-manager-cleaning-check.png','srcset' => ['food-manager-cleaning-check.png','food-manager-cleaning-check@2x.png'],'text' => 'Manager cleaning check'],
-                ['image' => 'food-mystery-shopper.png','srcset' => ['food-mystery-shopper.png','food-mystery-shopper@2x.png'],'text' => 'Mystery shopper checklist'],
-                ['image' => 'food-daily-temperature-log.png','srcset' => ['food-daily-temperature-log.png','food-daily-temperature-log@2x.png'],'text' => 'Daily temperature log'],
-                ['image' => 'food-hygiene.png','srcset' => ['food-hygiene.png','food-hygiene@2x.png'],'text' => 'General food safety And hygiene checklist'],
-                ['image' => 'food-self-monitoring.png','srcset' => ['food-self-monitoring.png','food-self-monitoring@2x.png'],'text' => 'Self-monitoring checklist for food businesses'],
-                ['image' => 'food-closing-the-counter.png','srcset' => ['food-closing-the-counter.png','food-closing-the-counter@2x.png'],'text' => 'Closing the counter checklist '],
+                ['image' => 'food-manager-cleaning-check.png','srcset' => ['food-manager-cleaning-check.png','food-manager-cleaning-check@2x.png'],'text' => __('Manager cleaning check')],
+                ['image' => 'food-mystery-shopper.png','srcset' => ['food-mystery-shopper.png','food-mystery-shopper@2x.png'],'text' => __('Mystery shopper checklist')],
+                ['image' => 'food-daily-temperature-log.png','srcset' => ['food-daily-temperature-log.png','food-daily-temperature-log@2x.png'],'text' => __('Daily temperature log')],
+                ['image' => 'food-hygiene.png','srcset' => ['food-hygiene.png','food-hygiene@2x.png'],'text' => __('General food safety And hygiene checklist')],
+                ['image' => 'food-self-monitoring.png','srcset' => ['food-self-monitoring.png','food-self-monitoring@2x.png'],'text' => __('Self-monitoring checklist for food businesses')],
+                ['image' => 'food-closing-the-counter.png','srcset' => ['food-closing-the-counter.png','food-closing-the-counter@2x.png'],'text' => __('Closing the counter checklist ')],
             ],
         'image' => 'group-1509.png',
-        'template' => ['text' => 'View all TEMPLATES','url' => '#']
+        'template' => ['text' => __('View all TEMPLATES'),'url' => '#']
         ])
     @include('components.solution.industries_explore_section',[
-    'heading' => 'Explore how <span class="text-gold">leaders in the food industry</span> use Lumiform',
+    'heading' => __('Explore how <span class="text-gold">leaders in the food industry</span> use Lumiform'),
     'items' => [
-    ['image' => 'inspections-food.png','srcset' => ['inspections-food.png','inspections-food@2x.png'],'template' => ['url' => '#','text' => 'View INSPECTIOn CASE STUDY'] ],
-    ['image' => 'food-safety.png','srcset' => ['food-safety.png','food-safety@2x.png'],'template' => ['url' => '#','text' => 'View AUDIT CASE STUDY'] ],
+    ['image' => 'inspections-food.png','srcset' => ['inspections-food.png','inspections-food@2x.png'],'template' => ['url' => '#','text' => __('View INSPECTIOn CASE STUDY')] ],
+    ['image' => 'food-safety.png','srcset' => ['food-safety.png','food-safety@2x.png'],'template' => ['url' => '#','text' => __('View AUDIT CASE STUDY')] ],
     ]
     ])
     @include('components.solution.industries_quotes',[
     'image' => 'group-1031.svg',
-    'text' => '„In the past, we used paper, pen and camera for our audit reports. Now we can use Lumiform and we get everything we need in one tool.“',
-    'position' => '-Sven,  <br>Head of Quality Management',
+    'text' => __('„In the past, we used paper, pen and camera for our audit reports. Now we can use Lumiform and we get everything we need in one tool.“'),
+    'position' => __('-Sven,  <br>Head of Quality Management'),
     ])
     @include('components.product.bottom_form',[
-    'heading' =>'Start improving food quality now – free of charge!',
+    'heading' => __('Start improving food quality now – free of charge!'),
     'sectionBg' =>'red-opacity',
     'buttonBg' =>'red',
     'left' => true,

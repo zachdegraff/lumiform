@@ -94,19 +94,19 @@
                 @include('components.resources.team_items',[
                 'items' => [
                      ['image' => 'team-1.png',
-                     'name' => 'Lukas Blasberg, CEO ',
+                     'name' => __('Lukas Blasberg, CEO '),
                      'linkedin' => 'https://www.linkedin.com/in/lukas-blasberg/',
-                     'text' => 'Lukas recognised the tragedy that occurs due to manual processes in quality and safety management: poor quality in terms of products and services, serious accidents at work and a very high workload. <br><br>Since Lukas and Philip are an experienced founding team (they have already founded a successful business together), they decided to sit down together to work out a solution.',
+                     'text' => __('Lukas recognised the tragedy that occurs due to manual processes in quality and safety management: poor quality in terms of products and services, serious accidents at work and a very high workload. <br><br>Since Lukas and Philip are an experienced founding team (they have already founded a successful business together), they decided to sit down together to work out a solution.'),
                                 ],
                      ['image' => 'team-2.png',
-                     'name' => 'Philip Blasberg, CEO ',
+                     'name' => __('Philip Blasberg, CEO '),
                      'linkedin' => 'https://www.linkedin.com/in/philip-roelen-blasberg-38201873/',
-                     'text' => 'Philip has always questioned the manual processes that he was regularly confronted with – even in well-established companies – while working at the digital consultancy where he was previously employed. <br><br>So, after he and Lukas had put their heads together, he came up with the idea of Lumiform, in order to enable digital processes in quality and safety management, thereby reducing the number of accidents in the workplace and eliminating quality defects.',
+                     'text' => __('Philip has always questioned the manual processes that he was regularly confronted with – even in well-established companies – while working at the digital consultancy where he was previously employed. <br><br>So, after he and Lukas had put their heads together, he came up with the idea of Lumiform, in order to enable digital processes in quality and safety management, thereby reducing the number of accidents in the workplace and eliminating quality defects.'),
                                 ],
                      ['image' => 'team-3.png',
-                     'name' => 'Marton Farago, CTO ',
+                     'name' => __('Marton Farago, CTO '),
                      'linkedin' => 'https://www.linkedin.com/in/martonfarago/',
-                     'text' => 'Marton heard about the tools that were being used for quality and safety checks, and could not believe his ears. He thought about how they could solve the lack of transparency and the inefficient conduction process technically. <br><br>All forms needed to be digitised, inspections had to be organised, smooth conduction via a mobile app was required, issues needed to be tracked and resolved quickly, in a team, and data had to be used to help businesses to improve procedures continually. Lumiform was born!',
+                     'text' => __('Marton heard about the tools that were being used for quality and safety checks, and could not believe his ears. He thought about how they could solve the lack of transparency and the inefficient conduction process technically. <br><br>All forms needed to be digitised, inspections had to be organised, smooth conduction via a mobile app was required, issues needed to be tracked and resolved quickly, in a team, and data had to be used to help businesses to improve procedures continually. Lumiform was born!'),
                                 ]
                                 ]
                 ])
@@ -159,12 +159,12 @@
             <div class="common__items flex justify-around flex-wrap">
                 @include('components.resources.common__items',[
                 'items' => [
-                ['image' => 'ok-icon.svg','title' => 'POSITIVE','text' => 'We are pro rather than contra: our <span class="line__break"> </span>glass is half full, not half empty.'],
-                ['image' => 'strong-icon.svg','title' => 'PROACTIVE','text' => 'We love to show initiative and realise that we <span class="line__break"> </span> are responsible for the successful completion of <span class="line__break"> </span> the tasks we tackle.'],
-                ['image' => 'crown-icon.svg','title' => 'CUSTOMER-ORIENTED','text' => 'We always consider the customer’s point of view.'],
-                ['image' => 'fire-icon.svg','title' => 'PASSIONATE','text' => 'We are intrinsically motivated and believe in our mission.'],
-                ['image' => 'dancers-icon.svg','title' => 'PLAYFUL','text' => 'We think creatively, outside the box, try out <span class="line__break"> </span> different solutions and learn from mistakes.'],
-                ['image' => 'pointing-up-icon.svg','title' => 'PRAGMATIC','text' => 'We are solution-driven and prefer to implement <span class="line__break"> </span> rather than talking. We love the 80/20 principle.'],
+                ['image' => 'ok-icon.svg','title' => 'POSITIVE','text' => __('We are pro rather than contra: our <span class="line__break"> </span>glass is half full, not half empty.')],
+                ['image' => 'strong-icon.svg','title' => 'PROACTIVE','text' => __('We love to show initiative and realise that we <span class="line__break"> </span> are responsible for the successful completion of <span class="line__break"> </span> the tasks we tackle.')],
+                ['image' => 'crown-icon.svg','title' => 'CUSTOMER-ORIENTED','text' => __('We always consider the customer’s point of view.')],
+                ['image' => 'fire-icon.svg','title' => 'PASSIONATE','text' => __('We are intrinsically motivated and believe in our mission.')],
+                ['image' => 'dancers-icon.svg','title' => 'PLAYFUL','text' => __('We think creatively, outside the box, try out <span class="line__break"> </span> different solutions and learn from mistakes.')],
+                ['image' => 'pointing-up-icon.svg','title' => 'PRAGMATIC','text' => __('We are solution-driven and prefer to implement <span class="line__break"> </span> rather than talking. We love the 80/20 principle.')],
                 ]
                 ])
             </div>
@@ -222,7 +222,7 @@
         </div>
     </section>
     @include('components.product.bottom_form',[
-      'heading' =>'Want to use Lumiform your way?',
+      'heading' => __('Want to use Lumiform your way?'),
       'sectionBg' =>'blue',
       'buttonBg' =>'blue-dark',
       'image' =>'img/group-2671.png',

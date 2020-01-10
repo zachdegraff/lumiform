@@ -1,20 +1,22 @@
 @extends('layout/base')
 
-@section("head.title", __("home/index.title"))
+@section("head.title", __("Lumiform: FREE & Easy Quality / Safety Management Software & App"))
 @section('meta-tags')
-    @foreach(__('home/index.keywords') as $keyword)
-        <meta name="keywords" content="{{$keyword}}">
-    @endforeach
-    <meta name="description" content="@lang('home/index.description')">
+
+    <meta name="keywords" content="Quality management software">
+    <meta name="keywords" content="Safety app">
+    <meta name="keywords" content="Safety management software">
+    <meta name="description"
+          content="@lang('Start with the easiest and incredibly powerful quality management software and safety app. Available on all devices, iOS & Android - FOR FREE!')">
 @endsection
 @section("content")
     <section id="home__banner" class="relative">
         <div class="container mx-auto flex">
             <div class="banner__left py-12 md:py-20 xxl:py-32 w-full lg:w-6/12 xxl:w-5/12">
                 <h1 class="mb-5 text-primary text-70 font-cocogoose font-extrabold uppercase tracking-normal leading-tight">
-                    @lang('home/index.bannerTitle')
+                    @lang('A new, easy way for inspections AND audits')
                 </h1>
-                <p class="font-din text-30 font-light text-secondary mb-12 xxl:mb-32 w-11/12"> @lang('home/index.bannerText')</p>
+                <p class="font-din text-30 font-light text-secondary mb-12 xxl:mb-32 w-11/12"> @lang('Equip your team with the Lumiform app and brighten up your quality and safety workflows.')</p>
                 @include('components.product.banner_form')
             </div>
             <div class="banner__right md:flex-shrink-0 lg:flex-1 relative">
@@ -85,14 +87,15 @@
                     @lang('Lumiform provides free, ready-to-use templates that you can further customise, to enable you to start industry-proofed checklists within minutes.')
                 </p>
                 <a href="@urlTo('templateLibrary')"
-                   class="flex items-center uppercase text-red text-center block text-17 lg:text-20 tracking-large my-5 lg:mt-10">
+                   class="flex items-center uppercase text-red text-center block text-20 tracking-large my-5 lg:mt-10">
                     @lang('DISCOVER TEMPLATES')
                     <img src="{{asset('img/arrow-right-long-red.svg')}}" alt="" class="h-3 ml-8">
                 </a>
 
             </div>
             <div class="start__image w-0 md:w-2/5 lg:w-3/5">
-                <img src="{{asset('img/checklists-tablet.png')}}" alt="" srcset="{{asset('img/checklists-tablet.png')}}, {{asset('img/checklists-tablet@2x.png')}} 2x">
+                <img src="{{asset('img/checklists-tablet.png')}}" alt=""
+                     srcset="{{asset('img/checklists-tablet.png')}}, {{asset('img/checklists-tablet@2x.png')}} 2x">
             </div>
 
         </div>
@@ -117,8 +120,10 @@
                         <img src="{{asset('img/industries.png')}}" alt="">
                     </div>
 
-                    <a href=" @urlTo('industries')" class="text-20 font-extrabold font-cocogoose uppercase flex items-center justify-center" style="color: #00B2FF;">
-                        @include('components.product.arrow-right',['color' => '#00B2FF','text' => 'SOLUTION BY INDUSTRIES'])
+                    <a href=" @urlTo('industries')"
+                       class="text-20 font-extrabold font-cocogoose uppercase flex items-center justify-center"
+                       style="color: #00B2FF;">
+                        @include('components.product.arrow-right',['color' => '#00B2FF','text' => __('SOLUTION BY INDUSTRIES')])
                     </a>
                 </div>
                 <div class="learn__item w-full md:w-1/2 lg:flex-1 text-center mb-5">
@@ -126,8 +131,10 @@
                         <div class="image__circle" style="background:#FD2F581A ;"></div>
                         <img src="{{asset('img/type-solution.png')}}" alt="">
                     </div>
-                    <a href=" @urlTo('useCases')" class="text-20 font-extrabold font-cocogoose uppercase flex items-center justify-center" style="color: #FD2F58;">
-                        @include('components.product.arrow-right',['color' => '#FD2F58','text' => 'SOLUTION BY category'])
+                    <a href=" @urlTo('useCases')"
+                       class="text-20 font-extrabold font-cocogoose uppercase flex items-center justify-center"
+                       style="color: #FD2F58;">
+                        @include('components.product.arrow-right',['color' => '#FD2F58','text' => __('SOLUTION BY category')])
                     </a>
                 </div>
 
@@ -136,8 +143,10 @@
                         <div class="image__circle" style="background:#F3EFFB ;"></div>
                         <img src="{{asset('img/case-study.png')}}" alt="">
                     </div>
-                    <a href=" @urlTo('resources')" class="text-20 font-extrabold font-cocogoose uppercase flex items-center justify-center" style="color: #8D5FD6;">
-                        @include('components.product.arrow-right',['color' => '#8D5FD6','text' => 'CASE STUDIES'])
+                    <a href=" @urlTo('resources')"
+                       class="text-20 font-extrabold font-cocogoose uppercase flex items-center justify-center"
+                       style="color: #8D5FD6;">
+                        @include('components.product.arrow-right',['color' => '#8D5FD6','text' => __('CASE STUDIES')])
                     </a>
 
                 </div>
@@ -146,15 +155,17 @@
                         <div class="image__circle" style="background:#00B2FF19;"></div>
                         <img src="{{asset('img/use-cases.png')}}" alt="">
                     </div>
-                    <a href=" @urlTo('resources.appUses')" class="text-20 font-extrabold font-cocogoose uppercase flex items-center justify-center" style="color: #00C389;">
-                        @include('components.product.arrow-right',['color' => '#00C389','text' => 'APP USES'])
+                    <a href=" @urlTo('resources.appUses')"
+                       class="text-20 font-extrabold font-cocogoose uppercase flex items-center justify-center"
+                       style="color: #00C389;">
+                        @include('components.product.arrow-right',['color' => '#00C389','text' => __('APP USES')])
                     </a>
                 </div>
             </div>
         </div>
     </section>
     @include('components.product.companions_section',[
-   'heading' => 'Manage quality and safety like industry leaders',
+   'heading' => __('Manage quality and safety like industry leaders'),
    'icons' => [
    'adidasArtboard.svg','ALDIArtboard.svg','AllianzArtboard.svg','ARALArtboard.svg','audi-black-vector-logo.svg','BecksArtboard.svg',
    'BMWArtboard.svg','BOSCHArtboard.svg','DHlArtboard.svg','DPArtboard.svg','dpd-logo-png.svg','Dr._Oetker-Logo.svg','EDEKAArtboard.svg',
@@ -165,7 +176,7 @@
    ]
    ])
     @include('components.product.bottom_form',[
-   'heading' =>'It’s easy to get started with Lumiform.',
+   'heading' =>__('It’s easy to get started with Lumiform.'),
    'sectionBg' =>'green-opacity',
    'buttonBg' =>'green',
    'image' =>'img/home-easy-img.png',

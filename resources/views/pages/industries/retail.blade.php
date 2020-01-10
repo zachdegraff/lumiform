@@ -1,18 +1,18 @@
 @extends('layout/base')
 
-@section("head.title", __("industry/retail.title"))
+@section("head.title", __("Retail Audit and Inspection Software & App - FREE - Lumiform"))
 @section('meta-tags')
-    @foreach(__('industry/retail.keywords') as $keyword)
-        <meta name="keywords" content="{{$keyword}}">
-    @endforeach
-    <meta name="description" content="@lang('industry/retail.description')">
+    <meta name="keywords" content="@lang('Retail audit software')">
+    <meta name="keywords" content="@lang('Retail audit app')">
+    <meta name="keywords" content="@lang('Retail inspection app')">
+    <meta name="description" content="@lang('Start with the retail audit software and inspection app to improve operational efficiencies through faster data capturing. FOR FREE!')">
 @endsection
 @section("content")
     @include('components.solution.industries_banner_section',[
         'imageBg' => 'retail-banner.png',
         'class' => 'lg:w-9/12 py-16',
-        'heading' =>  __('industry/retail.bannerTitle'),
-        'text' => __('industry/retail.bannerText'),
+        'heading' =>  __('Protect your retail brand'),
+        'text' => __('Ensure a positive on-site experience for your customers. Collect consistent data, standardise operations, identify areas that have failed and get problems resolved quickly!'),
         ])
     <section class="py-16 lg:py-32 with__border--bottom">
         <div class="container mx-auto">
@@ -23,23 +23,23 @@
             <div class="flex justify-between mb-20">
                 @include('components.solution.industries_icon_with_text',[
                 'icon' => 'icons/brand-icon_blue.svg',
-                'heading' => 'Create brand consistency',
+                'heading' => __('Create brand consistency'),
                 'color' => 'light-blue',
-                'text' => 'Assess the in-store experience and report on brand consistency. Coordinate all aspects of brand experience from remote.',
+                'text' => __('Assess the in-store experience and report on brand consistency. Coordinate all aspects of brand experience from remote.'),
                 'width' => '440'
                 ])
                 @include('components.solution.industries_icon_with_text',[
                 'icon' => 'icons/home-icon_red.svg',
-                'heading' => 'Reduce stock loss',
+                'heading' => __('Reduce stock loss'),
                 'color' => 'red',
-                'text' => 'Continuously track what’s causing stock shrinkage and identify the problem stores with Lumiform.',
+                'text' => __('Continuously track what’s causing stock shrinkage and identify the problem stores with Lumiform.'),
                 'width' => '450'
                 ])
                 @include('components.solution.industries_icon_with_text',[
                 'icon' => 'icons/improve-icon_purple.svg',
-                'heading' => 'Improve PoS campaigns',
+                'heading' => __('Improve PoS campaigns'),
                 'color' => 'purple',
-                'text' => 'Use Lumiform’s checklists to roll out your next promotion or merchandise initiative faster, and get better results..',
+                'text' => __('Use Lumiform’s checklists to roll out your next promotion or merchandise initiative faster, and get better results.'),
                 'width' => '410'
                 ])
             </div>
@@ -59,12 +59,12 @@
             </p>
             @include('components.solution.industries_droptown_section',[
             'items' => [
-            ['srcset' => ['group-2969.png','group-2969@2x.png'],'title' => 'Create forms','desc' => 'Create custom forms within minutes. Organise store audits and inspections to make sure they are done reliably.'],
-            ['srcset' => ['group-4764.png','group-4764@2x.png'],'title' => 'Conduct via App','desc' => 'Conduct audits and inspections whether with a tablet or smartphone, Android or iOS – online or offline.'],
-            ['srcset' => ['group-5134.png','group-5134@2x.png'],'title' => 'Solve Issues','desc' => 'Make all field workers can easily raise issues as soon as they occur. Keep track of the progress and solve them together, as a team.'],
-            ['srcset' => ['group-4750.png','group-4750@2x.png'],'title' => 'Results, Reports and Analyses','desc' => 'Don’t waste time on post-processing and digitisation of audit and inspection reports – everything is fully automated. Uncover stores that need your attention through in-depth analyses.'],
+            ['srcset' => ['group-2969.png','group-2969@2x.png'],'title' => __('Create forms'),'desc' => __('Create custom forms within minutes. Organise store audits and inspections to make sure they are done reliably.')],
+            ['srcset' => ['group-4764.png','group-4764@2x.png'],'title' => __('Conduct via App'),'desc' => __('Conduct audits and inspections whether with a tablet or smartphone, Android or iOS – online or offline.')],
+            ['srcset' => ['group-5134.png','group-5134@2x.png'],'title' => __('Solve Issues'),'desc' => __('Make all field workers can easily raise issues as soon as they occur. Keep track of the progress and solve them together, as a team.')],
+            ['srcset' => ['group-4750.png','group-4750@2x.png'],'title' => __('Results, Reports and Analyses'),'desc' => __('Don’t waste time on post-processing and digitisation of audit and inspection reports – everything is fully automated. Uncover stores that need your attention through in-depth analyses.')],
             ],
-            'features' => ['url' => '#','text' => 'Explore more PRODUCT features']
+            'features' => ['url' => '#','text' => __('Explore more PRODUCT features')]
             ])
 
         </div>
@@ -77,22 +77,22 @@
             <div class="industry__icons flex justify-between flex-wrap">
                 @include('components.solution.industries_icon_list',[
                 'items' => [
-                ['icon' => 'incoming-icon_blue.svg', 'text' => 'Incoming goods Inspection'],
-                ['icon' => 'list-icon_purple.svg', 'text' => 'Opening checklist'],
-                ['icon' => 'list-icon_blue.svg', 'text' => '6S Audit'],
-                ['icon' => 'secure-icon_green.svg', 'text' => 'Security check'],
-                ['icon' => 'home-icon_purple.svg', 'text' => 'Warehouse audit'],
-                ['icon' => 'face-icon_green.svg', 'text' => 'Customer Satisfaction'],
-                ['icon' => 'store-icon_blue.svg', 'text' => 'Store operation checklists'],
-                ['icon' => 'safe-icon_gold.svg', 'text' => 'Work safety'],
-                ['icon' => 'calc-icon_orange.svg', 'text' => 'Retail store audit'],
-                ['icon' => 'drawer-icon_blue.svg', 'text' => 'Cleaning documentation'],
-                ['icon' => 'employee-icon_purple.svg', 'text' => 'Employee training'],
-                ['icon' => 'store-icon_green.svg', 'text' => 'Presentation checklist'],
-                ['icon' => 'list-icon_blue.svg', 'text' => 'Employee survey'],
-                ['icon' => 'inventory-icon_purple.svg', 'text' => 'Inventory checklist'],
-                ['icon' => 'tshirt-icon_orange.svg', 'text' => 'Merchandising Checklist'],
-                ['icon' => 'face-icon_red.svg', 'text' => 'Complaint forms'],
+                ['icon' => 'incoming-icon_blue.svg', 'text' => __('Incoming goods Inspection')],
+                ['icon' => 'list-icon_purple.svg', 'text' => __('Opening checklist')],
+                ['icon' => 'list-icon_blue.svg', 'text' => __('6S Audit')],
+                ['icon' => 'secure-icon_green.svg', 'text' => __('Security check')],
+                ['icon' => 'home-icon_purple.svg', 'text' => __('Warehouse audit')],
+                ['icon' => 'face-icon_green.svg', 'text' => __('Customer Satisfaction')],
+                ['icon' => 'store-icon_blue.svg', 'text' => __('Store operation checklists')],
+                ['icon' => 'safe-icon_gold.svg', 'text' => __('Work safety')],
+                ['icon' => 'calc-icon_orange.svg', 'text' => __('Retail store audit')],
+                ['icon' => 'drawer-icon_blue.svg', 'text' => __('Cleaning documentation')],
+                ['icon' => 'employee-icon_purple.svg', 'text' => __('Employee training')],
+                ['icon' => 'store-icon_green.svg', 'text' => __('Presentation checklist')],
+                ['icon' => 'list-icon_blue.svg', 'text' => __('Employee survey')],
+                ['icon' => 'inventory-icon_purple.svg', 'text' => __('Inventory checklist')],
+                ['icon' => 'tshirt-icon_orange.svg', 'text' => __('Merchandising Checklist')],
+                ['icon' => 'face-icon_red.svg', 'text' => __('Complaint forms')],
                 ]
                 ])
             </div>
@@ -104,34 +104,34 @@
         </div>
     </section>
     @include('components.solution.industries_bg_grey',[
-        'heading' => '<span class="text-light-blue">Quickstart with ready-to-use forms </span> for your retail store',
-        'text' =>  'Lumiform offers an extensive template library, so you can roll out your quality and safety concept within minutes.',
+        'heading' => __('<span class="text-light-blue">Quickstart with ready-to-use forms </span> for your retail store'),
+        'text' =>  __('Lumiform offers an extensive template library, so you can roll out your quality and safety concept within minutes.'),
         'items' => [
-                ['image' => 'retail-cleaning-checklist.png','srcset' => ['retail-cleaning-checklist.png','retail-cleaning-checklist@2x.png'],'text' => '5S audit'],
-                ['image' => 'retail-incoming-good.png','srcset' => ['retail-incoming-good.png','retail-incoming-good@2x.png'],'text' => 'facility review'],
-                ['image' => 'construction-weekly.png','srcset' => ['construction-weekly.png','construction-weekly@2x.png'],'text' => 'high risk machine safety checklist'],
-                ['image' => 'construction-daily.png','srcset' => ['construction-daily.png','construction-daily@2x.png'],'text' => 'safety assessment of worklift driver'],
-                ['image' => 'retail-store.png','srcset' => ['retail-store.png','retail-store@2x.png'],'text' => 'general risk assessment'],
-                ['image' => 'retail-customer.png','srcset' => ['retail-customer.png','retail-customer@2x.png'],'text' => 'gemba walk checklist'],
+                ['image' => 'retail-cleaning-checklist.png','srcset' => ['retail-cleaning-checklist.png','retail-cleaning-checklist@2x.png'],'text' => __('5S audit')],
+                ['image' => 'retail-incoming-good.png','srcset' => ['retail-incoming-good.png','retail-incoming-good@2x.png'],'text' => __('facility review')],
+                ['image' => 'construction-weekly.png','srcset' => ['construction-weekly.png','construction-weekly@2x.png'],'text' => __('high risk machine safety checklist')],
+                ['image' => 'construction-daily.png','srcset' => ['construction-daily.png','construction-daily@2x.png'],'text' => __('safety assessment of worklift driver')],
+                ['image' => 'retail-store.png','srcset' => ['retail-store.png','retail-store@2x.png'],'text' => __('general risk assessment')],
+                ['image' => 'retail-customer.png','srcset' => ['retail-customer.png','retail-customer@2x.png'],'text' => __('gemba walk checklist')],
             ],
         'image' => 'group-1622.png',
-        'template' => ['text' => 'View all TEMPLATES','url' => '#']
+        'template' => ['text' => __('View all TEMPLATES'),'url' => '#']
         ])
     @include('components.solution.industries_explore_section',[
-    'heading' => '<span class="text-gold"> Read success stories </span> about<span class="line__break"></span> retailers who use Lumiform',
+    'heading' => __('<span class="text-gold"> Read success stories </span> about<span class="line__break"></span> retailers who use Lumiform'),
     'items' => [
-    ['image' => 'retail-inspection.png','srcset' => ['retail-inspection.png','retail-inspection@2x.png'],'template' => ['url' => '#','text' => 'View INSPECTIOn CASE STUDY'] ],
-    ['image' => 'retail-audit.png','srcset' => ['retail-audit.png','retail-audit@2x.png'],'template' => ['url' => '#','text' => 'View AUDIT CASE STUDY'] ],
+    ['image' => 'retail-inspection.png','srcset' => ['retail-inspection.png','retail-inspection@2x.png'],'template' => ['url' => '#','text' => __('View INSPECTIOn CASE STUDY')] ],
+    ['image' => 'retail-audit.png','srcset' => ['retail-audit.png','retail-audit@2x.png'],'template' => ['url' => '#','text' => __('View AUDIT CASE STUDY')] ],
     ]
     ])
     @include('components.solution.industries_quotes',[
     'image' => 'heart-blue.png',
     'class' => 'bg-blue-light',
-    'text' => '„With Lumiform, we can streamline all the processes in the stores, and keep an exact overview of whether we are meeting the standards, at all times!“',
-    'position' => '- Quoted Person, Client Company',
+    'text' => __('„With Lumiform, we can streamline all the processes in the stores, and keep an exact overview of whether we are meeting the standards, at all times!“'),
+    'position' => __('- Quoted Person, Client Company'),
     ])
     @include('components.product.bottom_form',[
-    'heading' =>'Equip your retail store and get started – free of charge!',
+    'heading' => __('Equip your retail store and get started – free of charge!'),
     'sectionBg' =>'blue',
     'buttonBg' =>'blue-dark',
     'image' =>'img/group-2028.svg',

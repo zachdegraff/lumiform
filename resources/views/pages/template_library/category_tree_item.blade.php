@@ -11,7 +11,7 @@
                           stroke-linecap="round" stroke-width="1"/>
                 </g>
             </svg>
-            {{ $category->title }}
+            {{ __($category->title) }}
         </button>
         <ul style="display: none;" class="aside__submenu">
             @foreach($category->subcategories as $subcategory)
@@ -30,7 +30,7 @@
                           stroke-linecap="round" stroke-width="1"/>
                 </g>
             </svg>
-            {{ $category->title }}
+            {{ __($category->title) }}
         </a>
     @endif
 

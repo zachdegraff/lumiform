@@ -1,18 +1,17 @@
 @extends('layout/base')
 
-@section("head.title", __("industry/construction.title"))
+@section("head.title", __("Construction Inspection Software & Safety App - Lumiform - FREE"))
 @section('meta-tags')
-    @foreach(__('industry/construction.keywords') as $keyword)
-        <meta name="keywords" content="{{$keyword}}">
-    @endforeach
-    <meta name="description" content="@lang('industry/construction.description')">
+        <meta name="keywords" content="@lang('Industries')">
+        <meta name="keywords" content="@lang('overview')">
+    <meta name="description" content="@lang('See how companies of all industries, with all shapes, and sizes, use the App for their quality and safety management. TRY FREE!')">
 @endsection
 @section("content")
     @include('components.solution.industries_banner_section',[
   'imageBg' => 'construction-banner.png',
   'class' => 'w-full py-16',
-  'heading' => __('industry/construction.bannerTitle'),
-  'text' => __('industry/construction.bannerText'),
+  'heading' => __('Improve safety on the construction site'),
+  'text' => __('Only Lumiform is designed to help construction businesses in making their sites safer, within minutes.'),
   ])
 
     <section class="py-16 lg:py-32 with__border--bottom">
@@ -24,23 +23,23 @@
             <div class="flex justify-between mb-20">
                 @include('components.solution.industries_icon_with_text',[
                 'icon' => 'icons/injury-icon.svg',
-                'heading' => 'Prevent injuries and reduce risks',
+                'heading' => __('Prevent injuries and reduce risks'),
                 'color' => 'gold',
-                'text' => 'Track whether checks are done in time and solve issues as soon as they occur.',
+                'text' => __('Track whether checks are done in time and solve issues as soon as they occur.'),
                 'width' => '415'
                 ])
                 @include('components.solution.industries_icon_with_text',[
                 'icon' => 'icons/glass-icon_blue.svg',
-                'heading' => 'Ensure full transparency',
+                'heading' => __('Ensure full transparency'),
                 'color' => 'light-blue',
-                'text' => 'Cut your inspection time by 30% through faster conduction and automated documentation.',
+                'text' => __('Cut your inspection time by 30% through faster conduction and automated documentation.'),
                 'width' => '415'
                 ])
                 @include('components.solution.industries_icon_with_text',[
                 'icon' => 'icons/time-icon_green.svg',
-                'heading' => 'Save time',
+                'heading' => __('Save time'),
                 'color' => 'green',
-                'text' => 'We help you to comply with all the laws and to ensure that you have all the documents available at the right time.',
+                'text' => __('We help you to comply with all the laws and to ensure that you have all the documents available at the right time.'),
                 'width' => '415'
                 ])
             </div>
@@ -60,12 +59,12 @@
             </p>
             @include('components.solution.industries_droptown_section',[
             'items' => [
-            ['srcset' => ['group-2831.png','group-2831@2x.png'],'title' => 'Create forms','desc' => 'Create custom forms within minutes. Organise inspections on the construction site, to make sure the right person does all the checklists reliably.'],
-            ['srcset' => ['group-2834.png','group-2834@2x.png'],'title' => 'Conduct via App','desc' => 'Conduct audits and inspections whether with a tablet or smartphone, Android or iOS – online or offline.'],
-            ['srcset' => ['group-3430.png','group-3430@2x.png'],'title' => 'Solve Issues','desc' => 'Make sure all inspectors can easily report issues. Keep track of the progress, and solve issues together as a team.'],
-            ['srcset' => ['group-2835.png','group-2835@2x.png'],'title' => 'Results, Reports and Analyses','desc' => 'Don’t waste time on post-processing and digitisation of audit and inspection reports – everything is fully automated. Uncover areas of your construction site that need your attention.'],
+            ['srcset' => ['group-2831.png','group-2831@2x.png'],'title' => __('Create forms'),'desc' => __('Create custom forms within minutes. Organise inspections on the construction site, to make sure the right person does all the checklists reliably.')],
+            ['srcset' => ['group-2834.png','group-2834@2x.png'],'title' => __('Conduct via App'),'desc' => __('Conduct audits and inspections whether with a tablet or smartphone, Android or iOS – online or offline.')],
+            ['srcset' => ['group-3430.png','group-3430@2x.png'],'title' => __('Solve Issues'),'desc' => __('Make sure all inspectors can easily report issues. Keep track of the progress, and solve issues together as a team.')],
+            ['srcset' => ['group-2835.png','group-2835@2x.png'],'title' => __('Results, Reports and Analyses'),'desc' => __('Don’t waste time on post-processing and digitisation of audit and inspection reports – everything is fully automated. Uncover areas of your construction site that need your attention.')],
             ],
-            'features' => ['url' => '#','text' => 'Explore more PRODUCT features']
+            'features' => ['url' => '#','text' => __('Explore more PRODUCT features')]
             ])
 
 
@@ -80,22 +79,22 @@
             <div class="industry__icons flex justify-between flex-wrap">
                 @include('components.solution.industries_icon_list',[
                 'items' => [
-                ['icon' => 'checkin-icon_purple.svg', 'text' => 'Site documentation'],
-                ['icon' => 'list-icon_orange.svg', 'text' => 'Maintenance logs'],
-                ['icon' => 'expense-icon_green.svg', 'text' => 'Expense documentation'],
-                ['icon' => 'acceptance-icon_blue.svg', 'text' => 'Acceptance forms'],
-                ['icon' => 'handover-icon_green.svg', 'text' => 'Handover forms'],
-                ['icon' => 'safety-icon_gold.svg', 'text' => 'Work safety audits'],
-                ['icon' => 'construction-icon_orange.svg', 'text' => 'Construction logbook'],
-                ['icon' => 'walk-icon_red.svg', 'text' => 'Safety walks'],
-                ['icon' => 'car-icon_blue.svg', 'text' => 'Vehicles inspection'],
-                ['icon' => 'list-icon_red.svg', 'text' => 'Feedback survey'],
-                ['icon' => 'order-icon_purple.svg', 'text' => 'Order forms'],
-                ['icon' => 'glass-icon_gold.svg', 'text' => 'Pre-start siteinspection'],
-                ['icon' => 'tool-box-icon_orange.svg', 'text' => 'Tool box checklist'],
-                ['icon' => 'list-icon_purple.svg', 'text' => 'order  forms'],
-                ['icon' => 'commision-icon_blue.svg', 'text' => 'Commissioning form'],
-                ['icon' => 'safety-icon_orange.svg', 'text' => 'Safety assessments'],
+                ['icon' => 'checkin-icon_purple.svg', 'text' => __('Site documentation')],
+                ['icon' => 'list-icon_orange.svg', 'text' => __('Maintenance logs')],
+                ['icon' => 'expense-icon_green.svg', 'text' => __('Expense documentation')],
+                ['icon' => 'acceptance-icon_blue.svg', 'text' => __('Acceptance forms')],
+                ['icon' => 'handover-icon_green.svg', 'text' => __('Handover forms')],
+                ['icon' => 'safety-icon_gold.svg', 'text' => __('Work safety audits')],
+                ['icon' => 'construction-icon_orange.svg', 'text' => __('Construction logbook')],
+                ['icon' => 'walk-icon_red.svg', 'text' => __('Safety walks')],
+                ['icon' => 'car-icon_blue.svg', 'text' => __('Vehicles inspection')],
+                ['icon' => 'list-icon_red.svg', 'text' => __('Feedback survey')],
+                ['icon' => 'order-icon_purple.svg', 'text' => __('Order forms')],
+                ['icon' => 'glass-icon_gold.svg', 'text' => __('Pre-start siteinspection')],
+                ['icon' => 'tool-box-icon_orange.svg', 'text' => __('Tool box checklist')],
+                ['icon' => 'list-icon_purple.svg', 'text' => __('order  forms')],
+                ['icon' => 'commision-icon_blue.svg', 'text' => __('Commissioning form')],
+                ['icon' => 'safety-icon_orange.svg', 'text' => __('Safety assessments')],
                 ]
                 ])
             </div>
@@ -107,34 +106,34 @@
         </div>
     </section>
     @include('components.solution.industries_bg_grey',[
-        'heading' => 'Start with<span class="text-green"> FREE CHECKLISTS</span> for CONSTRUCTION',
-        'text' =>  'Browse the Lumiform construction template library. Get started with expert-proofed checklists for construction businesses.',
+        'heading' => __('Start with<span class="text-green"> FREE CHECKLISTS</span> for CONSTRUCTION'),
+        'text' =>  __('Browse the Lumiform construction template library. Get started with expert-proofed checklists for construction businesses.'),
         'items' => [
-                ['image' => 'inspections-osha-self-inspection.png','srcset' => ['inspections-osha-self-inspection.png','inspections-osha-self-inspection@2x.png'],'text' => 'Manager cleaning check'],
-                ['image' => 'facility-vehicle-inspection.png','srcset' => ['facility-vehicle-inspection.png','facility-vehicle-inspection@2x.png'],'text' => 'Mystery shopper checklist'],
-                ['image' => 'construction-weekly.png','srcset' => ['construction-weekly.png','construction-weekly@2x.png'],'text' => 'Daily temperature log'],
-                ['image' => 'construction-daily.png','srcset' => ['construction-daily.png','construction-daily@2x.png'],'text' => 'General food safety And hygiene checklist'],
-                ['image' => 'construction-safety-walk.png','srcset' => ['construction-safety-walk.png','construction-safety-walk@2x.png'],'text' => 'Self-monitoring checklist for food businesses'],
-                ['image' => 'construction-toolbox-check.png','srcset' => ['construction-toolbox-check.png','construction-toolbox-check@2x.png'],'text' => 'Closing the counter checklist '],
+                ['image' => 'inspections-osha-self-inspection.png','srcset' => ['inspections-osha-self-inspection.png','inspections-osha-self-inspection@2x.png'],'text' => __('Manager cleaning check')],
+                ['image' => 'facility-vehicle-inspection.png','srcset' => ['facility-vehicle-inspection.png','facility-vehicle-inspection@2x.png'],'text' => __('Mystery shopper checklist')],
+                ['image' => 'construction-weekly.png','srcset' => ['construction-weekly.png','construction-weekly@2x.png'],'text' => __('Daily temperature log')],
+                ['image' => 'construction-daily.png','srcset' => ['construction-daily.png','construction-daily@2x.png'],'text' => __('General food safety And hygiene checklist')],
+                ['image' => 'construction-safety-walk.png','srcset' => ['construction-safety-walk.png','construction-safety-walk@2x.png'],'text' => __('Self-monitoring checklist for food businesses')],
+                ['image' => 'construction-toolbox-check.png','srcset' => ['construction-toolbox-check.png','construction-toolbox-check@2x.png'],'text' => __('Closing the counter checklist ')],
             ],
         'image' => 'group-1542.png',
-        'template' => ['text' => 'View all TEMPLATES','url' => '#']
+        'template' => ['text' => __('View all TEMPLATES'),'url' => '#']
         ])
     @include('components.solution.industries_explore_section',[
-    'heading' => '<span class="text-gold">Trusted by the world’s best brands</span> in the construction industry',
+    'heading' => __('<span class="text-gold">Trusted by the world’s best brands</span> in the construction industry'),
     'items' => [
-    ['image' => 'construction-inspection.png','srcset' => ['construction-inspection.png','construction-inspection@2x.png'],'template' => ['url' => '#','text' => 'View INSPECTIOn CASE STUDY'] ],
-    ['image' => 'construction-audit.png','srcset' => ['construction-audit.png','construction-audit@2x.png'],'template' => ['url' => '#','text' => 'View AUDIT CASE STUDY'] ],
+    ['image' => 'construction-inspection.png','srcset' => ['construction-inspection.png','construction-inspection@2x.png'],'template' => ['url' => '#','text' => __('View INSPECTIOn CASE STUDY')] ],
+    ['image' => 'construction-audit.png','srcset' => ['construction-audit.png','construction-audit@2x.png'],'template' => ['url' => '#','text' => __('View AUDIT CASE STUDY')] ],
     ]
     ])
     @include('components.solution.industries_quotes',[
     'image' => 'quote-orange.png',
     'class' => 'bg-orange-extralight',
-    'text' => '„In the past, we used paper, pen and camera for our audit reports. Now we can use Lumiform and we get everything we need in one tool.“',
-    'position' => '- VIP, TItle <br> Company Name',
+    'text' => __('„In the past, we used paper, pen and camera for our audit reports. Now we can use Lumiform and we get everything we need in one tool.“'),
+    'position' => __('- VIP, TItle <br> Company Name'),
     ])
     @include('components.product.bottom_form',[
-    'heading' =>'Start improving food quality now – free of charge!',
+    'heading' => __('Start improving food quality now – free of charge!'),
     'sectionBg' =>'orange-light',
     'buttonBg' =>'orange',
     'image' =>'img/man-sitting.svg',

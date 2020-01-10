@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="1e32b0ea-e844-4b65-bdb9-d16144ca90d6" name="server" url="http://37.143.14.116">
+        <fileTransfer host="37.143.14.116" port="22" rootFolder="/var/www/avo/data" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="f059eba9-e135-497a-85ca-a25601d8d05a" name="root" url="http://37.143.14.116">
+        <fileTransfer host="37.143.14.116" port="22" rootFolder="/root" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

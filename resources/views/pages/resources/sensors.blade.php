@@ -1,22 +1,22 @@
 @extends('layout/base')
 
-@section("head.title", __("resources/sensors.title"))
+@section("head.title", __("Lumiform - Affordable Temperature Monitoring for Food & Hospitality"))
 @section('meta-tags')
-    @foreach(__('resources/sensors.keywords') as $keyword)
-        <meta name="keywords" content="{{$keyword}}">
-    @endforeach
-    <meta name="description" content="@lang('resources/sensors.description')">
+        <meta name="keywords" content="@lang('Temperature sensors')">
+        <meta name="keywords" content="@lang('temperature monitoring')">
+        <meta name="keywords" content="@lang('Temperature tracking')">
+    <meta name="description" content="@lang('Try out the most affordable and easy temperature monitoring solution and food safety app with real-time tracking via sensors.')">
 @endsection
 @section("content")
     <section class="py-16 lg:py-35 bg-red-light">
         <div class="container mx-auto">
             <h1 class="text-70 font-cocogoose font-black uppercase text-center tracking-normal text-primary mb-12 leading-tight">
-                @lang('resources/sensors.bannerTitle')
+                @lang('Automated and affordable temperature and humidity monitoring')
             </h1>
             <div class="flex justify-center">
                 <a href="#"
                    class="font-extrabold text-20 bg-red text-white uppercase font-cocogoose  px-12 py-6 rounded-20 tracking-large text-center">
-                    @lang('resources/sensors.buttonText')
+                    @lang('Buy hardware now & test software for free')
                 </a>
             </div>
         </div>
@@ -74,10 +74,10 @@
             </p>
             @include('components.solution.industries_droptown_section',[
             'items' => [
-            ['srcset' => ['group-4742.png','group-4742@2x.png'],'title' => 'Define sensor specifics','desc' => 'Define the site, device title, thresholds, alarm delays and users to be alerted, per sensor. '],
-            ['srcset' => ['group-4740.png','group-4740@2x.png'],'title' => 'Get real-time data','desc' => 'View history and real-time data of all your devices (temperature & humidity) anytime, anywhere.'],
-            ['srcset' => ['group-4739.png','group-4739@2x.png'],'title' => 'Alarms','desc' => 'Our system notifies assigned users of threshold violations by E-mail, SMS or Push-Notifications.'],
-            ['srcset' => ['group-3410.png','group-3410@2x.png'],'title' => 'Reports','desc' => 'All data flow automatically into an individual HACCP report, so you don’t have any manual work.'],
+            ['srcset' => ['group-4742.png','group-4742@2x.png'],'title' => __('Define sensor specifics'),'desc' => __('Define the site, device title, thresholds, alarm delays and users to be alerted, per sensor. ')],
+            ['srcset' => ['group-4740.png','group-4740@2x.png'],'title' => __('Get real-time data'),'desc' => __('View history and real-time data of all your devices (temperature & humidity) anytime, anywhere.')],
+            ['srcset' => ['group-4739.png','group-4739@2x.png'],'title' => __('Alarms'),'desc' => __('Our system notifies assigned users of threshold violations by E-mail, SMS or Push-Notifications.')],
+            ['srcset' => ['group-3410.png','group-3410@2x.png'],'title' => __('Reports'),'desc' => __('All data flow automatically into an individual HACCP report, so you don’t have any manual work.')],
             ]
             ])
 
@@ -243,24 +243,24 @@
             </h1>
             <div class="flex justify-center sm:flex-no-wrap flex-wrap">
                 @include('components.product.icons_raw',[
-                            'text' => 'Refrigerators',
+                            'text' => __('Refrigerators'),
                             'image' => 'icons/burger.svg',
                             'class' => 'mx-12  md:mb-20 mb-5',
                             ])
 
                 @include('components.product.icons_raw',[
-                            'text' => 'Freezers',
+                            'text' => __('Freezers'),
                             'image' => 'icons/manufactur.svg',
                             'class' => 'mx-12  md:mb-20 mb-5',
                             ])
                 @include('components.product.icons_raw',[
-                            'text' => 'Heating equipment',
+                            'text' => __('Heating equipment'),
                             'image' => 'icons/heating-icon_blue.svg',
                             'class' => 'mx-12  md:mb-20 mb-5',
                             ])
 
                 @include('components.product.icons_raw',[
-                            'text' => 'Cold storage',
+                            'text' => __('Cold storage'),
                             'image' => 'icons/facility.svg',
                             'class' => 'mx-12  md:mb-20 mb-5',
                             ])
@@ -270,22 +270,22 @@
     </section>
     @include('components.resources.faq',['heading' => 'FREQUENTLY ASKED QUESTIONS','sections' => [
     [
-        ['title' => 'How does the gateway send data to the cloud?','text' => 'A base is a collection of related tables, often reflecting a single project, process, or workflow that you collaborate on with your team. For example, you could make a base to organize your sales process, with tables for sales leads, companies, and deal opportunities. Each table contains records (similar to rows in a spreadsheet), which represent the individual objects, ideas, or people that you’re tracking. You’re free to create as many bases as you’d like on any of our plans.'],
-        ['title' => 'How long is the battery life?','text' => 'A base is a collection of related tables, often reflecting a single project, process, or workflow that you collaborate on with your team. For example, you could make a base to organize your sales process, with tables for sales leads, companies'],
-        ['title' => 'What if I don’t have Wifi?','text' => 'A base is a collection of related tables, often reflecting a single project, process, or workflow that you collaborate on with your team. For example, you could make a base to organize your sales process, with tables for sales leads, companies'],
-        ['title' => 'What’s the accuracy of the sensors?','text' => 'A base is a collection of related tables, often reflecting a single project, process, or workflow that you collaborate on with your team. For example, you could make a base to organize your sales process, with tables for sales leads, companies'],
+        ['title' => __('How does the gateway send data to the cloud?'),'text' => __('A base is a collection of related tables, often reflecting a single project, process, or workflow that you collaborate on with your team. For example, you could make a base to organize your sales process, with tables for sales leads, companies, and deal opportunities. Each table contains records (similar to rows in a spreadsheet), which represent the individual objects, ideas, or people that you’re tracking. You’re free to create as many bases as you’d like on any of our plans.')],
+        ['title' => __('How long is the battery life?'),'text' => __('A base is a collection of related tables, often reflecting a single project, process, or workflow that you collaborate on with your team. For example, you could make a base to organize your sales process, with tables for sales leads, companies')],
+        ['title' => __('What if I don’t have Wifi?'),'text' => __('A base is a collection of related tables, often reflecting a single project, process, or workflow that you collaborate on with your team. For example, you could make a base to organize your sales process, with tables for sales leads, companies')],
+        ['title' => __('What’s the accuracy of the sensors?'),'text' => __('A base is a collection of related tables, often reflecting a single project, process, or workflow that you collaborate on with your team. For example, you could make a base to organize your sales process, with tables for sales leads, companies')],
         ],
         [
-        ['title' => 'Whats the temperature and humidity range of the sensors?','text' => 'A base is a collection of related tables, often reflecting a single project, process, or workflow that you collaborate on with your team. For example, you could make a base to organize your sales process, with tables for sales leads, companies, and deal opportunities. Each table contains records (similar to rows in a spreadsheet), which represent the individual objects, ideas, or people that you’re'],
-        ['title' => 'What happens when the battery is flat?','text' => 'A base is a collection of related tables, often reflecting a single project, process, or workflow that you collaborate on with your team. For example, you could make a base to organize your sales process, with tables for sales leads, companies, and deal opportunities. Each table contains records (similar to rows in a spreadsheet), which represent the individual objects, ideas, or people that you’re'],
-        ['title' => 'Is the documentation recognised by the authorities?','text' => 'A base is a collection of related tables, often reflecting a single project, process, or workflow that you collaborate on with your team. For example, you could make a base to organize your sales process, with tables for sales leads, companies, and deal opportunities. Each table contains records (similar to rows in a spreadsheet), which represent the individual objects, ideas, or people that you’re'],
-        ['title' => 'Can I also use the sensors for transportation use cases?','text' => 'A base is a collection of related tables, often reflecting a single project, process, or workflow that you collaborate on with your team. For example, you could make a base to organize your sales process, with tables for sales leads, companies, and deal opportunities. Each table contains records (similar to rows in a spreadsheet), which represent the individual objects, ideas, or people that you’re'],
+        ['title' => __('Whats the temperature and humidity range of the sensors?'),'text' => __('A base is a collection of related tables, often reflecting a single project, process, or workflow that you collaborate on with your team. For example, you could make a base to organize your sales process, with tables for sales leads, companies, and deal opportunities. Each table contains records (similar to rows in a spreadsheet), which represent the individual objects, ideas, or people that you’re')],
+        ['title' => __('What happens when the battery is flat?'),'text' => __('A base is a collection of related tables, often reflecting a single project, process, or workflow that you collaborate on with your team. For example, you could make a base to organize your sales process, with tables for sales leads, companies, and deal opportunities. Each table contains records (similar to rows in a spreadsheet), which represent the individual objects, ideas, or people that you’re')],
+        ['title' => __('Is the documentation recognised by the authorities?'),'text' => __('A base is a collection of related tables, often reflecting a single project, process, or workflow that you collaborate on with your team. For example, you could make a base to organize your sales process, with tables for sales leads, companies, and deal opportunities. Each table contains records (similar to rows in a spreadsheet), which represent the individual objects, ideas, or people that you’re')],
+        ['title' => __('Can I also use the sensors for transportation use cases?'),'text' => __('A base is a collection of related tables, often reflecting a single project, process, or workflow that you collaborate on with your team. For example, you could make a base to organize your sales process, with tables for sales leads, companies, and deal opportunities. Each table contains records (similar to rows in a spreadsheet), which represent the individual objects, ideas, or people that you’re')],
         ],
         [
-        ['title' => 'Which sensor technology do you use?','text' => 'A base is a collection of related tables, often reflecting a single project, process, or workflow that you collaborate on with your team. For example, you could make a base to organize your sales process, with tables for sales leads, companies, and deal opportunities. Each table contains records (similar to rows in a spreadsheet), which represent the individual objects, ideas, or people that you’re'],
-        ['title' => 'How much does the gateway cost?','text' => 'A base is a collection of related tables, often reflecting a single project, process, or workflow that you collaborate on with your team. For example, you could make a base to organize your sales process, with tables for sales leads, companies, and deal opportunities. Each table contains records (similar to rows in a spreadsheet), which represent the individual objects, ideas, or people that you’re'],
-        ['title' => 'What is the payment model?','text' => 'A base is a collection of related tables, often reflecting a single project, process, or workflow that you collaborate on with your team. For example, you could make a base to organize your sales process, with tables for sales leads, companies, and deal opportunities. Each table contains records (similar to rows in a spreadsheet), which represent the individual objects, ideas, or people that you’re'],
-        ['title' => 'What is the transmission frequency?','text' => 'A base is a collection of related tables, often reflecting a single project, process, or workflow that you collaborate on with your team. For example, you could make a base to organize your sales process, with tables for sales leads, companies, and deal opportunities. Each table contains records (similar to rows in a spreadsheet), which represent the individual objects, ideas, or people that you’re'],
+        ['title' => __('Which sensor technology do you use?'),'text' => __('A base is a collection of related tables, often reflecting a single project, process, or workflow that you collaborate on with your team. For example, you could make a base to organize your sales process, with tables for sales leads, companies, and deal opportunities. Each table contains records (similar to rows in a spreadsheet), which represent the individual objects, ideas, or people that you’re')],
+        ['title' => __('How much does the gateway cost?'),'text' => __('A base is a collection of related tables, often reflecting a single project, process, or workflow that you collaborate on with your team. For example, you could make a base to organize your sales process, with tables for sales leads, companies, and deal opportunities. Each table contains records (similar to rows in a spreadsheet), which represent the individual objects, ideas, or people that you’re')],
+        ['title' => __('What is the payment model?'),'text' => __('A base is a collection of related tables, often reflecting a single project, process, or workflow that you collaborate on with your team. For example, you could make a base to organize your sales process, with tables for sales leads, companies, and deal opportunities. Each table contains records (similar to rows in a spreadsheet), which represent the individual objects, ideas, or people that you’re')],
+        ['title' => __('What is the transmission frequency?'),'text' => __('A base is a collection of related tables, often reflecting a single project, process, or workflow that you collaborate on with your team. For example, you could make a base to organize your sales process, with tables for sales leads, companies, and deal opportunities. Each table contains records (similar to rows in a spreadsheet), which represent the individual objects, ideas, or people that you’re')],
         ],
      ]])
 @endsection

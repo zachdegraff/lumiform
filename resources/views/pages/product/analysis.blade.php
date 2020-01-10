@@ -1,18 +1,17 @@
 @extends('layout/base')
 
-@section("head.title", __("product/analysis.title"))
+@section("head.title", __("Lumiform - Results, reports, and analytics - FREE"))
 @section('meta-tags')
-
-    <meta name="description" content="@lang('product/analysis.description')">
+    <meta name="description" content="@lang('All audit & inspection results and reports in one system. Analyse data in a snap. Improve quality and safety procedures continuously - FOR FREE!')">
 @endsection
 @section("content")
     <section id="analysis__banner" class="py-10 lg:py-16 bg-red-light">
         <div class="container mx-auto flex ">
             <div class="banner__left  w-full lg:w-7/12 mt-16">
                 <h1 class="tracking-normal text-center lg:text-left text-40 xxl:text-70 mb-16 font-cocogoose uppercase font-extrabold">
-                    @lang('product/analysis.bannerTitle')
+                    @lang('Fully automated reports and in-depth analyses.')
                 </h1>
-                @include('components.product.banner_form',['buttonText' => 'product/analysis.buttonText'])
+                @include('components.product.banner_form',['buttonText' => 'try for free'])
             </div>
             <div class="analysis__banner--image  w-0 lg:w-5/12 flex">
                 <img src="{{asset('img/group-5045.png')}}" alt=""
@@ -56,30 +55,33 @@
             </h2>
             @include('components.product.image_text_horizontal',
                 [
-                'heading' => 'Define header page',
+                'heading' => __('Define header page'),
                 'headingColor' => 'gold',
-                'text' => 'In the form builder, define which information should appear on your header page in the customised audit report. Use both fields, which are automatically filled out by the system (date and inspector) and individual queries, such as comment fields or second inspector.',
-                'image' => 'group-1328.svg',
+                'text' => __('In the form builder, define which information should appear on your header page in the customised audit report. Use both fields, which are automatically filled out by the system (date and inspector) and individual queries, such as comment fields or second inspector.'),
+                'image' => 'group-1328.png',
+                'srcset' => ['group-1328.png','group-1328@2x.png'],
                 ]
                 )
             @include('components.product.image_text_horizontal',
                 [
-                'heading' => 'Create <span class="text-green">fully customised report templates</span>',
+                'heading' => __('Create <span class="text-green">fully customised report templates</span>'),
                 'headingColor' => 'primary',
-                'text' => '
+                'text' => __('
                         Create your audit report, including the company logo. Select whether your report should display the location, scores, checklist description, instruction fields and unfilled checks.
                         <br>
                         <br>
-                        Define the final result, depending on the score, for example, results between 90% and 100% are called ‘Excellent’',
-                'image' => 'group-1743.svg',
+                        Define the final result, depending on the score, for example, results between 90% and 100% are called ‘Excellent’'),
+                'image' => 'group-1743.png',
+                'srcset' => ['group-1743.png','group-1743@2x.png'],
                 ]
                 )
             @include('components.product.image_text_horizontal',
                [
-               'heading' => 'Create and secure reports<span class="text-light-blue"> securely and automatically </span>',
+               'heading' => __('Create and secure reports<span class="text-light-blue"> securely and automatically </span>'),
                'headingColor' => 'primary',
-               'text' => 'Download all automatically generated audit reports in your own design, as a PDF file. Retrieve all safely stored reports at any time.. Use both fields, which are automatically filled out by the system (date and inspector) and individual queries, such as comment fields or second inspector..',
-               'image' => 'group-1744.svg',
+               'text' => __('Download all automatically generated audit reports in your own design, as a PDF file. Retrieve all safely stored reports at any time.. Use both fields, which are automatically filled out by the system (date and inspector) and individual queries, such as comment fields or second inspector.'),
+               'image' => 'group-1744.png',
+               'srcset' => ['group-1744.png','group-1744@2x.png'],
                ]
                )
 
@@ -163,32 +165,32 @@
                 <div class="w-full md:w-4/12 lg:w-5/12 ">
                     <div class="feature__items flex flex-wrap ">
                         @include('components.product.icons_raw',[
-                            'text' => 'time',
+                            'text' => __('time'),
                             'image' => 'time-icon.svg',
                              'class' => 'w-1/3 mb-20',
                             ])
                         @include('components.product.icons_raw',[
-                            'text' => 'site',
+                            'text' => __('site'),
                             'image' => 'site-icon.svg',
                              'class' => 'w-1/3 mb-20',
                             ])
                         @include('components.product.icons_raw',[
-                            'text' => 'checklist',
+                            'text' => __('checklist'),
                             'image' => 'checklist-icon.svg',
                              'class' => 'w-1/3 mb-20',
                             ])
                         @include('components.product.icons_raw',[
-                            'text' => 'check',
+                            'text' => __('check'),
                             'image' => 'check-icon.svg',
                              'class' => 'w-1/3',
                             ])
                         @include('components.product.icons_raw',[
-                            'text' => 'users & groups',
+                            'text' => __('users & groups'),
                             'image' => 'group-icon.svg',
                              'class' => 'w-1/3',
                             ])
                         @include('components.product.icons_raw',[
-                            'text' => 'categories',
+                            'text' => __('categories'),
                             'image' => 'category-icon.svg',
                              'class' => 'w-1/3',
                             ])
@@ -219,7 +221,7 @@
         </div>
     </section>
     @include('components.product.bottom_form',[
-   'heading' =>'Improve your quality and safety <span class="line__break"> </span> efforts with meaningful analyses',
+   'heading' => __('Improve your quality and safety <span class="line__break"> </span> efforts with meaningful analyses'),
    'sectionBg' =>'orange-light',
    'buttonBg' =>'orange',
    'image' =>'img/group-1919.svg',

@@ -1,57 +1,57 @@
 @extends('layout/base')
 
-@section("head.title", __("use-cases/audits.title"))
+@section("head.title", __("Easy and Powerful Audit Software & App - FREE  - Lumiform"))
 @section('meta-tags')
-    @foreach(__('use-cases/audits.keywords') as $keyword)
-        <meta name="keywords" content="{{$keyword}}">
-    @endforeach
-    <meta name="description" content="@lang('use-cases/assessments.description')">
+        <meta name="keywords" content="@lang('Audit App')">
+        <meta name="keywords" content="@lang('Audit software')">
+        <meta name="keywords" content="@lang('Audit tool')">
+    <meta name="description" content="@lang('Conduct audits in half the time, solve issues more quickly, and get fully automated audit reports with the audit app + audit software. FOR FREE!')">
 @endsection
 @section("content")
     <section class="xxl:pt-24 xxl:pb-32 py-16 cases--audit">
         <div class="container mx-auto">
             <div class="w-full lg:w-10/12 mx-auto lg:mb-32 mb-12">
                 <h1 class="text-70 font-cocogoose font-black uppercase  text-center tracking-normal text-primary lg:mb-16 mb-10">
-                    @lang('use-cases/audits.bannerTitle')
+                    @lang('Your secret to time-saving audits')
                 </h1>
                 <p class="text-30 font-light font-din text-secondary text-center">
-                    @lang('use-cases/audits.bannerText')
+                    @lang('With Lumiform’s audit app, you cut the inspection time by half. Perform audits anytime and everywhere, get automatically created reports, and analyse with ease. ')
                 </p>
             </div>
             <button class="mx-auto w-215  bg-red tracking-large font-extrabold text-white uppercase font-cocogoose text-20 h-70  rounded-20 items-center justify-center flex">
-                @lang('use-cases/audits.buttonText')
+                @lang('try for FREE')
             </button>
         </div>
     </section>
     <section class="py-16 lg:py-32 with__border--bottom">
         @include('components.use-cases.image_text_horizontal',[
-        'heading' => '<span class="text-light-blue">Cut audit time </span> by 50%',
+        'heading' => __('<span class="text-light-blue">Cut audit time </span> by 50%'),
         'image' => ['group-3144.png','group-3144@2x.png'],
         'items' => [
-        'Efficient, digital auditing, without an additional camera',
-        'Custom audit reports are automatically created, and can be sent directly to team members'
+        __('Efficient, digital auditing, without an additional camera'),
+        __('Custom audit reports are automatically created, and can be sent directly to team members')
         ],
-        'bottom' => ['text' => 'Through Lumiform, Beumer Group was able to reduce the time required for an audit by 50%.','borderColor' => 'light-blue']
+        'bottom' => ['text' => __('Through Lumiform, Beumer Group was able to reduce the time required for an audit by 50%.'),'borderColor' => 'light-blue']
         ])
         @include('components.use-cases.image_text_horizontal',[
-        'heading' => 'Uncover more issues and <span class="text-red">solve them faster </span>',
+        'heading' => __('Uncover more issues and <span class="text-red">solve them faster </span>'),
         'image' => ['group-4928.png','group-4928@2x.png'],
         'reversed' => true,
         'items' => [
-        'Assign corrective actions to teammates on the fly',
-        'Set a deadline and track the progress'
+        __('Assign corrective actions to teammates on the fly'),
+        __('Set a deadline and track the progress')
         ],
         'bottom' => ['text' => 'Nordsee managed to cut the time spent on troubleshooting by 60%.','borderColor' => 'red']
         ])
         @include('components.use-cases.image_text_horizontal',[
-        'heading' => '<span class="text-green">Analyse faster </span> and more accurately',
+        'heading' => __('<span class="text-green">Analyse faster </span> and more accurately'),
         'image' => ['group-5111.png','group-5111@2x.png'],
         'items' => [
-        'Get all audit results and trends at a glance',
-        'Monitor failed audits and troubleshooting over time',
-        'Uncover weak areas that require attention',
+        __('Get all audit results and trends at a glance'),
+        __('Monitor failed audits and troubleshooting over time'),
+        __('Uncover weak areas that require attention'),
         ],
-        'bottom' => ['text' => 'MyGoodness has eight times fewer critical and moderate problems than they did a year ago, thanks to our audit platform.','borderColor' => 'green']
+        'bottom' => ['text' => __('MyGoodness has eight times fewer critical and moderate problems than they did a year ago, thanks to our audit platform.'),'borderColor' => 'green']
         ])
         <a href=""
            class="mx-auto base__button font-extrabold bg-red text-white uppercase font-cocogoose text-20 h-70 px-8 rounded-20 items-center flex">@lang('Get Lumiform FREE')</a>
@@ -66,33 +66,33 @@
             </p>
             @include('components.solution.industries_droptown_section',[
             'items' => [
-            ['srcset' => ['group-4892.png','group-4892@2x.png'],'title' => 'Create audit forms and report templates','desc' => 'Lumiform allows you to create audits in just a few minutes, entirely according to your individual needs, with our flexible form and report builder.'],
-            ['srcset' => ['group-4837.png','group-4837@2x.png'],'title' => 'Conduct via App','desc' => 'Perform your audits anywhere, anytime via the app –online or offline. Add photos and comments automatically, while auditing.'],
-            ['srcset' => ['group-4838.png','group-4838@2x.png'],'title' => 'Solve Issues','desc' => 'Let teammates or third parties know if audit checks uncovered issues, and assign corrective action to any stakeholder immediately. Track the troubleshooting process while the system documents everything automatically.'],
-            ['srcset' => ['group-4681.png','group-4681@2x.png'],'title' => 'AUTOMATIC AND CUSTOMISABLE AUDIT REPORTS','desc' => 'Lumiform automatically creates in-depth analyses. View all reports, including images, comments and checks, and share your audit report immediately via e-mail. '],
-            ['srcset' => ['group-5131.png','group-5131@2x.png'],'title' => 'Smart analyses','desc' => 'Lumiform presents the standardised data in such a way that you can quickly identify areas that need your special attention.'],
+            ['srcset' => ['group-4892.png','group-4892@2x.png'],'title' => __('Create audit forms and report templates'),'desc' => __('Lumiform allows you to create audits in just a few minutes, entirely according to your individual needs, with our flexible form and report builder.')],
+            ['srcset' => ['group-4837.png','group-4837@2x.png'],'title' => __('Conduct via App'),'desc' => __('Perform your audits anywhere, anytime via the app –online or offline. Add photos and comments automatically, while auditing.')],
+            ['srcset' => ['group-4838.png','group-4838@2x.png'],'title' => __('Solve Issues'),'desc' => __('Let teammates or third parties know if audit checks uncovered issues, and assign corrective action to any stakeholder immediately. Track the troubleshooting process while the system documents everything automatically.')],
+            ['srcset' => ['group-4681.png','group-4681@2x.png'],'title' => __('AUTOMATIC AND CUSTOMISABLE AUDIT REPORTS'),'desc' => __('Lumiform automatically creates in-depth analyses. View all reports, including images, comments and checks, and share your audit report immediately via e-mail. ')],
+            ['srcset' => ['group-5131.png','group-5131@2x.png'],'title' => __('Smart analyses'),'desc' => __('Lumiform presents the standardised data in such a way that you can quickly identify areas that need your special attention.')],
             ],
-            'features' => ['url' => '#','text' => 'Explore more PRODUCT features']
+            'features' => ['url' => '#','text' => __('Explore more PRODUCT features')]
             ])
 
         </div>
     </section>
     @include('components.solution.industries_explore_section',[
-    'heading' => '<span class="text-purple">WORK MORE EFFICIENTLY </span> WITH LUMIFORM’s DIGITAL AUDITS',
+    'heading' => __('<span class="text-purple">WORK MORE EFFICIENTLY </span> WITH LUMIFORM’s DIGITAL AUDITS'),
     'items' => [
-    ['image' => 'case-food-audit.png','srcset' => ['case-food-audit.png','case-food-audit@2x.png'],'template' => ['url' => '#','text' => 'View FOOD AUDIT CASE STUDY'] ],
-    ['image' => 'manufacturing-inspection.png','srcset' => ['manufacturing-inspection.png','manufacturing-inspection@2x.png'],'template' => ['url' => '#','text' => 'View MANUFACTURING Audit CASE STUDY'] ],
+    ['image' => 'case-food-audit.png','srcset' => ['case-food-audit.png','case-food-audit@2x.png'],'template' => ['url' => '#','text' => __('View FOOD AUDIT CASE STUDY')] ],
+    ['image' => 'manufacturing-inspection.png','srcset' => ['manufacturing-inspection.png','manufacturing-inspection@2x.png'],'template' => ['url' => '#','text' => __('View MANUFACTURING Audit CASE STUDY')] ],
     ]
     ])
     @include('components.solution.industries_quotes',[
     'image' => 'heart-blue.png',
     'class' => 'bg-blue-light',
-    'text' => '“Lumiform has helped us to eliminate accidents on the construction site, and we have managed to increase the quality of work at the same time, through frequent safety and quality controls.“',
-    'position' => '- Mark, HSE-Manager',
+    'text' => __('“Lumiform has helped us to eliminate accidents on the construction site, and we have managed to increase the quality of work at the same time, through frequent safety and quality controls.“'),
+    'position' => __('- Mark, HSE-Manager'),
     ])
     @include('components.use-cases.section_companies')
     @include('components.product.bottom_form',[
-    'heading' =>'Start conducting your audits via app, with Lumiform – free of charge',
+    'heading' => __('Start conducting your audits via app, with Lumiform – free of charge'),
     'sectionBg' =>'blue',
     'left' => true,
     'srcset' => ['group-2173.png','group-2173@2x.png'],

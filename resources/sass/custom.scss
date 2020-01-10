@@ -1477,7 +1477,18 @@ footer ul li a {
   max-width: 1920px;
   margin: 0 auto 20px;
 }
-
+.easy__section .team__itemw-full {
+  max-width: 320px;
+  width: 100%;
+}
+.easy__section .w-390 {
+  max-width: 390px;
+  width: 100%;
+}
+.easy__section .w-360 {
+  max-width: 360px;
+  width: 100%;
+}
 @media (max-width: 1660px) {
   .solution__section .bottom__left {
     max-width: 700px;
@@ -1712,7 +1723,7 @@ footer ul li a {
     font-size: 25px;
   }
   .text-70 {
-    font: 700 60px/70px Cocogoose;
+    font: 700 50px/55px Cocogoose;
   }
 
   .text-50 {
@@ -1850,6 +1861,10 @@ footer ul li a {
         display: inline-block;
       }
     }
+  }
+  .footer__image {
+
+    right: 0;
   }
   .container {
     padding-left: 20px;
@@ -2273,6 +2288,7 @@ footer ul li a {
       margin-top: 15px;
     }
   }
+
   .contact__input {
     width: 100%;
   }

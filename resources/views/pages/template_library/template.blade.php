@@ -46,7 +46,7 @@
                         </a>
                     </div>
                     <p class="font-din font-light tracking-text leading-snug text-secondary text-30">
-                        {!! $template->long_description !!}
+                        {!! __($template->long_description) !!}
                     </p>
                     {{--@if (isset($template->form->items))
                         @include('components/template_preview/preview', [ 'template' => $template ])

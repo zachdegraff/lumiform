@@ -18,8 +18,8 @@
     <div class="image img-box__image" style="background: #f0f3f4"
     ></div>
     <div class="text p-6">
-        <h3 class="font-cocogoose text-18 font-bold tracking-heading leading-snug text-primary uppercase mb-3">Achieve higher standards</h3>
-        <p class="font-din text-18 font-light leading-snug text-secondary">Manage every step from script to screen! You can use this template to plan out scenes, shots, props and actors for your next film project.</p>
+        <h3 class="font-cocogoose text-18 font-bold tracking-heading leading-snug text-primary uppercase mb-3">@lang('Achieve higher standards')</h3>
+        <p class="font-din text-18 font-light leading-snug text-secondary">@lang('Manage every step from script to screen! You can use this template to plan out scenes, shots, props and actors for your next film project.')</p>
     </div>
     </a>
 </li>

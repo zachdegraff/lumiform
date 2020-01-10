@@ -1,11 +1,10 @@
 @extends('layout/base')
 
-@section("head.title", __("use-cases/issue.title"))
+@section("head.title", __("Workflow and Issue Management Software - FREE - Lumiform"))
 @section('meta-tags')
-    @foreach(__('use-cases/issue.keywords') as $keyword)
-        <meta name="keywords" content="{{$keyword}}">
-    @endforeach
-    <meta name="description" content="@lang('use-cases/issue.description')">
+        <meta name="keywords" content="@lang('Workflow management software')">
+        <meta name="keywords" content="@lang('Issue management software')">
+    <meta name="description" content="@lang('Start with the workflow management software, and drive effective issue management, raise issues more quickly, and solve them rapidly in a team. TRY FREE.')">
 @endsection
 
 @section("content")
@@ -13,45 +12,46 @@
         <div class="container mx-auto">
             <div class="w-full lg:w-10/12 mx-auto mb-8 lg:mb-12">
                 <h1 class="text-70 font-cocogoose font-black uppercase text-center tracking-normal text-primary lg:mb-16 mb-8 leading-tight">
-                    @lang('use-cases/issue.bannerTitle')
+                    @lang('Resolve issues quickly,
+                        <span class="line__break"></span> through collaboration')
                 </h1>
                 <p class="text-30 font-light font-din text-secondary text-center">
-                    @lang('use-cases/issue.bannerText')
+                    @lang('Solve issues immediately, by reporting them quickly, via the app and resolving <span class="line__break"></span>  them with seamless collaboration between field operations and head office.')
                 </p>
             </div>
             <button class="mx-auto w-215  bg-red tracking-large font-extrabold text-white uppercase font-cocogoose text-20 h-70  rounded-20 items-center justify-center flex">
-                @lang('use-cases/issue.buttonText')
+                @lang('try for FREE')
             </button>
         </div>
     </section>
     <section class="py-16 lg:py-32 with__border--bottom">
         @include('components.use-cases.image_text_horizontal',[
-        'heading' => '<span class="text-light-blue">Save time and effort</span> ',
+        'heading' => __('<span class="text-light-blue">Save time and effort</span> '),
         'image' => ['group-4364.png','group-4364@2x.png'],
         'items' => [
-        'Pre-define issue events, at which the system automatically assigns troubleshooting to teammates.',
-        'Solve issues more quickly, together with your colleagues, by inviting them to issue cases. '
+        __('Pre-define issue events, at which the system automatically assigns troubleshooting to teammates.'),
+        __('Solve issues more quickly, together with your colleagues, by inviting them to issue cases. ')
         ],
-        'bottom' => ['text' => 'Issues are solved 40% faster, by inviting teammates to participate in problem solving.','borderColor' => 'light-blue']
+        'bottom' => ['text' => __('Issues are solved 40% faster, by inviting teammates to participate in problem solving.'),'borderColor' => 'light-blue']
         ])
         @include('components.use-cases.image_text_horizontal',[
-        'heading' => '<span class="text-red">Solve issues faster</span>',
+        'heading' => __('<span class="text-red">Solve issues faster</span>'),
         'image' => ['group-5034.png','group-5034@2x.png'],
         'reversed' => true,
         'items' => [
-        'Send corrective actions and notify co-workers or third party contractors whenever a problem occurs.',
-        'Keep track of task completion by co-workers and third parties, and track troubleshooting in real-time.'
+        __('Send corrective actions and notify co-workers or third party contractors whenever a problem occurs.'),
+        __('Keep track of task completion by co-workers and third parties, and track troubleshooting in real-time.')
         ],
-        'bottom' => ['text' => 'With Lumiform, inspectors were able to increase the time available for operational business by 1/3.','borderColor' => 'red']
+        'bottom' => ['text' => __('With Lumiform, inspectors were able to increase the time available for operational business by 1/3.'),'borderColor' => 'red']
         ])
         @include('components.use-cases.image_text_horizontal',[
-        'heading' => '<span class="text-green">Communicate faster</span>',
+        'heading' => __('<span class="text-green">Communicate faster</span>'),
         'image' => ['group-5035.png','group-5035@2x.png'],
         'items' => [
-        'Assign and schedule issue solving directly to your team, from the field, and see operations in real-time.',
-        'Let all stakeholders know about any risks or failure areas immediately, via the app.',
+        __('Assign and schedule issue solving directly to your team, from the field, and see operations in real-time.'),
+        __('Let all stakeholders know about any risks or failure areas immediately, via the app.'),
         ],
-        'bottom' => ['text' => 'Issues are solved four times faster if they are raised within the first 30 minutes, after their occurrence.','borderColor' => 'green']
+        'bottom' => ['text' => __('Issues are solved four times faster if they are raised within the first 30 minutes, after their occurrence.'),'borderColor' => 'green']
         ])
         <a href=""
            class="mx-auto base__button font-extrabold bg-red text-white uppercase font-cocogoose text-20 h-70 px-8 rounded-20 items-center flex">@lang('Get Lumiform FREE')</a>
@@ -66,12 +66,12 @@
             </p>
             @include('components.solution.industries_droptown_section',[
             'items' => [
-            ['srcset' => ['group-4633.png','group-4633@2x.png'],'title' => 'Create an issue case','desc' => 'Create a follow-up task for a specific check during an audit, raise issues any time, independently, or pre-define events in which problems are triggered automatically.'],
-            ['srcset' => ['group-4893.png','group-4893@2x.png'],'title' => 'Assign and schedule','desc' => 'Assign the issue task to a teammate or third party contractor, and schedule the job with a deadline. Alert the those responsible immediately, via notification.'],
-            ['srcset' => ['group-4894.png','group-4894@2x.png'],'title' => 'Solve the Issues','desc' => 'Solve issues quickly, together with your teammates, by inviting them to the issue task.  Communicate effortlessly, via chat. Everything is logged, so you never miss any actions.'],
-            ['srcset' => ['group-4896.png','group-4896@2x.png'],'title' => 'Manage and track','desc' => 'Manage all issues and tasks on a dashboard, with complete visibility. Lumiform logs and documents all of the processes automatically. The issue resolution is automatically attached to the audit report.'],
+            ['srcset' => ['group-4633.png','group-4633@2x.png'],'title' => __('Create an issue case'),'desc' => __('Create a follow-up task for a specific check during an audit, raise issues any time, independently, or pre-define events in which problems are triggered automatically.')],
+            ['srcset' => ['group-4893.png','group-4893@2x.png'],'title' => __('Assign and schedule'),'desc' => __('Assign the issue task to a teammate or third party contractor, and schedule the job with a deadline. Alert the those responsible immediately, via notification.')],
+            ['srcset' => ['group-4894.png','group-4894@2x.png'],'title' => __('Solve the Issues'),'desc' => __('Solve issues quickly, together with your teammates, by inviting them to the issue task.  Communicate effortlessly, via chat. Everything is logged, so you never miss any actions.')],
+            ['srcset' => ['group-4896.png','group-4896@2x.png'],'title' => __('Manage and track'),'desc' => __('Manage all issues and tasks on a dashboard, with complete visibility. Lumiform logs and documents all of the processes automatically. The issue resolution is automatically attached to the audit report.')],
             ],
-            'features' => ['url' => '#','text' => 'Explore more PRODUCT features']
+            'features' => ['url' => '#','text' => __('Explore more PRODUCT features')]
             ])
 
         </div>
@@ -90,22 +90,22 @@
            class="mx-auto base__button font-extrabold bg-red text-white uppercase font-cocogoose text-20 h-70 px-8 rounded-20 items-center flex">@lang('Solve your first issue')</a>
     </section>
     @include('components.solution.industries_explore_section',[
-    'heading' => 'Explore how we help teams to
-        <span class="text-green">solve issues quickly</span>',
+    'heading' => __('Explore how we help teams to
+        <span class="text-green">solve issues quickly</span>'),
     'items' => [
-    ['image' => 'issue-general-workplace.png','srcset' => ['issue-general-workplace.png','issue-general-workplace@2x.png'],'template' => ['url' => '#','text' => 'View Food Issue Management CASE STUDY'] ],
-    ['image' => 'documentation-food-incoming.png','srcset' => ['documentation-food-incoming.png','documentation-food-incoming@2x.png'],'template' => ['url' => '#','text' => 'View transportation Issue management CASE STUDY'] ],
+    ['image' => 'issue-general-workplace.png','srcset' => ['issue-general-workplace.png','issue-general-workplace@2x.png'],'template' => ['url' => '#','text' => __('View Food Issue Management CASE STUDY')] ],
+    ['image' => 'documentation-food-incoming.png','srcset' => ['documentation-food-incoming.png','documentation-food-incoming@2x.png'],'template' => ['url' => '#','text' => __('View transportation Issue management CASE STUDY')] ],
     ]
     ])
     @include('components.solution.industries_quotes',[
     'image' => 'group-1031.svg',
     'class' => 'bg-red-light',
-    'text' => '“Lumiform has helped us to eliminate accidents on the construction site, and we have managed to increase the quality of work at the same time, through frequent safety and quality controls.“',
-    'position' => '- Christina, Head of Quality, Environmental and Safety Management',
+    'text' => __('“Lumiform has helped us to eliminate accidents on the construction site, and we have managed to increase the quality of work at the same time, through frequent safety and quality controls.“'),
+    'position' => __('- Christina, Head of Quality, Environmental and Safety Management'),
     ])
     @include('components.use-cases.section_companies')
     @include('components.product.bottom_form',[
-    'heading' =>'Try effective issue management – free of charge!',
+    'heading' => __('Try effective issue management – free of charge!'),
    'sectionBg' =>'red-opacity',
     'buttonBg' =>'red',
     'image' =>'img/group-2262.png',

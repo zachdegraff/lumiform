@@ -1,19 +1,19 @@
 @extends('layout/base')
 
-@section("head.title", __("product/index.title"))
+@section("head.title", __("Lumiform - Easy Quality Management Software & Safety App - FREE"))
 @section('meta-tags')
-    @foreach(__('product/index.keywords') as $keyword)
-        <meta name="keywords" content="{{$keyword}}">
-    @endforeach
-    <meta name="description" content="@lang('product/index.description')">
+        <meta name="keywords" content="@lang('Quality management software')">
+        <meta name="keywords" content="@lang('Safety app')">
+        <meta name="keywords" content="@lang('Safety management software')">
+    <meta name="description" content="@lang('Equip your frontline with the easy-to-use App and control all operations with the quality and safety management software - FOR FREE!')">
 @endsection
 @section("content")
     <section id="product__banner" class="py-10 lg:pt-32 lg:pb-24 bg-grey relative">
         <div class="container mx-auto flex">
             <div class="banner__left lg:w-1/2 w-full">
                 <h1 class="tracking-normal leading-snug text-center lg:text-left text-70 mb-16 font-cocogoose uppercase font-extrabold">
-                    @lang('product/index.bannerTitle')</h1>
-                @include('components.product.banner_form',['buttonText' => 'product/index.buttonText'])
+                    @lang('Extremely powerful. Surprisingly simple.')</h1>
+                @include('components.product.banner_form',['buttonText' => 'try for free'])
             </div>
             <div class="banner__right hidden lg:block absolute top-0 right-0">
                 <img src="{{asset('img/landing-page-devices.png')}}" alt="">
@@ -42,9 +42,9 @@
                     @include('components.product.tab_content',[
                     'isActive' => true,
                     'textColor' => 'primary',
-                    'heading' => '<span class="text-light-blue">Start within minutes</span> with forms that are tailored to your needs.',
-                    'text' => 'Use ready-made, expert-proofed checklists from the template library, which you can further customise according to your needs. Or, start from scratch and convert manual hard copies or excel lists into digital checklists.',
-                    'discoverText' => 'Discover how to create custom forms',
+                    'heading' => __('<span class="text-light-blue">Start within minutes</span> with forms that are tailored to your needs.'),
+                    'text' => __('Use ready-made, expert-proofed checklists from the template library, which you can further customise according to your needs. Or, start from scratch and convert manual hard copies or excel lists into digital checklists.'),
+                    'discoverText' => __('Discover how to create custom forms'),
                     'image' => 'img/group-1105.png',
                     'srcset' => ['img/group-1105.png','img/group-1105@2x.png'],
                     'urlTo' => 'product.formBuilder',]
@@ -52,26 +52,26 @@
                     @include('components.product.tab_content',[
                     'isActive' => false,
                     'textColor' => 'primary',
-                    'heading' => '<span class="text-purple">Conduct quickly and reliably</span>, whenever and wherever',
-                    'text' => 'Conduct inspections and audits, whether on a tablet or smartphone, Android or iOS – online or offline. The highly intuitive and easy-to-use app guides you through all checks. ',
-                    'discoverText' => 'Discover how to conduct via the intuitive app',
+                    'heading' => __('<span class="text-purple">Conduct quickly and reliably</span>, whenever and wherever'),
+                    'text' => __('Conduct inspections and audits, whether on a tablet or smartphone, Android or iOS – online or offline. The highly intuitive and easy-to-use app guides you through all checks. '),
+                    'discoverText' => __('Discover how to conduct via the intuitive app'),
                     'image' => 'img/group-917.png',
                     'srcset' => ['img/group-917.png','img/group-917@2x.png'],
                     'urlTo' => 'product.conduct'])
                     @include('components.product.tab_content',[
                     'isActive' => false,
                     'textColor' => 'red',
-                    'heading' => 'Uncover more issues and  resolve them faster.',
-                    'text' => 'Make sure all field workers can quickly report quality and safety issues. Keep track of the troubleshooting progress and resolve problems together, with your teammates.',
-                    'discoverText' => 'DISCOVER HOW TO SOLVE ISSUES QUICKLY',
+                    'heading' => __('Uncover more issues and  resolve them faster.'),
+                    'text' => __('Make sure all field workers can quickly report quality and safety issues. Keep track of the troubleshooting progress and resolve problems together, with your teammates.'),
+                    'discoverText' => __('DISCOVER HOW TO SOLVE ISSUES QUICKLY'),
                     'image' => 'img/group-4610.png',
                     'urlTo' => 'product.issues'])
                     @include('components.product.tab_content',[
                     'isActive' => false,
                     'textColor' => 'green',
-                    'heading' => 'Custom reports and  detailed analyses',
-                    'text' => 'Audit reports are automatically created, so you don’t waste time on post-processing. Uncover areas of your organisation that need your attention, and continuously improve quality and security through in-depth analyses.',
-                    'discoverText' => 'DISCOVER CUSTOM REPORTS AND ANALYSES',
+                    'heading' => __('Custom reports and  detailed analyses'),
+                    'text' => __('Audit reports are automatically created, so you don’t waste time on post-processing. Uncover areas of your organisation that need your attention, and continuously improve quality and security through in-depth analyses.'),
+                    'discoverText' => __('DISCOVER CUSTOM REPORTS AND ANALYSES'),
                     'image' => 'img/group-4614.png',
                     'urlTo' => 'product.analysis'])
 
@@ -92,27 +92,27 @@
                 @include('components.product.flow_image',[
                 'image' => 'img/group-1810.svg',
                 'textColor' => 'light-blue',
-                'text' => 'create',
+                'text' => __('create'),
                 ])
                 @include('components.product.flow_image',[
                'image' => 'img/group-1823.svg',
                'textColor' => 'gold',
-               'text' => 'Conduct',
+               'text' => __('Conduct'),
                ])
                 @include('components.product.flow_image',[
                'image' => 'img/group-1836.svg',
                'textColor' => 'red',
-               'text' => 'Correct',
+               'text' => __('Correct'),
                ])
                 @include('components.product.flow_image',[
                'image' => 'img/group-2564.svg',
                'textColor' => 'purple',
-               'text' => 'Analyse',
+               'text' => __('Analyse'),
                ])
                 @include('components.product.flow_image',[
                'image' => 'img/group-2580.svg',
                'textColor' => 'green',
-               'text' => 'Optimise',
+               'text' => __('Optimise'),
                ])
                 <div class="line z-0 hidden lg:block"></div>
             </div>
@@ -135,7 +135,7 @@
 
     </section>
     @include('components.product.companions_section',[
-    'heading' => 'Manage quality and safety like industry leaders',
+    'heading' => __('Manage quality and safety like industry leaders'),
     'icons' => [
     'adidasArtboard.svg','ALDIArtboard.svg','AllianzArtboard.svg','ARALArtboard.svg','audi-black-vector-logo.svg','BecksArtboard.svg',
     'BMWArtboard.svg','BOSCHArtboard.svg','DHlArtboard.svg','DPArtboard.svg','dpd-logo-png.svg','Dr._Oetker-Logo.svg','EDEKAArtboard.svg',
@@ -147,7 +147,7 @@
     ]
     ])
     @include('components.product.bottom_form',[
-    'heading' =>'It’s easy to get started - free of charge',
+    'heading' => __('It’s easy to get started - free of charge'),
     'sectionBg' =>'purple-light',
     'buttonBg' =>'purple',
     'image' =>'img/group-1975.svg',

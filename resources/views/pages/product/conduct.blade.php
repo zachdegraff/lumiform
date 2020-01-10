@@ -1,17 +1,17 @@
 @extends('layout/base')
 
-@section("head.title", __("product/conduct.title"))
+@section("head.title", __("Lumiform - Conduct inspections & audits via App - FREE"))
 @section('meta-tags')
-    <meta name="description" content="@lang('product/conduct.description')">
+    <meta name="description" content="@lang('Conduct quality and safety inspections and audits in half the time. Use your smartphone or tablet, Android, or iOS. It\'s easy and FREE!')">
 @endsection
 @section("content")
     <section id="conduct__banner" class="py-10 lg:pt-32 lg:pb-24 bg-red-light relative">
         <div class="container mx-auto flex">
             <div class="banner__left lg:w-3/4 w-full">
                 <h1 class="tracking-normal text-center lg:text-left text-70 mb-16 font-cocogoose uppercase font-extrabold">
-                    @lang('product/conduct.bannerTitle')
+                    @lang('Conduct audits and inspections via the mobile app.')
                 </h1>
-                @include('components.product.banner_form',['buttonText' => 'product/conduct.buttonText'])
+                @include('components.product.banner_form',['buttonText' => 'try for free'])
             </div>
 
         </div>
@@ -27,12 +27,14 @@
                 <div class="download__links flex items-center">
                     <div class="w-210">
                         <a href="">
-                            <img src="{{asset('img/app-store.svg')}}" alt="">
+                            <img src="{{asset('img/app-store.png')}}" alt=""
+                                 srcset="{{asset('img/app-store.png')}} , {{asset('img/app-store@2x.png')}} 2x">
                         </a>
                     </div>
                     <div class="w-270 ml-10">
                         <a href="">
-                            <img src="{{asset('img/google-play.svg')}}" alt="">
+                            <img src="{{asset('img/google-play.png')}}" alt=""
+                                 srcset="{{asset('img/google-play.png')}} , {{asset('img/google-play@2x.png')}} 2x">
                         </a>
                     </div>
                 </div>
@@ -52,7 +54,7 @@
         </div>
         <div class="container mx-auto text-center lg:text-left flex flex-wrap lg:flex-no-wrap justify-around">
             <div class="team__itemw-full sm:w-1/2 lg:w-1/3 mb-10 px-5 lg:px-0">
-                <img src="{{asset('img/group-2723.svg')}}" alt="" class="mb-16 mx-auto lg:mx-0">
+                <img src="{{asset('img/group-2723.png')}}" alt="" srcset="{{asset('img/group-2723.png')}} , {{asset('img/group-2723@2x.png')}} 2x" class="mb-16 mx-auto lg:mx-0">
                 <h3 class="font-cocogoose font-black text-light-blue uppercase text-20 md:text-38 mb-10">
                     @lang('Never miss deadlineS')
                 </h3>
@@ -61,7 +63,9 @@
                 </p>
             </div>
             <div class="team__itemw-full sm:w-1/2 lg:w-1/3 mb-10 px-5 lg:px-0">
-                <img src="{{asset('img/group-2724.svg')}}" alt="" class="mb-16 mx-auto lg:mx-0">
+                <img src="{{asset('img/group-2724.png')}}"
+                     srcset="{{asset('img/group-2724.png')}} , {{asset('img/group-2724@2x.png')}} 2x"
+                     alt="" class="mb-16 mx-auto lg:mx-0">
                 <h3 class="font-cocogoose font-black text-purple uppercase text-20 md:text-38 mb-10">
                     @lang('Always use templates')
                 </h3>
@@ -93,7 +97,7 @@
             </div>
             <div class="team__itemw-full sm:w-1/3  mb-10 xxl:w-1/2 px-5 lg:px-0">
                 <img src="{{asset('img/group-5239.png')}}" alt=""
-                     srcset="{{asset('img/group-5239.png')}},{{asset('img/group-5239@2x.png')}} 2x"
+                     srcset="{{asset('img/group-5239.png')}}, {{asset('img/group-5239@2x.png')}} 2x"
                      class="mb-16 mx-auto lg:mx-0 sm:max-h-1/4 lg:max-h-1/2">
                 <h3 class="font-cocogoose font-black text-gold uppercase text-38 mb-5 lg:mb-10">
                     @lang('Supervisor notifications')
@@ -127,7 +131,7 @@
             </div>
         </div>
     </section>
-    <section id="as_a_team" class="py-12 lg:py-32 with__border--bottom">
+    <section id="as_a_team" class="py-12 lg:py-32 with__border--bottom easy__section">
         <div class="container mx-auto">
             <h2 class="font-bold text-center font-cocogoose text-primary text-30 lg:text-50 mb-10 lg:mb-20 uppercase tracking-heading">
                 @lang('Easy, intuitive <span class="text-green">filling-out process</span>')
@@ -137,7 +141,8 @@
 
             <div class="team__itemw-full sm:w-1/2 lg:w-1/5 mb-10 px-5 lg:px-0">
                 <div class="h-320 mb-16 mx-auto lg:mx-0 flex items-center">
-                    <img src="{{asset('img/group-3329.svg')}}" alt="" class="h-fit mx-auto">
+                    <img src="{{asset('img/group-5130.png')}}" alt=""
+                         srcset="{{asset('img/group-5130.png')}} , {{asset('img/group-5130@2x.png')}} 2x" class="h-fit mx-auto">
                 </div>
                 <h3 class="font-cocogoose font-black text-green uppercase text-38 mb-10 lg:mb-20">
                     @lang('simple interface')
@@ -148,9 +153,10 @@
             </div>
 
 
-            <div class="team__itemw-full sm:w-1/2 lg:w-1/5 mb-10 px-5 lg:px-0">
+            <div class="team__itemw-full w-390 sm:w-1/2  lg:w-1/5 mb-10 px-5 lg:px-0">
                 <div class="h-320 mb-16 mx-auto lg:mx-0 flex items-center">
-                    <img src="{{asset('img/group-3330.svg')}}" alt="" class="h-fit mx-auto">
+                    <img src="{{asset('img/group-5039.png')}}"
+                         srcset="{{asset('img/group-5039.png')}} , {{asset('img/group-5039@2x.png')}} 2x" alt="" class="h-fit mx-auto">
                 </div>
                 <h3 class="font-cocogoose font-black text-gold uppercase text-38 mb-10 lg:mb-20">
                     @lang('Guided By Logics')
@@ -162,8 +168,9 @@
 
 
             <div class="team__itemw-full sm:w-1/2 lg:w-1/5 mb-10 px-5 lg:px-0">
-                <div class="h-320 mb-16 mx-auto lg:mx-0 flex items-center">
-                    <img src="{{asset('img/group-3331.svg')}}" alt="" class="h-fit mx-auto">
+                <div class=" mb-16 mx-auto lg:mx-0 flex items-center">
+                    <img src="{{asset('img/group-3335.png')}}"
+                         srcset="{{asset('img/group-3335.png')}} , {{asset('img/group-3335@2x.png')}} 2x" alt="" class=" mx-auto">
                 </div>
                 <h3 class="font-cocogoose font-black text-purple uppercase text-38 mb-10">
                     @lang('Text and Photo comments')
@@ -174,9 +181,10 @@
             </div>
 
 
-            <div class="team__itemw-full sm:w-1/2 lg:w-1/5 mb-10 px-5 lg:px-0">
+            <div class="team__itemw-full sm:w-1/2 w-360 lg:w-1/5 mb-10 px-5 lg:px-0">
                 <div class="h-320 mb-16 mx-auto lg:mx-0 flex items-center">
-                    <img src="{{asset('img/group-3332.svg')}}" alt="" class="h-fit mx-auto">
+                    <img src="{{asset('img/group-3332.png')}}"
+                         srcset="{{asset('img/group-3332.png')}} , {{asset('img/group-3332@2x.png')}} 2x" alt="" class="h-fit mx-auto">
                 </div>
                 <h3 class="font-cocogoose font-black text-red uppercase text-38 mb-10">
                     @lang('Save inspections as drafts')
@@ -208,7 +216,8 @@
                 </p>
             </div>
             <div class="team__itemw-full sm:w-1/2 lg:w-1/3  px-5 lg:px-0">
-                <img src="{{asset('img/group-2732.svg')}}" alt=""
+                <img src="{{asset('img/group-2732.png')}}" alt=""
+                     srcset="{{asset('img/group-2732.png')}}, {{asset('img/group-2732@2x.png')}} 2x"
                      class="mb-16 mx-auto sm:max-h-1/4 lg:max-h-500">
                 <h3 class="font-cocogoose font-black text-red uppercase text-38 mb-10">
                     @lang('Share reports')
@@ -222,7 +231,7 @@
         <button class="button__base px-8 py-5 mt-5 lg:mt-20 mx-auto">@lang('Get Lumiform FREE')</button>
     </section>
     @include('components.product.bottom_form',[
-   'heading' =>'Install the mobile app on your device now, and use Lumiform free of charge',
+   'heading' => __('Install the mobile app on your device now, and use Lumiform free of charge'),
    'sectionBg' =>'red-opacity',
    'buttonBg' =>'red',
    'left' => true,

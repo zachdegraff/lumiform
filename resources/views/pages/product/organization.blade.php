@@ -1,18 +1,18 @@
 @extends('layout/base')
 
-@section("head.title", __("product/organization.title"))
+@section("head.title", __("Lumiform - Manage your organisation - FREE"))
 @section('meta-tags')
 
-    <meta name="description" content="@lang('product/organization.description')">
+    <meta name="description" content="@lang('Orchestrate your team with user permissions, sites, users, and user groups to map your individual, organisational structures in the App. TRY FREE!')">
 @endsection
 @section("content")
     <section id="organization__banner" class="py-8 lg:py-20 bg-grey relative">
         <div class="container mx-auto flex">
             <div class="banner__left lg:w-7/12 w-full pt-12">
                 <h1 class="tracking-normal text-center lg:text-left text-40 xxl:text-70 mb-16 font-cocogoose uppercase font-extrabold">
-                    @lang('product/organization.bannerTitle')
+                    @lang('Adapt to your complex organisation structure.')
                 </h1>
-                @include('components.product.banner_form',['buttonText' => 'product/organization.buttonText'])
+                @include('components.product.banner_form',['buttonText' => 'try for free'])
             </div>
             <div class="banner__right--img hidden lg:block w-5/12 flex">
                 <img  src="{{asset('img/bildschirm-foto.png')}}" srcset="
@@ -27,9 +27,9 @@
 
             @include('components.product.image_text_horizontal',
                   [
-                  'heading' => '<span class="text-50">Create users</span>',
+                  'heading' => __('<span class="text-50">Create users</span>'),
                   'headingColor' => 'light-blue',
-                  'text' => 'Easily manage users, user roles, groups and locations, in order to customise Lumiform to suit your business and team structure.',
+                  'text' => __('Easily manage users, user roles, groups and locations, in order to customise Lumiform to suit your business and team structure.'),
                   'image' => 'group-3328.png',
                   'srcset' => ['group-3328.png','group-3328@2x.png']
                   ]
@@ -48,27 +48,27 @@
 
             <div class="flex justify-between flex-wrap lg:flex-no-wrap">
                 @include('components.product.flag',[
-                    'text' => 'English',
+                    'text' => __('English'),
                     'color' => 'light-blue',
                     'image' => 'gb',
                 ])
                 @include('components.product.flag',[
-                    'text' => 'español',
+                    'text' => __('español'),
                     'color' => 'red',
                     'image' => 'sp',
                 ])
                 @include('components.product.flag',[
-                    'text' => 'Nederlands',
+                    'text' => __('Nederlands'),
                     'color' => 'gold',
                     'image' => 'nl',
                 ])
                 @include('components.product.flag',[
-                    'text' => 'Deutsch',
+                    'text' => __('Deutsch'),
                     'color' => 'grey-bold',
                     'image' => 'ge',
                 ])
                 @include('components.product.flag',[
-                    'text' => 'Français',
+                    'text' => __('Français'),
                     'color' => 'purple',
                     'image' => 'fr',
                 ])
@@ -86,22 +86,22 @@
 
             <div class="flex justify-around lg:justify-between lg:flex-no-wrap flex-wrap">
                 @include('components.product.title_with_list',[
-                    'text' => 'Forms & inspections',
+                    'text' => __('Forms & inspections'),
                     'color' => 'red',
                     'items' => ['Create new forms','Edit own inspections'],
                 ])
                 @include('components.product.title_with_list',[
-                    'text' => 'Issue management',
+                    'text' => __('Issue management'),
                     'color' => 'purple',
                     'items' => ['Create new issues','Manage issues'],
                 ])
                 @include('components.product.title_with_list',[
-                    'text' => 'Analytics & reports',
+                    'text' => __('Analytics & reports'),
                     'color' => 'green',
                     'items' => ['View analytics','Get performance reports'],
                 ])
                 @include('components.product.title_with_list',[
-                    'text' => 'Administration',
+                    'text' => __('Administration'),
                     'color' => 'gold',
                     'items' => ['Manage sites','Manage invoices'],
                 ])
@@ -114,7 +114,7 @@
         <div class="container mx-auto">
             @include('components.product.image_text_horizontal',
                  [
-                 'heading' => 'Create user groups',
+                 'heading' => __('Create user groups'),
                  'headingColor' => 'light-blue',
                  'text' => 'Create user groups, such as Cleaning Team or Store Managers, to make inspections and audits visible or to assign only the checklist to these groups. ',
                  'image' => 'group-3329.png',
@@ -123,9 +123,9 @@
                  )
             @include('components.product.image_text_horizontal',
                    [
-                   'heading' => 'Create sites ',
+                   'heading' => __('Create sites '),
                    'headingColor' => 'purple',
-                   'text' => 'Companies with several locations can add all their sites, together with their data, in order to assign users and checklists individually.',
+                   'text' => __('Companies with several locations can add all their sites, together with their data, in order to assign users and checklists individually.'),
                    'image' => 'group-3333.png',
                    'reversed' => true,
                    'srcset' => ['group-3333.png','group-3333@2x.png']
@@ -135,7 +135,7 @@
         </div>
     </section>
     @include('components.product.bottom_form',[
-   'heading' =>'Adapt to your structure - start free of charge!',
+   'heading' => __('Adapt to your structure - start free of charge!'),
    'sectionBg' =>'purple-light',
    'buttonBg' =>'purple',
    'left' => true,

@@ -1,18 +1,18 @@
 @extends('layout/base')
 
-@section("head.title", __("industry/logistics.title"))
+@section("head.title", __("Transport & Logistics Inspection Software - FREE - Lumiform"))
 @section('meta-tags')
-    @foreach(__('industry/logistics.keywords') as $keyword)
-        <meta name="keywords" content="{{$keyword}}">
-    @endforeach
-    <meta name="description" content="@lang('industry/logistics.description')">
+    <meta name="keywords" content="@lang('Transport Inspection software')">
+    <meta name="keywords" content="@lang('Transport & logistics')">
+    <meta name="description" content="@lang('Quickstart with easy and flexible transport and logistics inspection software to keep your workplace and vehicles safe. FOR FREE!')">
 @endsection
 @section("content")
     @include('components.solution.industries_banner_section',[
   'imageBg' => 'logistics-banner.png',
   'class' => 'lg:w-9/12',
-  'heading' => __('industry/logistics.bannerTitle'),
-  'text' => __('industry/logistics.bannerText'),
+  'heading' => __('Safer logistic and transportation procedures'),
+  'text' => __('Create a safer workplace with individual safety and quality forms.<span class="line__break"></span>
+Ensure reliable vehicles and better drivers with the Lumiform mobile inspection app.'),
   ])
     <section class="py-16 lg:py-32 with__border--bottom">
         <div class="container mx-auto">
@@ -23,23 +23,23 @@
             <div class="flex justify-between mb-20">
                 @include('components.solution.industries_icon_with_text',[
                 'icon' => 'icons/track-icon_red.svg',
-                'heading' => 'Avoid costly damage to vehicles',
+                'heading' => __('Avoid costly damage to vehicles'),
                 'color' => 'red',
-                'text' => 'Improve vehicle quality through regular vehicle inspections. Make sure inspectors conduct checks in time and fix issues immediately.',
+                'text' => __('Improve vehicle quality through regular vehicle inspections. Make sure inspectors conduct checks in time and fix issues immediately.'),
                 'width' => '450'
                 ])
                 @include('components.solution.industries_icon_with_text',[
                 'icon' => 'icons/time-icon_blue.svg',
-                'heading' => 'Cut inspection time by 30%',
+                'heading' => __('Cut inspection time by 30%'),
                 'color' => 'light-blue',
-                'text' => 'Not only does each individual inspection take less time, but the automated issue management and fast analysis also save time.',
+                'text' => __('Not only does each individual inspection take less time, but the automated issue management and fast analysis also save time.'),
                 'width' => '420'
                 ])
                 @include('components.solution.industries_icon_with_text',[
                 'icon' => 'icons/safe-icon_orange.svg',
-                'heading' => 'Enhance safety',
+                'heading' => __('Enhance safety'),
                 'color' => 'green',
-                'text' => 'Fix issues immediately, in case of deviations from the standards, and meet all safety standards in terms of your transport and logistics initiatives.',
+                'text' => __('Fix issues immediately, in case of deviations from the standards, and meet all safety standards in terms of your transport and logistics initiatives.'),
                 'width' => '470'
                 ])
             </div>
@@ -59,12 +59,12 @@
             </p>
             @include('components.solution.industries_droptown_section',[
             'items' => [
-            ['srcset' => ['group-2995.png','group-2995@2x.png'],'title' => 'Create forms','desc' => 'Create custom forms within minutes. Organise inspections to make sure the right person does all the checklists reliably.'],
-            ['srcset' => ['group-4773.png','group-4773@2x.png'],'title' => 'Conduct via App','desc' => 'Conduct audits and inspections whether with a tablet or smartphone, Android or iOS – online or offline.'],
-            ['srcset' => ['group-5134.png','group-5134@2x.png'],'title' => 'Solve Issues','desc' => 'Make sure all inspectors can easily report issues. Keep track of the progress, and solve issues together as a team.'],
-            ['srcset' => ['group-4775.png','group-4775@2x.png'],'title' => 'Results, Reports and Analyses','desc' => 'Don’t waste time on post-processing and digitisation of audit and inspection reports – everything is fully automated. Uncover areas of your logistics and transportation process that need your attention.'],
+            ['srcset' => ['group-2995.png','group-2995@2x.png'],'title' => __('Create forms'),'desc' => __('Create custom forms within minutes. Organise inspections to make sure the right person does all the checklists reliably.')],
+            ['srcset' => ['group-4773.png','group-4773@2x.png'],'title' => __('Conduct via App'),'desc' => __('Conduct audits and inspections whether with a tablet or smartphone, Android or iOS – online or offline.')],
+            ['srcset' => ['group-5134.png','group-5134@2x.png'],'title' => __('Solve Issues'),'desc' => __('Make sure all inspectors can easily report issues. Keep track of the progress, and solve issues together as a team.')],
+            ['srcset' => ['group-4775.png','group-4775@2x.png'],'title' => __('Results, Reports and Analyses'),'desc' => __('Don’t waste time on post-processing and digitisation of audit and inspection reports – everything is fully automated. Uncover areas of your logistics and transportation process that need your attention.')],
             ],
-            'features' => ['url' => '#','text' => 'Explore more PRODUCT features']
+            'features' => ['url' => '#','text' => __('Explore more PRODUCT features')]
             ])
 
 
@@ -78,22 +78,22 @@
             <div class="industry__icons flex justify-between flex-wrap">
                 @include('components.solution.industries_icon_list',[
                 'items' => [
-                ['icon' => 'track-icon_blue.svg', 'text' => 'Vehicle inspection'],
-                ['icon' => 'pallet-icon_orange.svg', 'text' => 'Pallet inspection'],
-                ['icon' => 'car-icon_purple.svg', 'text' => 'Driver audit'],
-                ['icon' => 'rack-icon_blue.svg', 'text' => 'Rack inspection'],
-                ['icon' => 'departure-icon_gold.svg', 'text' => 'Departure control'],
-                ['icon' => 'face-sad-icon_red.svg', 'text' => 'Complaint forms'],
-                ['icon' => 'home-icon_blue.svg', 'text' => 'Warehouse inspections'],
-                ['icon' => 'chat-icon_green.svg', 'text' => 'Customers and driver feedback'],
-                ['icon' => 'danger-icon_gold.svg', 'text' => 'Dangerous goods control'],
-                ['icon' => 'left-icon_orange.svg', 'text' => 'Returns documentation'],
-                ['icon' => 'proof-icon_blue.svg', 'text' => 'Proofs of delivery'],
-                ['icon' => 'bills-icon_purple.svg', 'text' => 'Bills of delivery'],
-                ['icon' => 'incoming-icon_purple.svg', 'text' => 'Incoming goods inspection'],
-                ['icon' => 'spare-icon_gold.svg', 'text' => 'Spare parts supply'],
-                ['icon' => 'inventory-icon_orange.svg', 'text' => 'Inventory control'],
-                ['icon' => 'log-icon_purple.svg', 'text' => 'Driver’s log'],
+                ['icon' => 'track-icon_blue.svg', 'text' => __('Vehicle inspection')],
+                ['icon' => 'pallet-icon_orange.svg', 'text' => __('Pallet inspection')],
+                ['icon' => 'car-icon_purple.svg', 'text' => __('Driver audit')],
+                ['icon' => 'rack-icon_blue.svg', 'text' => __('Rack inspection')],
+                ['icon' => 'departure-icon_gold.svg', 'text' => __('Departure control')],
+                ['icon' => 'face-sad-icon_red.svg', 'text' => __('Complaint forms')],
+                ['icon' => 'home-icon_blue.svg', 'text' => __('Warehouse inspections')],
+                ['icon' => 'chat-icon_green.svg', 'text' => __('Customers and driver feedback')],
+                ['icon' => 'danger-icon_gold.svg', 'text' => __('Dangerous goods control')],
+                ['icon' => 'left-icon_orange.svg', 'text' => __('Returns documentation')],
+                ['icon' => 'proof-icon_blue.svg', 'text' => __('Proofs of delivery')],
+                ['icon' => 'bills-icon_purple.svg', 'text' => __('Bills of delivery')],
+                ['icon' => 'incoming-icon_purple.svg', 'text' => __('Incoming goods inspection')],
+                ['icon' => 'spare-icon_gold.svg', 'text' => __('Spare parts supply')],
+                ['icon' => 'inventory-icon_orange.svg', 'text' => __('Inventory control')],
+                ['icon' => 'log-icon_purple.svg', 'text' => __('Driver’s log')],
                 ]
                 ])
             </div>
@@ -105,35 +105,35 @@
         </div>
     </section>
     @include('components.solution.industries_bg_grey',[
-        'heading' => '<span class="text-green">Ready-to-use checklists </span> for logistics and transportation',
-        'text' =>  'Get inspired by numerous ready-to-use templates for your security checks, and audits. Customise them to suit your needs.',
+        'heading' => __('<span class="text-green">Ready-to-use checklists </span> for logistics and transportation'),
+        'text' =>  __('Get inspired by numerous ready-to-use templates for your security checks, and audits. Customise them to suit your needs.'),
         'items' => [
-                ['image' => 'inspections-osha-self-inspection.png','srcset' => ['inspections-osha-self-inspection.png','inspections-osha-self-inspection@2x.png'],'text' => 'Driver field audit'],
-                ['image' => 'logistic&transportation-rail-safet-check.png','srcset' => ['logistic&transportation-rail-safet-check.png','logistic&transportation-rail-safet-check@2x.png'],'text' => 'Rail Safety check'],
-                ['image' => 'logistic&transportation-driver-assessment.png','srcset' => ['logistic&transportation-driver-assessment.png','logistic&transportation-driver-assessment@2x.png'],'text' => 'Driver assessment'],
-                ['image' => 'logistic&transportation-monthly-tank-inspection.png','srcset' => ['logistic&transportation-monthly-tank-inspection.png','logistic&transportation-monthly-tank-inspection@2x.png'],'text' => 'Monthly Tank Inspection'],
-                ['image' => 'logistic&transportation-heavy-vehicle-inspection.png','srcset' => ['logistic&transportation-heavy-vehicle-inspection.png','logistic&transportation-heavy-vehicle-inspection@2x.png'],'text' => 'Heavy vehicle inspection'],
-                ['image' => 'logistic&transportation-vehicle-defect-report.png','srcset' => ['logistic&transportation-vehicle-defect-report.png','logistic&transportation-vehicle-defect-report@2x.png'],'text' => 'Vehicle defect report'],
+                ['image' => 'inspections-osha-self-inspection.png','srcset' => ['inspections-osha-self-inspection.png','inspections-osha-self-inspection@2x.png'],'text' => __('Driver field audit')],
+                ['image' => 'logistic&transportation-rail-safet-check.png','srcset' => ['logistic&transportation-rail-safet-check.png','logistic&transportation-rail-safet-check@2x.png'],'text' => __('Rail Safety check')],
+                ['image' => 'logistic&transportation-driver-assessment.png','srcset' => ['logistic&transportation-driver-assessment.png','logistic&transportation-driver-assessment@2x.png'],'text' => __('Driver assessment')],
+                ['image' => 'logistic&transportation-monthly-tank-inspection.png','srcset' => ['logistic&transportation-monthly-tank-inspection.png','logistic&transportation-monthly-tank-inspection@2x.png'],'text' => __('Monthly Tank Inspection')],
+                ['image' => 'logistic&transportation-heavy-vehicle-inspection.png','srcset' => ['logistic&transportation-heavy-vehicle-inspection.png','logistic&transportation-heavy-vehicle-inspection@2x.png'],'text' => __('Heavy vehicle inspection')],
+                ['image' => 'logistic&transportation-vehicle-defect-report.png','srcset' => ['logistic&transportation-vehicle-defect-report.png','logistic&transportation-vehicle-defect-report@2x.png'],'text' => __('Vehicle defect report')],
             ],
         'image' => 'group-4813.png',
-        'template' => ['text' => 'View all TEMPLATES','url' => '#']
+        'template' => ['text' => __('View all TEMPLATES'),'url' => '#']
         ])
     @include('components.solution.industries_explore_section',[
-    'heading' => 'Read success stories about <span class="text-light-gold"> <span class="line__break"></span>
-Logistics Professionals </span> who use Lumiform',
+    'heading' => __('Read success stories about <span class="text-light-gold"> <span class="line__break"></span>
+Logistics Professionals </span> who use Lumiform'),
     'items' => [
-    ['image' => 'logistic-inspection.png','srcset' => ['logistic-inspection.png','logistic-inspection@2x.png'],'template' => ['url' => '#','text' => 'View logistics INSPECTIOn CASE STUDY'] ],
-    ['image' => 'logistic-audit.png','srcset' => ['logistic-audit.png','logistic-audit@2x.png'],'template' => ['url' => '#','text' => 'View logistics AUDIT CASE STUDY'] ],
+    ['image' => 'logistic-inspection.png','srcset' => ['logistic-inspection.png','logistic-inspection@2x.png'],'template' => ['url' => '#','text' => __('View logistics INSPECTIOn CASE STUDY')] ],
+    ['image' => 'logistic-audit.png','srcset' => ['logistic-audit.png','logistic-audit@2x.png'],'template' => ['url' => '#','text' => __('View logistics AUDIT CASE STUDY')] ],
     ]
     ])
     @include('components.solution.industries_quotes',[
     'image' => 'heart-blue.png',
     'class' => 'bg-blue-light',
-    'text' => '“Lumiform has helped us to eliminate accidents on the construction site, and we have managed to increase the quality of work at the same time, through frequent safety and quality controls.“',
-    'position' => '- Karina,Team Lead Quality and Energy Management',
+    'text' => __('“Lumiform has helped us to eliminate accidents on the construction site, and we have managed to increase the quality of work at the same time, through frequent safety and quality controls.“'),
+    'position' => __('- Karina,Team Lead Quality and Energy Management'),
     ])
     @include('components.product.bottom_form',[
-    'heading' =>'Improve security in transportation and logistics – <span class="line__break"></span> Start free of charge!',
+    'heading' => __('Improve security in transportation and logistics – <span class="line__break"></span> Start free of charge!'),
     'sectionBg' =>'green-opacity',
     'buttonBg' =>'green',
     'image' =>'img/group-5137.png',

@@ -113,7 +113,7 @@
         </ul>
     </div>
     <img src="{{asset('img/footer-img.png')}}" alt=""
-         srcset="{{asset('img/footer-img.png')}},{{asset('img/footer-img@2x.png')}} 2x"
+         srcset="{{asset('img/footer-img.png')}}, {{asset('img/footer-img@2x.png')}} 2x"
          class="footer__image">
 </nav>
 <div class="copyrights">

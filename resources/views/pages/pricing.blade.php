@@ -1,6 +1,6 @@
 @extends('layout/base')
 
-@section("head.title", __("pricing-page.title"))
+@section("head.title", __("Plans & Pricing - Lumiform"))
 
 @section("content")
     <section class="bg-grey-light lg:pt-28 lg:pb-32 py-16">
@@ -48,7 +48,7 @@
                         <a href=""
                            class="mx-auto font-extrabold text-20 bg-red text-white uppercase font-cocogoose  h-70 px-8  rounded-20 items-center ">@lang('Get Started')</a>
                         <div class="functions mt-6 lg:mt-16">
-                            <p class="text-18 font-cocogoose font-black text-grey-bold mb-6 ">TOP FUNCTIONS ↓</p>
+                            <p class="text-18 font-cocogoose font-black text-grey-bold mb-6 ">@lang('TOP FUNCTIONS ↓')</p>
                             <ul class="starter">
                                 <li class="font-din text-20 tracking-text text-secondary pl-10 mb-3">@lang('Up to 5 users')</li>
                                 <li class="font-din text-20 tracking-text text-secondary pl-10 mb-3">@lang('Limited data volume')</li>
@@ -97,7 +97,7 @@
                         <a href=""
                            class="font-extrabold text-20 bg-red text-white uppercase font-cocogoose  h-70 px-8  rounded-20 items-center mx-auto">@lang('Start free trial')</a>
                         <div class="functions mt-6 lg:mt-16 sm:ml-40 lg:ml-32">
-                            <p class="text-18 font-cocogoose font-black text-grey-bold mb-6">TOP FUNCTIONS ↓</p>
+                            <p class="text-18 font-cocogoose font-black text-grey-bold mb-6">@lang('TOP FUNCTIONS ↓')</p>
                             <ul class="pro">
                                 <li class="font-din text-20 tracking-text text-secondary pl-10 mb-3">@lang('Issues')</li>
                                 <li class="font-din text-20 tracking-text text-secondary pl-10 mb-3">@lang('Analytics')</li>
@@ -137,7 +137,7 @@
                         <a href=""
                            class="font-extrabold text-20 bg-red text-white uppercase font-cocogoose  h-70 px-8 py-6 rounded-20 items-center mx-auto">@lang('Contact Sales')</a>
                         <div class="functions mt-6 lg:mt-16">
-                            <p class="text-18 font-cocogoose font-black text-grey-bold mb-6">TOP FUNCTIONS ↓</p>
+                            <p class="text-18 font-cocogoose font-black text-grey-bold mb-6">@lang('TOP FUNCTIONS ↓')</p>
                             <ul class="enterprise">
                                 <li class="font-din text-20 tracking-text text-secondary pl-10 mb-3">@lang('Custom onboarding')</li>
                                 <li class="font-din text-20 tracking-text text-secondary pl-10 mb-3">@lang('Single Sign On')</li>
