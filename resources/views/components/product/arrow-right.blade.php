@@ -1,6 +1,6 @@
 
    {!! $text !!}
-    <div class="ml-8">
+    <div class="md:ml-6 xl:ml-8 arrow__right--svg">
     <svg xmlns="http://www.w3.org/2000/svg" width="40.5" height="16.994" viewBox="0 0 40.5 16.994">
         <g id="Group_585" data-name="Group 585" transform="translate(-411 0.572)" >
             <path id="Path_114" data-name="Path 114" d="M0,0H37" transform="translate(412.5 7.926)" fill="none" stroke="{{$color}}" stroke-linecap="round" stroke-width="3"/>

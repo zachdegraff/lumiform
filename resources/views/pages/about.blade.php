@@ -5,7 +5,7 @@
 @section("content")
     <section class="py-16 lg:pt-35 lg:pb-26 bg-blue-light">
         <div class="container mx-auto">
-            <h1 class="text-70 font-cocogoose font-black uppercase text-center tracking-normal text-primary mb-12 leading-tight">
+            <h1 class="text-70 font-cocogoose font-black uppercase text-center tracking-normal text-primary sm:mb-12 leading-tight">
                 @lang('We enable businesses to exceed their promises in terms of quality, and <span class="line__break"></span> make workplaces safe.')
             </h1>
         </div>

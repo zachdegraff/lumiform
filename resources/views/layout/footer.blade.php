@@ -1,4 +1,4 @@
-<nav class="container mx-auto flex justify-between pb-24 flex-wrap lg:flex-no-wrap relative">
+<nav class="container mx-auto flex justify-between pb-10 xl:pb-24 flex-wrap lg:flex-no-wrap relative">
     <div class="w-1/2 md:w-1/3 lg:w-auto mb-5">
         <h5 class="mb-8">{{ __('Language') }}</h5>
         <div class="relative">

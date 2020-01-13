@@ -343,6 +343,10 @@ button.banner__button {
   }
 }
 
+li.sub__menu--item:last-child {
+  padding-bottom: 0;
+}
+
 .banner__small-text {
 
   font: 300 20px/27px DINosaur;
@@ -373,7 +377,7 @@ section#home__trusted {
 #home__banner input {
   border: 1px solid #8D5FD666;
   color: #aaa;
-  font-size: 24px;
+  font: 300 20px/27px Cocogoose;
 }
 
 .section__title {
@@ -845,7 +849,7 @@ h1 {
 }
 
 #subscribe input {
-  border: 1px solid #8D5FD666;
+  border: 1px solid #aaaaaa;
 }
 
 /* switch button*/
@@ -1306,7 +1310,7 @@ footer ul li a {
   text-transform: capitalize;
 }
 
-.logo svg {
+.logo {
   max-width: 212px;
   width: 100%;
 }
@@ -1477,18 +1481,22 @@ footer ul li a {
   max-width: 1920px;
   margin: 0 auto 20px;
 }
+
 .easy__section .team__itemw-full {
   max-width: 320px;
   width: 100%;
 }
+
 .easy__section .w-390 {
   max-width: 390px;
   width: 100%;
 }
+
 .easy__section .w-360 {
   max-width: 360px;
   width: 100%;
 }
+
 @media (max-width: 1660px) {
   .solution__section .bottom__left {
     max-width: 700px;
@@ -1651,28 +1659,28 @@ footer ul li a {
 @media (max-width: 1400px) {
   ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: #707070;
-    font-size: 15px;
+    font-size: 13px;
     text-transform: uppercase;
     font-family: Cocogoose, sans-serif;
   }
 
   ::-moz-placeholder { /* Firefox 19+ */
     color: #707070;
-    font-size: 15px;
+    font-size: 13px;
     text-transform: uppercase;
     font-family: Cocogoose, sans-serif;
   }
 
   :-ms-input-placeholder { /* IE 10+ */
     color: #707070;
-    font-size: 15px;
+    font-size: 13px;
     text-transform: uppercase;
     font-family: Cocogoose, sans-serif;
   }
 
   :-moz-placeholder { /* Firefox 18- */
     color: #707070;
-    font-size: 15px;
+    font-size: 13px;
     text-transform: uppercase;
     font-family: Cocogoose, sans-serif;
   }
@@ -1720,14 +1728,14 @@ footer ul li a {
     font-size: 32px;
   }
   .text-30 {
-    font-size: 25px;
+    font-size: 22px;
   }
   .text-70 {
     font: 700 50px/55px Cocogoose;
   }
 
   .text-50 {
-    font-size: 40px;
+    font-size: 33px;
   }
   .text-110, .text-100 {
     font-size: 70px;
@@ -1743,6 +1751,108 @@ footer ul li a {
     width: 300px;
     height: 300px;
 
+  }
+  .nav__item {
+    font: 500 15px/20px Cocogoose;
+  }
+  .nav__register {
+    font-size: 15px;
+    padding: 13px 20px;
+  }
+  .arrow-right {
+    svg {
+      height: 12px;
+    }
+  }
+  .logo {
+    max-width: 180px;
+  }
+  .case__items .item__text {
+    max-width: 50%;
+  }
+  .case__item.reversed .item__text {
+    max-width: 50%;
+  }
+  #home__learn {
+    .w-2\/3 {
+      width: 100%;
+      p {
+        text-align: center;
+        .line__break {
+          display: inline-block;
+        }
+      }
+
+    }
+  }
+  .text-20 {
+    font-size: 13px;
+  }
+  .h-70 {
+    height: 50px;
+  }
+  .home__banner--email input {
+    height: 50px;
+  }
+  #tab {
+    img {
+      height: auto;
+    }
+    .arrow__right-red {
+      width: 30px;
+    }
+  }
+  .team__itemw-full img {
+    width: 80%;
+    height: auto;
+  }
+  ul.list--circle__check li {
+    font: 300 18px/20px DINosaur;
+  }
+  .button__base {
+    font: 900 13px/15px Cocogoose;
+    height: 50px;
+  }
+  .start__text {
+    margin: 300px 0 50px;
+  }
+  .arrow__right--svg {
+    svg {
+      width: 30px;
+    }
+  }
+  .leader__item img {
+    max-height: 25px;
+  }
+  footer h5 {
+    font: 700 15px/20px Cocogoose;
+  }
+  footer ul li {
+    font: 300 15px/20px DINosaur;
+    margin-bottom: 10px;
+  }
+  .select {
+    background-size: 20px 20px;
+    font-size: 15px;
+  }
+  .options .language img {
+    width: 20px;
+    height: 20px;
+  }
+  .options {
+    font-size: 14px;
+    padding-top: 10px;
+  }
+  .custom_select {
+    width: 100px;
+  }
+  .footer__image {
+    right: 0;
+    width: 150px;
+  }
+  .copyrights {
+    font: 700 12px/14px Cocogoose;
+    padding: 20px 0;
   }
 }
 
@@ -1766,13 +1876,7 @@ footer ul li a {
   .line {
     bottom: 70px;
   }
-  ul.list--circle__check li {
 
-    font: 300 20px/35px DINosaur;
-  }
-  .logo svg {
-    max-width: 180px;
-  }
   .nav__item {
     padding: 15px 10px;
   }
@@ -1923,8 +2027,7 @@ footer ul li a {
     background: transparent;
   }
   .start__image img {
-    transform: scale(1);
-    right: 0;
+    transform: scale(1.3);
   }
   .from__image {
     top: 0;
@@ -1933,9 +2036,7 @@ footer ul li a {
   .management__tools .tool__item--img:after {
     display: none;
   }
-  .text-38, .md\:text-38 {
-    font-size: 20px;
-  }
+
   .text-30 {
     font-size: 17px;
   }
@@ -1952,7 +2053,10 @@ footer ul li a {
     font-size: 25px;
   }
   .text-50 {
-    font-size: 30px;
+    font-size: 20px;
+  }
+  .text-20{
+    font-size: 12px;
   }
 
   .text-110, .text-100 {
@@ -1967,7 +2071,6 @@ footer ul li a {
     padding: 20px 0;
   }
   .button__base {
-    font: 900 15px/15px Cocogoose;
     height: 50px;
   }
   .flag__block {
@@ -2066,9 +2169,33 @@ footer ul li a {
   .common__image {
     height: 125px;
   }
+  ul.list--circle__check li {
+    font: 300 14px/20px DINosaur;
+    margin-bottom: 15px;
+    padding-left: 30px;
+  }
+  .item__image {
+    max-width: 30%;
+  }
+  .case__items .item__text ,.case__item.reversed .item__text {
+    max-width: 60%;
+  }
+  .item__text p, .start__text p, .learn__text p {
+    font: 300 15px/25px DINosaur;
+  }
+  .start__text {
+    margin: 190px 0 30px;
+  }
+  .section__title-large {
+    font: 700 20px/30px Cocogoose;
+  }
+
 }
 
 @media (max-width: 768px) {
+  .start__text {
+    margin: 50px 0 30px;
+  }
   .section__title, .section__title-large {
     font: 700 20px/40px DINosaur;
   }
@@ -2090,10 +2217,10 @@ footer ul li a {
     margin-bottom: 10px;
   }
   .text-70 {
-    font: 700 30px/40px Cocogoose;
+    font: 700 25px/30px Cocogoose;
   }
   .text-30 {
-    font-size: 17px;
+    font-size: 15px;
   }
   .text-38, .md\:text-38 {
     font-size: 20px;
@@ -2102,7 +2229,7 @@ footer ul li a {
     font-size: 13px;
   }
   .text-50 {
-    font-size: 22px;
+    font-size: 17px;
   }
   .text-100 {
     font-size: 70px;
@@ -2111,10 +2238,10 @@ footer ul li a {
     line-height: 40px;
   }
   .text-110, .text-100 {
-    font-size: 40px;
+    font-size: 30px;
   }
   .copyrights {
-    font: 700 13px/15px Cocogoose;
+    font: 700 10px/15px Cocogoose;
     padding: 15px 0;
   }
   .workflow__items .digitise__item--image, #organization__orchestrate .digitise__item--image {
@@ -2169,15 +2296,24 @@ footer ul li a {
   .faq__container {
     max-width: 100%;
   }
-  .focus__item{
+  .focus__item {
     max-width: 70%;
-    .focus__text{
+    .focus__text {
       width: 100%;
       max-width: initial;
     }
   }
-  .modal-content input{
+  .modal-content input {
     height: 60px;
+  }
+  .section__title, .section__title-large {
+    font: 700 17px/30px DINosaur;
+  }
+  .banner__small-text a {
+    font: 900 17px/25px DINosaur;
+  }
+  .banner__small-text  {
+    font: 900 15px/20px DINosaur;
   }
 }
 
@@ -2264,10 +2400,10 @@ footer ul li a {
     min-height: 20px;
     margin: 0 auto;
   }
-  .modal-content{
+  .modal-content {
     max-width: 330px;
   }
-  .input__raw .input__group{
+  .input__raw .input__group {
     max-width: 100%;
   }
 }
@@ -2292,7 +2428,7 @@ footer ul li a {
   .contact__input {
     width: 100%;
   }
-  .focus__item{
+  .focus__item {
     max-width: 100%;
   }
 }

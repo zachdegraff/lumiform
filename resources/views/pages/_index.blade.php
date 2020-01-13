@@ -12,11 +12,11 @@
 @section("content")
     <section id="home__banner" class="relative">
         <div class="container mx-auto flex">
-            <div class="banner__left py-12 md:py-20 xxl:py-32 w-full lg:w-6/12 xxl:w-5/12">
-                <h1 class="mb-5 text-primary text-70 font-cocogoose font-extrabold uppercase tracking-normal leading-tight">
+            <div class="banner__left py-8 md:py-20 xxl:py-32 w-full lg:w-5/12">
+                <h1 class="mb-3 md:mb-5 text-primary text-70 font-cocogoose font-extrabold uppercase tracking-normal leading-tight">
                     @lang('A new, easy way for inspections AND audits')
                 </h1>
-                <p class="font-din text-30 font-light text-secondary mb-12 xxl:mb-32 w-11/12"> @lang('Equip your team with the Lumiform app and brighten up your quality and safety workflows.')</p>
+                <p class="font-din text-30 font-light text-secondary mb-6 md:mb-12 xxl:mb-32 w-11/12"> @lang('Equip your team with the Lumiform app and brighten up your quality and safety workflows.')</p>
                 @include('components.product.banner_form')
             </div>
             <div class="banner__right md:flex-shrink-0 lg:flex-1 relative">
@@ -27,12 +27,12 @@
     @include('components.use-cases.section_companies',['fontSize' => 'text-20','bgColor' => 'grey-light'])
     <section id="home__procedure" class="py-10 lg:pt-16 xxl:pt-28 lg:pb-20 xxl:pb-48">
         <div class="container mx-auto">
-            <h2 class="md:mb-32 mb-10 text-center text-50 font-cocogoose font-black leading-none tracking-text uppercase text-light-blue">
+            <h2 class="xl:mb-32 mb-10 text-center text-50 font-cocogoose font-black leading-none tracking-text uppercase text-light-blue">
                 @lang('AN intuitive app for  all quality and safety procedures')
             </h2>
             <div class="procedure__content flex pt-5">
-                <div class="w-full mx-auto mt-5  md:w-1/2 xl:w-2/5">
-                    <ul class="list--circle__check mb-20 md:mx-auto">
+                <div class="w-full mx-auto mt-5  md:w-2/5">
+                    <ul class="list--circle__check mb-12 lg:mb-20 md:mx-auto">
                         <li>@lang('Create customised forms in minutes')</li>
                         <li>@lang('Start with expert-proofed templates')</li>
                         <li>@lang('Conduct inspections faster via app')</li>
@@ -41,21 +41,21 @@
                         <li>@lang('Data analysis')</li>
                     </ul>
                     <a href="@urlTo('product')"
-                       class="flex items-center uppercase text-red text-center block text-17 lg:text-20 tracking-large my-5 lg:mt-10">
+                       class="flex items-center uppercase text-red text-center block text-20 tracking-heading lg:tracking-large my-5 lg:mt-10">
                         @lang('LEARN MORE ABOUT THE PRODUCT')
-                        <img src="{{asset('img/arrow-right-long-red.svg')}}" alt="" class="h-3 ml-8">
+                        <img src="{{asset('img/arrow-right-long-red.svg')}}" alt="" class="h-3 ml-4 lg:ml-8">
                     </a>
                 </div>
-                <div class="w-0 md:w-1/2 xl:w-3/5">
+                <div class="w-0 md:w-3/5">
                     <img src="{{asset('img/landing-page-devices.png')}}" alt="" class="procedure__image">
                 </div>
             </div>
         </div>
     </section>
-    <section id="home__cases" class="pb-10 lg:pb-64">
+    <section id="home__cases" class="pb-10 lg:pb-40 xl:pb-64">
         <div class="container mx-auto">
-            <div class="case__items md:w-10/12 mx-auto">
-                <div class="case__item flex mt-24 justify-between">
+            <div class="case__items lg:w-10/12 mx-auto">
+                <div class="case__item flex mt-8 md:mt-16 xl:mt-24 justify-between">
                     <div class="item__text ">
                         <h6 class="text-50 font-cocogoose font-black tracking-middle leading-none uppercase mb-5 text-green">@lang('Improve quality and safety')</h6>
                         <p>@lang('Your reputation is everything – preserve it. Don’t just digitise your inspections and audits: continuously optimise procedures.')</p>
@@ -64,7 +64,7 @@
                         <img src="{{asset('img/improve-quality.png')}}" alt="">
                     </div>
                 </div>
-                <div class="case__item reversed flex mt-24 justify-between">
+                <div class="case__item reversed flex mt-8 md:mt-16 xl:mt-24 justify-between">
                     <div class="item__text ">
                         <h6 class="text-50 font-cocogoose font-black tracking-middle leading-none uppercase mb-5 text-gold">@lang('Save time and money')</h6>
                         <p>@lang('Cut your inspection time by up to half, resolve issues up to four times faster, get customised reports that are generated fully automatically, and uncover underperforming areas in a snap.')</p>
@@ -79,11 +79,11 @@
     </section>
     <section id="home__start">
         <div class="container mx-auto flex align-baseline ">
-            <div class="start__text w-full md:w-3/5 md:w-2/3 md:mx-auto md:text-center lg:w-2/5">
+            <div class="start__text w-full  md:mx-auto md:text-center md:w-2/5">
                 <h3 class="md:text-center text-50 font-cocogoose uppercase leading-none tracking-middle mb-10 lg:text-left">
                     @lang('Start right away, with <span class="text-gold">ready-to-use checklists</span>')
                 </h3>
-                <p class="mb-24">
+                <p class="mb-12 lg:mb-24">
                     @lang('Lumiform provides free, ready-to-use templates that you can further customise, to enable you to start industry-proofed checklists within minutes.')
                 </p>
                 <a href="@urlTo('templateLibrary')"
@@ -93,7 +93,7 @@
                 </a>
 
             </div>
-            <div class="start__image w-0 md:w-2/5 lg:w-3/5">
+            <div class="start__image w-0  md:w-3/5">
                 <img src="{{asset('img/checklists-tablet.png')}}" alt=""
                      srcset="{{asset('img/checklists-tablet.png')}}, {{asset('img/checklists-tablet@2x.png')}} 2x">
             </div>
@@ -102,8 +102,8 @@
 
     </section>
     <section id="home__learn">
-        <div class="container mx-auto my-12 lg:my-24 xxl:my-48 ">
-            <div class=" w-full lg:w-2/3 mx-auto mb-12 lg:mb-32">
+        <div class="container mx-auto my-12 xl:my-24 xxl:my-48 ">
+            <div class=" w-full w-2/3 mx-auto mb-8 md:mb-16 xl:mb-32">
                 <h3 class="text-50 font-cocogoose font-black text-primary uppercase text-center mb-5">
                     @lang('Learn and grow through <span class="text-purple">inspiration</span>')
                 </h3>
@@ -115,7 +115,7 @@
 
             <div class="learn__items flex-wrap lg:flex-no-wrap flex">
                 <div class="learn__item w-full md:w-1/2 lg:flex-1 text-center mb-5">
-                    <div class="with__circle mb-10 lg:mb-24 mx-auto">
+                    <div class="with__circle mb-8 lg:mb-16 xl:mb-24 mx-auto">
                         <div class="image__circle" style="background:#00B2FF19 ;"></div>
                         <img src="{{asset('img/industries.png')}}" alt="">
                     </div>
@@ -127,7 +127,7 @@
                     </a>
                 </div>
                 <div class="learn__item w-full md:w-1/2 lg:flex-1 text-center mb-5">
-                    <div class="with__circle  mb-10 lg:mb-24 mx-auto">
+                    <div class="with__circle mb-8 lg:mb-16 xl:mb-24 mx-auto">
                         <div class="image__circle" style="background:#FD2F581A ;"></div>
                         <img src="{{asset('img/type-solution.png')}}" alt="">
                     </div>
@@ -139,7 +139,7 @@
                 </div>
 
                 <div class="learn__item w-full md:w-1/2 lg:flex-1 text-center mb-5">
-                    <div class="with__circle  mb-10 lg:mb-24 mx-auto">
+                    <div class="with__circle mb-8 lg:mb-16 xl:mb-24 mx-auto">
                         <div class="image__circle" style="background:#F3EFFB ;"></div>
                         <img src="{{asset('img/case-study.png')}}" alt="">
                     </div>
@@ -151,7 +151,7 @@
 
                 </div>
                 <div class="learn__item w-full md:w-1/2 lg:flex-1 text-center mb-5">
-                    <div class="with__circle  mb-10 lg:mb-24 mx-auto">
+                    <div class="with__circle mb-8 lg:mb-16 xl:mb-24 mx-auto">
                         <div class="image__circle" style="background:#00B2FF19;"></div>
                         <img src="{{asset('img/use-cases.png')}}" alt="">
                     </div>

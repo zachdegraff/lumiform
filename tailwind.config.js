@@ -61,6 +61,7 @@ module.exports = {
                 'red': '#FD2F58',
                 'red-light': '#fff3e5',
                 'red-opacity': '#Fd6e8B',
+                'pink': '#ffe9ee',
                 'blue': '#4EC9FF',
                 'blue-dark': '#00B2FF',
                 'blue-light': '#e5f9f3',

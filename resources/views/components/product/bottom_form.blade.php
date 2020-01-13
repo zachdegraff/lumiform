@@ -1,6 +1,6 @@
-<section id="easy" class="pt-12 lg:pt-32 bg-{{$sectionBg}}">
+<section id="easy" class="pt-10 md:pt-20 xl:pt-32 bg-{{$sectionBg}}">
     <div class="container mx-auto">
-        <h3 class="text-white text-50 font-extrabold uppercase font-cocogoose md:mx-auto text-center mb-5 lg:mb-20 tracking-heading"
+        <h3 class="text-white text-50 font-extrabold uppercase font-cocogoose md:mx-auto text-center mb-6 md:mb-12 xl:mb-20 tracking-heading"
         >{!! $heading !!}</h3>
         <div class="easy__content flex justify-between">
 
@@ -24,7 +24,7 @@
 
                         <input class="pl-8 w-full md:w-1/2 xxl:w-360  " type="email"
                                placeholder="{{__('Enter e-mail address')}}">
-                        <button class=" mt-5 md:mt-0 md:ml-3 bg-{{$buttonBg}} tracking-large font-extrabold text-white uppercase font-cocogoose px-8 text-17 lg:text-20 h-70  rounded-20 items-center justify-center flex">@lang('Try for free')</button>
+                        <button class=" mt-5 md:mt-0 md:ml-3 bg-{{$buttonBg}} tracking-large font-extrabold text-white uppercase font-cocogoose px-8 text-20 h-70  rounded-20 items-center justify-center flex">@lang('Try for free')</button>
                     </div>
                 </form>
                 @php $url = '' @endphp

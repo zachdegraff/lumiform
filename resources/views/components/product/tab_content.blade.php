@@ -1,18 +1,18 @@
 <div class="content__item @if ($isActive) active @endif sm:flex-no-wrap flex-wrap flex justify-between items-center">
     <div class="w-full sm:w-5/12 flex items-start  flex-col">
         <div >
-            <h3 class="mb-10 font-bold md:text-25 lg:text-38 tracking-text leading-none uppercase font-cocogoose text-{{$textColor}}">
+            <h3 class="mb-10 font-bold text-38 tracking-text leading-none uppercase font-cocogoose text-{{$textColor}}">
                 {!! $heading !!}
             </h3>
-            <p class="text-left font-light font-din md:text-20 lg:text-30 text-secondary tracking-text">
+            <p class="text-left font-light font-din text-30 text-secondary tracking-text">
                 {!! $text !!}
             </p>
 
         </div>
         <a href="{{route(app()->getLocale().'.'.$urlTo)}}"
-           class="sm:mb-0 mb-8 flex items-center  uppercase text-red text-center block text-20 tracking-large  mt-10 ">
+           class="sm:mb-0 mb-8 flex items-center  uppercase text-red  block text-20 tracking-large  mt-10 ">
            {!! $discoverText !!}
-            <img src="{{asset('img/arrow-right-long-red.svg')}}" alt="" class="h-3 ml-8">
+            <img src="{{asset('img/arrow-right-long-red.svg')}}" alt="" class="h-3 ml-8 arrow__right-red">
         </a>
 
     </div>

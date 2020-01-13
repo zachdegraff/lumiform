@@ -4,7 +4,7 @@
           class="mb-10 flex flex-col md:flex-row items-center justify-center lg:justify-start lg:flex-none ">
         <input type="email" class="w-full md:w-1/2 xxl:w-360 pl-8 h-70 rounded-20"
                placeholder="@lang('Enter e-mail address')">
-        <button class="font-black w-full  md:w-auto mt-5  md:mt-0 sm:ml-2 bg-red text-white uppercase font-cocogoose text-20 h-70 leading-snug sm:px-4 xxl:px-8 rounded-20 tracking-large">
+        <button class="font-black w-full  md:w-auto mt-5  md:mt-0 sm:ml-2 bg-red text-white uppercase font-cocogoose text-20 h-70 leading-snug px-8 rounded-20 tracking-large">
             @if(isset($buttonText))
                 @lang($buttonText)
             @else

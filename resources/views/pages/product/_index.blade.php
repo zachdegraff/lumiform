@@ -23,12 +23,12 @@
     </section>
     <section id="how__works" class="py-12 lg:py-32 ">
         <div class="container mx-auto">
-            <h2 class="font-bold text-center font-cocogoose text-primary text-30 lg:text-40 mb-3 uppercase tracking-heading">@lang('How Lumiform works')</h2>
-            <p class="font-light text-center font-din md:text-20 lg:text-30 text-secondary tracking-text mb-24">@lang('Make sure you’re mastering the whole process – from flexible form building to fast problem solving to in depth analysis.')</p>
+            <h2 class="font-bold text-center font-cocogoose text-primary text-40 mb-3 uppercase tracking-heading">@lang('How Lumiform works')</h2>
+            <p class="font-light text-center font-din text-30 text-secondary tracking-text mb-24">@lang('Make sure you’re mastering the whole process – from flexible form building to fast problem solving to in depth analysis.')</p>
         </div>
         <div class="container mx-auto">
             <div id="tab" class="px-5 lg:px-0">
-                <div class="mx-auto tab__header flex-wrap sm:flex-no-wrap h-auto sm:h-40 md:h-70 flex md:text-15 lg:text-20 rounded-l-20 rounded-r-20 mb-12 lg:mb-24">
+                <div class="mx-auto tab__header flex-wrap sm:flex-no-wrap h-auto sm:h-40 md:h-70 flex text-20 rounded-l-20 rounded-r-20 mb-12 lg:mb-24">
                     <div class="header__item flex sm:flex-none sm:w-auto justify-center items-center w-1/2  py-2 px-2 md:py-5 md:px-5 xxl:px-24 font-cocogoose font-bold text-secondary active uppercase"
                          onclick="openTab(this)" data-index="0">@lang('Create forms')</div>
                     <div class=" header__item flex sm:flex-none sm:w-auto justify-center items-center w-1/2  py-2 px-2 md:py-5 md:px-5 xxl:px-24 font-cocogoose font-bold text-secondary uppercase"
@@ -84,8 +84,8 @@
     </section>
     <section id="flow" class="py-12 lg:py-28 bg-grey-opacity">
         <div class="container mx-auto">
-            <h2 class="font-bold text-center font-cocogoose text-primary text-30 lg:text-50 mb-8 lg:mb-8 uppercase tracking-heading">@lang('The Lumiform flow')</h2>
-            <p class="px-16 text-center font-light font-din text-20 lg:text-30 text-secondary tracking-text mb-32">
+            <h2 class="font-bold text-center font-cocogoose text-primary text-50 mb-8 lg:mb-8 uppercase tracking-heading">@lang('The Lumiform flow')</h2>
+            <p class="px-16 text-center font-light font-din text-30 text-secondary tracking-text mb-32">
                 @lang('Digitise all quality and safety efforts, and cut down inspection time, with the Lumiform app. And, even more importantly, continuously optimise your quality and safety operations easily, with the Lumiform flow.')
             </p>
             <div class="flow__process flex-wrap lg:flex-no-wrap flex justify-between  pt-24 relative ">
@@ -118,10 +118,12 @@
             </div>
         </div>
     </section>
-    <section id="feedback" class="bg-red-light py-16">
+    <section id="feedback" class="bg-pink py-16">
         <div class="container mx-auto flex justify-around">
             <div class="w-0 lg:w-3/12">
-                <img src="{{asset('img/group-1031.svg')}}" alt="">
+                <img src="{{asset('img/group-1031.png')}}"
+                     srcset="{{asset('img/group-1031.png')}} , {{asset('img/group-1031@2x.png')}} 2x"
+                     alt="">
             </div>
             <div class="w-full lg:w-6/12  flex flex-col justify-around">
                 <p class="font-din font-light text-30 text-secondary">@lang('“With Lumiform, we conduct quality and safety checks quickly, easyly, and reliably while improving quality and safety ongoing.”')</p>

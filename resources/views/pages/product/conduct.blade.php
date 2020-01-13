@@ -77,9 +77,9 @@
         </div>
         <button class="button__base px-8 py-5 mt-10 mx-auto">@lang('Get Lumiform FREE')</button>
     </section>
-    <section id="as_a_team" class="py-12 lg:py-32 with__border--bottom">
+    <section id="as_a_team" class="py-12 lg:py-32 ">
         <div class="container mx-auto">
-            <h2 class="font-bold text-center font-cocogoose text-primary text-30 lg:text-50 mb-10 lg:mb-26 uppercase tracking-heading">
+            <h2 class="font-bold text-center font-cocogoose text-primary text-50 mb-10 lg:mb-26 uppercase tracking-heading">
                 @lang('ensure that inspections are <span class="text-gold"> conducted reliably</span>')
             </h2>
         </div>
@@ -113,18 +113,18 @@
     <section id="messages" class="py-12 lg:py-32 bg-grey-light">
         <div class="container mx-auto">
             <div class="flex items-center justify-around">
-                <h2 class="font-bold text-center font-cocogoose text-primary text-30 lg:text-30 ml-4 uppercase tracking-heading">
+                <h2 class="font-bold text-center font-cocogoose text-primary text-30 ml-4 uppercase tracking-heading">
                     @lang('CHOOSE BETWEEN <span class="text-light-blue"> TWO TYPES OF MESSAGES</span>')
                 </h2>
 
                 <div class="w-5/12 flex message_items">
                     <div class="feature__item w-1/2  text-center mb-2 sm:mb-0">
                         <img src="{{asset('img/icons/notification-icon_gold.svg')}}" alt="" class="mb-6 mx-auto">
-                        <span class="uppercase text-secondary text-12 lg:text-20 tracking-heading">@lang('Push notification')</span>
+                        <span class="uppercase text-secondary text-20 tracking-heading">@lang('Push notification')</span>
                     </div>
                     <div class="feature__item  max-w-140 xl:ml-40 ml-5 text-center mb-2 sm:mb-0">
                         <img src="{{asset('img/icons/message-icon_blue.svg')}}" alt="" class="mb-6 mx-auto">
-                        <span class="uppercase text-secondary text-12 lg:text-20 tracking-heading">@lang('Email')</span>
+                        <span class="uppercase text-secondary text-20 tracking-heading">@lang('Email')</span>
                     </div>
                 </div>
 
@@ -133,7 +133,7 @@
     </section>
     <section id="as_a_team" class="py-12 lg:py-32 with__border--bottom easy__section">
         <div class="container mx-auto">
-            <h2 class="font-bold text-center font-cocogoose text-primary text-30 lg:text-50 mb-10 lg:mb-20 uppercase tracking-heading">
+            <h2 class="font-bold text-center font-cocogoose text-primary text-50 mb-10 lg:mb-20 uppercase tracking-heading">
                 @lang('Easy, intuitive <span class="text-green">filling-out process</span>')
             </h2>
         </div>
@@ -147,7 +147,7 @@
                 <h3 class="font-cocogoose font-black text-green uppercase text-38 mb-10 lg:mb-20">
                     @lang('simple interface')
                 </h3>
-                <p class="font-light font-din text-15 text-30 pt-2 text-secondary">
+                <p class="font-light font-din  text-30 pt-2 text-secondary">
                     @lang('Simple, straightforward user interface that anyone can work with – absolutely anyone!')
                 </p>
             </div>
@@ -161,21 +161,21 @@
                 <h3 class="font-cocogoose font-black text-gold uppercase text-38 mb-10 lg:mb-20">
                     @lang('Guided By Logics')
                 </h3>
-                <p class="font-light font-din text-15 text-30 pt-2 text-secondary">
+                <p class="font-light font-din  text-30 pt-2 text-secondary">
                     @lang('When logics have been pre-defined in the form builder, you are guided through your inspection and always do the right checks at the right time.')
                 </p>
             </div>
 
 
             <div class="team__itemw-full sm:w-1/2 lg:w-1/5 mb-10 px-5 lg:px-0">
-                <div class=" mb-16 mx-auto lg:mx-0 flex items-center">
+                <div class="h-320 mb-16 mx-auto lg:mx-0 flex items-center">
                     <img src="{{asset('img/group-3335.png')}}"
                          srcset="{{asset('img/group-3335.png')}} , {{asset('img/group-3335@2x.png')}} 2x" alt="" class=" mx-auto">
                 </div>
                 <h3 class="font-cocogoose font-black text-purple uppercase text-38 mb-10">
                     @lang('Text and Photo comments')
                 </h3>
-                <p class="font-light font-din text-15 text-30 text-secondary">
+                <p class="font-light font-din  text-30 text-secondary">
                     @lang('Add photos and text comments to specific checks, to describe deficiencies better. Draw in pictures and mark particular areas.')
                 </p>
             </div>
@@ -189,7 +189,7 @@
                 <h3 class="font-cocogoose font-black text-red uppercase text-38 mb-10">
                     @lang('Save inspections as drafts')
                 </h3>
-                <p class="font-light font-din text-15 text-30 text-secondary">
+                <p class="font-light font-din  text-30 text-secondary">
                     @lang('Save incomplete forms as a draft and reopen them as soon as you want to complete the audit.')
                 </p>
             </div>
@@ -199,7 +199,7 @@
     </section>
     <section id="as_a_team" class="py-12 lg:py-32 with__border--bottom">
         <div class="container mx-auto">
-            <h2 class="font-bold text-center font-cocogoose text-purple text-30 lg:text-50 mb-10 lg:mb-20 uppercase tracking-heading">
+            <h2 class="font-bold text-center font-cocogoose text-purple text-50 mb-10 lg:mb-20 uppercase tracking-heading">
                 @lang('Manage and share reports')
             </h2>
         </div>

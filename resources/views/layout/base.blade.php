@@ -44,6 +44,7 @@
             filterSection.classList.contains('open') ? filterSection.classList.remove('open') : filterSection.classList.add('open')
         });
     }
+
     function openMenu(el) {
         let items = document.querySelectorAll('.menu__item')
 
@@ -135,11 +136,11 @@
                 if (filters.includes(cat)) {
                     let index = filters.indexOf(cat);
                     filters.splice(index, 1);
-                    if (!filter.length){
+                    if (!filter.length) {
                         sections.forEach(function (section) {
                             section.style.display = 'block'
                         });
-                    } else{
+                    } else {
                         sections.forEach(function (section) {
                             section.style.display = 'block'
                         });
@@ -164,6 +165,13 @@
 
         })
     });
+    document.querySelector('.content').addEventListener('click', function () {
+        document.querySelector('.menu__items').classList.remove('open')
+        document.querySelector('#nav-icon3').classList.remove('open')
+        document.querySelectorAll('.menu__item').forEach(function (item) {
+            item.classList.remove('active')
+        })
+    })
 </script>
 <script src="{{asset('js/app.js')}}"></script>
 </body>
