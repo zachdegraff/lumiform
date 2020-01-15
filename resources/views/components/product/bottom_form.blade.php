@@ -1,4 +1,4 @@
-<section id="easy" class="pt-10 md:pt-20 xl:pt-32 bg-{{$sectionBg}}">
+<section id="easy" class="pt-8 md:pt-16 xl:pt-32 bg-{{$sectionBg}}">
     <div class="container mx-auto">
         <h3 class="text-white text-50 font-extrabold uppercase font-cocogoose md:mx-auto text-center mb-6 md:mb-12 xl:mb-20 tracking-heading"
         >{!! $heading !!}</h3>

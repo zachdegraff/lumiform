@@ -13,7 +13,7 @@
                     @lang('Pay annually (20% off)')
                 </p>
                 <label class="switch mx-3 sm:mx-8">
-                    <input type="checkbox">
+                    <input type="checkbox" id="planSwitcher">
                     <span class="slider round"></span>
                 </label>
                 <p class="text-20 font-din font-light tracking-text text-secondary">
@@ -51,8 +51,8 @@
                             <p class="text-18 font-cocogoose font-black text-grey-bold mb-6 ">@lang('TOP FUNCTIONS ↓')</p>
                             <ul class="starter">
                                 <li class="font-din text-20 tracking-text text-secondary pl-10 mb-3">@lang('Up to 5 users')</li>
-                                <li class="font-din text-20 tracking-text text-secondary pl-10 mb-3">@lang('Limited data volume')</li>
-                                <li class="font-din text-20 tracking-text text-secondary pl-10 mb-3">@lang('Limited schedules')</li>
+                                <li class="font-din text-20 tracking-text text-secondary pl-10 mb-3">@lang('Up to 8 inspections')</li>
+                                <li class="font-din text-20 tracking-text text-secondary pl-10 mb-3">@lang('Unlimited schedules')</li>
                                 <li class="font-din text-20 tracking-text text-secondary pl-10 mb-3">@lang('Unlimited queries')</li>
                                 <li class="font-din text-20 tracking-text text-secondary pl-10 mb-3">@lang('Unlimited forms')</li>
                             </ul>
@@ -73,7 +73,7 @@
                         </div>
                         <div class="price mb-8">
                             <span class="text-80 text-primary font-cocogoose font-hairline text-center mx-auto block">
-                                <span class="price__number">20</span>€
+                                <span class="price__number">16</span>€
                             </span>
                         </div>
                         <div class="text__bottom w-full">
@@ -88,7 +88,7 @@
                                 @lang('user(s)')
                             </p>
                             <div class="slidecontainer">
-                                <input type="range" min="1" max="10" value="1" class="slider mx-auto block"
+                                <input type="range" min="1" max="1000" value="1" class="slider mx-auto block"
                                        id="myRange">
                             </div>
                         </div>
@@ -99,11 +99,11 @@
                         <div class="functions mt-6 lg:mt-16 sm:ml-40 lg:ml-32">
                             <p class="text-18 font-cocogoose font-black text-grey-bold mb-6">@lang('TOP FUNCTIONS ↓')</p>
                             <ul class="pro">
-                                <li class="font-din text-20 tracking-text text-secondary pl-10 mb-3">@lang('Issues')</li>
+                                <li class="font-din text-20 tracking-text text-secondary pl-10 mb-3">@lang('Unlimited Usage')</li>
+                                <li class="font-din text-20 tracking-text text-secondary pl-10 mb-3">@lang('Issue Management')</li>
                                 <li class="font-din text-20 tracking-text text-secondary pl-10 mb-3">@lang('Analytics')</li>
                                 <li class="font-din text-20 tracking-text text-secondary pl-10 mb-3">@lang('Custom Reports')</li>
-                                <li class="font-din text-20 tracking-text text-secondary pl-10 mb-3">@lang('Advanced user management')</li>
-                                <li class="font-din text-20 tracking-text text-secondary pl-10 mb-3">@lang('If-then logics')</li>
+                                <li class="font-din text-20 tracking-text text-secondary pl-10 mb-3">@lang('Permission Management')</li>
                             </ul>
                         </div>
                     </div>
@@ -190,11 +190,11 @@
 
                 <div class="easy__image w-0 lg:w-3/12 flex justify-center">
 
-                            <img src="{{asset('img/group-5157.png')}}" alt=""
-                                 srcset="
+                    <img src="{{asset('img/group-5157.png')}}" alt=""
+                         srcset="
                     {{asset('img/group-5157.png')}},
                     {{asset('img/group-5157@2x.png')}} 2x"
-                            >
+                    >
 
                 </div>
 
@@ -203,20 +203,76 @@
     </section>
 
     <script>
+
         let slider = document.getElementById("myRange");
         let output = document.querySelector(".plan__count");
         let priceInput = document.querySelector(".price__number");
-        let price = 20;
+        let price = 16;
+        let newPrice = 16;
+        let plan = 'annual';
+        let planSwitcher = document.querySelector('#planSwitcher');
+
+        let userNumber = 1;
+        let diff = 0;
+
+        /*  Get plan with start price  (monthly/annual) */
+        planSwitcher.addEventListener('change', function (event) {
+            if (event.target.checked === true) {
+                plan = 'monthly';
+                price = 20;
+                newPrice = 20;
+                calcPrice()
+            } else {
+                plan = "annual";
+                price = 16;
+                newPrice = 16;
+                calcPrice()
+            }
+
+
+        });
+
+        /* Calculate New Price */
+        function calcPrice() {
+            if (userNumber < 25) {
+                if (plan === 'monthly') {
+                    newPrice = 20;
+                } else {
+                    newPrice = 16;
+                }
+            } else if (userNumber >= 25 && userNumber < 50) {
+                diff = (price / 100) * 10;
+                newPrice = price - diff;
+
+
+            } else if (userNumber >= 50 && userNumber < 100) {
+                diff = (price / 100) * 15;
+                newPrice = price - diff;
+
+            } else if (userNumber >= 100 && userNumber < 250) {
+                diff = (price / 100) * 20;
+                newPrice = price - diff;
+
+            } else if (userNumber >= 250) {
+                diff = (price / 100) * 40;
+                newPrice = price - diff;
+
+            }
+            priceInput.innerHTML = newPrice
+        }
+
         output.value = slider.value;
-
-
+        /* on slider change get number of users and calculate the price */
         slider.oninput = function () {
             output.value = this.value;
-            priceInput.innerHTML = price * this.value;
+            userNumber = this.value;
+            calcPrice()
         };
+        /* on input change get number of users and calculate the price */
         output.oninput = function () {
             slider.value = this.value;
-            priceInput.innerHTML = price * this.value;
+            userNumber = this.value;
+            calcPrice()
         }
     </script>
 @endsection

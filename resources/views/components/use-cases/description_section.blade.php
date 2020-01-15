@@ -2,14 +2,14 @@
     <div class="container mx-auto">
         <div class="audits-top flex justify-between items-center mb-16">
             <div class="w-4/12">
-                <h2 class="font-cocogoose font-bold text-left uppercase text-40 text-{{$color}} mb-10">
+                <h2 class="font-cocogoose font-bold text-left uppercase text-50 text-{{$color}} mb-10">
                     {!! $heading !!}
                 </h2>
                 <p class="mt-10 font-din text-left font-light text-secondary text-20 mb-5">
                     {!! $text !!}
                 </p>
                 <a href="{{route(app()->getLocale().'.'.$explore['url'])}}"
-                   class="flex items-center uppercase text-red text-center block text-17 lg:text-20 tracking-large">
+                   class="flex items-center uppercase text-red text-center block font-bold text-20 tracking-large">
                     {{$explore['text']}}
                     <img src="{{asset('img/arrow-right-long-red.svg')}}" alt="" class="h-3 ml-6">
                 </a>
@@ -31,15 +31,15 @@
                 @endforeach
 
             </div>
-            <div class="cases__bottom--right   rounded-full bg-grey-light">
-                <div class="mx-auto max-w-240 h-full flex flex-col justify-center">
-                    <p class="font-din text-20 font-light text-primary mb-5">{!! $companion['text'] !!}</p>
-                    <span class="text-base grey-bold font-hairline font-din">{!! $companion['info'] !!}</span>
+            <div class="bottom__right w-4/12 mx-auto rounded-full bg-grey-opacity">
+                <div class="mx-auto max-w-370 h-full flex flex-col justify-center sm:py-16">
+                    <p class="font-din text-20 font-light text-primary mb-10">{!! $companion['text'] !!}</p>
+                    <span class="text-base grey-bold font-hairline font-din ">{!! $companion['info'] !!}</span>
                 </div>
             </div>
         </div>
         <a href="{{$template['url']}}"
-           class="flex items-center uppercase text-red text-center block text-17 lg:text-20 tracking-large">
+           class="flex items-center uppercase text-red text-center block font-bold text-20 tracking-large">
             {{$template['text']}}
             <img src="{{asset('img/arrow-right-long-red.svg')}}" alt="" class="h-3 ml-8">
         </a>

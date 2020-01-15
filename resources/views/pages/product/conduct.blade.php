@@ -5,7 +5,7 @@
     <meta name="description" content="@lang('Conduct quality and safety inspections and audits in half the time. Use your smartphone or tablet, Android, or iOS. It\'s easy and FREE!')">
 @endsection
 @section("content")
-    <section id="conduct__banner" class="py-10 lg:pt-32 lg:pb-24 bg-red-light relative">
+    <section id="conduct__banner" class="py-8 md:py-16 xl:pt-32 xl:pb-24 bg-red-light relative">
         <div class="container mx-auto flex">
             <div class="banner__left lg:w-3/4 w-full">
                 <h1 class="tracking-normal text-center lg:text-left text-70 mb-16 font-cocogoose uppercase font-extrabold">
@@ -17,7 +17,7 @@
         </div>
 
     </section>
-    <section id="from" class="py-12 lg:py-24 with__border--bottom relative">
+    <section id="from" class="py-6 md:py-12 xl:py-24 with__border--bottom relative">
         <div class="container mx-auto md:flex justify-between">
 
             <div class="from__text w-full lg:w-5/12">
@@ -46,7 +46,7 @@
 
         </div>
     </section>
-    <section id="as_a_team" class="py-12 lg:py-32 with__border--bottom">
+    <section id="as_a_team" class="py-6 md:py-12 xl:py-32 with__border--bottom">
         <div class="container mx-auto">
             <h2 class="font-bold text-center font-cocogoose text-primary text-50 mb-5 lg:mb-26 uppercase tracking-heading">
                 @lang('The right form  in the palm of your hand at all times ')
@@ -55,7 +55,7 @@
         <div class="container mx-auto text-center lg:text-left flex flex-wrap lg:flex-no-wrap justify-around">
             <div class="team__itemw-full sm:w-1/2 lg:w-1/3 mb-10 px-5 lg:px-0">
                 <img src="{{asset('img/group-2723.png')}}" alt="" srcset="{{asset('img/group-2723.png')}} , {{asset('img/group-2723@2x.png')}} 2x" class="mb-16 mx-auto lg:mx-0">
-                <h3 class="font-cocogoose font-black text-light-blue uppercase text-20 md:text-38 mb-10">
+                <h3 class="font-cocogoose font-black text-light-blue uppercase text-38 mb-10">
                     @lang('Never miss deadlineS')
                 </h3>
                 <p class="font-light font-din text-30 text-secondary">
@@ -66,7 +66,7 @@
                 <img src="{{asset('img/group-2724.png')}}"
                      srcset="{{asset('img/group-2724.png')}} , {{asset('img/group-2724@2x.png')}} 2x"
                      alt="" class="mb-16 mx-auto lg:mx-0">
-                <h3 class="font-cocogoose font-black text-purple uppercase text-20 md:text-38 mb-10">
+                <h3 class="font-cocogoose font-black text-purple uppercase text-38 mb-10">
                     @lang('Always use templates')
                 </h3>
                 <p class="font-light font-din text-30 text-secondary">
@@ -77,7 +77,7 @@
         </div>
         <button class="button__base px-8 py-5 mt-10 mx-auto">@lang('Get Lumiform FREE')</button>
     </section>
-    <section id="as_a_team" class="py-12 lg:py-32 ">
+    <section id="as_a_team" class="py-6 md:py-12 xl:py-32 ">
         <div class="container mx-auto">
             <h2 class="font-bold text-center font-cocogoose text-primary text-50 mb-10 lg:mb-26 uppercase tracking-heading">
                 @lang('ensure that inspections are <span class="text-gold"> conducted reliably</span>')
@@ -108,9 +108,9 @@
             </div>
 
         </div>
-        <button class="button__base px-8 py-5 mt-5 lg:mt-20 mx-auto">@lang('Get Lumiform FREE')</button>
+        <button class="button__base px-8 py-5 mt-5 md:mt-10 xl:mt-20 mx-auto">@lang('Get Lumiform FREE')</button>
     </section>
-    <section id="messages" class="py-12 lg:py-32 bg-grey-light">
+    <section id="messages" class="py-8 md:py-16 xl:py-32 bg-grey-light">
         <div class="container mx-auto">
             <div class="flex items-center justify-around">
                 <h2 class="font-bold text-center font-cocogoose text-primary text-30 ml-4 uppercase tracking-heading">
@@ -131,7 +131,7 @@
             </div>
         </div>
     </section>
-    <section id="as_a_team" class="py-12 lg:py-32 with__border--bottom easy__section">
+    <section id="as_a_team" class="py-8 md:py-16 xl:py-32 with__border--bottom easy__section">
         <div class="container mx-auto">
             <h2 class="font-bold text-center font-cocogoose text-primary text-50 mb-10 lg:mb-20 uppercase tracking-heading">
                 @lang('Easy, intuitive <span class="text-green">filling-out process</span>')
@@ -195,9 +195,9 @@
             </div>
 
         </div>
-        <button class="button__base px-8 py-5 mt-5 lg:mt-20 mx-auto">@lang('Get Lumiform FREE')</button>
+        <button class="button__base px-8 py-5 mt-5 md:mt-10 xl:mt-20 mx-auto">@lang('Get Lumiform FREE')</button>
     </section>
-    <section id="as_a_team" class="py-12 lg:py-32 with__border--bottom">
+    <section id="as_a_team" class="py-8 md:py-16 xl:py-32 with__border--bottom">
         <div class="container mx-auto">
             <h2 class="font-bold text-center font-cocogoose text-purple text-50 mb-10 lg:mb-20 uppercase tracking-heading">
                 @lang('Manage and share reports')
@@ -228,7 +228,7 @@
             </div>
 
         </div>
-        <button class="button__base px-8 py-5 mt-5 lg:mt-20 mx-auto">@lang('Get Lumiform FREE')</button>
+        <button class="button__base px-8 py-5 mt-5 md:mt-10 xl:mt-20 mx-auto">@lang('Get Lumiform FREE')</button>
     </section>
     @include('components.product.bottom_form',[
    'heading' => __('Install the mobile app on your device now, and use Lumiform free of charge'),

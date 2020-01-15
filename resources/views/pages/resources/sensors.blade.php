@@ -8,7 +8,7 @@
     <meta name="description" content="@lang('Try out the most affordable and easy temperature monitoring solution and food safety app with real-time tracking via sensors.')">
 @endsection
 @section("content")
-    <section class="py-16 lg:py-35 bg-red-light">
+    <section class="py-8 md:py-16 xl:py-35 bg-pink">
         <div class="container mx-auto">
             <h1 class="text-70 font-cocogoose font-black uppercase text-center tracking-normal text-primary mb-12 leading-tight">
                 @lang('Automated and affordable temperature and humidity monitoring')
@@ -21,13 +21,13 @@
             </div>
         </div>
     </section>
-    <section id="control" class="py-16 lg:py-26">
+    <section id="control" class="py-8 md:py-16 xl:py-26">
         <div class="container mx-auto">
             <h2 class="text-50 font-black font-cocogoose text-primary text-center lg:mb-26 mb-10 uppercase">@lang('Stay in control without manual effort')</h2>
 
             <div class="control__items md:flex justify-between">
                 <div class="control__item lg:flex md:mb-0 mb-5">
-                    <div class="control__icon mlg:r-10 text mx-auto mb-5">
+                    <div class="control__icon lg:mr-8 text mx-auto mb-5">
                         <img src="{{asset('img/icons/face-happy_green.svg')}}" alt="">
                     </div>
                     <div class="control__left lg:text-left text-center">
@@ -64,7 +64,7 @@
             </div>
         </div>
     </section>
-    <section class="py-16 lg:py-28 bg-grey-light">
+    <section class="py-8 md:py-16 xl:py-28 bg-grey-light">
         <div class="container mx-auto">
             <h2 class="font-bold text-center font-cocogoose text-primary text-50 lg:mb-2 uppercase tracking-heading">
                 @lang('The most <span class="text-green"> affordable and uncomplicated </span>solution')
@@ -83,7 +83,7 @@
 
         </div>
     </section>
-    <section class="lg:py-28 py-16 with__border--bottom steps">
+    <section class="xl:py-28 md:py-16 py-8 with__border--bottom steps">
         <div class="container mx-auto">
             <h2 class="font-bold text-center font-cocogoose text-primary text-50  uppercase tracking-heading mb-10 lg:mb-32">
                 @lang('Get started within minutes, in <span class="text-light-blue"> three simple steps  </span>')
@@ -100,8 +100,8 @@
                                 @lang('Buy the temperature and humidity sensors, either directly from our partner or through us. <br><br>We need to know two things:')
                             </p>
                             <ul class="mt-2 lg:mt-10">
-                                <li class="text-20 text-purple font-cocogoose uppercase">@lang('1. How many sensors do you need?')</li>
-                                <li class="text-20 text-purple font-cocogoose uppercase">@lang('2. How large is the area to be monitored?')</li>
+                                <li class="text-20 text-purple font-black font-cocogoose uppercase">@lang('1. How many sensors do you need?')</li>
+                                <li class="text-20 text-purple font-black font-cocogoose uppercase">@lang('2. How large is the area to be monitored?')</li>
                             </ul>
                         </div>
                     </div>
@@ -157,7 +157,7 @@
             </div>
         </div>
     </section>
-    <section class="py-16 lg:py-32 bg-red-opacity">
+    <section class="py-8 md:py-16 xl:py-32 bg-red-opacity">
         <div class="container mx-auto">
             <h2 class="font-cocogoose text-50 font-black leading-none tracking-text text-white uppercase text-center mb-12">
                 @lang('Buy your first sensors and test for <span class="line__break"></span> 14 days, free of charge!')
@@ -170,7 +170,7 @@
             </div>
         </div>
     </section>
-    <section class="py-16 lg:py-28 bg-grey-light">
+    <section class="py-8 md:py-16 xl:py-28 bg-grey-light">
         <div class="container mx-auto">
             <h2 class="font-bold text-center font-cocogoose text-primary text-50  uppercase tracking-heading mb-10 lg:mb-32">
                 @lang('The <span class="text-green"> most affordable monitoring solution </span>on the market')
@@ -222,7 +222,7 @@
                                 @lang('Monthly payment')
                             </p>
                             <span class="text-80 font-hairline font-cocogoose text-primary leading-snug block text-center">
-                                ≤3€*
+                                <span>&le;</span>3,90€*
                             </span>
                             <h5 class="font-cocogoose font-black text-20 text-light-blue text-center mt-12 leading-snug tracking-large uppercase">
                                 @lang('Per sensor / month')

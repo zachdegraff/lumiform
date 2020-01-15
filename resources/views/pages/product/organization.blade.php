@@ -6,7 +6,7 @@
     <meta name="description" content="@lang('Orchestrate your team with user permissions, sites, users, and user groups to map your individual, organisational structures in the App. TRY FREE!')">
 @endsection
 @section("content")
-    <section id="organization__banner" class="py-8 lg:py-20 bg-grey relative">
+    <section id="organization__banner" class="py-8 md:py-16 xl:py-20 bg-grey relative">
         <div class="container mx-auto flex">
             <div class="banner__left lg:w-7/12 w-full pt-12">
                 <h1 class="tracking-normal text-center lg:text-left text-40 xxl:text-70 mb-16 font-cocogoose uppercase font-extrabold">
@@ -22,7 +22,7 @@
         </div>
 
     </section>
-    <section id="organization__orchestrate" class="py-12 lg:pt-40 lg:py-20">
+    <section id="organization__orchestrate" class="py-8 md:py-16 xl:pt-40 lg:py-20">
         <div class="container mx-auto">
 
             @include('components.product.image_text_horizontal',
@@ -37,9 +37,9 @@
             <button class="button__base px-8 py-3 lg:py-5 mx-auto">@lang('Get Lumiform FREE')</button>
         </div>
     </section>
-    <section id="languages" class="py-12 lg:pb-24 lg:pt-32 bg-grey-light">
+    <section id="languages" class="py-8 md:py-16 xl:pb-24 xl:pt-32 bg-grey-light">
         <div class="container mx-auto">
-            <h2 class="font-bold text-center font-cocogoose text-primary text-30 lg:text-50  uppercase tracking-heading">
+            <h2 class="font-bold text-center font-cocogoose text-primary text-50  uppercase tracking-heading">
                 @lang('Manage your <span class="text-green">language preferences</span>')
             </h2>
             <p class=" text-center font-light font-din text-20  text-secondary tracking-text mb-20">
@@ -75,12 +75,12 @@
             </div>
         </div>
     </section>
-    <section class="py-12 lg:py-28 with__border--bottom">
+    <section class="py-8 md:py-16 xl:py-28 with__border--bottom">
         <div class="container mx-auto">
-            <h2 class="font-bold text-center font-cocogoose text-primary text-30 lg:text-50 mb-5 uppercase tracking-heading">
+            <h2 class="font-bold text-center font-cocogoose text-primary text-50 mb-5 uppercase tracking-heading">
                 @lang('highly customised user roles')
             </h2>
-            <p class=" text-center font-light font-din text-20 lg:text-30  text-secondary tracking-text mb-12 lg:mb-32">
+            <p class=" text-center font-light font-din text-30  text-secondary tracking-text mb-8 md:mb-20 xl:mb-32">
                 @lang('Create highly individualised user roles, and determine the granular permissions for each role.')
             </p>
 
@@ -110,7 +110,7 @@
             <button class="button__base px-8 py-3 lg:py-5  mx-auto">@lang('Get Lumiform FREE')</button>
         </div>
     </section>
-    <section id="organization__orchestrate" class="py-12 lg:pt-32 lg:pb-20">
+    <section id="organization__orchestrate" class="py-8 md:py-16 xl:pt-32 xl:pb-20">
         <div class="container mx-auto">
             @include('components.product.image_text_horizontal',
                  [

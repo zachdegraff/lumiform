@@ -27,8 +27,8 @@
                         <div class="flex-1">@lang('Unlimited')</div>
                     </div>
                     <div class="section__raw flex mb-3">
-                        <div class="flex-1 text-left">@lang('Data limit')</div>
-                        <div class="flex-1">@lang('10MB')</div>
+                        <div class="flex-1 text-left">@lang('Number of inspections per month')</div>
+                        <div class="flex-1">@lang('8')</div>
                         <div class="flex-1">@lang('Unlimited')</div>
                         <div class="flex-1">@lang('Unlimited')</div>
                     </div>
@@ -80,13 +80,13 @@
                     </div>
                     <div class="section__raw flex mb-3">
                         <div class="flex-1 text-left">@lang('Schedule & assign inspections')</div>
-                        <div class="flex-1">3</div>
+                        <div class="flex-1"><div class="checked-blue"></div></div>
                         <div class="flex-1"><div class="checked-green"></div></div>
                         <div class="flex-1"><div class="checked-gold"></div></div>
                     </div>
                     <div class="section__raw flex mb-3">
                         <div class="flex-1 text-left">@lang('If-then logics')</div>
-                        <div class="flex-1">-</div>
+                        <div class="flex-1"><div class="checked-blue"></div></div>
                         <div class="flex-1"><div class="checked-green"></div></div>
                         <div class="flex-1"><div class="checked-gold"></div></div>
                     </div>

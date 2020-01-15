@@ -9,7 +9,7 @@
     <section id="use-cases-top" class="bg-grey-light relative pt-32 pb-32">
         <div class="container mx-auto flex flex-wrap">
             <div class="page-title w-full text-center ">
-                <h1 class="tracking-normal text-center lg:text-center text-40 xxl:text-70 mb-16 font-cocogoose uppercase font-extrabold text-primary">@lang('Specific for all types of use cases')</h1>
+                <h1 class="tracking-normal text-center lg:text-center text-70 mb-16 font-cocogoose uppercase font-extrabold text-primary">@lang('One solution for all categories')</h1>
             </div>
             <div class="icon-block w-full flex">
                 <div class="icon-block-child w-2/12">
@@ -177,14 +177,14 @@
         <div class="container mx-auto">
             <div class="audits-top flex justify-between items-center mb-16">
                 <div class="w-4/12">
-                    <h2 class="font-cocogoose font-bold text-left uppercase text-40 text-red mb-10">
+                    <h2 class="font-cocogoose font-bold text-left uppercase text-50 text-red mb-10">
                         @lang('Issue management')
                     </h2>
                     <p class="mt-10 font-din text-left font-light text-secondary text-20 mb-5">
                         @lang('The Lumiform issue management helps you to uncover more issues and to solve them faster, collaborating as a team. All issues are seamlessly documented, and either attached to reports or recorded separately.')
                     </p>
                     <a href="@urlTo('useCases.issue')"
-                       class="flex items-center uppercase text-red text-center block text-17 lg:text-20 tracking-large">
+                       class="flex items-center uppercase text-red text-center block font-bold text-20 tracking-large">
                         @lang('Explore Lumiform for issue management')
                         <img src="{{asset('img/arrow-right-long-red.svg')}}" alt="" class="h-3 ml-6">
                     </a>

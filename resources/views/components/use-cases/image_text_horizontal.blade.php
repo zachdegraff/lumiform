@@ -1,5 +1,5 @@
-<div class="container mx-auto mb-12 md:mb-40">
-    <div class="flex justify-around items-center @if (isset($reversed) && $reversed == true) flex-row-reverse @endif flex-col-reverse md:flex-row">
+<div class="container mx-auto mb-12 md:mb-40 category__section">
+    <div class="flex justify-around items-center @if (isset($reversed) && $reversed === true)  md:flex-row-reverse @endif  md:flex-row flex-col-reverse">
         <div class="w-6/12 xxl:w-1/2 md:w-5/12">
             <div class="cases__image__section  mx-auto w-auto ">
                 <img src="{{asset('img/'.$image[0])}}" alt="" srcset="{{asset('img/'.$image[0])}},

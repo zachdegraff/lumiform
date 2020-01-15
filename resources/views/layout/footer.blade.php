@@ -108,8 +108,8 @@
             <li><a href="@urlTo('about')">{{ __('About') }}</a></li>
             <li><a href="">{{ __('Jobs') }}</a></li>
             <li><a href="">{{ __('Imprint') }}</a></li>
-            <li><a href="">{{ __('Terms') }}</a></li>
-            <li><a href="">{{ __('Privacy') }}</a></li>
+            <li><a href="@urlTo('terms')">{{ __('Terms and Conditions') }}</a></li>
+            <li><a href="@urlTo('privacy')">{{ __('Data Privacy') }}</a></li>
         </ul>
     </div>
     <img src="{{asset('img/footer-img.png')}}" alt=""

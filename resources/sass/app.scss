@@ -17,7 +17,8 @@
   text-transform: uppercase;
   background: #FD2F58 0% 0% no-repeat padding-box;
   border-radius: 19px;
-  display: block;
+  display: flex;
+  align-items: center;
 }
 @tailwind base;
 

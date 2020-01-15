@@ -10,13 +10,13 @@
 @section("content")
     @include('components.solution.industries_banner_section',[
         'imageBg' => 'retail-banner.png',
-        'class' => 'lg:w-9/12 py-16',
+        'class' => 'xl:w-9/12 py-8',
         'heading' =>  __('Protect your retail brand'),
         'text' => __('Ensure a positive on-site experience for your customers. Collect consistent data, standardise operations, identify areas that have failed and get problems resolved quickly!'),
         ])
-    <section class="py-16 lg:py-32 with__border--bottom">
+    <section class="py-8 md:py-16 xl:py-32 with__border--bottom">
         <div class="container mx-auto">
-            <h2 class="font-bold text-center font-cocogoose text-primary text-50 mb-10 lg:mb-32 uppercase tracking-heading">
+            <h2 class="font-bold text-center font-cocogoose text-primary text-50 mb-12 xl:mb-32 uppercase tracking-heading">
                 @lang('Retailers use Lumiform to …')
             </h2>
 
@@ -49,7 +49,7 @@
             </a>
         </div>
     </section>
-    <section class="py-16 lg:py-32 with__border--bottom">
+    <section class="py-8 md:py-16 xl:py-32 with__border--bottom">
         <div class="container mx-auto">
             <h2 class="font-bold text-center font-cocogoose text-primary text-50 lg:mb-4 uppercase tracking-heading">
                 @lang('Boost<span class="text-purple"> quality and safety standards </span> in your retail stores')
@@ -69,9 +69,9 @@
 
         </div>
     </section>
-    <section class="py-16 lg:py-24">
+    <section class="py-8 md:py-16 xl:py-24">
         <div class="container mx-auto">
-            <h3 class="text-primary text-center uppercase text-50 font-cocogoose tracking-heading font-bold mb-10 lg:mb-32">
+            <h3 class="text-primary text-center uppercase text-50 font-cocogoose tracking-heading font-bold mb-10 xl:mb-32">
                 @lang('<span class="text-green">Check  your quality standards </span> with one app')
             </h3>
             <div class="industry__icons flex justify-between flex-wrap">
@@ -97,7 +97,7 @@
                 ])
             </div>
             <a href="#"
-               class="flex items-center uppercase justify-center text-red text-center block text-20 tracking-large mt-10">
+               class="flex items-center uppercase justify-center text-red text-center block font-bold text-20 tracking-large mt-10">
                 @lang('View all retail use cases')
                 <img src="{{asset('img/arrow-right-long-red.svg')}}" alt="" class="h-3 ml-8">
             </a>
@@ -126,7 +126,7 @@
     ])
     @include('components.solution.industries_quotes',[
     'image' => 'heart-blue.png',
-    'class' => 'bg-blue-light',
+    'class' => 'bg-blue-opacity',
     'text' => __('„With Lumiform, we can streamline all the processes in the stores, and keep an exact overview of whether we are meeting the standards, at all times!“'),
     'position' => __('- Quoted Person, Client Company'),
     ])

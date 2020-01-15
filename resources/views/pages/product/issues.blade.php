@@ -6,7 +6,7 @@
     <meta name="description" content="@lang('Solve all quality and safety issues as soon as they occur. Assign troubleshooting with deadlines and keep track of the resolution. TRY FREE!')">
 @endsection
 @section("content")
-    <section id="issues__banner" class="py-10 lg:pt-32 lg:pb-24 bg-blue-light relative">
+    <section id="issues__banner" class="py-8 md:py-16 xl:pt-32 xl:pb-24 bg-blue-light relative">
         <div class="container mx-auto flex">
             <div class="banner__left  w-full lg:w-2/3">
                 <h1 class="tracking-normal text-center lg:text-left text-70 mb-16 font-cocogoose uppercase font-extrabold">
@@ -18,7 +18,7 @@
         </div>
 
     </section>
-    <section id="management" class="py-12 lg:py-24 with__border--bottom">
+    <section id="management" class="py-6 md:py-12 xl:py-24 with__border--bottom">
         <div class="container mx-auto">
             <h2 class="font-bold text-center font-cocogoose text-primary text-50 lg:mb-4 uppercase tracking-heading">
                 @lang('No back and forth, just <span class="text-gold">effective issue management</span>')
@@ -26,7 +26,7 @@
             <p class="sm:px-16 text-center font-light font-din text-30 text-secondary tracking-text mb-8 lg:mb-24">
                 @lang('We invented the first issue management feature, to make issue workflows more effective and traceable.')
             </p>
-            <div class="management__tools flex flex-wrap justify-center lg:flex-no-wrap lg:justify-between">
+            <div class="management__tools flex flex-wrap justify-center lg:flex-no-wrap md:justify-between">
                 @include('components.product.image_with_title',[
                 'heading' => __('Raise Issue'),
                 'color' => 'red',
@@ -50,7 +50,7 @@
             <button class="button__base px-8 py-3 lg:py-5 lg:mt-20 mt-8 mx-auto">@lang('Get Lumiform FREE')</button>
         </div>
     </section>
-    <section id="restrict" class="py-12 lg:py-32">
+    <section id="restrict" class="py-8 md:py-16 xl:py-32">
         <div class="container mx-auto">
             <h2 class="font-bold text-center font-cocogoose text-primary text-50 mb-12 lg:mb-24 uppercase tracking-heading">
                 @lang('Raise issues in <span class="text-red">three different ways:</span>')
@@ -84,9 +84,9 @@
 
         </div>
     </section>
-    <section id="features" class="py-12 lg:pt-24 lg:pb-32 bg-grey-light">
+    <section id="features" class="py-8 md:py-16 xl:pt-24 xl:pb-32 bg-grey-light">
         <div class="container mx-auto">
-            <h2 class="font-bold text-center font-cocogoose text-primary text-30 lg:text-38 mb-5 lg:mb-20 uppercase tracking-heading">
+            <h2 class="font-bold text-center font-cocogoose text-primary text-38 mb-5 lg:mb-20 uppercase tracking-heading">
                 @lang('FOR EVERY ISSUE RAISED, YOU CAN <span class="text-purple">DEFINE THE FOLLOWING PARAMETERS</span>')
             </h2>
 
@@ -121,10 +121,10 @@
         </div>
 
     </section>
-    <section id="as_a_team" class="py-12 lg:py-32 with__border--bottom">
+    <section id="as_a_team" class="py-8 md:py-16 xl:py-32 with__border--bottom ">
         <dic class="container mx-auto">
 
-            <h2 class="font-bold text-center font-cocogoose text-primary text-30 lg:text-50 mb-5 lg:mb-26 uppercase tracking-heading">
+            <h2 class="font-bold text-center font-cocogoose text-primary text-50 mb-5 lg:mb-26 uppercase tracking-heading">
                 @lang('  <span class="text-purple"> Solve issues quickly </span> as a team')
             </h2>
         </dic>
@@ -156,14 +156,14 @@
             @include('components.product.image_text_vertical',[
                                                            'heading' => __('Log protocol'),
                                                            'text' => __('The system logs all process steps automatically, and this ensures seamless documentation.'),
-                                                           'color' => 'red mb-24',
+                                                           'color' => 'red mb-18 xl:mb-24',
                                                            'image' => 'group-5044.png',
                                                             'srcset' => ['group-5044.png','group-5044@2x.png'],
                                                            ])
         </div>
         <button class="button__base px-8 py-5 mt-20 mx-auto">@lang('Get Lumiform FREE')</button>
     </section>
-    <section id="troubleshot" class="lg:py-24 py-12">
+    <section id="troubleshot" class="xl:py-24 md:py-12 py-8">
         <div class="container mx-auto">
             @include('components.product.image_text_horizontal',
                 [

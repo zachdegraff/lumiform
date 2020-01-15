@@ -65,6 +65,7 @@ module.exports = {
                 'blue': '#4EC9FF',
                 'blue-dark': '#00B2FF',
                 'blue-light': '#e5f9f3',
+                'blue-opacity': '#e6f8ff',
                 'purple': '#8D5FD6',
                 'purple-light': '#B090E2',
                 'purple-extralight': 'rgba(141,95,214,0.1)',

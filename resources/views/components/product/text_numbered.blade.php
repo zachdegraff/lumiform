@@ -6,7 +6,7 @@
                 <h3 class="text-left text-38 font-bold font-cocogoose uppercase mb-5 text-{{$color}}">
                     {!! $heading !!}
                 </h3>
-                <p class="text-left text-secondary font-hairline text-15 lg:text-30 font-din mb-5 sm:mb-0 font-light">
+                <p class="text-left text-secondary font-hairline text-30 font-din mb-5 sm:mb-0 font-light">
                     {!! $text !!}
                 </p>
             </div>

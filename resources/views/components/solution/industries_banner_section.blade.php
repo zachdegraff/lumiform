@@ -1,6 +1,6 @@
 <section id="intusry__banner"
          style="background: url({{asset('img/'.$imageBg)}}) no-repeat; background-size: cover"
-         class="lg:pt-35 lg:pb-28 py-12"
+         class="xl:pt-35 xl:pb-28 md:py-16 py-8"
 >
     <div class="container mx-auto">
         <div class="@if(isset($class)){{$class}} @else w-full lg:w-8/12 @endif mx-auto">
@@ -11,7 +11,7 @@
                 {!! $text !!}
             </p>
             <a href="#"
-               class="font-extrabold w-215 mt-5 flex justify-center items-center mx-auto bg-red text-white uppercase font-cocogoose text-17 lg:text-xl  h-50 xxl:h-70 px-8 rounded-20">@lang('TRY FOR FREE')</a>
+               class="font-extrabold w-215 mt-5 flex justify-center items-center mx-auto bg-red text-white uppercase font-cocogoose text-20  h-70 px-8 rounded-20">@lang('TRY FOR FREE')</a>
         </div>
     </div>
 

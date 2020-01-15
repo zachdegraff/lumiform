@@ -15,7 +15,7 @@
     'text' => __('Lumiform helps your business within the food industry to comply with regulations and improve quality through more transparent processes.'),
     ])
 
-    <section class="py-16 lg:py-32 with__border--bottom">
+    <section class="py-8 md:py-16 xl:py-32 with__border--bottom">
         <div class="container mx-auto">
             <h2 class="font-bold text-center font-cocogoose text-primary text-50 mb-10 lg:mb-32 uppercase tracking-heading">
                 @lang('With Lumiform, your <span class="text-gold">food and hospitality</span> company can…')
@@ -45,17 +45,17 @@
                 ])
             </div>
             <a href="#"
-               class="font-extrabold w-290 mt-5 flex justify-center items-center mx-auto bg-red text-white uppercase font-cocogoose text-17 text-20 tracking-large  h-50 xxl:h-70 px-8 rounded-20">
+               class="font-extrabold w-290 mt-5 flex justify-center items-center mx-auto bg-red text-white uppercase font-cocogoose  text-20 tracking-large  h-70 px-8 rounded-20">
                 @lang('Get Lumiform FREE')
             </a>
         </div>
     </section>
-    <section class="py-16 lg:py-32 food__dropdown">
+    <section class="py-8 md:py-16 xl:py-32 food__dropdown">
         <div class="container mx-auto">
-            <h2 class="font-bold text-center font-cocogoose text-primary text-30 xl:text-40 lg:mb-4 uppercase tracking-heading">
+            <h2 class="font-bold text-center font-cocogoose text-primary text-50 lg:mb-4 uppercase tracking-heading">
                 @lang('<span class="text-light-blue">Reduce documentation time</span> while increasing food quality')
             </h2>
-            <p class="text-center font-light font-din text-20 lg:text-30 text-secondary tracking-text mb-20">
+            <p class="text-center font-light font-din text-30 text-secondary tracking-text mb-20">
                 @lang('Make sure all inspections and audits are done reliably and issues resolved quickly. Get the visibility you need to steer the ship.')
             </p>
             @include('components.solution.industries_droptown_section',[
@@ -79,21 +79,21 @@
                 {{asset('img/group-3311@2x.png')}}">
             </div>
             <div class="w-full sm:w-5/12">
-                <h3 class="text-red uppercase text-50 font-cocogoose tracking-heading font-bold mb-6 w-7/12">
+                <h3 class="text-red uppercase text-50 font-cocogoose tracking-heading font-bold mb-6 w-9/12">
                     @lang('Add automatic temperature monitoring')
                 </h3>
                 <p class="font-din font-light text-30 tracking-text text-secondary mb-10">
                     @lang('Explore the most affordable temperature tracking system on the market. It’s manufacturer-independent and very easy to install.')
                 </p>
                 <a href="{{route(app()->getLocale().'.resources.sensors')}}"
-                   class="flex items-center uppercase text-red text-center block text-17 lg:text-20 tracking-large">
+                   class="flex items-center font-bold uppercase text-red text-center block text-20 tracking-large">
                     @lang('Discover the sensor solution')
                     <img src="{{asset('img/arrow-right-long-red.svg')}}" alt="" class="h-3 ml-8">
                 </a>
             </div>
         </div>
     </section>
-    <section class="py-16 lg:py-24">
+    <section class="py-8 md:py-16 xl:py-24">
         <div class="container mx-auto">
             <h3 class="text-primary text-center uppercase text-50 font-cocogoose tracking-heading font-bold mb-16 lg:mb-32">
                 @lang('<span class="text-purple">Check all of your quality standards</span> with one app')
@@ -121,7 +121,7 @@
                 ])
             </div>
             <a href="#"
-               class="flex items-center uppercase justify-center text-red text-center block text-20 tracking-large xl:mt-10">
+               class="font-bold flex items-center uppercase justify-center text-red text-center block text-20 tracking-large xl:mt-10">
                 @lang('View all food use cases')
                 <img src="{{asset('img/arrow-right-long-red.svg')}}" alt="" class="h-3 ml-8">
             </a>
@@ -149,7 +149,7 @@
     ]
     ])
     @include('components.solution.industries_quotes',[
-    'image' => 'group-1031.svg',
+    'image' => 'group-1031.png',
     'text' => __('„In the past, we used paper, pen and camera for our audit reports. Now we can use Lumiform and we get everything we need in one tool.“'),
     'position' => __('-Sven,  <br>Head of Quality Management'),
     ])

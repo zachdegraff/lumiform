@@ -5,7 +5,7 @@
     <meta name="description" content="@lang('All audit & inspection results and reports in one system. Analyse data in a snap. Improve quality and safety procedures continuously - FOR FREE!')">
 @endsection
 @section("content")
-    <section id="analysis__banner" class="py-10 lg:py-16 bg-red-light">
+    <section id="analysis__banner" class="py-8 lg:py-16 bg-red-light">
         <div class="container mx-auto flex ">
             <div class="banner__left  w-full lg:w-7/12 mt-16">
                 <h1 class="tracking-normal text-center lg:text-left text-40 xxl:text-70 mb-16 font-cocogoose uppercase font-extrabold">
@@ -22,7 +22,7 @@
         </div>
 
     </section>
-    <section class="py-10 lg:pt-32 lg:pb-24 with__border--bottom" id="analysis">
+    <section class="py-8 md:py-16 xl:pt-32 xl:pb-24 with__border--bottom" id="analysis">
         <div class="container mx-auto md:flex-no-wrap md:flex-row-reverse flex-wrap flex justify-between items-center">
             <div class="flex flex-wrap sm:flex-no-wrap mb-12 flex-row-reverse justify-around lg:justify-between mb-16">
                 <div class="digitise__item--text w-full sm:w-1/3 lg:w-4/12  flex flex-col justify-center">
@@ -45,10 +45,10 @@
         </div>
         <div class="flex justify-center">
             <a href="#"
-               class="leading-none bg-red tracking-large font-extrabold text-white uppercase font-cocogoose text-17 lg:text-20 h-70  rounded-20 px-8 py-6"> @lang('Get Lumiform FREE')</a>
+               class="button__base leading-none bg-red tracking-large font-extrabold text-white uppercase font-cocogoose text-20 h-70  rounded-20 px-8 "> @lang('Get Lumiform FREE')</a>
         </div>
     </section>
-    <section class="py-10 lg:pt-32 lg:pb-24 with__border--bottom" id="analysis__need">
+    <section class="py-8 md:py-16 xl:pt-32 xl:pb-24 with__border--bottom" id="analysis__need">
         <div class="container mx-auto custom-text-size">
             <h2 class="font-bold text-center font-cocogoose text-green text-50 mb-10 lg:mb-32 uppercase tracking-heading">
                 @lang('Customise all reports easily <span class="text-primary">to meet your specific needs</span>')
@@ -88,9 +88,9 @@
             <button class="button__base px-8 py-5 mt-20 mx-auto">@lang('Get Lumiform FREE')</button>
         </div>
     </section>
-    <section class="py-10 lg:pt-32 lg:pb-24 with__border--bottom">
+    <section class="py-8 md:py-16 xl:pt-32 xl:pb-24 with__border--bottom">
         <div class="container mx-auto">
-            <h2 class="font-bold text-center font-cocogoose text-light-blue text-30 lg:text-50 mb-10 lg:mb-32 uppercase tracking-heading">
+            <h2 class="font-bold text-center font-cocogoose text-light-blue text-50 mb-10 lg:mb-32 uppercase tracking-heading">
                 @lang('All issues compliantly documented <span class="text-primary"> without any hassle</span>')
             </h2>
             <div class="flex justify-around md:flex-no-wrap flex-wrap">
@@ -103,10 +103,10 @@
                         >
                     </div>
 
-                    <h3 class="font-cocogoose font-black text-purple uppercase text-20 md:text-38 mb-4">
+                    <h3 class="font-cocogoose font-black text-purple uppercase text-38 mb-4">
                         @lang('Save time with the <br> issue overview')
                     </h3>
-                    <p class="font-light text-secondary font-din text-17  lg:text-24">
+                    <p class="font-light text-secondary font-din text-24">
                         @lang('Define that in PDF reports, all issues found in the inspection and audit are displayed separately, above all other results. Use this functionality to identify failed checks, and resolve issues directly, and more quickly.')
                     </p>
                 </div>
@@ -118,10 +118,10 @@
                         >
                     </div>
 
-                    <h3 class="font-cocogoose font-black text-red uppercase text-20 md:text-38 mb-4">
+                    <h3 class="font-cocogoose font-black text-red uppercase text-38 mb-4">
                         @lang('Document <br> troubleshooting')
                     </h3>
-                    <p class="font-light text-secondary font-din text-17  lg:text-24">
+                    <p class="font-light text-secondary font-din text-24">
                         @lang('All solution actions are automatically recorded and attached to the audit report, which leads to complete and compliant documentation.')
                     </p>
                 </div>
@@ -129,7 +129,7 @@
             <button class="button__base px-8 py-5 mt-20 mx-auto">@lang('Get Lumiform FREE')</button>
         </div>
     </section>
-    <section class="py-10 lg:pt-32 lg:pb-24 with__border--bottom">
+    <section class="py-8 md:py-16 xl:pt-32 xl:pb-24 with__border--bottom">
         <div class="container mx-auto">
             <h2 class="font-bold text-center font-cocogoose text-gold text-50 mb-10 lg:mb-32 uppercase tracking-heading">
                 @lang('Detailed analyses and reporting')
@@ -140,7 +140,7 @@
                     <h3 class="font-cocogoose font-black text-light-blue uppercase text-38 mb-4">
                         @lang('in-depth Analysis <span class="text-primary">of all collected data</span>')
                     </h3>
-                    <p class="font-light text-secondary font-din text-17  lg:text-24">
+                    <p class="font-light text-secondary font-din text-24">
                         @lang('Evaluate all collected data by filtering it according to different criteria, such as location, inspector, checklist, etc. Quickly identify areas that need your attention, in order to improve your quality and safety processes continuously.')
                     </p>
                 </div>
@@ -158,7 +158,7 @@
                     <h3 class="font-cocogoose font-black text-purple uppercase text-38 mb-4">
                         @lang('Filter performance stats')
                     </h3>
-                    <p class="font-light text-secondary font-din text-17  lg:text-24">
+                    <p class="font-light text-secondary font-din text-24">
                         @lang('Analyse the number of inspections, negative responses, overdue inspections, incidents raised and resolved – the average score is broken down into the six criteria seen here.')
                     </p>
                 </div>
@@ -202,10 +202,10 @@
             <div class="flex justify-around items-center md:flex-no-wrap flex-wrap mb-10 lg:mb-32">
 
                 <div class="w-full md:w-6/12 lg:w-4/12 mb-10 md:mb-0 text-center md:text-left">
-                    <h3 class="font-cocogoose font-black text-gold uppercase text-20 md:text-38 mb-4">
+                    <h3 class="font-cocogoose font-black text-gold uppercase text-38 mb-4">
                         @lang('Weekly and monthly reporting')
                     </h3>
-                    <p class="font-light text-secondary font-din text-17  lg:text-24">
+                    <p class="font-light text-secondary font-din text-24">
                         @lang('Get automatic weekly and monthly updates of what has been happening in your organisation.')
                     </p>
                 </div>

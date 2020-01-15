@@ -23,7 +23,7 @@
     </section>
     <section id="how__works" class="py-12 lg:py-32 ">
         <div class="container mx-auto">
-            <h2 class="font-bold text-center font-cocogoose text-primary text-40 mb-3 uppercase tracking-heading">@lang('How Lumiform works')</h2>
+            <h2 class="font-bold text-center font-cocogoose text-primary text-50 mb-3 uppercase tracking-heading">@lang('How Lumiform works')</h2>
             <p class="font-light text-center font-din text-30 text-secondary tracking-text mb-24">@lang('Make sure you’re mastering the whole process – from flexible form building to fast problem solving to in depth analysis.')</p>
         </div>
         <div class="container mx-auto">

@@ -1,5 +1,5 @@
 <div class="sm:flex mb-12 lg:mb-40 @if (isset($reversed) && $reversed === true )sm:flex-row-reverse @endif justify-between ">
-    <div class="digitise__item--text w-full sm:w-1/2 lg:w-4/12  flex flex-col justify-center horizontal__section">
+    <div class="digitise__item--text w-full sm:w-1/2 lg:w-4/12 xl:pr-0 pr-8  flex flex-col justify-center horizontal__section">
         <h3 class="text-center sm:text-left text-38 font-bold font-cocogoose uppercase mb-5 text-{{$headingColor}}">
             {!! $heading !!}
         </h3>

@@ -29,7 +29,7 @@ foreach (config("app.locales") as $localeSlug => $locale) {
 
             Route::name(".useCases")
                 ->group(function () use ($locale) {
-                    Route::view("use-cases-solutions", 'pages/use_cases/_index');
+                    Route::view("category-solutions", 'pages/use_cases/_index');
                     Route::view(__("audits", [], $locale), 'pages/use_cases/audits')->name('.audits');
                     Route::view(__("inspections", [], $locale), 'pages/use_cases/inspections')->name('.inspections');
                     Route::view(__("checklists", [], $locale), 'pages/use_cases/digital_checklists')->name('.digitalChecklists');
@@ -76,5 +76,7 @@ foreach (config("app.locales") as $localeSlug => $locale) {
 
 
             Route::view(__("about", [], $locale), 'pages/about')->name('.about');
+            Route::view(__("terms", [], $locale), 'pages/terms')->name('.terms');
+            Route::view(__("privacy", [], $locale), 'pages/privacy')->name('.privacy');
         });
 }

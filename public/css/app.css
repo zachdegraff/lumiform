@@ -22,7 +22,10 @@
   text-transform: uppercase;
   background: #FD2F58 0% 0% no-repeat padding-box;
   border-radius: 19px;
-  display: block;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -974,6 +977,10 @@ video {
   background-color: #e5f9f3;
 }
 
+.bg-blue-opacity {
+  background-color: #e6f8ff;
+}
+
 .bg-purple-light {
   background-color: #B090E2;
 }
@@ -1230,6 +1237,10 @@ video {
   background-color: #e5f9f3;
 }
 
+.hover\:bg-blue-opacity:hover {
+  background-color: #e6f8ff;
+}
+
 .hover\:bg-purple-light:hover {
   background-color: #B090E2;
 }
@@ -1484,6 +1495,10 @@ video {
 
 .focus\:bg-blue-light:focus {
   background-color: #e5f9f3;
+}
+
+.focus\:bg-blue-opacity:focus {
+  background-color: #e6f8ff;
 }
 
 .focus\:bg-purple-light:focus {
@@ -12120,6 +12135,7 @@ h1 {
 #organization__banner .banner__right--img img {
   max-width: 630px;
   margin-left: auto;
+  width: 100%;
 }
 
 #organization__orchestrate .digitise__item--image {
@@ -12890,7 +12906,7 @@ footer ul li a {
 }
 
 .easy__section .team__itemw-full {
-  max-width: 320px;
+  max-width: 335px;
   width: 100%;
 }
 
@@ -12902,6 +12918,46 @@ footer ul li a {
 .easy__section .w-360 {
   max-width: 360px;
   width: 100%;
+}
+
+.terms__page ul {
+  list-style: square;
+  padding-left: 50px;
+}
+
+.terms__page a {
+  color: #1155cc;
+}
+
+.terms__page ul.secondary-list {
+  list-style: circle;
+}
+
+.terms__page h5 {
+  font-size: 24px;
+}
+
+.terms__page table {
+  border: 1px solid #a9a9a9;
+  width: 100%;
+  font: lighter 20px Cocogoose;
+  color: #4D4D4D;
+}
+
+.terms__page table th {
+  padding: 15px 0 15px 5px;
+  font-weight: bold;
+  text-align: left;
+  border-right: 1px solid #a9a9a9;
+}
+
+.terms__page table td {
+  padding: 30px 0 30px 5px;
+  border-right: 1px solid #a9a9a9;
+}
+
+.terms__page table tr {
+  border-bottom: 1px solid #a9a9a9;
 }
 
 @media (max-width: 1660px) {
@@ -13181,8 +13237,8 @@ footer ul li a {
   }
 
   .flag__block {
-    width: calc(100vw / 5 - 20px);
-    height: calc(100vw / 5 - 20px);
+    width: calc(100vw / 5 - 50px);
+    height: calc(100vw / 5 - 50px);
     margin: 0 auto;
   }
 
@@ -13191,7 +13247,7 @@ footer ul li a {
   }
 
   .text-38, .md\:text-38 {
-    font-size: 32px;
+    font-size: 22px;
   }
 
   .text-30 {
@@ -13200,6 +13256,14 @@ footer ul li a {
 
   .text-70 {
     font: 700 50px/55px Cocogoose;
+  }
+
+  .text-24 {
+    font-size: 17px;
+  }
+
+  .mb-18 {
+    margin-bottom: 4.5rem;
   }
 
   .text-50 {
@@ -13282,8 +13346,9 @@ footer ul li a {
   }
 
   .team__itemw-full img {
-    width: 80%;
+    width: auto;
     height: auto;
+    max-height: 280px;
   }
 
   ul.list--circle__check li {
@@ -13344,6 +13409,57 @@ footer ul li a {
     font: 700 12px/14px Cocogoose;
     padding: 20px 0;
   }
+
+  .easy__section .team__itemw-full {
+    padding-right: 20px;
+  }
+
+  .management__tools .tool__item--img.first:after, .management__tools .tool__item--img.second:after {
+    width: 45px;
+    height: 12px;
+    background-size: contain;
+  }
+
+  #as_a_team .team__item {
+    max-width: 200px;
+  }
+
+  .icon__item {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+  }
+
+  .with__check--bg li {
+    padding-left: 30px;
+    margin-bottom: 10px;
+  }
+
+  .control__item .text-30 {
+    font-size: 17px;
+  }
+
+  .text-16 {
+    font-size: 12px;
+  }
+
+  .industries__list--image.active__image {
+    max-height: 300px;
+    width: auto;
+  }
+
+  .bottom__right {
+    width: 350px;
+    height: 350px;
+  }
+
+  .max-w-370 {
+    max-width: 270px;
+  }
+
+  .terms__page h5 {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 1280px) {
@@ -13353,10 +13469,6 @@ footer ul li a {
 
   .list__border {
     padding: 15px 0;
-  }
-
-  .industries__icon {
-    margin: 0 auto 15px;
   }
 
   .container {
@@ -13442,9 +13554,17 @@ footer ul li a {
   .team__item .team__image {
     height: 300px;
   }
+
+  .tool__item--img img {
+    max-height: 230px;
+  }
 }
 
 @media (max-width: 1024px) {
+  .industries__icon {
+    margin: 0 auto 10px;
+  }
+
   .w-215 {
     width: 180px;
   }
@@ -13563,10 +13683,6 @@ footer ul li a {
     right: 0;
   }
 
-  .management__tools .tool__item--img:after {
-    display: none;
-  }
-
   .text-30 {
     font-size: 17px;
   }
@@ -13584,7 +13700,11 @@ footer ul li a {
   }
 
   .text-38 {
-    font-size: 25px;
+    font-size: 17px;
+  }
+
+  .mb-18 {
+    margin-bottom: 2.75rem;
   }
 
   .text-50 {
@@ -13613,13 +13733,12 @@ footer ul li a {
   }
 
   .flag__block {
-    width: calc(100vw / 3 - 20px);
-    height: calc(100vw / 3 - 20px);
-    margin: 0 auto;
+    width: calc(100vw / 5 - 30px);
+    height: calc(100vw / 5 - 30px);
   }
 
   .flag__block img {
-    width: 70%;
+    width: 60%;
   }
 
   .from__image {
@@ -13755,9 +13874,25 @@ footer ul li a {
   .section__title-large {
     font: 700 20px/30px Cocogoose;
   }
+
+  .terms__page h5 {
+    font-size: 15px;
+  }
+
+  .terms__page table {
+    font: lighter 15px Cocogoose;
+  }
 }
 
 @media (max-width: 768px) {
+  .management__tools .tool__item--img:after {
+    display: none;
+  }
+
+  .tool__item--img img {
+    max-height: 150px;
+  }
+
   .start__text {
     margin: 50px 0 30px;
   }
@@ -14329,6 +14464,10 @@ footer ul li a {
     background-color: #e5f9f3;
   }
 
+  .sm\:bg-blue-opacity {
+    background-color: #e6f8ff;
+  }
+
   .sm\:bg-purple-light {
     background-color: #B090E2;
   }
@@ -14585,6 +14724,10 @@ footer ul li a {
     background-color: #e5f9f3;
   }
 
+  .sm\:hover\:bg-blue-opacity:hover {
+    background-color: #e6f8ff;
+  }
+
   .sm\:hover\:bg-purple-light:hover {
     background-color: #B090E2;
   }
@@ -14839,6 +14982,10 @@ footer ul li a {
 
   .sm\:focus\:bg-blue-light:focus {
     background-color: #e5f9f3;
+  }
+
+  .sm\:focus\:bg-blue-opacity:focus {
+    background-color: #e6f8ff;
   }
 
   .sm\:focus\:bg-purple-light:focus {
@@ -24773,6 +24920,10 @@ footer ul li a {
     background-color: #e5f9f3;
   }
 
+  .md\:bg-blue-opacity {
+    background-color: #e6f8ff;
+  }
+
   .md\:bg-purple-light {
     background-color: #B090E2;
   }
@@ -25029,6 +25180,10 @@ footer ul li a {
     background-color: #e5f9f3;
   }
 
+  .md\:hover\:bg-blue-opacity:hover {
+    background-color: #e6f8ff;
+  }
+
   .md\:hover\:bg-purple-light:hover {
     background-color: #B090E2;
   }
@@ -25283,6 +25438,10 @@ footer ul li a {
 
   .md\:focus\:bg-blue-light:focus {
     background-color: #e5f9f3;
+  }
+
+  .md\:focus\:bg-blue-opacity:focus {
+    background-color: #e6f8ff;
   }
 
   .md\:focus\:bg-purple-light:focus {
@@ -35217,6 +35376,10 @@ footer ul li a {
     background-color: #e5f9f3;
   }
 
+  .lg\:bg-blue-opacity {
+    background-color: #e6f8ff;
+  }
+
   .lg\:bg-purple-light {
     background-color: #B090E2;
   }
@@ -35473,6 +35636,10 @@ footer ul li a {
     background-color: #e5f9f3;
   }
 
+  .lg\:hover\:bg-blue-opacity:hover {
+    background-color: #e6f8ff;
+  }
+
   .lg\:hover\:bg-purple-light:hover {
     background-color: #B090E2;
   }
@@ -35727,6 +35894,10 @@ footer ul li a {
 
   .lg\:focus\:bg-blue-light:focus {
     background-color: #e5f9f3;
+  }
+
+  .lg\:focus\:bg-blue-opacity:focus {
+    background-color: #e6f8ff;
   }
 
   .lg\:focus\:bg-purple-light:focus {
@@ -45661,6 +45832,10 @@ footer ul li a {
     background-color: #e5f9f3;
   }
 
+  .xl\:bg-blue-opacity {
+    background-color: #e6f8ff;
+  }
+
   .xl\:bg-purple-light {
     background-color: #B090E2;
   }
@@ -45917,6 +46092,10 @@ footer ul li a {
     background-color: #e5f9f3;
   }
 
+  .xl\:hover\:bg-blue-opacity:hover {
+    background-color: #e6f8ff;
+  }
+
   .xl\:hover\:bg-purple-light:hover {
     background-color: #B090E2;
   }
@@ -46171,6 +46350,10 @@ footer ul li a {
 
   .xl\:focus\:bg-blue-light:focus {
     background-color: #e5f9f3;
+  }
+
+  .xl\:focus\:bg-blue-opacity:focus {
+    background-color: #e6f8ff;
   }
 
   .xl\:focus\:bg-purple-light:focus {
@@ -56105,6 +56288,10 @@ footer ul li a {
     background-color: #e5f9f3;
   }
 
+  .xxl\:bg-blue-opacity {
+    background-color: #e6f8ff;
+  }
+
   .xxl\:bg-purple-light {
     background-color: #B090E2;
   }
@@ -56361,6 +56548,10 @@ footer ul li a {
     background-color: #e5f9f3;
   }
 
+  .xxl\:hover\:bg-blue-opacity:hover {
+    background-color: #e6f8ff;
+  }
+
   .xxl\:hover\:bg-purple-light:hover {
     background-color: #B090E2;
   }
@@ -56615,6 +56806,10 @@ footer ul li a {
 
   .xxl\:focus\:bg-blue-light:focus {
     background-color: #e5f9f3;
+  }
+
+  .xxl\:focus\:bg-blue-opacity:focus {
+    background-color: #e6f8ff;
   }
 
   .xxl\:focus\:bg-purple-light:focus {

@@ -36,7 +36,7 @@
         @include('components.use-cases.image_text_horizontal',[
         'heading' => __('Uncover more issues and <span class="text-red">solve them faster </span>'),
         'image' => ['group-4928.png','group-4928@2x.png'],
-        'reversed' => true,
+        'reversed' => true ,
         'items' => [
         __('Assign corrective actions to teammates on the fly'),
         __('Set a deadline and track the progress')
@@ -86,7 +86,7 @@
     ])
     @include('components.solution.industries_quotes',[
     'image' => 'heart-blue.png',
-    'class' => 'bg-blue-light',
+    'class' => 'bg-blue-opacity',
     'text' => __('“Lumiform has helped us to eliminate accidents on the construction site, and we have managed to increase the quality of work at the same time, through frequent safety and quality controls.“'),
     'position' => __('- Mark, HSE-Manager'),
     ])
